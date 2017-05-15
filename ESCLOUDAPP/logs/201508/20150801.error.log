@@ -1,0 +1,388 @@
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 00:12:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0357809066772"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 00:47:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0021860599518"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 00:48:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0076229572296"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 00:49:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0038130283356"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 00:53:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0087418556213"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 00:57:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028159618378"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:21:02"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0019481182098"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:21:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0112271308899"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:28:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0105559825897"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:39:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0037848949432"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:39:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0039010047913"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:43:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0012061595917"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:43:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0850119590759"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:46:52"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0316121578217"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:47:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99945306777954"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:49:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0142569541931"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:49:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.010498046875"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:49:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026788711548"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:49:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030159950256"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:51:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99963998794556"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:51:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0156111717224"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:53:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0053679943085"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:53:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0108790397644"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:58:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010929107666"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 10:58:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0024189949036"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:02:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0061948299408"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:02:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0073180198669"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:21:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.1107709407806"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:21:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99977397918701"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:21:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.008780002594"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:23:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0033228397369"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:27:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0043370723724"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:28:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0104110240936"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:32:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99483704566956"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:32:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99961709976196"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:35:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99805188179016"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:35:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.002937078476"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:36:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0691781044006"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:36:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0061218738556"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:37:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0374050140381"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:37:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0046098232269"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:50:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.012216091156"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:50:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0100660324097"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:50:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99480295181274"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:50:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028948783875"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:50:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99574613571167"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:51:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.006472826004"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:51:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0061202049255"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:51:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0103561878204"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:51:52"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.9996120929718"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:52:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0131690502167"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:52:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004370212555"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:52:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0036020278931"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:52:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0060830116272"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:53:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0029909610748"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:53:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0106709003448"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:53:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0122940540314"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:53:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0053532123566"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:53:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99690699577332"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 11:54:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0090007781982"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:43:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0163779258728"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:45:52"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0061900615692"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:46:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0125551223755"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:47:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0051989555359"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:51:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0021529197693"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:52:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0118360519409"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:53:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99901795387268"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:53:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0104510784149"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:57:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.000627040863"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:57:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0126559734344"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:57:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99595379829407"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:57:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0914659500122"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:58:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0029108524323"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:58:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.9993360042572"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027990341187"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023221969604"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0036849975586"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99678611755371"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010049343109"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0131740570068"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 12:59:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0048232078552"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:00:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.003518819809"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:01:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0024719238281"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:01:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99514317512512"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:01:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0129420757294"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:01:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99813914299011"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:01:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0062930583954"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:05:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99791693687439"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 13:05:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0681099891663"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:05:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99818897247314"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:14:47"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0405378341675"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:15:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0038969516754"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:15:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0264959335327"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:15:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99841284751892"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:45:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99912595748901"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:45:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0043330192566"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-08-01 15:45:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99925208091736"}
+

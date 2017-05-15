@@ -1,0 +1,1693 @@
+.userCommunityMain a:HOVER{	  
+  color: #d14836;
+  text-decoration: none;
+}
+.userCommunityMain a {
+  color: #666666;
+  outline: 0 none;
+}
+	.communitycolor{
+		color:red;
+	}
+	.all_text_input{
+		height: auto;
+	}
+	.a_reply a:HOVER{color: red;text-decoration:none;}
+	
+	
+	.commnitylist .top_title span:hover{ color:#ff0000; }
+	.commnitylist .top_title span{
+		font-size: 15px;
+		font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+		font-weight: 500;
+		color: #333;
+		margin-left: -11%;
+	}
+	
+	.userCommunityMain {
+		overflow:hidden; 
+		width:100%;
+		height:100%;
+		padding: 10px 0px 10px 10px;
+	} 
+	#userGridListCommnity{
+		position: relative;
+		height:100%;
+		padding-right:10px;
+	}
+	#topMenuCommnity{
+		width:100%;
+		height:60px;
+		border-bottom-color: rgb(225, 225, 225);
+  		border-bottom-style: solid;
+  		border-bottom-width: 1px;
+  		box-shadow: rgb(238, 238, 238) 0px 0px 3px 0px, rgb(255, 255, 255) 0px 0px 3px 0px inset;
+	}
+	#topMenuCommnity .left_title {
+		font-size:18px;
+		margin-top:5px;
+		height: 30px;
+		margin-left: 20px;
+		width: 146px;
+		float: left;
+		text-align: center;
+	}
+	#topMenuCommnity .left_title a{
+  		font-size: 18px;
+  		font-weight: 500;
+  		height:auto;
+  		line-height: 59px;
+  		text-decoration: none;
+  		color: black;
+	}
+	#typeofCommnity .left_title {
+		font-size:18px;
+		height: 40px;
+		margin-left: 45px;
+		width: 610px;
+	}
+	#typeofCommnity .left_title a{
+		color:black;
+		text-decoration:none;
+  		font-size: 18px;
+  		font-weight: 500;
+  		height:auto;
+  		line-height: 59px;
+	}
+	#topMenuCommnity .right_title{
+		margin-top: 15px;
+		height: 50px;
+		margin-right: 20px;
+		width: 200px;
+		float: right;
+		display:inline;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.nav_module_title_list{
+		border-bottom-color: rgb(225, 225, 225);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		border-left-color: rgb(225, 225, 225);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-color: rgb(225, 225, 225);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color: rgb(225, 225, 225);
+		border-top-style: solid;
+		border-top-width: 1px;
+		box-shadow: rgb(238, 238, 238) 0px 0px 3px 0px, rgb(255, 255, 255) 0px 0px 3px 0px inset;
+		box-sizing: border-box;
+		margin-left:0;
+		width:73%;
+		height:99%;
+		min-height:554px;
+		float:left;
+		position: relative;
+	}
+	.show_module_title{
+		font-size:17px;
+		margin-left: 2%;
+  		width: 96%;
+		height:35px;
+		border-bottom-color: rgb(225, 225, 225);
+  		border-bottom-style: solid;
+  		border-bottom-width: 1px;
+	}
+	#navListCommnity .commnitylist{
+	  margin-left: 2%;
+	  width: 96%;
+	  height: 90px;
+	  border-bottom-color: rgb(225, 225, 225);
+	  border-bottom-style: solid;
+	  border-bottom-width: 1px;
+	  padding-top: 7px;
+	}
+	.commnitylist div:hover{
+		background-color: background-color:rgb(247, 247, 245);
+		
+	}
+	#navListCommnity .commnitylist .top_title{
+	    float: right;
+		margin-top: 2px;
+		margin-right: 10px;
+		width:80%;
+		height: 20px;
+  		font-size: 14px;
+  		font-weight: 500;
+  		cursor: pointer;
+	}
+	/* #comm_module_title{
+  		  margin-left: 22px;
+  		  margin-top: 15px;
+  		  color: #646b75;
+  		  font-size: 18px;
+	} */
+	#navListCommnity .commnitylist .end_date{
+		  float: right;
+  		  margin-right: 66%;
+  		  padding-top: 38px;
+		 font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+		 font-size: 10px;
+  		 color: #778899;
+	}
+	
+	#navListCommnity .commnitylist .pub_type{
+	  color: #778899;
+	  float: right;
+	  font-size: 1px;
+	  margin-right: -6%;
+	}
+
+	#typeofCommnity{
+		border-bottom-color: rgb(225, 225, 225);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		border-left-color: rgb(225, 225, 225);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-color: rgb(225, 225, 225);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color: rgb(225, 225, 225);
+		border-top-style: solid;
+		border-top-width: 1px;
+		box-shadow: rgb(238, 238, 238) 0px 0px 3px 0px, rgb(255, 255, 255) 0px 0px 3px 0px inset;
+		box-sizing: border-box;
+		margin-top:10px;
+		width:73%;
+		height:auto;
+		float:left;
+		position: relative;
+	}
+	#commnitytitleids{
+		  background-attachment: scroll;
+		  background-clip: border-box;
+		  background-color: rgb(255, 255, 255);
+		  background-image: none;
+		  background-origin: padding-box;
+		  background-size: auto;
+		  border-bottom-color: rgb(221, 221, 221);
+		  border-bottom-left-radius: 3px;
+		  border-bottom-right-radius: 3px;
+		  border-bottom-style: solid;
+		  border-bottom-width: 1px;
+		  border-image-outset: 0px;
+		  border-image-repeat: stretch;
+		  border-image-slice: 100%;
+		  border-image-source: none;
+		  border-image-width: 1;
+		  border-left-color: rgb(221, 221, 221);
+		  border-left-style: solid;
+		  border-left-width: 1px;
+		  border-right-color: rgb(221, 221, 221);
+		  border-right-style: solid;
+		  border-right-width: 1px;
+		  border-top-color: rgb(221, 221, 221);
+		  border-top-left-radius: 3px;
+		  border-top-right-radius: 3px;
+		  border-top-style: solid;
+		  border-top-width: 1px;
+		  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+		  box-sizing: border-box;
+		  color: rgb(115, 115, 115);
+		  cursor: auto;
+		  display: block;
+		  font-size: 14px;
+		  font-stretch: normal;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: normal;
+		  height: 36px;
+		  letter-spacing: normal;
+		  line-height: 20px;
+		  margin-bottom: 0px;
+		  margin-left: 2%;
+		  margin-top: 10px;
+		  padding-bottom: 6px;
+		  padding-left: 12px;
+		  padding-right: 12px;
+		  padding-top: 6px;
+		  text-align: start;
+		  text-indent: 0px;
+		  text-shadow: none;
+		  text-transform: none;
+		  transition-delay: 0s, 0s;
+		  transition-duration: 0.15s, 0.15s;
+		  transition-property: border-color, box-shadow;
+		  transition-timing-function: ease-in-out, ease-in-out;
+		  width: 96%;
+		  word-spacing: 0px;
+		  writing-mode: lr-tb;
+	}
+	
+	#commnitytextarea{
+		  background-attachment: scroll;
+		  background-clip: border-box;
+		  background-color: rgb(255, 255, 255);
+		  background-image: none;
+		  background-origin: padding-box;
+		  background-size: auto;
+		  border-bottom-color: rgb(221, 221, 221);
+		  border-bottom-left-radius: 3px;
+		  border-bottom-right-radius: 3px;
+		  border-bottom-style: solid;
+		  border-bottom-width: 1px;
+		  border-image-outset: 0px;
+		  border-image-repeat: stretch;
+		  border-image-slice: 100%;
+		  border-image-source: none;
+		  border-image-width: 1;
+		  border-left-color: rgb(221, 221, 221);
+		  border-left-style: solid;
+		  border-left-width: 1px;
+		  border-right-color: rgb(221, 221, 221);
+		  border-right-style: solid;
+		  border-right-width: 1px;
+		  border-top-color: rgb(221, 221, 221);
+		  border-top-left-radius: 3px;
+		  border-top-right-radius: 3px;
+		  border-top-style: solid;
+		  border-top-width: 1px;
+		  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+		  box-sizing: border-box;
+		  color: rgb(115, 115, 115);
+		  cursor: auto;
+		  display: block;
+		  flex-direction: column;
+		  font-size: 14px;
+		  font-stretch: normal;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: normal;
+		  height: 196px;
+		  letter-spacing: normal;
+		  line-height: 25.2000007629395px;
+		  margin-bottom: 0px;
+		  margin-left: 2%;
+		  margin-right: 0px;
+		  margin-top: 10px;
+		  overflow-x: auto;
+		  overflow-y: auto;
+		  padding-bottom: 7px;
+		  padding-left: 7px;
+		  padding-right: 7px;
+		  padding-top: 7px;
+		  resize: none;
+		  text-align: start;
+		  text-indent: 0px;
+		  text-shadow: none;
+		  text-transform: none;
+		  transition-delay: 0s, 0s;
+		  transition-duration: 0.15s, 0.15s;
+		  transition-property: border-color, box-shadow;
+		  transition-timing-function: ease-in-out, ease-in-out;
+		  white-space: pre-wrap;
+		  width: 96%;
+		  word-spacing: 0px;
+		  word-wrap: break-word;
+		  writing-mode: lr-tb;
+		  position: relative;
+	}
+	#userownCommnity{
+		width:73%;
+		height:auto;
+	}
+	.userCommunityMain .select_type{
+		width: 96%;
+		height:30px;
+		margin-left: 2%;
+		margin-top: 5px;
+		background-attachment: scroll;
+		  background-clip: border-box;
+		  background-color: rgb(255, 255, 255);
+		  background-image: none;
+		  background-origin: padding-box;
+		  background-size: auto;
+		  border-bottom-color: rgb(221, 221, 221);
+		  border-bottom-left-radius: 3px;
+		  border-bottom-right-radius: 3px;
+		  border-bottom-style: solid;
+		  border-bottom-width: 1px;
+		  border-image-outset: 0px;
+		  border-image-repeat: stretch;
+		  border-image-slice: 100%;
+		  border-image-source: none;
+		  border-image-width: 1;
+		  border-left-color: rgb(221, 221, 221);
+		  border-left-style: solid;
+		  border-left-width: 1px;
+		  border-right-color: rgb(221, 221, 221);
+		  border-right-style: solid;
+		  border-right-width: 1px;
+		  border-top-color: rgb(221, 221, 221);
+		  border-top-left-radius: 3px;
+		  border-top-right-radius: 3px;
+		  border-top-style: solid;
+		  border-top-width: 1px;
+	}
+#typeofreply{
+		border-bottom-color: rgb(225, 225, 225);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-image-outset: 0px;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		border-left-color: rgb(225, 225, 225);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-color: rgb(225, 225, 225);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color: rgb(225, 225, 225);
+		border-top-style: solid;
+		border-top-width: 1px;
+		box-shadow: rgb(238, 238, 238) 0px 0px 3px 0px, rgb(255, 255, 255) 0px 0px 3px 0px inset;
+		box-sizing: border-box;
+		margin-top:10px;
+		width:100%;
+		height:auto;
+		float:left;
+}
+#replytextarea{
+		background-attachment: scroll;
+		  background-clip: border-box;
+		  background-color: rgb(255, 255, 255);
+		  background-image: none;
+		  background-origin: padding-box;
+		  background-size: auto;
+		  border-bottom-color: rgb(221, 221, 221);
+		  border-bottom-left-radius: 3px;
+		  border-bottom-right-radius: 3px;
+		  border-bottom-style: solid;
+		  border-bottom-width: 1px;
+		  border-image-outset: 0px;
+		  border-image-repeat: stretch;
+		  border-image-slice: 100%;
+		  border-image-source: none;
+		  border-image-width: 1;
+		  border-left-color: rgb(221, 221, 221);
+		  border-left-style: solid;
+		  border-left-width: 1px;
+		  border-right-color: rgb(221, 221, 221);
+		  border-right-style: solid;
+		  border-right-width: 1px;
+		  border-top-color: rgb(221, 221, 221);
+		  border-top-left-radius: 3px;
+		  border-top-right-radius: 3px;
+		  border-top-style: solid;
+		  border-top-width: 1px;
+		  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+		  box-sizing: border-box;
+		  color: rgb(115, 115, 115);
+		  cursor: auto;
+		  display: block;
+		  flex-direction: column;
+		  font-size: 14px;
+		  font-stretch: normal;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: normal;
+		  height: 196px;
+		  letter-spacing: normal;
+		  line-height: 25.2000007629395px;
+		  margin-bottom: 0px;
+		  margin-left: 2%;
+		  margin-top: 10px;
+		  overflow-x: auto;
+		  overflow-y: auto;
+		  padding-bottom: 7px;
+		  padding-left: 7px;
+		  padding-right: 7px;
+		  padding-top: 7px;
+		  resize: none;
+		  text-align: start;
+		  text-indent: 0px;
+		  text-shadow: none;
+		  text-transform: none;
+		  transition-delay: 0s, 0s;
+		  transition-duration: 0.15s, 0.15s;
+		  transition-property: border-color, box-shadow;
+		  transition-timing-function: ease-in-out, ease-in-out;
+		  white-space: pre-wrap;
+		  width: 96%;
+		  word-spacing: 0px;
+		  word-wrap: break-word;
+		  writing-mode: lr-tb;
+}
+#the_submit_btn{
+	  -webkit-appearance: none;
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  -webkit-user-select: none;
+  -webkit-writing-mode: horizontal-tb;
+  align-items: flex-start;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(92, 184, 92);
+  background-image: none;
+  background-origin: padding-box;
+  background-repeat: repeat-x;
+  background-size: auto;
+  border-bottom-color: rgb(76, 174, 76);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(76, 174, 76);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(76, 174, 76);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(76, 174, 76);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 38px;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  outline-color: rgb(255, 255, 255);
+  outline-style: none;
+  outline-width: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  text-align: center;
+  text-indent: 0px;
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 108px;
+  word-spacing: 0px;
+  writing-mode: lr-tb;
+}
+#reply_list .userreplylist{
+		height:auto;
+		min-height:57px;
+		margin-left:2%;
+		width:96%;
+		border-bottom-color: rgb(225, 225, 225);
+  		border-bottom-style: solid;
+  		border-bottom-width: 1px;
+  		
+}
+ .userCommunityMain .reply_mete {width: 732px;height: 20px;}
+ .userCommunityMain .reply_mete .reply_auth{float:left;width:350px; margin-left: 10px;}
+ .userCommunityMain .reply_mete .reply_date{
+ 	width: 68%;
+  	margin-left: 17%;
+  	text-align: right;
+  	margin-top: -2%;
+  	float: left;
+  }
+ .userCommunityMain .reply_mete .a_reply{
+ 	width: 68%;
+  	margin-left: 18%;
+  	text-align: right;
+  	margin-top: -2%;
+  	float: left;
+ }
+ 
+ .userCommunityMain .reply_mete .reply_floor{
+  		  background: none repeat scroll 0 0 #F9F9F7;
+		  border: 1px solid #E1E1E1;
+		  border-radius: 3px;
+		  color: #AAAAAA;
+		  display: inline-block;
+		  font-size: 12px;
+		  line-height: 16px;
+		  padding: 0 4px;
+		  float: right;
+		  margin-top: -14px;
+		  margin-right: 58px;
+  }
+ .userCommunityMain .replaylist{
+		height:auto;
+		min-height:30px;
+		width:732px;
+		font-size:16px;
+		margin-left: 15px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;		
+		color: #333;
+}
+.userCommunityMain .normal{background-color:white;
+		height:auto;
+		min-height:80px;
+		margin-left:13px;
+		width:97%;
+  	    padding: 10px 0 10px 0;
+  	    border-bottom-color: rgb(225, 225, 225);
+  		border-bottom-style: solid;
+  		border-bottom-width: 1px; 
+}
+ .userCommunityMain .change{
+ 		background-color:rgb(247, 247, 245);
+ 		height:auto;
+		min-height:80px;
+		margin-left:13px;
+		width:97%;
+  	    padding: 10px 0 10px 0;
+  	    border-bottom-color: rgb(225, 225, 225);
+  		border-bottom-style: solid;
+  		border-bottom-width: 1px; 
+} 
+.userCommunityMain .hide_error{
+		background-attachment: scroll;
+		  background-clip: border-box;
+		  background-color: rgb(255, 255, 255);
+		  background-image: none;
+		  background-origin: padding-box;
+		  background-size: auto;
+		  border-bottom-color: rgb(221, 221, 221);
+		  border-bottom-left-radius: 3px;
+		  border-bottom-right-radius: 3px;
+		  border-bottom-style: solid;
+		  border-bottom-width: 1px;
+		  border-image-outset: 0px;
+		  border-image-repeat: stretch;
+		  border-image-slice: 100%;
+		  border-image-source: none;
+		  border-image-width: 1;
+		  border-left-color: rgb(221, 221, 221);
+		  border-left-style: solid;
+		  border-left-width: 1px;
+		  border-right-color: rgb(221, 221, 221);
+		  border-right-style: solid;
+		  border-right-width: 1px;
+		  border-top-color: rgb(221, 221, 221);
+		  border-top-left-radius: 3px;
+		  border-top-right-radius: 3px;
+		  border-top-style: solid;
+		  border-top-width: 1px;
+		  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+		  box-sizing: border-box;
+		  color: rgb(115, 115, 115);
+		  cursor: auto;
+		  display: block;
+		  flex-direction: column;
+		  font-size: 14px;
+		  font-stretch: normal;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: normal;
+		  height: 36px;
+		  letter-spacing: normal;
+		  line-height: 25.2000007629395px;
+		  margin-bottom: 0px;
+		  margin-left: 5px;
+		  margin-right: 0px;
+		  margin-top: 10px;
+		  padding-bottom: 7px;
+		  padding-left: 7px;
+		  padding-right: 7px;
+		  padding-top: 7px;
+		  resize: none;
+		  text-align: start;
+		  text-indent: 0px;
+		  text-shadow: none;
+		  text-transform: none;
+		  transition-delay: 0s, 0s;
+		  transition-duration: 0.15s, 0.15s;
+		  transition-property: border-color, box-shadow;
+		  transition-timing-function: ease-in-out, ease-in-out;
+		  white-space: pre-wrap;
+		  width: 724px;
+		  margin-left:15px;
+		  word-spacing: 0px;
+		  word-wrap: break-word;
+		  writing-mode: lr-tb;
+		  color: orange;
+		  border-color: orange;
+}
+ 
+ .userCommunityMain .total_btn{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width:96%;
+  margin-top: 9px;
+  margin-left: 2%;
+}
+.userCommunityMain .all_title{
+	position: relative;
+  display: inline-block;
+  vertical-align: middle;
+    margin-left: 5px;
+}
+.userCommunityMain .btn_title_h1{
+	 background-color: #F9F9F5;
+	border: solid 1px #ddd;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+  width: 37px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+.userCommunityMain .btn_title_h2{
+  background-color: #F9F9F5;
+  border: solid 1px #ddd;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+  width: 37px;}
+  .userCommunityMain .btn_title_h3{
+    background-color: #F9F9F5;
+  	  border: solid 1px #ddd;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+  width: 37px;
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  }
+  .userCommunityMain .all_title a span{
+	margin-left:8px;
+  	font-size: 14px;
+  font-weight: bold;
+  height: 29px;
+  line-height: 29px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  text-indent: -5000px;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  white-space: nowrap;
+  width: 37px;
+  }
+  .userCommunityMain .all_title a {text-decoration:none;}
+/*   .total_btn .preview_btn {
+  border-radius:3px;
+  position:relative;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+    width: 32px;
+  margin-right: 100px;
+  margin-top: 0px;
+  } */
+  .btn_b_i_img{
+  margin-left:6px;
+  	position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  }
+  .btn_b_i_img .btn_add_tupian{
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+  background-color: #F9F9F5;
+  	 border: solid 1px #ddd;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+    width: 37px;
+  }
+  .btn_b_i_img .btn_B{
+  background-color: #F9F9F5;
+	  border: solid 1px #ddd;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+  width: 37px;
+  }
+  .btn_b_i_img .btn_I{
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  background-color: #F9F9F5;
+  	  border: solid 1px #ddd;
+  color: #333;
+  display: block;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: 0 1px 0 #fff;
+  width: 37px;
+  }
+    .btn_b_i_img a span{
+	margin-left:14px;
+  	font-size: 14px;
+  font-weight: bold;
+  height: 29px;
+  line-height: 29px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  text-indent: -5000px;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  white-space: nowrap;
+  width: 37px;
+  }
+  .btn_b_i_img a {text-decoration:none;}
+   #userinfomainCommunity h3{
+  margin-top: 0px;
+  margin-bottom: 12px;
+  }
+ 
+  #userinfomainCommunity{
+     padding: 20px;
+  	 margin-bottom: 10px;
+     width: 100%;
+     border: solid 1px #e1e1e1;
+     overflow: overlay;
+     
+  }
+  #userinfomainCommunity_title{
+  height:auto;
+  min-height:50px;
+  font-size: 14px;
+  margin-top: 0;
+/*  margin-bottom: 127px;*/
+  margin-bottom: 100px;
+  padding-bottom: 12px;
+  color: #646b75;
+  border-bottom: solid 1px #e1e1e1;
+  }
+  #userinfomainCommunity_info{
+	  font-size: 14px;
+	  padding: 0px 10px 10px 10px;
+	  min-height: 180px;
+/*	  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;*/
+	  padding-top: 0px;
+	  position: relative;
+	  width: auto;
+	  word-wrap: break-word;
+  }
+  .userdisplaytitle{
+  border-bottom: solid 1px #e1e1e1;margin-left: 5px;font-size: 20px;height: auto;text-align: center;
+  }
+   .usertitleinfo .title_auth{
+  color: #d7d7d7;float: left;font-size: 14px;margin-left: 10px;
+  }
+  .userCommunityMain .title_date{
+  color: #d7d7d7;float: left;font-size: 14px;margin-left: 10px;
+  }
+  
+ .usertitleinfo a{text-decoration:none;}
+ .userarticle_delete{
+  margin-right:3px;
+  float:right;
+  color: black;
+  font-size:14px;
+  padding: 2px 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+ }
+ .userdisplaytitle a{text-decoration:none;}
+ /*  .back_to_index{
+  margin-right:10px;
+  float:right;
+  color: black;
+  font-size:14px;
+  padding: 2px 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+ } */
+ .back_to_index{
+ 	float: right;
+ 	margin-top: 8px;
+ }
+ .delete-btn-sm{
+   float: right;
+  margin-top: 8px;
+  margin-right: 12px;
+ }
+  .edit-btn-sm{
+  float: right;
+  margin-top: 8px;
+  margin-right: 12px;
+ }
+  
+ 
+ #typetoshowCommunity{
+  margin-top:10px;
+  background: #fbfbfb;
+  border: solid 1px #e1e1e1;
+  margin-right: 1%;
+  width: 98%;
+  height:300px;
+  float: right;
+ }
+ #typetoshowCommunityMain{
+  margin-right: 1%;
+  width: 25%;
+  height:600px;
+  float: right;
+ }
+  #typetoshowCommunity h4{
+  margin-top:18px;
+  margin-left: 25px;
+  margin-right: 25px;
+   border-bottom: solid 1px #e1e1e1;
+   height: 33px;
+  }
+ /*   #typetoshowCommunity h4 a{text-decoration: none;}  */
+  
+ #typetoshowCommunity ul{
+  	  margin-left: -6%;
+  	  padding : 0;
+  }
+   
+  #typetoshowCommunity ul li{
+	  margin:6%;
+	  font-size:14px;
+	  list-style-type: none;
+	  cursor: pointer;
+	  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+	  padding-left: 13%;
+	  width: 94%;
+	  padding-bottom: 4%;	
+  }
+  
+  #typetoshowCommunity ul li:HOVER{
+  	color: red;
+  }
+  
+  .userCommunityMain .click_after{
+	  background-color: rgb(210, 201, 201);
+	  padding-top:5%;
+  }
+  .userCommunityMain .priview_openeyes{
+  margin-left:50%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  }
+  .community_Pagination{
+  width: 96%;
+  margin-top:3px;
+  margin-left: 2%;
+  text-align: center;
+  margin-bottom: 0px;
+  position:absolute;
+  bottom:0;
+  }
+  .publisacrascommunity{
+  	  border-radius:5px;  
+	  background-color: #5cb85c;
+	  border: solid 1px #4cae4c;
+	  box-sizing: border-box;
+	  color: rgb(255, 255, 255);
+	  display: block;
+	  float: right;
+	  width: 98%;
+	  height:38px;
+	  margin-right: 1%;
+	  margin-top: 0%;
+	  text-align: center;
+  }
+  .publisacrascommunity .fatie_tobottom_btn{
+  	  width: 5%;
+  	  margin-left: 30%;
+  	  background-color: #5cb85c;
+  }
+   .publisacrascommunity .fatie_tobottom_btn a{
+   	color: white;
+   	text-decoration: none;
+   	margin-top: 50%;
+   }
+   .publisacrascommunity .abtntobottom{
+   		-webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #5cb85c;
+  background-image: none;
+  background-origin: padding-box;
+  background-repeat: repeat-x;
+  background-size: auto;
+  border-bottom-color: #5cb85c;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: #5cb85c;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #5cb85c;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #5cb85c;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  height: 38px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  outline-color: rgb(255, 255, 255);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+   }
+   #communitysubmit  a{
+   	text-decoration: none;
+   	color: white;
+   }
+   #the_submit_btn_fatie{
+   	  -webkit-appearance: none;
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  -webkit-user-select: none;
+  -webkit-writing-mode: horizontal-tb;
+  float:right;
+  align-items: flex-start;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(92, 184, 92);
+  background-image: none;
+  background-origin: padding-box;
+  background-repeat: repeat-x;
+  background-size: auto;
+  border-bottom-color: rgb(76, 174, 76);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(76, 174, 76);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(76, 174, 76);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(76, 174, 76);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: 38px;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-right: 2%;
+  margin-top: 10px;
+  outline-color: rgb(255, 255, 255);
+  outline-style: none;
+  outline-width: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  text-align: center;
+  text-indent: 0px;
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 108px;
+  word-spacing: 0px;
+  writing-mode: lr-tb;
+   }
+   
+/**所有帖子展示样式**/
+
+
+.wt-row-thread-item{
+  border-bottom-color: rgb(225, 225, 225);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px; 
+  line-height: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  margin-left: -15px;
+  position: relative;
+  width: 104.3%;
+}
+
+
+ .thread-total-comments {
+  line-height: 12px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #d84c31;
+  display: inline-block;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 18px 12px 0px 0px;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-left: 60%;
+}
+
+.col-sm-4-thread-comment-meta-ng-scope{
+  box-sizing: border-box;
+  color: rgb(215, 215, 215);
+  cursor: default;
+  display: block;
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  min-height: 1px;
+ /* overflow-x: hidden;
+  overflow-y: hidden;*/
+  overflow:hidden;
+  padding-left: 15px;
+  padding-right: 18px;
+  position: relative;
+/*  text-align: right; */
+  text-align: left; 
+ /* text-overflow: ellipsis;*/
+  white-space: nowrap;
+  width: 39%;
+}   
+.col-sm-7-col-xs-7-thread-meta{   
+  box-sizing: border-box;
+  color: rgb(215, 215, 215);
+  cursor: default;
+  display: block;
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 55%;   
+}   
+
+.userCommunityMain h4 a{
+  display: block;
+  width: 100%;
+  color: #666666;
+  outline: 0 none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: initial;
+}
+   
+.userCommunityMain h4 a:HOVER{
+  color: #d14836;
+  text-decoration: none;
+}
+
+.userCommunityMain .thread a{
+	text-decoration: none;
+	cursor:default
+}
+
+.userCommunityMain .thread-title a{
+	 color: #666666;
+}
+
+.userCommunityMain .thread-meta a{
+	    color: #332B2B;
+}   
+
+.userCommunityMain .thread-meta .thread-information {
+	     color: #332B2B;
+}   
+
+.userCommunityMain .thread-meta .thread-information{
+	  padding-top: 22px;
+}   
+
+.userCommunityMain .pull-right{
+	  margin-top: 24px;
+}   
+   
+/**我的社区htmlcss**/
+.col-md-8-mainContent{
+box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  min-height: 1px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  position: relative;
+  width: 74%;
+}
+.file-list-content-panel-body-ps-container{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  position: relative;
+  width: 100%;
+}
+
+.panel-footer-file-panel-footer{
+  background-color: rgb(245, 245, 245);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  width : 104.5%;
+  line-height: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 18px 14px;
+  padding-top: 10px;
+  margin-left:-15px;
+  position: relative;
+  margin-bottom: -6px
+}
+.panel-panel-default{
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(225, 225, 225);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(225, 225, 225);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(225, 225, 225);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(225, 225, 225);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgb(238, 238, 238) 0px 0px 3px 0px, rgb(255, 255, 255) 0px 0px 3px 0px inset;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  margin-bottom: 5px;
+  width: 98%;
+  position: relative;
+}
+
+/**我的社区htmlcss**/
+   
+ 
+ /**我的社区模板样式*/
+ .sidebar-widget{ 
+  margin-top: 10px;
+  background: #fbfbfb;
+  border: solid 1px #e1e1e1;
+  margin-right: 1%;
+  width: 98%;
+  height: 132px;
+  float: right;
+  padding-left: 26px;
+  padding-top: 8px;
+ }
+ 
+ .sidebar-widget h4{
+  margin-right: 35px;
+  border-bottom: solid 1px #e1e1e1;
+  height: 33px;
+ }  
+ .sidebar-widget h4 a{
+   font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+   font-size: 17px;
+  line-height: 1.428571429;
+  color: #333;
+  	
+  }
+ .sidebar-widget  li a{
+   font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+   font-size: 14px;
+   line-height: 1.428571429;
+   color: #333;
+  }
+  .sidebar-widget a:HOVER{
+  	  color: #d14836;
+      text-decoration: none;
+  }
+ .sidebar-widget ul{
+ margin: 0px;
+ 
+ } 
+ .sidebar-widget ul li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  	
+  }
+  .thread-total-comment{
+	  box-sizing: border-box;
+	  color: rgb(102, 102, 102);
+	  cursor: auto;
+	  display: inline;
+	  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+	  font-size: 14px;
+	  height: auto;
+	  line-height: 20px;
+	  list-style-type: none;
+	  text-align: left;
+	  width: auto;
+   } 
+   
+   .mycommnitylist{
+   		margin-left: 2%;
+  		width: 96%;
+		height:0px;
+		border-bottom-color: rgb(225, 225, 225);
+  		border-bottom-style: solid;
+  		border-bottom-width: 1px;
+  		padding-bottom: 88px;
+   
+   }
+   
+   #myCommnutyList .mycommnitylist div:HOVER{
+   	background-color: red;
+   }
+   
+   .mycommnitylist .pub_date{
+   		margin-top:35px;
+		margin-bottom:2px;
+		margin-left: -174px;
+		height: 13px;
+		width: 60%;
+		font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+		font-size: 10px;
+  		font-weight: 500;
+  		text-align: right;
+  		color: #778899;
+   }
+  
+  .thread-total-count{
+  	  float: right;
+  	  margin-top: -46px;
+  	  margin-right: 25px;
+  }
+  
+  .thread-total-comment{
+	  line-height: 12px;
+	  font-weight: bold;
+	  color: #FFF;
+	  background-color: #d84c31;
+	  display: inline-block;
+	  padding: 5px 8px 5px 8px;
+	  border-radius: 3px;
+	  margin: 18px 12px 0px 0px;
+	  text-decoration: none;
+	  margin-top: -3px;
+	  margin-left: 211px;
+  }
+  
+  .wt-row-comment-item{
+		 border-top-color: rgb(225, 225, 225);
+		 border-top-style: solid;
+		 border-top-width: 1px;
+		 box-sizing: border-box;
+		 color: rgb(51, 51, 51);
+		 display: block;
+		 font-size: 14px;
+		 height: auto;
+		 line-height: 20px;
+		 padding-bottom: 10px;
+		 padding-left: 0px;
+		 padding-right: 0px;
+		 padding-top: 10px;
+		 margin-left: 11px;
+		 width: 97%;
+		 position: relative;
+		 overflow: overlay;
+  }
+  
+  .wt-row-thread-item:hover, .wt-row-thread-item.active {
+  background: #f7f7f4;
+}
+  
+  
+/**我的社区**/  
+
+/**用户评论**/
+.comment-content-thread-markdown{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+/*  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;*/
+  font-size: 14px;
+  height: auto;
+  line-height: initial;
+  margin-left: 16px;
+  margin-top: 23px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 15px;
+  width: auto;
+  word-wrap: break-word;
+   overflow: overlay;
+}
+
+.userCommunityMain .comment-meta{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  height: 32px;
+  line-height: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.comment-time-ng-binding{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: inline;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  margin-right: 14px;
+  width: auto;
+}
+
+.top-right-corner{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 8px;
+  margin-top: -28px;
+  position: absolute;
+  right: 0px;
+  width: 18%;
+	
+}
+
+.comment-time-ng-binding{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: inline;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 20px;
+  margin-right: 14px;
+  width: auto;
+  position: relative;
+  margin-right: 2px;
+  
+}
+
+.userCommunityMain .avatar {
+	padding-top:9px;
+	padding-left: 1em; 
+}
+.forum-badge-floor-label{
+  border-bottom-color: rgb(225, 225, 225);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(225, 225, 225);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(225, 225, 225);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(225, 225, 225);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(170, 170, 170);
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 4px;
+  margin-left: 38px;
+  position: relative;
+  top: -16px;
+  width: 24px;
+  float: right;
+  
+}
+
+.userCommunityMain .hover-show{
+	display: none;
+}
+  .wt-row-comment-item:hover, .wt-row-comment-item.active {
+  background: #f7f7f4;
+  
+.comment-author .avatar .avatar-30{
+	cursor:default
+}
+
+.card-up-praise :HOVER{
+	color: #d14836 ;
+	cursor: pointer;
+}
+
+
+/**用户评论**/
+  
+   
+  /**我的社区分页*/
+   .mycommnitylist .top_title{
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+  	margin-left: 63px;
+  	padding-top: 10px;
+  
+  }
+  .mycommnitylist .top_title:HOVER {
+   color:#ff0000; 
+  }
+  
+  .mycommnitylist .top_title{
+  		cursor: pointer;
+  }
+
+  #mycomm_module_title{
+	  margin-left: 22px;
+	  margin-top: 15px;
+	  color: #646b75;
+	  font-size: 20px;
+  } 
+}
+  .last-callback{
+  	margin-top: 15px;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', Tahoma, Arial, STHeiti, sans-serif;
+  font-size: 10px;
+  color: #778899;
+  
+  }
+  
+ /**用户点赞样式**/ 
+ .card-up.selected{color:#d14836 !important;cursor: pointer;}
+.thread-information .btn:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  background: #449d44;
+}
+/**用户社区点赞样式**/
+
+
+/**添加附件样式**/
+.add-attachment{
+	margin-left:12px;
+}
+
+/**用户新消息提示样式**/ 
+
+.forum-content-message{
+  background: #fbfbfb;
+  box-shadow: 0 0 3px #eeeeee, inset 0 0 3px #ffffff;
+  border: solid 1px #e1e1e1;
+  min-height: 178px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 95%;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+	
+
+.message-list .wt-row {
+  padding: 10px 0 10px 0;
+  border-bottom: solid 1px #e1e1e1;
+    box-sizing: border-box;
+}
+
+#navListCommnity .category-desc{
+	 color: #d7d7d7;
+    font-size: 15px;
+    margin-left: 1em;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    background-color: #fff;
+} 
+.forum-category-wrapper .forum-heading{
+    border-bottom: solid 1px #e1e1e1;
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 16px;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
+
+#navListCommnity .message-list{
+	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
+
+.message-list .wt-row:HOVER {
+	    background: #f7f7f4;
+}
+

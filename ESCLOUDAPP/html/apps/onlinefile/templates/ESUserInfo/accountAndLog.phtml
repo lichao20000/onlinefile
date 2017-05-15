@@ -1,0 +1,236 @@
+<link rel="stylesheet" href="<?php echo $tplPath;?>/ESUserInfo/css/jquery.Jcrop.min.css" type="text/css" />
+<div id="mainusermsgset" style="overflow: hidden;position: relative;width:100%;">
+<div id="acountAndLog" style="overflow: hidden;width:100%;">
+					<div id="acount" class="frame" style="min-height:430px;padding: 10px 35px;border: 0px;"> 
+					   <div class="collapse navbar-collapse">
+					    	<ul class="nav navbar-nav navbar-right" style="float: left!important;">
+					          <li class="active" id = "user_perfect"><a>基本设置</a></li>
+					          <li id = "headimage"><a>头像设置</a></li>
+							  <li id = "changepassword"><a>密码修改</a></li>
+							  <li id = "loginLog"><a>安全日志</a></li>
+							  <!--  ######xyc 个性设置针对企业开放，所以不显示，给予默认展开。 -->
+							 <?php if($companyId !="-1") {?>
+							  <li id = "singleSet"><a>个性设置</a></li>
+							 <?php }?>	
+					        </ul>
+					    </div>
+				   		 <hr style="margin-top: 3px;"/>
+				   		<div id="singleSetDivId" style="display:none;">
+					       <form name="singleSet_form"  class="form-horizontal wt-form w_660 ng-pristine ng-invalid ng-invalid-required"> 
+							<div class="form-group"> 
+						        <label class="col-xs-2 control-label p_0"></label> 
+						        <div class="col-xs-10" style="width: 25%;"> 
+						          <input type="checkbox" value="<?php echo $ISUPREMIND;?>" <?php echo ($ISUPREMIND=="1"?"checked=true":"");?> name="isUpRemind" id="isUpRemind"><label for="isUpRemind" style="font-weight: normal">上线通知提醒</label>
+						          <input type="hidden" value="<?php echo $ISUPREMIND;?>" >
+						        </div>
+				       		</div>
+				       		<div class="form-group"> 
+						       <label class="col-xs-2 control-label p_0"></label> 
+						        <div class="col-xs-10" style="width: 25%;"> 
+						          <input type="checkbox" value="<?php echo $ISDOWREMIND;?>" <?php echo ($ISDOWREMIND=="1"?"checked=true":"");?> name="isDownRemind" id="isDownRemind"><label for="isDownRemind" style="font-weight: normal">下线通知提醒</label>     
+						          <input type="hidden" value="<?php echo $ISDOWREMIND;?>" >     
+						        </div> 
+				       		</div> 
+				       		<div class="form-group"> 
+				       			<label class="col-xs-2 control-label p_0"></label> 
+				       				<div class="col-xs-10" style="width: 25%;"> 
+				       					<input type="checkbox" value="<?php echo $isOpenSpace;?>" <?php echo ($isOpenSpace=="1"?"checked=true":"");?> name="isOpenSpace" id="isOpenSpace"><label for="isOpenSpace" style="font-weight: normal">默认展开空间</label>     
+				       					<input type="hidden" value="<?php echo $isOpenSpace;?>" >     
+				       				</div> 
+				       		</div> 
+				       		<div class="form-group"> 
+				       			<label class="col-xs-2 control-label p_0"></label> 
+				       				<div class="col-xs-10" style="width: 25%;"> 
+				       					<input type="checkbox" value="<?php echo $isOpenGroup;?>" <?php echo ($isOpenGroup=="1"?"checked=true":"");?> name="isOpenGroup" id="isOpenGroup"><label for="isOpenGroup" style="font-weight: normal">默认展开分类</label>     
+				       					<input type="hidden" value="<?php echo $isOpenGroup;?>" >     
+				       				</div> 
+				       		</div> 
+							 	<hr>
+							<div class="form-group"> 
+						        <label class="col-xs-2 control-label p_0"></label> 
+						        <div class="col-xs-10"> 
+						         <button  class="btn btn-success mr_15" id="single_Set_User"  data-loading-text="保存中...">保存修改</button> 
+						        </div> 
+				      		 </div>    
+					       </form> 
+					   </div>	 
+				   	<div id="loginLogDivId" style="display:none;">
+					   	<div id="loginLogHeaderDivId">
+								<div class="loginLogHeaderNameDiv">#</div>
+								<div class="loginLogHeaderSizeDiv">登陆地址</div>
+								<div class="loginLogHeaderTimeDiv">登陆时间</div>
+						</div>
+						<div id="loginLogMainDivId">
+						<div class="logLoding"></div>
+						</div>
+						<div id="content-footer" class="panel-footer file-panel-footer" style="background-color:white;">
+					  	<nav class="pagingBarNavCls">
+						  	<div id="pagingDiv" class="pagingDiv">
+						  	<ul class="pagination paging"><li><a href="#page-1" class="page-link prev"><span aria-hidden="true">«</span></a></li>
+						  	<li><a href="#page-1" class="page-link pagenumber">1</a></li><li><a href="#page-3" class="page-link next"><span aria-hidden="true">»</span></a></li></ul>
+						  	</div>
+				        </nav>
+					  </div>
+				   	</div>
+				   	 <div class="panel-section" id="headimagediv" style="display: none;"> 
+				      <div id="head">
+					  	<form  id="imageform" method="post" enctype="multipart/form-data">
+							<div id="preview">
+							    <img id="imghead" border=0 src="<?php echo $PORTRAIT;?>" style="margin-top: -5px;max-width:700px;"/>
+								<input type="hidden" id="x" name="x" />
+								<input type="hidden" id="y" name="y" />
+								<input type="hidden" id="w" name="w" />
+								<input type="hidden" id="h" name="h" />
+							    <div style="clear: both; height: 10px;text-align: center;"></div>
+							    <p>头像建议大小：100x100；</p>
+							    <p>只支持jpeg、jpg、png、bmp格式！</p>
+							</div>
+					  		<div id="imgheaddiv" style="position:relative;height:40px;widh:100%;">
+								<input id="imgheadinput" type="file" name="myfile" class="f" style="width:82px;height:34px;position:absolute;opacity: 0;z-index:2;"/>
+							    <button id="uploadA" class="btn btn-primary mr_15" style="position:absolute;z-index:1;">上传头像</button>
+							    <button id="imghead_ok" class="btn btn-success mr_15" style="display: none;position:absolute;z-index:1;left:100px;" >保存新头像 </button> 
+					  		</div>
+						</form>  
+					  </div>
+				     </div> 
+				   	 <div class="password" id="password" style="display: none;"> 
+				      <div class="panel-section"> 
+				       <form name="user_pwd_form"  class="form-horizontal wt-form w_660 ng-pristine ng-invalid ng-invalid-required"> 
+				        <div class="form-group"> 
+				         <label class="col-xs-2 control-label p_0">原密码：</label> 
+				         <div class="col-xs-10" style="width: 60%"> 
+				          <input id="oldPassword" name="oldPassword" maxlength="20"  type="password" class="form-control ng-pristine ng-invalid ng-invalid-required valid"  placeholder="原密码"  /> 
+				         </div> 
+				        </div> 
+				        <div class="form-group" > 
+				         <label class="col-xs-2 control-label p_0">新密码：</label> 
+				         <div class="col-xs-10" style="width: 60%"> 
+				          <input id="newPassword" name="newPassword" maxlength="20" type="password" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-minlength valid"  placeholder="新密码" ng-minlength="6"/> 
+				         </div> 
+				        </div> 
+				        <div class="form-group"> 
+				         <label class="col-xs-2 control-label p_0">重复密码：</label> 
+				         <div class="col-xs-10" style="width: 60%"> 
+				          <input id="rePassword" name="rePassword" maxlength="20" type="password" class="form-control ng-pristine ng-valid valid"   placeholder="再输入一次" /> 
+				         </div> 
+				        </div> 
+				        <div class="form-group ng-hide" > 
+				         <label class="col-xs-2 control-label p_0"></label> 
+				         <div class="col-xs-10" style=""> 
+				        
+				         </div> 
+				        </div> 
+				        <div class="form-group ng-hide" > 
+				         <label class="col-xs-2 control-label p_0"></label> 
+				         <div class="col-xs-10"> 
+				          
+				         </div> 
+				        </div> 
+				        <div class="form-group"> 
+				         <label class="col-xs-2 control-label p_0"></label> 
+				         <div class="col-xs-10"> 
+				          <button class="btn btn-success mr_15" id="changePassword" data-loading-text="保存中..." >确认修改 </button> 
+				          <div class="alert alert-success mb_0" style="width: 30%;display:inline;display:none;" id="user_password_alert"> 
+				           	 修改密码成功。 
+				          </div>
+				         </div> 
+				        </div> 
+				       </form> 
+				       <hr /> 
+				      </div> 
+				     </div> 
+				   	
+				   <dd id="userSettingDDId"> 
+				    <div data-ng-hide="part_loading_done" class="part-loading mt_20 ng-hide"></div> 
+				    <div data-ng-show="part_loading_done" class=""> 
+				     <div class="panel-section" > 
+				      <form name="user_update_form"  class="form-horizontal wt-form w_660 ng-pristine ng-valid ng-valid-required" > 
+				       <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">姓名：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="fullname"  name="fullname" type="text" value="<?php echo $userinfo->FULLNAME;?>" maxlength="30" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="姓名"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div> 
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">手机：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="mobilephone"  name="mobilephone" value="<?php echo $userinfo->MOBILEPHONE;?>" type="text" maxlength="11" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="手机"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div>
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">公司电话：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="telephone"  name="telephone" value="<?php echo $userinfo->TELEPHONE;?>" type="text" maxlength="15" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="公司电话"   style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div>
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">邮箱：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="email"  name="email" type="text" value="<?php echo $userinfo->EMAIL;?>" maxlength="30" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="邮箱"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div>
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">职位：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="position"  name="position" type="text" maxlength="50" value="<?php echo $userinfo->POSITION;?>" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="职位"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div>
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">传真：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="fax"  name="fax" type="text" value="<?php echo $userinfo->FAX;?>" maxlength="30" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="传真"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div> 
+				       <div class="form-group" style="display:none;"> 
+				        <label class="col-xs-2 control-label p_0" >个性签名：</label> 
+				        <div class="col-xs-10" style="width: 30%"> 
+				         <textarea  id="signature"  name="signature"  class="form-control help-block ng-pristine ng-valid" rows="4" placeholder="个性签名（可空）" style="width:463px;"><?php echo $userinfo->SIGNATURE;?></textarea> 
+				        </div> 
+				       </div>
+				       <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0" ></label>
+				        <div class="col-xs-10" style="width: 80%"> 
+				         <p>注意：邮箱用于找回密码，请确保其正常使用！</p>
+				        </div> 
+				       </div>  
+				       <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0"></label> 
+				        <div class="col-xs-10"> 
+				         <button  class="btn btn-success mr_15" id="saveUser_perfect"  data-loading-text="保存中...">保存 </button> 
+				         <div class="alert alert-success mb_0" style="width: 30%;display:inline;display:none;" id="user_perfect_alert"> 
+				        	    信息保存成功。 
+				          </div>
+				        </div> 
+				       </div> 
+				      </form> 
+				     </div> 
+				    
+				    </div> 
+				   </dd> 
+				  </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESUserInfo/js/jquery.Jcrop.min.js"></script>
+<script type="text/javascript">
+
+!function(){
+	$("#mainusermsgset").height(document.documentElement.clientHeight-110);
+}();
+  function updateCoords(c)
+  {
+    $('#x').val(c.x);
+    $('#y').val(c.y);
+    $('#w').val(c.w);
+    $('#h').val(c.h);
+  };
+
+  function checkCoords()
+  {
+    if (parseInt($('#w').val())) return true;
+    return false;
+  };
+</script>

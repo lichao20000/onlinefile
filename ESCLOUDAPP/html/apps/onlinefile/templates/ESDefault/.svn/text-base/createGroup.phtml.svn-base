@@ -1,0 +1,155 @@
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+<div class="newClassNameLableCls">
+	<span class="lablecss">名称:</span>
+	<div class="dd-glyphicon dd-hide" id="groupnamemsg"><div class="dd-input-error"></div><span></span></div>
+</div>
+<input type="text" id="groupnameid" class="form-control createClassName" placeholder="请输入群聊名称">
+<div class="newClassNameLableCls createGrouplabel">
+	<span class="lablecss">描述:</span>
+	<div class="dd-glyphicon dd-hide" id="groupremarkmsg"><div class="dd-input-error"></div><span></span></div>
+</div>
+<textarea type="text" id="groupremarkid" class="form-control createClassDescription" placeholder="群聊简单描述"></textarea>
+<div class="newClassNameLableCls createGrouplabel">成员:</div>
+<div style="height:200px;">
+	<div class="groupusers">
+		<div class="labelcss">组外成员</div>
+		<input id="leftUserSearch" class="user-search" placeholder="输入检索词后点击回车进行检索"></input>
+		<div id="leftuserlistdiv" class="userlistdiv">
+			<ul id="leftUserlist">
+			</ul>
+		</div>
+	</div>
+	<div class="groupusers groupusers2">
+		<div class="labelcss">组内成员</div>
+		<input id="rightUserSearch" class="user-search" placeholder="输入检索词后点击回车进行检索"></input>
+		<div id="rightuserlistdiv" class="userlistdiv">
+			<ul id="rightUserlist">
+			</ul>
+		</div>
+	</div>
+</div>
+<script id="cgroupusersTemplate" type="text/html">
+	{{each outUsers as user}}
+		<li userid="{{user.ID}}" username="{{user.USERNAME}}" title="双击进行左右移动">{{user.FULLNAME}}</li>
+	{{/each}}
+</script>
+<script id="cingroupusersTemplate" type="text/html">
+	{{each inUsers as user}}
+		<li userid="{{user.ID}}" username="{{user.USERNAME}}">{{user.FULLNAME}}</li>
+	{{/each}}
+</script>
+<script type="text/javascript">
+!function(e){
+	$('#leftUserlist').on('dblclick', "li", function(){
+		$(this).appendTo('#rightUserlist');
+		var objs = $('#leftUserlist').find(".active");
+		objs.removeClass("active") ;
+		objs.appendTo('#rightUserlist');
+		$("#leftuserlistdiv").perfectScrollbar('update');
+		$("#rightuserlistdiv").perfectScrollbar('update');
+	}) ;
+	$('#rightUserlist').on('dblclick', "li", function(){
+		if($(this).attr('userid')==window.userId){
+// 			$(this).appendTo('#leftUserlist');
+		} else {
+			$(this).appendTo('#leftUserlist');
+			var objs = $('#rightUserlist').find(".active") ;
+			objs.removeClass("active") ;
+			objs.appendTo('#leftUserlist');
+			$("#leftuserlistdiv").perfectScrollbar('update');
+			$("#rightuserlistdiv").perfectScrollbar('update');
+		}
+	}) ;
+	$('#leftUserlist').on('mouseup', "li", function(event){
+		 if (event.ctrlKey && event.button == 0) { 
+			 $(this).addClass("active") ;
+		 } else {
+			 $(this).removeClass("active") ;
+		 }
+	}) ;
+	$('#rightUserlist').on('mouseup', "li", function(event){
+		 if (event.ctrlKey && event.button == 0) { 
+			 $(this).addClass("active") ;
+		 } else {
+			 $(this).removeClass("active") ;
+		 }
+	}) ;
+	$('#groupnameid').on('blur', function(event){
+		var groupname = $(this).val();
+		if(groupname == ''){
+			$("#groupnamemsg").find("span").html("群组名称不能为空！") ;
+			$("#groupnamemsg").show() ;
+		} else if($.trim(groupname) == ''){
+			$("#groupnamemsg").find("span").html("群组名称不能全为空格！") ;
+			$("#groupnamemsg").show() ;
+		} else if($.trim(groupname).length>20){
+			$("#groupnamemsg").find("span").html("群组名称的最大长度为20！") ;
+			$("#groupnamemsg").show() ;
+		} else {
+			$("#groupnamemsg").hide() ;
+		}
+	}) ;
+	$('#groupremarkid').on('blur', function(event){
+		var groupremark = $(this).val();
+		if($.trim(groupremark).length>100){
+			$("#groupremarkmsg").find("span").html("群组描述的最大长度为100！") ;
+			$("#groupremarkmsg").show() ;
+		} else {
+			$("#groupremarkmsg").hide() ;
+		}
+	}) ;
+	$('#leftUserSearch').on("keyup", function(event){
+		var e = event || window.event;
+		var keyCode = e.which || e.keyCode;
+		var keyword = $('#leftUserSearch').val();
+		if (keyCode == 13) {
+			$('#leftUserlist').find("li").each(function(){
+				if($(this).html().indexOf(keyword)>-1){
+					$(this).css("display", "block") ;
+				} else {
+					$(this).css("display", "none") ;
+				}
+			});
+			$("#leftuserlistdiv").perfectScrollbar('update');
+			return false;
+		} else if(keyword == ""){
+			$('#leftUserlist').find("li").css("display", "block") ;
+			$("#leftuserlistdiv").perfectScrollbar('update');
+		}
+	}) ;
+	$('#rightUserSearch').on("keyup", function(event){
+		var e = event || window.event;
+		var keyCode = e.which || e.keyCode;
+		var keyword = $('#rightUserSearch').val();
+		if (keyCode == 13) {
+			$('#rightUserlist').find("li").each(function(){
+				if($(this).html().indexOf(keyword)>-1){
+					$(this).css("display", "block") ;
+				} else {
+					$(this).css("display", "none") ;
+				}
+			});
+			$("#rightuserlistdiv").perfectScrollbar('update');
+			return false;
+		} else if(keyword == ""){
+			$('#rightUserlist').find("li").css("display", "block") ;
+			$("#rightuserlistdiv").perfectScrollbar('update');
+		}
+	}) ;
+	var baseurl = $("#flyingchat").attr("baseurl") ; 
+	var companyId = window.companyid ;
+	var username = window.userName ;
+	
+	var url = baseurl+'/rest/chat/getCompanyUsersForGroupSet/'+companyId+'/'+username+'?callback=?';
+	var data = {'userid':window.userId};
+	var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+	jQuery.getJSON(url, ret.data,
+			function(json) {
+				$('#leftUserlist').html(template('cgroupusersTemplate', json));
+				$('#rightUserlist').html(template('cingroupusersTemplate', json));
+				$.WebIM.scrollbarCreate($("#leftuserlistdiv"));
+				$.WebIM.scrollbarCreate($("#rightuserlistdiv"));
+	});
+}();
+</script>

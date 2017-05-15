@@ -1,0 +1,530 @@
+<div id="filePropManageMainDiv" >
+	<div id="filePropTitleImg">
+		<img src="/apps/onlinefile/templates/ESFileProperties/img/prop.png" title="文件属性管理">
+	</div>
+	<div>
+		<div id="filePropLst">
+			<div id="filePropValueLst">
+				<?php 
+				echo '<input type="hidden" id="filePropPageHidden" value="'.$page.'"  />';
+					$num = 1;
+					foreach($lst AS $value)
+					{
+						if($num==1){
+							echo '<div class="filePropOneLstSelect" filePropId="'.$value->ID.'">'.$value->TITLE.'</div>';
+						}else{
+							echo '<div class="filePropOneLst" filePropId="'.$value->ID.'">'.$value->TITLE.'</div>';
+						}
+						$num ++;
+					}
+ 				?>
+			</div>	
+			<div id="filePropMoreId">点击加载更多</div>
+		</div>
+		<div id="filePropDetail" class="filePropDetailClsheigth350">
+					<input type="hidden" id="filePropOneId"/>
+					<div style="clear: both; height: 30px;"></div>
+					<label class="filePropTitle-label" for="filePropTitle" style="float: left;margin-left: 50px;">字段名:</label>
+					<div id="filePropTitleShowDiv" style="float: left;width: 200px;margin-left: 40px;"><input type="text" name="filePropTitle" id="filePropTitleId" class="width200px textborder"  value="" /></div>
+					<input type="hidden" id="filePropMustID" value="0">
+					<div style="clear: both; height: 10px;"></div>
+					<label class="filePropType-label" for="filePropType">类型:</label>
+					<select name="filePropType" disabled="false" id="filePropTypeID" class="width60 marginleft45px bordercolorccc">
+						<option value="文本" selected>文本</option>
+						<option value="数值">数值</option>
+						<option value="日期">日期</option>
+						<option value="浮点">浮点</option>
+						<option value="时间">时间</option>
+						<option value="布尔">布尔</option>
+					</select>
+					<div style="clear: both; height: 10px;"></div>
+					<label class="filePropLength-label" for="filePropLength" style="float: left;margin-left: 50px;">字段长度:</label>
+					<div id="filePropLengthShowDiv"  style="float: left;width: 200px;margin-left: 28px;"><input type="text" name="filePropLength" id="filePropLengthId" class="width200px textborder" oldval=""  value="" /></div>
+					<div style="clear: both; height: 10px;"></div>
+					<label class="filePropDotLength-label" for="filePropDotLength" style="float: left;margin-left: 50px;">小数位数:</label> 
+					<div id="filePropDotLengthShowDiv" style="float: left;width: 200px;margin-left: 28px;"><input type="text" name="filePropDotLength" id="filePropDotLengthId" class="width200px textborder" oldval=""  value="" /></div>
+					<div style="clear: both; height: 10px;"></div>
+					<label class="filePropSystem-label" for="filePropSystem">系统字段:</label>
+					<input type="text"  readonly name="filePropSystem" id="filePropSystemID" class="width200px marginleft22px textborder" style="border-style:none;"  value="" />
+					<div style="clear: both; height: 10px;"></div>
+					<label class="filePropDescription-label" for="filePropDescription">描述:</label>
+					<textarea rows="3" class="width200px marginleft45px bordercolorccc" id="filePropDescriptionID"></textarea>
+					<div style="clear: both; height: 10px;"></div>
+					<input type="button" name="submitFilePropEdit" class="filePropbtn" id="editFilePropBtnId"  value="修改"/>
+		</div>
+		<div id="filePropBtnDiv">
+			<input type="button" id="createFilePropBtnId" class="filePropbtn" value="新建"/>
+			<input type="button" id="delFilePropBtnId" class="filePropbtn marginleft15px" value="删除"/>
+		</div>
+	</div>
+</div>
+
+
+
+<style type="text/css">
+.textborder{
+	border:1px #ccc solid;
+	line-height: 20px;
+}
+.bordercolorccc{
+	border:1px #ccc solid;
+}
+#filePropManageMainDiv{
+	width:640px;
+	height:450px;
+}
+#filePropLst{
+	border: 1px #ccc solid;
+	width: 200px;
+	height: 350px;
+	float: left;
+	margin: 10px 0px 10px 23px;
+}
+#filePropValueLst{
+	height:319px;
+	padding: 0px;
+	margin: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.filePropDetailCls{
+	border: 1px #ccc solid;
+	float: left;
+	width: 380px;
+	height: 280px;
+	margin: 10px;
+	text-align:center;
+}
+.filePropDetailClsheigth350{
+	border: 1px #ccc solid;
+	float: left;
+	width: 380px;
+	height: 350px;
+	margin: 10px;
+	text-align:center;
+}
+#filePropTitleImg{
+	width: 640px;
+	height: 50px;
+	text-align: center;
+	margin-top: 10px;
+}
+.width200px{
+	width:200px;
+}
+.marginleft10px{
+	margin-left:10px;
+}
+.marginleft15px{
+	margin-left:15px;
+}
+.marginleft22px{
+	margin-left:22px;
+}
+.marginleft35px{
+	margin-left:35px;
+}
+.marginleft45px{
+	margin-left:45px;
+}
+.marginleft47px{
+	margin-left:47px;
+}
+.filePropbtn{
+	height: 20px;
+	background-color: #f2f2f5;
+	border: 1px #ccc solid;
+	line-height: 18px;
+	font-size: 12px;
+	width: 60px;
+	cursor:pointer;
+}
+#filePropBtnDiv{
+	clear: both;
+	margin-left: 25px;
+}
+.filePropOneLst{
+	height: 20px;
+	padding-top: 5px;
+	padding-left: 15px;
+	background-color: white;
+	font-size: 12px;
+}
+.filePropOneLstSelect{
+	height: 20px;
+	padding-top: 5px;
+	padding-left: 15px;
+	background-color: #f2f2f5;
+	font-size: 12px;
+}
+#filePropLst div:hover{
+	cursor:pointer;
+}
+#filePropMoreId{
+	height: 20px;text-align: center;color: #ccc;
+}
+.heigth350px{
+	heigth:350px;
+}
+.filePropMust-label{
+	margin-left:-141px;
+}
+.width60{
+	width:60px;
+}
+.filePropType-label{
+	margin-left:-140px;
+}
+</style>
+<script>
+$(function(){
+	filePropValueLstBindClick();
+	<?php 
+		if($total > 0){
+			echo '$("#filePropOneId").val("'.$lst[0]->ID.'");';
+			echo '$("#filePropTitleId").val("'.$lst[0]->TITLE.'");';
+			echo '$("#filePropMustID").val("'.$lst[0]->ISNULL.'");';
+			echo '$("#filePropTypeID").val("'.$lst[0]->TYPE.'");';
+			echo '$("#filePropLengthId").val("'.$lst[0]->LENGTH.'");';
+			echo '$("#filePropLengthId").attr("oldval","'.$lst[0]->LENGTH.'");';
+			echo '$("#filePropDotLengthId").val("'.$lst[0]->DOTLENGTH.'");';
+			echo '$("#filePropDotLengthId").attr("oldval","'.$lst[0]->DOTLENGTH.'");';
+			echo '$("#filePropDescriptionID").val("'.$lst[0]->DESCRIPTION.'");';
+			echo '$("#filePropSystemID").val("'.($lst[0]->ISSYSTEM=="1"?"是":"否").'");';
+			if($lst[0]->TYPE == '浮点'){
+				echo '$("#filePropDotLengthId").removeAttr("disabled");';
+			}else{
+				echo '$("#filePropDotLengthId").attr("disabled","false");';
+			}
+		}
+		if($total==0){
+			echo	'$("#filePropMoreId").hide();';
+		}
+	?>
+});
+function filePropValueLstBindClick(){
+	$("#filePropValueLst div").click(function() {
+		var filePropId = $(this).attr("filePropId");
+		getOneFileProp(filePropId, $(this));
+	});
+}
+
+function getOneFileProp(filePropId,obj){
+	var url=$.appClient.generateUrl({ESFileProperties:'getOneFileProp'},'x');
+	$.post(url,{filePropId:filePropId},function(result){
+		var resultJson = eval("("+result+")");
+		if(resultJson.mapsize == "0"){
+			$("#filePropOneId").val(resultJson.ID);
+			$("#filePropTitleId").val(resultJson.TITLE);
+			$("#filePropMustID").val(resultJson.ISNULL);
+			$("#filePropTypeID").val(resultJson.TYPE);
+			$("#filePropLengthId").val(resultJson.LENGTH);
+			$("#filePropLengthId").attr('oldval',resultJson.LENGTH);
+			$("#filePropDotLengthId").val(resultJson.DOTLENGTH);
+			$("#filePropDotLengthId").attr('oldval',resultJson.DOTLENGTH);
+			$("#filePropDescriptionID").val(resultJson.DESCRIPTION);
+			$("#filePropSystemID").val(resultJson.ISSYSTEM);
+			$("#filePropLst div").removeClass("filePropOneLstSelect");
+			$("#filePropLst div").addClass("filePropOneLst");
+			$(obj).addClass("filePropOneLstSelect");
+			if(resultJson.TYPE=="浮点"){
+				$("#filePropDotLengthId").removeAttr("disabled");
+			}else{
+				$("#filePropDotLengthId").attr("disabled","false");
+			}
+		}else{
+			return false;
+		}
+	});
+}
+
+$("#filePropMoreId").die().live('click',function(){
+	$.post(
+			$.appClient.generateUrl({ESFileProperties:'getNextPageLst'},'x'),
+			{pageNow:$("#filePropPageHidden").val(),userId:g_userId},
+			function (data){
+				var json = eval('('+data+')');
+				if(json.total>0 && json.lst.length>0){
+					//开始循环
+					var lst = json.lst;
+					for (var i=0;i<lst.length;i++)
+					{
+						var oneFileProp = lst[i];
+						//这判断页面上有没有数据，没有则追加
+						if($("div[filePropId='"+oneFileProp.ID+"']").length<=0){
+							$("#filePropValueLst").append("<div class='filePropOneLst' filePropId='"+oneFileProp.ID+"'>"+oneFileProp.TITLE+"</div>");
+						}    
+					}
+					filePropValueLstBindClick();
+					$("#filePropPageHidden").val(json.page);
+				}else{
+					$("#filePropMoreId").hide();
+				}
+			},
+			false
+		);
+});
+
+$("#editFilePropBtnId").die().live('click',function(){
+	var filePropId = $("#filePropOneId").val();
+	if(filePropId==''){
+		return;
+	}
+	var filePropTitle = $("#filePropTitleId").val();
+	var filePropIsNull = $("#filePropMustID").val();
+	var filePropType = $("#filePropTypeID").val();
+	var filePropLength = $("#filePropLengthId").val();
+	var filePropDotlength = $("#filePropDotLengthId").val();
+	var filePropDec = $("#filePropDescriptionID").val();
+	//这要加验证
+	var isvalidate = true;
+	isvalidate = editValidate();
+	if(!isvalidate){
+		return;
+	}
+	$.dialog({
+		content:'确定要修改吗?',
+		ok:true,
+		okVal:'确定',
+		cancel:true,
+		cancelVal:'取消',
+		ok:function()
+		{
+			var url=$.appClient.generateUrl({ESFileProperties:'editFileProp'},'x');
+			$.post(url,{ID:filePropId,companyId:g_companyId,TITLE:filePropTitle,TYPE:filePropType,ISNULL:filePropIsNull,LENGTH:filePropLength,DOTLENGTH:filePropDotlength,DESCRIPTION:filePropDec},function(result){
+				var resultJson = eval("("+result+")");
+				if(resultJson.success=='true'){
+					$("div[filePropId='"+filePropId+"']").text(filePropTitle);
+					$("#filePropLengthId").attr('oldval',filePropLength);
+					$("#filePropDotLengthId").attr('oldval',filePropDotlength);
+					$.dialog.notice({width: 150,content: '修改成功',icon: 'succeed',time: 3});
+				}else{
+					if(resultJson.msg=='ishave'){
+						$.dialog.notice({width: 150,content:'此属性名您已经定义过，请勿重复定义。',icon: 'error',time: 3});
+					}else{
+						$.dialog.notice({width: 150,content:'修改失败，请稍后重试。',icon: 'error',time: 3});
+					}
+				}
+			});
+		}
+	});
+});
+
+
+$("#delFilePropBtnId").die().live('click',function(){
+	var thisObj = $(".filePropOneLstSelect");
+	var fileId = $(".filePropOneLstSelect").attr("filePropId");
+	if(fileId=='' || fileId == "undefined" ||fileId == undefined){
+		return;
+	}
+	var title =  $(".filePropOneLstSelect").text();
+	var broderObj = $(".filePropOneLstSelect").next();
+	if(broderObj.text()==''){
+		broderObj = $(".filePropOneLstSelect").prev();
+	}
+	if(broderObj.text()==''){
+		//没数据了
+	}
+	$.dialog({
+		content:'确定要删除 '+title+' 属性吗?',
+		ok:true,
+		okVal:'确定',
+		cancel:true,
+		cancelVal:'取消',
+		ok:function()
+		{
+			var url=$.appClient.generateUrl({ESFileProperties:'delFileProp'},'x');
+			$.post(url,{fileId:fileId,companyId:g_companyId,title:title},function(result){
+				var resultJson = eval("("+result+")");
+				if(resultJson.success=='true'){
+					$.dialog.notice({width: 150,content: '删除成功',icon: 'succeed',time: 3});
+					thisObj.remove();
+					if(broderObj.text()==''){
+						//没数据了
+						$("#filePropOneId").val("");
+						$("#filePropTitleId").val("");
+						$("#filePropMustID").val("1");
+						$("#filePropTypeID").val("文本");
+						$("#filePropLengthId").val("");
+						$("#filePropDotLengthId").val("");
+						$("#filePropDescriptionID").val("");
+						$("#filePropSystemID").val("");
+					}else{
+						broderObj.removeClass("filePropOneLst");
+						broderObj.addClass("filePropOneLstSelect");
+						getOneFileProp(broderObj.attr("filePropId"),broderObj);
+					}
+				}else{
+					$.dialog.notice({width: 150,content: '删除失败',icon: 'error',time: 3});
+				}
+			});
+		}
+	});
+});
+
+$("#createFilePropBtnId").die().live('click',function(){
+	if($("#filePropValueLst div").length>9){
+		$.dialog.notice({width: 150,content:'对不起，您最多定义10个自定义属性。',icon: 'error',time: 3});
+		return ;
+	}
+	$.ajax({
+		url:$.appClient.generateUrl({ESFileProperties:'addFileProphtm'},'x'),
+	    success:function(html){
+	    	$.dialog({
+		    	title:'新增属性',
+		    	padding:'0',
+			    content:html,
+			    okVal : '保存',
+				ok : function() {
+					//这要加验证
+					var validate = false;
+					validate = createfilePropFormValidate();
+					if(!validate){
+						return false;
+					}
+					var url = $.appClient.generateUrl({ESFileProperties:'addFileProp'},'x');
+					var filePropTitle = $("#createfilePropTitleId").val();
+					var filePropType = $("#createfilePropTypeID").val();
+					var filePropIsNull = $("#createfilePropMustID").val();
+					var filePropLength = $("#createfilePropLengthId").val();
+					var filePropDotlength = $("#createfilePropDotLengthId").val();
+					var filePropDec = $("#createfilePropDescriptionID").val();
+					var bol = true;
+					$.ajax({
+						url : url ,
+						type : 'post',
+						async:false,
+						data:{userId:g_userId,companyId:g_companyId,TITLE:filePropTitle,TYPE:filePropType,ISNULL:filePropIsNull,LENGTH:filePropLength,DOTLENGTH:filePropDotlength,DESCRIPTION:filePropDec},
+						success : function(result) {
+							var resultJson = eval("("+result+")");
+							if(resultJson.success=='true'){
+								$.dialog.notice({width: 150,content: '保存成功',icon: 'succeed',time: 3});
+								if($('#filePropValueLst').children('div').length>0){
+									$("#filePropValueLst").append("<div class='filePropOneLst' filePropId='"+resultJson.id+"'>"+resultJson.title+"</div>");
+								}else{
+									$("#filePropValueLst").append("<div class='filePropOneLstSelect' filePropId='"+resultJson.id+"'>"+resultJson.title+"</div>");
+									$("#filePropOneId").val(resultJson.id);
+									$("#filePropTitleId").val(filePropTitle);
+									$("#filePropMustID").val(filePropIsNull);
+									$("#filePropTypeID").val(filePropType);
+									$("#filePropLengthId").val(filePropLength);
+									$("#filePropLengthId").attr('oldval',filePropLength);
+									$("#filePropDotLengthId").val(filePropDotlength);
+									$("#filePropDotLengthId").attr('oldval',filePropDotlength);
+									$("#filePropDescriptionID").val(filePropDec);
+									$("#filePropSystemID").val('否');
+									
+								}
+								$("#filePropMoreId").show();
+								filePropValueLstBindClick();
+							}else{
+								if(resultJson.msg=='ishave'){
+									$.dialog.notice({width: 150,content:'此属性名您已经定义过，请勿重复定义。',icon: 'error',time: 3});
+								}else{
+									$.dialog.notice({width: 150,content:'添加失败，请稍后重试。',icon: 'error',time: 3});
+								}
+								bol = false;
+							}
+						}
+					});
+					if(!bol){
+						return false;
+					}
+				},
+		    });
+	    },
+		cache:false
+	});
+});
+
+function createfilePropFormValidate(){
+	if($("#createfilePropTitleId").val().length==0){
+		$("#createfilePropTitleShowDiv").showTooltips("请填写字段名。", 5000) ;
+		return false;
+	}
+	if($("#createfilePropTitleId").val().length>20){
+		$("#createfilePropTitleShowDiv").showTooltips("字段名长度不能超于20。", 5000) ;
+		return false;
+	}
+	if($("#createfilePropLengthId").val().length==0){
+		$("#createfilePropLengthShowDiv").showTooltips("请设定字段长度。", 5000) ;
+		return false;
+	}
+	if("文本"==$("#createfilePropTypeID").val()){
+		if($("#createfilePropLengthId").val()>4000){
+			$("#createfilePropLengthShowDiv").showTooltips("文本类型的字段最大长度不得超过4000。", 5000) ;
+			return false;
+		}
+	}else if("数值"==$("#createfilePropTypeID").val()){
+		if($("#createfilePropLengthId").val()>10){
+			$("#createfilePropLengthShowDiv").showTooltips("数值类型的字段最大长度不得超过10。", 5000) ;
+			return false;
+		}
+	}else if("浮点"==$("#createfilePropTypeID").val()){
+		if($("#createfilePropLengthId").val()>10){
+			$("#createfilePropLengthShowDiv").showTooltips("浮点类型的字段最大长度不得超过10。", 5000) ;
+			return false;
+		}
+		if($("#createfilePropDotLengthId").val().length==0){
+			$("#createfilePropDotLengthShowDiv").showTooltips("请填写小数位数的长度。", 5000) ;
+			return false;
+		}
+		if($("#createfilePropDotLengthId").val()>3){
+			$("#createfilePropDotLengthShowDiv").showTooltips("浮点类型的小数点最大长度不得超过3。", 5000) ;
+			return false;
+		}
+	}
+	return true;
+}
+
+function editValidate(){
+
+	if($("#filePropTitleId").val().length==0){
+		$("#filePropTitleShowDiv").showTooltips("请填写字段名。", 5000) ;
+		return false;
+	}
+	if($("#filePropTitleId").val().length>20){
+		$("#filePropTitleShowDiv").showTooltips("字段名长度不能超于20。", 5000) ;
+		return false;
+	}
+	if($("#filePropLengthId").val().length==0){
+		$("#filePropLengthShowDiv").showTooltips("请填写字段长度。", 5000) ;
+		return false;
+	}
+	if(eval($("#filePropLengthId").val())<eval($("#filePropLengthId").attr("oldval"))){
+		$("#filePropLengthShowDiv").showTooltips("新的长度只能大于原有的长度。", 5000) ;
+		return false;
+	}
+	if("文本"==$("#filePropTypeID").val()){
+		if($("#filePropLengthId").val()>4000){
+			$("#filePropLengthShowDiv").showTooltips("文本类型的字段最大长度不得超过4000。", 5000) ;
+			return false;
+		}
+	}else if("数值"==$("#filePropTypeID").val()){
+		if($("#filePropLengthId").val()>10){
+			$("#filePropLengthShowDiv").showTooltips("数值类型的字段最大长度不得超过10。", 5000) ;
+			return false;
+		}
+	}else if("浮点"==$("#filePropTypeID").val()){
+		if($("#filePropLengthId").val()>10){
+			$("#filePropLengthShowDiv").showTooltips("浮点类型的字段最大长度不得超过10。", 5000) ;
+			return false;
+		}
+		if($("#filePropDotLengthId").val().length==0){
+			$("#filePropDotLengthShowDiv").showTooltips("请填写小数位数的长度。", 5000) ;
+			return false;
+		}
+		if($("#filePropDotLengthId").val()>3){
+			$("#filePropDotLengthShowDiv").showTooltips("浮点类型的小数点最大长度不得超过3。", 5000) ;
+			return false;
+		}
+		if($("#filePropDotLengthId").val()<$("#filePropDotLengthId").attr("oldval")){
+			$("#filePropDotLengthShowDiv").showTooltips("新的小数位数长度只能大于原有的长度。", 5000) ;
+			return false;
+		}
+	}
+
+	return true;
+}
+
+</script>

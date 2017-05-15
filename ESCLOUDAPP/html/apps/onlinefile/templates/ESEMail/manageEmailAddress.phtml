@@ -1,0 +1,100 @@
+<script
+	type="text/javascript"
+	src='<?php echo $tplPath?>/ESEMail/js/manageData.js'></script>
+<link
+	href='<?php echo $tplPath?>/ESEMail/css/email.css' rel="stylesheet" />
+
+<div
+	id="emailContainer" class="emailContainerCls">
+
+	<div id="emailManageTitle" class="emailManageTitleCls">
+		<img src="<?php echo $tplPath?>/ESEMail/img/emailLogo.png"
+			class="emailLogoCls">
+	</div>
+	<div id="leftSection" class="leftSectionCls">
+		<div id = "emailListsContainerForScro" class = "emailListsContainerForScro">
+		<!--  邮箱列表 -->
+		</div>
+	</div>
+
+	<!-- <div id="rightSection" class="rightSectionCls">  -->
+
+	<div class="rightSectionCls">
+		<form id="saveEmailSettingForm">
+			<fieldset
+				style="border: solid 1px #ccc; text-align: center; height: 400px; border-radius:5px;">
+				<legend align="center">
+					<input id = "settingSectionBtn" type="button" value="邮箱设置" style="width: 70px;" /> 
+				</legend>
+				<div id="settingSection">
+					<div style="clear: both; height: 70px;"></div>
+					<input type="text" id = "emailId" style = "display:none;" value = "">
+					<label class="emailAddress-label" for="emailAddress">email地址:</label>
+					<input type="text" name="emailAddress" class="emailAddressCls" id = "emailAddressInput_set"
+						value="" verify="email/100/1/0"/>
+					<div style="clear: both; height: 10px;"></div>
+					<label class="emailpassword-label" for="emailpassword">密码:</label>
+					<input type="password" name="emailpassword" class="passwordCls" id = "emailPasswordInput_set"
+						value="" verify="text/50/1/0"/>
+					<div style="clear: both; height: 10px;"></div>
+					<label class="receiveEmailServer-label" for="receiveEmailServer">pop服务器:</label> <input
+						type="text" name="receiveEmailServer" class="receiveEmailServerCls" id = "receiveEmailServer_set"
+						value="" verify="text/50/1/0"/>
+					<label class="receiveEmailServer-port" for="receiveEmailServer">SSL端口:</label> <input
+						type="text" name="receiveEmailServer" class="receiveEmailServerPortCls" id = "receiveEmailServerPort_set"
+						value="" verify="number/5/1/0"/>
+					<div style="clear: both; height: 10px;"></div>
+					<label class="sendEmailServer-label" for="sendEmailServer">smtp服务器:</label> <input
+						type="text" name="sendEmailServer" class="sendEmailServerCls" id = "sendEmailServer_set"
+						value="" verify="text/50/1/0"/>
+					<label class="receiveEmailServer-port" for="receiveEmailServer">SSL端口:</label> <input
+						type="text" name="receiveEmailServer" class="receiveEmailServerPortCls" id = "sendEmailServerPort_set"
+						value="" verify="number/5/1/0"/>
+					<div style="clear: both; height: 20px;"></div>
+					<input type="button" name="submitEmail" value="保存"
+						class="saveEmailBaseSettingCls" id="saveEmailBaseSetting" />
+					<input type="button" name="setAsDefaultEmail" value="设为常用邮箱"
+						class="setAsDefaultEmailCls" id="setAsDefaultEmail" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="buttonContainerCls">
+		<input type="button" value="新建" id="addEmailBtn"
+			style="width: 60px; float: left; margin-right: 9px;margin-left:2px;" />
+		<input
+			type="button" value="删除" style="width: 60px; float: left ;margin-right: 9px;" id = "delEmailBtn" />
+		<input
+			type="button" value="清空" style="width: 60px; float: left" id = "delAllEmailBtn" />
+	</div>
+
+</div>
+
+<style>
+	input{
+	  font-size: 13px;
+	  color: #555860;
+	  background-color: #ffffff;
+	  height: 25px;
+	  width: 65px;
+	  border: solid 1px #ccc;
+	  border-radius: 5px;
+	  cursor:pointer;
+	}
+	input:hover{
+		background-color:#ececec;
+	}
+	
+</style>
+<!-- 获取邮箱列表 -->
+<script id="email_list_item_template" type="text/html">
+	{{each emails}}
+		{{if $index ==0 }}
+			<div class="emailList_selected" title = {{$value.email}}>{{$value.email}}</div>
+			{{else}}
+			<div class="emailList" title = {{$value.email}}>{{$value.email}}</div>
+		{{/if}}
+	{{/each}}
+</script>
+

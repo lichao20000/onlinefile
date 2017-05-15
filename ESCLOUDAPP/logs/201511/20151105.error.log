@@ -1,0 +1,16 @@
+INFO - {"user":"xwd4java@163.com","time":"2015-11-05 12:38:10"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getUserCompanys/71", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0118680000305"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-11-05 12:38:11"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefile_filesws/initClassList", "method":"POST", "params":"{"userId":"71","companyId":"32","username":"xwd4java@163.com"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0043630599976"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-11-05 12:38:20"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getUserCompanys/71", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0132849216461"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-11-05 12:38:21"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefile_filesws/initClassList", "method":"POST", "params":"{"userId":"71","companyId":"32","username":"xwd4java@163.com"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99991011619568"}
+

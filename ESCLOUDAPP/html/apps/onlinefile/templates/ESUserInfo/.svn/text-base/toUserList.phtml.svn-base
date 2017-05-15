@@ -1,0 +1,1164 @@
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESUserInfo/js/import.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+<style>
+	.userGridMain {
+		width : 780px;
+	<!--height: 100%;-->
+		overflow:hidden;
+	}
+	.userGridMain .tbar{
+		width : 100%;
+		height: 30px;
+		padding-left:5px;
+	}
+	.userGridMain .tbar dl{
+		width : 100%;
+		padding:0px;
+		float:left;
+		border:0px;
+		background-color:#ffffff;
+		
+	}
+	.userGridMain .tbar dd{
+	float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #5cb85c;
+  color: #ffffff;
+  padding: 5px;
+  border-color: #4cae4c;
+  border-radius: 4px;
+  padding: 6px 12px;
+	}
+	
+	.userGridMain .tbar dd:hover{
+		color:#fff;
+		background-color:#449d44;
+		border-color:#398439
+	}
+	.userGridMain .bbar{
+/* 		position: absolute; */
+/*   		top: 88%; */
+	}
+	.userGridMain .bbar dl{
+		padding:0px;
+		float:left;
+		border:0px;
+		height: 30px;
+		background-color:#ffffff;
+	}
+	.userGridMain .bbar dd{
+		float:left;
+		margin-right:8px;
+		cursor: pointer;
+		height: 30px;
+		padding-top:7px;
+		padding-bottom:7px;
+		width:16px;
+		height:16px;
+	}
+	.userGridMain .bbar div{
+		width:16px;
+		height:16px;
+	}
+	.userGridList	{
+		width: 100%;
+		overflow: hidden;
+		border-bottom:1px solid #F0F0F0;
+	}
+	#userGridRecords	{
+		width : 100%;
+		height:100%;
+		overflow:hidden;
+		position: relative;
+	}
+	#userGrid	{
+		width : 100%;
+		height:auto;
+	}
+	/*.closeUserNameButton{
+	  width: 16px;
+	  height: 16px;
+	  line-height: 16px;
+	  position: absolute;
+	  left: 92%;
+	  top: 55px;
+	  color: #F7F4F4;
+	  text-align: center;
+	  cursor: pointer;
+	  display:none;
+  	  background: url(<?php echo $tplPath?>/ESUserInfo/img/removes.png) no-repeat;
+	}*/
+	
+	.userGridMain .bbar .pFirst {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/first.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pPrev {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/prev.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pNext {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/next.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pLast {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/last.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pReload {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/load.png) no-repeat center;
+	}
+	.userGridMain .tbar .adduser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/add.png) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .deleteuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/close.png) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .enableuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/tick.png) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .disableuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/wfdelete.gif) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .importuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/import.gif) no-repeat center left;
+		padding-left:20px;
+	}
+	.editUse {
+		cursor:pointer;
+		background: url(<?php echo $tplPath?>/public/img/edit.jpg) no-repeat center left;
+		padding-left:20px;
+	}
+	.sendUse {
+		cursor:pointer;
+		background: url(<?php echo $tplPath?>/public/img/send.gif) no-repeat center left;
+		padding-right:8px;
+	}
+	#nowPage {
+		border:1px solid #6F6E81;
+		height:16px;
+		padding: 1px 4px;
+	}
+	.userListHeaderTitleDiv{
+		height: 48px;
+		position: relative;
+		float: left;
+		text-align:center;
+		border-right: 1px solid #e5e5e5;
+	}
+	#userListHeaderDivId{
+		height: 50px;
+		text-align: left;
+		line-height: 50px;
+		background-color: #F9F9F7;
+		border-top: 1px solid #e1e1e1;
+		border-left: 1px solid #e1e1e1;
+		border-bottom: 1px solid #e1e1e1;
+		font-size: 14px;
+		margin:0px 0px;
+		text-indent: 6px;
+  		letter-spacing: 2px;
+	}
+	.userListContentDiv{
+		height: 45px;
+		text-align: left;
+		border-bottom: 1px solid #e1e1e1;
+		line-height: 45px;
+		margin:0px 0px;
+	}
+	.userListContentDiv div{
+		padding-left:3px;
+	}
+	.userInfoDiv{
+		position: relative;
+		float: left;
+		text-align:center;
+		height: 45px;
+		overflow: hidden;
+	}
+	.userListContentNum{
+		position: relative;
+		float: left;
+		text-align:center;
+		height: 45px;
+		overflow: hidden;
+	}
+	.userListContent{
+		position: relative;
+		float: left;
+		height: 45px;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		cursor: pointer;
+	}
+	.checkboxcss{
+		width:5%;
+		float:left;
+		text-align:left;
+	}
+	#selectUserFlg{
+		width: 55px;
+		background-color: rgb(111, 110, 129);
+	}
+	#searchUserName{
+	    height: 32px;
+	    color: #999;
+	    width: 220px;
+	    border-radius: 4px;
+	    margin-right: -25px;
+	    padding-right: 30px;
+	    padding-left: 7px;
+	    border: 1px solid #ccc;
+		font-size: 12px;
+	}
+/*	#searchUserOclick{
+		background: url(/apps/onlinefile/templates/ESUserInfo/img/ss.png) no-repeat center left;
+		border-radius: 4px;
+		width: 20px;
+		height: 20px;
+		border-style: none;
+		position: relative;
+		cursor: pointer;
+		left: -5px;
+  		
+	}*/
+
+</style>
+<?php global $user;?>
+<script id="userGridTemplate" type="text/html">
+	{{if total>0}}
+		{{each rows as row i}}
+			<div class="userListContentDiv">
+				{{if row.USERNAME != "<?php echo $user->id;?>"}}
+					<div style="width:3%;" class="checkboxcss" column="checkbox">
+						<input type="checkbox" value="{{row.USERNAME}}" name="checkName" >
+					</div>
+				{{else}}
+					<div style="width:3%;" class="checkboxcss" column="checkbox" >
+						<input type="checkbox"  disabled>
+					</div>
+				{{/if}}
+                <div class="userInfoDiv" style="width:97%;">
+				<div style="width:7%;" class="userListContentNum"><input type="hidden" value="{{row.ID}}" name="userId">{{startNo+i}}</div>
+				<div style="width:20%;" class="userListContent" title="{{row.USERNAME}}">{{row.USERNAME}}</div>
+				<div style="width:20%;" class="userListContent" title="{{row.FULLNAME}}"><input type="hidden" value="{{row.FULLNAME}}" name="fullnameList">{{row.FULLNAME}}</div>
+				<div style="width:15%;" class="userListContent" title="{{row.POSITION}}">{{row.POSITION}}</div>
+				<div style="width:20%;" class="userListContent" title="{{row.MOBILEPHONE}}">{{row.MOBILEPHONE}}</div>
+		        <div style="display:none;" class="userListContent" title="{{row.EMAIL}}"><input type="hidden" value="{{row.EMAIL}}" name="emailList">{{row.EMAIL}}</div>
+				<div style="width:15%;" class="userListContent" ><input type="hidden" value="{{row.STATUS}}_{{row.USERNAME}}" name="isEnabled">
+				{{if row.STATUS==1}}
+					启用 
+				{{else if row.STATUS==-3}}
+					邀请邮件发送中 
+				{{else if row.STATUS==-1}}
+					未激活 
+				{{else if row.STATUS==0}}
+					禁用 
+				{{else if row.STATUS==-2}}
+					<div id="emailstatus" class="emailstatus" >
+						邀请邮件发送失败
+					</div>
+				{{else}}
+					未知
+				{{/if}}
+				</div>
+ 				</div>
+			</div>
+		{{/each}}
+	{{/if}}
+</script>
+<div class="userGridMain">
+	<div class="tbar" id="userGridTbar">
+		<dl style="margin-bottom:5px;">
+ 			<dd fun="adduser"><span class="adduser">用户邀请</span></dd> 
+			<dd fun="enableuser"><span class="enableuser">启用</span></dd>
+			<dd fun="disableuser"><span class="disableuser">禁用</span></dd>
+			<!-- <dd fun="deleteuser"><span class="deleteuser">删除</span></dd> -->
+			<!-- <dd fun="importuser"><span class="importuser">批量邀请</span></dd> -->
+			<dd id="usersearchdd" style="background-color:#ffffff;float:right;padding:0px;">
+			<!--	<div class="closeUserNameButton" title="清除" ></div> -->
+				<input type="text" id="searchUserName"  placeholder="输入检索词进行检索"/>
+			<!--<input id="searchUserOclick" /> -->
+				<span id="searchUserOclick" class="glyphicon glyphicon-search" title="搜索" style="top: 2px;left: -5px;color: #908C8C;"></span>
+				<span id="closeUserNameButton" class="glyphicon glyphicon-remove-circle" title="清除" style="top: 2px;left: -5px;color: #908C8C;display: none;"></span>
+				
+			</dd>
+		</dl>
+	</div>
+	<div class="userGridList">
+		<div id="userListHeaderDivId">
+			<div class="userListHeaderTitleDiv" style="width:3%;"><input type="checkbox" id="checkIdList" style="margin-left: -6px;"></div>
+			<div class="userListHeaderTitleDiv" style="width:7%;">序号</div>
+			<div class="userListHeaderTitleDiv" style="width:20%;">用户名</div>
+			<div class="userListHeaderTitleDiv" style="width:20%;">姓名</div>
+			<div class="userListHeaderTitleDiv" style="width:15%;">公司职务</div>
+			<div class="userListHeaderTitleDiv" style="width:20%;">手机</div>
+			<div class="userListHeaderTitleDiv" style="display:none;">邮箱	</div>
+			<div class="userListHeaderTitleDiv" style="width:15%;">状态</div>
+		</div>
+		<div id="userGridRecords">
+			<div id="userGrid">
+			</div>
+		</div>
+	</div>
+	<div class="bbar">
+		<dl>
+			<dd><div class="pFirst" title="首页"></div></dd>
+			<dd><div class="pPrev" title="上一页"></div></dd>
+			<dd><span id="nowPage">1</span></dd>
+			<dd><div class="pNext" title="下一页"></div></dd>
+			<dd><div class="pLast" title="最后一页"></div></dd>
+			<dd><div id="pReload" class="pReload" title="刷新"></div></dd>
+			<dd id="pReloadMsg"  style="width:140px;text-align:left;visibility:hidden;">正在加载，请稍候...</dd>
+			<dd id="bbarMsg" style="width:480px;text-align:right;cursor: default;"></dd>
+			<dd id="pageCount" style="width: 100px;margin-left:45%;margin-top:-2%;cursor: default;"></dd>
+		</dl>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var nameZZ= /^[\u4e00-\u9fa5a-zA-Z]+$/;
+	var unameZZ= /^[a-zA-Z]+$/;
+	var mobtelZZ =/^1[3|4|5|8][0-9]\d{8}$/;
+	var teleZZ = /^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$/;
+	var emailaddressZZ = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	var fexZZ =/^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/; 
+(function ($) {
+
+	reloadUsers(1) ;
+	var panelH = document.documentElement.clientHeight-185;
+	if(panelH>500){
+		panelH = 500 ;
+	}
+	$(".userGridList").height((panelH));
+	$("#userGridRecords").height((panelH-50));
+	$.WebIM.scrollbarCreate($("#userGridRecords"));
+	setTimeout(function(){$("#userGridRecords").perfectScrollbar('update');}, 500)
+
+	$('#userGridTbar').on('click', "dd", function(){
+		if($(this).attr("fun") == "adduser"){
+			adduser();
+		} else if($(this).attr("fun") == "deleteuser"){
+			deleteuser();
+		} else if($(this).attr("fun") == "enableuser"){
+			enableuser();
+		} else if($(this).attr("fun") == "disableuser"){
+			disableuser();
+		} else if($(this).attr("fun") == "importuser"){
+			importuser();
+		} 
+	});
+	
+	function adduser(){
+		$.ajax({
+		    url : $.appClient.generateUrl({
+		    	ESUserInfo : 'adduser'},'x'),
+		    success:function(data){
+	    		$.dialog({
+		    		id: 'adduser',
+			    	title:'添加新用户',
+			    	modal:true, //蒙层（弹出会影响页面大小） 
+		    	   	fixed:false,
+		    	   	stack: true ,
+		    	    resize: false,
+					opacity : 0.1,
+				    cancel: true,
+				    content:data,
+				    padding:0,
+				    okValue:'邀请',
+				    cancelValue:'取消',
+				    ok : function() {
+				    	realAddusers();
+				    	return false;
+				    }
+			    }).show();
+			  },
+		      cache:false
+		});
+	}
+
+	function deleteuser(){
+		var checkboxlength = $('#userGrid input:checked').length;
+		if (checkboxlength == 0) {
+//			$.dialog.notice({icon : 'warning',content : '请选择要删除的用户！',time : 3});
+			showBottomMsg('请选择要删除的用户！',2);
+			return;
+		}
+		$.dialog({
+			content : '确定要删除吗？删除后不能恢复！',
+			okValue: '确定',
+			cancelValue: '取消',
+			cancel : true,
+			ok : function() {
+				var usernames = '';
+				var ids = '';
+				var flgHint='0';//0 标示：无本用户存在。1：标示当前用户存在
+				$('#userGrid input:checked').each(
+					function(i) {
+						var vl=$('#userGrid input:checked:eq(' + i+ ')').val();
+						var uId = $('#userGrid input:checked:eq(' + i+ ')').parent().next().children(":first").val()
+						if(vl != userName){
+							usernames += vl+',';
+							ids +=uId + ',';
+						}
+						if(vl == userName){
+							flgHint=1;
+						}
+					});
+					usernames=usernames.substring(0,usernames.length-1);
+					ids=ids.substring(0,ids.length-1);
+					if(flgHint == 0){ //不是本用户可以进行直接删除
+						var url = $.appClient.generateUrl({ESUserInfo : 'deleteUserList'}, 'x');
+						$.post(url, {usernames : usernames,ids:ids,userId:window.userId}, function(res) {
+							var success = $.parseJSON(res);
+							if(success.issuccess==true){
+								showMsg("删除用户成功！");
+								//reloadUsers($('#nowPage').html()) ;
+								reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+								var arg = 'type=deleteusers&username='+usernames;
+								remote.jsjac.chat.ofuserservice(arg, true) ;
+							}else{
+								showBottomMsg('删除用户失败！',3);
+							}
+						});
+					}else if(flgHint == 1){
+						showMsg("不能删除自己!","2");
+						this.hide();
+						if(usernames.trim() != ''){
+							$.dialog({
+								content : '继续执行删除其他用户吗？',
+								okValue: '确定',
+								cancelValue: '关闭',
+								cancel : true,
+								ok : function() {
+								var url = $.appClient.generateUrl({ESUserInfo : 'deleteUserList'}, 'x');
+								$.post(url, {usernames : usernames,ids:ids}, function(res) {
+									var success = $.parseJSON(res);
+									if(success.issuccess==true){
+										showMsg("删除用户成功！");
+										//reloadUsers($('#nowPage').html()) ;
+										reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+										var arg = 'type=deleteusers&username='+usernames;
+										remote.jsjac.chat.ofuserservice(arg, true) ;
+									}else{
+										showBottomMsg('删除用户失败！',3);
+									}
+								});
+								}
+							}).show();
+						}
+				}
+			}
+		}).showModal();
+		
+	}
+
+	
+	
+	/** 鼠标经过行颜色改变监听 **/
+	$('#searchUserName').keyup(function(event){  
+		var searchname=$("#searchUserName").val().trim();
+	//	if(searchname.length == 0){
+			$("#closeUserNameButton").hide();
+			$("#searchUserOclick").show();
+	//	}
+		if(event.keyCode == 13){
+            var page=$('#nowPage').html();
+            if(page == 0){
+            	page = 1 ;
+            }
+			var searchusername=$("#searchUserName").val().trim();
+			if(searchusername == ''){
+				reloadUsers(page) ;
+			}else{
+				$("#closeUserNameButton").show();
+				$("#searchUserOclick").hide();
+				reloadUsersSelect(1,0,searchusername);
+			}
+        }  
+    });  
+  
+	$('#userGrid').on('mouseover', "tr", function(){
+		$(this).children("td").addClass("hover") ;
+	}) ;
+	$('#userGrid').on('mouseout', "tr", function(){
+		$(this).children("td").removeClass("hover") ;
+	}) ;
+	$(".bbar").on("mouseover", "div", function(){
+		$(this).css("border", "1px solid #FFFFFF");
+	});
+	$(".bbar").on("mouseout", "div", function(){
+		$(this).css("border", "");
+	});
+	$(".bbar").on("click", "div", function(){
+		if($(this).attr("class") == "pFirst"){
+			if($('#nowPage').html()*1>1){
+				//reloadUsers(1) ;
+				reloadUsersSelect(1,0,$('#searchUserName').val());
+				$('#nowPage').html(1) ;
+			}
+		} else if($(this).attr("class") == "pPrev"){
+			if($('#nowPage').html()*1>1){
+				var newpage = $('#nowPage').html()*1-1 ;
+				//reloadUsers(newpage) ;
+				reloadUsersSelect(newpage,0,$('#searchUserName').val());
+				$('#nowPage').html(newpage) ;
+			}
+		} else if($(this).attr("class") == "pNext"){
+			if($('#nowPage').attr("pagecount")*1>$('#nowPage').html()*1){
+				var newpage = $('#nowPage').html()*1+1 ;
+				//reloadUsers(newpage) ;
+				reloadUsersSelect(newpage,0,$('#searchUserName').val());
+				$('#nowPage').html(newpage) ;
+			}
+		} else if($(this).attr("class") == "pLast"){
+			if($('#nowPage').attr("pagecount")*1>$('#nowPage').html()*1){
+				var newpage = $('#nowPage').attr("pagecount")*1 ;
+				//reloadUsers(newpage) ;
+				reloadUsersSelect(newpage,0,$('#searchUserName').val());
+				$('#nowPage').html(newpage) ;
+			}
+		} else if($(this).attr("class") == "pReload"){
+			//reloadUsers($('#nowPage').html()) ;
+			reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+		}
+	});
+	$(".tbar").on("mouseover", "dd", function(){
+		//if($(this).attr("id")!="usersearchdd")$(this).css("background-color", "#133959");
+	});
+	$(".tbar").on("mouseout", "dd", function(){
+		//if($(this).attr("id")!="usersearchdd")$(this).css("background-color", "#6F6E81");
+	});
+	
+	function realAddusers(){
+		$("#addUserForm").attr("flag", "true");
+		var numflg=0;
+		var flag = true;
+		var emailList='';
+		var erroremailstr = '' ;
+		var erroremailNum='';
+		var validateIsSelf = '';
+		/** lujixiang 20150828  记录邀请人员，发送邀请信息 **/
+		var inviteEmails = [] ;
+		
+		var email = $("#addUserForm input[name^='email']").each(function(){
+			var name =  $(this).attr("name");
+			var num = name.substr(name.length-1,name.length);
+			var emailStr=$.trim($(this).val());
+		    if(emailStr==''){
+		    	erroremailstr += emailStr+"、" ;
+			    flag = false;
+		 	} else if(emailaddressZZ.test(emailStr)==false){
+		 		erroremailstr += emailStr+"、" ;
+		 		flag = false;
+		 	}else if(window.userName == emailStr){
+		 		validateIsSelf += emailStr+"、" ;
+		 		flag = false;
+			}else {
+		 		inviteEmails.push(emailStr);
+		 		numflg++;
+		 		$("#addUserForm input[name^='email']").each(function(){
+					var names =  $(this).attr("name");
+					var nums = names.substr(names.length-1,names.length);
+						if(num != nums && $.trim($(this).val()) == emailStr){
+							if(erroremailNum.indexOf(numflg)<0){
+								erroremailNum +=numflg+"、";
+							}
+							if(erroremailstr.indexOf(emailStr)<0){
+								erroremailstr += emailStr+"、";
+							}
+							flag =false;
+						}
+				});
+		 		emailList += $(this).val()+",";
+		 	}
+		});
+		if(!flag){
+			if(erroremailNum.length > 0){
+				erroremailNum = erroremailNum.substring(0, erroremailNum.length-1);
+				$("#addusermessage").html("第 ["+erroremailNum+"] 条有相同邮箱，请修改。") ;
+				return false;
+			}else if (validateIsSelf!=''){
+				validateIsSelf = erroremailNum.substring(0, erroremailNum.length-1);
+				$("#addusermessage").html(erroremailstr+"不可以邀请自己!") ;
+				return false;
+			}else{
+				erroremailstr = erroremailstr.substring(0, erroremailstr.length-1);
+				$("#addusermessage").html(erroremailstr+" 邮箱格式不正确，请修改；正确格式如admin@flyingsoft.com。") ;
+				return false;
+			}
+		}
+		//验证邮箱。调用后台方法
+		if($.trim(emailList) != '' && flag){
+			 verifyMailboxS($.trim(emailList));
+			 if($("#addUserForm").attr("flag") == "false"){
+			 	flag = false;
+			 }
+		}else {
+			$("#addusermessage").html("请至少填写一个邮箱。") ;
+			return false;
+		}
+		//选择框的input
+		if(!flag){
+			return flag;
+		}
+
+		// longjunhao 20150819 根据邮箱的状态，对用户输入的多个邮箱进行对应的处理
+		// resendList  newCompanyInviteList  firstInviteList
+// 		var resendList = $("#addUserForm").attr("resendList");
+// 		var newCompanyInviteList = $("#addUserForm").attr("newCompanyInviteList");
+// 		var firstInviteList = $("#addUserForm").attr("firstInviteList");
+// 		if(resendList != null){//需要重新发送
+// 			var url = $.appClient.generateUrl({ESUserInfo : 'reSendMail'}, 'x');
+// 			$.post(url, {emails : resendList,userId:''}, function(res) {
+// 				var success = $.parseJSON(res);
+// 				if(success.issuccess==true){
+// 					showMsg("用户["+resendList+"]未激活，重新发送邀请邮件，请稍等！","2");
+// 					reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+// 					$.dialog.list['adduser'].close();
+// 				}else{
+// 					showMsg('发送失败！');
+// 					return;
+// 				}
+// 			});
+// 		}
+		
+// 		if (firstInviteList != null) {
+			var d = $("#addUserForm").serialize();
+			d +="&fromfullname="+$("#current_user_name").html() ;
+			d +="&companyid="+$("#flyingchat").attr("companyId") ;
+			$.ajax({
+				url:$.appClient.generateUrl({ESUserInfo : 'do_inviteAddUser'},'x'),
+				type:'POST',
+				data:{d:d},
+				datatype:"json",
+				success:function(data){
+					$.dialog.list['adduser'].close().remove();
+					reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+					showMsg("正在发送邀请邮件，请稍等！");
+					var jsonData=eval('('+data+')'); 
+					var informUsers=jsonData['informUsers'];
+				    //var newUsers=jsonData['newUsers'];
+					//已经存在的用户用于消息发送邀请
+					if(informUsers != 'undefined'){
+						var informUsersStr=JSON.stringify(informUsers).replace('["',' ').replace('"]',' ').replaceAll('"',' ').replaceAll('@', '\\40').split(',');
+						for(var i in informUsersStr){
+							//alert(typeof informUsersStr[i]);
+							var names = $.trim(informUsersStr[i]);
+							//alert(typeof names);
+							remote.jsjac.chat.sendMessage('addtocompany-邀请您加入[' + window.companyName + ']团队',names+"@"+remote.jsjac.domain);
+						}
+					}
+					
+					
+					//reloadUsers($('#nowPage').html()) ;
+			/**		 lujixiang 20150828  发送邀请消息 
+					for(var i in inviteEmails){
+						var emailStr=$.trim(inviteEmails[i]);
+						var name = emailStr.replace('@', '\\40');
+						remote.jsjac.chat.sendMessage('邀请您加入新公司，请刷新页面后点击头像查看',name+"@"+remote.jsjac.domain);
+					}**/
+				}
+			});
+// 		}
+	}
+
+	// 验证多个email的状态
+	function verifyMailboxS(emails){
+		$("#addusermessage").html("") ;
+		$.ajax({
+			url:$.appClient.generateUrl({ESUserInfo : 'do_verifyMailboxS'},'x'),
+			type:'POST',
+			async: false,
+			data:{emails:emails},
+			datatype:"json",
+			success:function(res){
+				var success = $.parseJSON(res);
+				if(success.verifyMailbox == true){//存在已激活过的邮箱
+					var isVerifys=success.isVerify;
+				//	var arrs=isVerifys.split(',');
+					var erroremailstr = "";
+					erroremailstr = isVerifys;
+					$("#addusermessage").html("已存在["+erroremailstr+"]邮箱激活的用户，不能被再次邀请！") ;
+					$("#addUserForm").attr("flag", "false");
+				}else{
+					$("#addUserForm").attr("flag", "true");
+					if(success.resendList.length > 0){
+						$("#addUserForm").attr("resendList", success.resendList);//需要重新发送
+					} else if (success.newCompanyInviteList.length > 0) {
+						$("#addUserForm").attr("newCompanyInviteList", success.newCompanyInviteList); //用户已经存在，但是有新的企业邀请
+					} else if (success.firstInviteList.length > 0) {
+						$("#addUserForm").attr("firstInviteList", success.firstInviteList); //用户不存在，第一次邀请
+					}
+				}
+			}
+		});
+	}
+	function enableuser(){
+		var checkboxlength = $('input:checkbox[name=checkName]:checked').length;
+		if (checkboxlength == 0) {
+//			$.dialog.notice({icon : 'warning',content : '请选择要启用的用户！',time : 3});
+			showBottomMsg('请选择要启用的用户！',2);
+			return;
+		}
+		$.dialog({
+			content : '确定要启用吗？<div style="font-size:12px;margin-top:5px;">用户被启用后，其创建的分类、文件等交由用户自己管理！</div>',
+			okValue: '确定',
+			cancelValue: '取消',
+			cancel : true,
+			ok : function() {
+				var userIds = '';
+				var userNames = '';
+				var fullNames = '';
+				var emails = '';
+				var disableNum = 0;
+				$('input:checkbox[name=checkName]:checked').each(
+					function(i) {
+						var name1 = $(this).val();//check的名字
+						$("#userGrid input[name='isEnabled']").each(
+							function(i) {
+								var	name = $(this).val();//状态_名字
+								var name2 = name.substr(2);//名字
+								if(name2 == name1){
+									var status = name.substr(0,1);//状态
+									if(status == "0"){
+                                        var currentUserId = "<?php echo $user->id;?>";
+										if(name2 != currentUserId){
+											disableNum = disableNum+1;
+											userIds += $("#userGrid input[name='userId']")[i].value+ ',';
+											userNames += name2+ ',';
+											fullNames += $("#userGrid input[name='fullnameList']")[i].value+ ',';
+											emails += $("#userGrid input[name='emailList']")[i].value+ ' ,';
+										}
+									}
+									return false;
+								}
+						});
+					});
+					userIds=userIds.substring(0,userIds.length-1);
+					userNames=userNames.substring(0,userNames.length-1);
+					emails=emails.substring(0,emails.length-1);
+				    if(disableNum!=0){
+				    	var url = $.appClient.generateUrl({ESUserInfo : 'changeIsEnableStatus'}, 'x');
+				    	$.post(url, {userIds : userIds,userNames : userNames,fullNames:fullNames,emails : emails,userstatus : 1,userId:window.userId}, function(res) {
+				    		var success = $.parseJSON(res);
+				    		if(success.issuccess==true){
+				    			/**  刷新我的关注信息(如果我的关注处于激活状态下)  **/
+					    		if($("#bodyContent_Title #mySubscribe").attr("class")=='active'){
+					    			$("#content-list").scrollTop(0);
+					    			$("#content-list").perfectScrollbar('update');
+					    			/** 获取关注信息  **/
+					    			var url = window.onlinefilePath+'/rest/onlinefile_filesws/getSubScribeMsgByUserId?callback=?';
+									var data = {'userId':window.userId,'companyId':window.companyid,"pageIndex":1,"pageLimit":20};
+									var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+									jQuery.getJSON(url, ret.data,
+					    					function(json) {
+					    				$("#contentBody").html(template("mySubscribe_templete",json));
+					    				$("#content-list").perfectScrollbar('update');
+					    				// 分页
+					    				$("#pagingDiv").pagination({
+					    					pages: json.subScribeSize,
+					    					currentPage: 1,
+					    					onPageClick:function(pageNumber, event) {
+					    						getSubScribeMsgsFun(pageNumber);
+					    					}
+					    				});
+					    			});
+					    		}
+//			    				$.dialog.notice({
+//			    					icon : 'succeed',
+//			    					content :'成功启用'+disableNum+'个用户，飞扬小强正在快速的奔跑，逐一发送邀请邮件，请稍等！',
+//			    					time : 3
+//			    				});
+								showBottomMsg('成功启用'+disableNum+'个用户！',1);
+			    				//reloadUsers($('#nowPage').html()) ;
+			    				reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+								//openfire聊天群组中删除管理员 //发送消息有误
+			    				for(var i in success.groups){
+			    					var hexname = hex_md5(success.groups[i].flag);
+			    					var adminUserName=window.userName.replace('@', '\\40');
+			    					var arg = 'type=reset_group&groups='+success.groups[i].flag+'&deletegroupusernames='+adminUserName;
+			    					remote.jsjac.chat.ofuserservice(arg, false) ;
+								}
+								//将用户请出公司
+								var arg = 'type=reset_group&groups=company'+window.companyid+'&addgroupusernames='+emails.replace('@', '\\40');
+			    				remote.jsjac.chat.ofuserservice(arg, false) ;
+			    			}else{
+//				    			$.dialog.notice({icon : 'warning',
+//				    				content :'启用失败！',
+//				    				time : 3
+//				    			});
+								showBottomMsg('启用失败！',3);
+				    			return;
+				    		}
+				    	});
+				    }else{
+//				    	$.dialog.notice({
+//							icon : 'warning',
+//							content :'请至少选择一个禁用状态的用户，并且非当前登录用户！',
+//							time : 3
+//						});
+						showBottomMsg('请至少选择一个禁用状态的用户！',2);
+//						showBottomMsg('请至少选择一个禁用状态的用户，并且非当前登录用户！',2);
+				    	return;
+				    }
+			}
+		}).showModal();
+	}
+	function disableuser(){
+		var checkboxlength = $('input:checkbox[name=checkName]:checked').length;
+		if (checkboxlength == 0) {
+//			$.dialog.notice({icon : 'warning',content : '请选择要禁用的用户！',time : 3});
+			showBottomMsg('请选择要禁用的用户！',2);
+			return;
+		}
+		$.dialog({
+			content : '确定要禁用吗？<div style="font-size:12px;margin-top:5px;">用户被禁用后，其创建的分类、文件等交由管理员管理！</div>',
+			okValue: '确定',
+			cancelValue: '关闭',
+			cancel : true,
+			ok : function() {
+				var userIds = '';
+				var userNames = '';
+				var fullNames = '';
+				var emails = '';
+				var enableNum = 0;
+				$('input:checkbox[name=checkName]:checked').each(
+					function(i) {
+						var name1 = $(this).val();//check的名字
+						$("#userGrid input[name='isEnabled']").each(
+							function(i) {
+								var	name = $(this).val();//状态_名字
+								var name2 = name.substr(2);//名字
+								if(name2 == name1){
+									var status = name.substr(0,1);//状态
+									if(status == "1"){
+										var currentUserId = "<?php echo $user->id;?>";
+										if(name2 != currentUserId){
+											enableNum = enableNum+1;
+											userIds += $("#userGrid input[name='userId']")[i].value+ ',';
+											userNames += name2+ ',';
+											fullNames += $("#userGrid input[name='fullnameList']")[i].value+ ',';
+											emails += $("#userGrid input[name='emailList']")[i].value+ ' ,';
+										}
+									}
+									return false;
+								}
+						});
+				});
+				userIds=userIds.substring(0,userIds.length-1);
+				userNames=userNames.substring(0,userNames.length-1);
+				emails=emails.substring(0,emails.length-1);
+			    if(enableNum!=0){
+			    	var url = $.appClient.generateUrl({ESUserInfo : 'changeIsEnableStatus'}, 'x');
+			    	$.post(url, {userIds : userIds,userNames : userNames,fullNames:fullNames,emails : emails,userstatus : 0,userId:window.userId}, function(res) {
+			    		var success = $.parseJSON(res);
+			    		if(success.issuccess==true){
+				    		/**  刷新我的关注信息(如果我的关注处于激活状态下)  **/
+				    		if($("#bodyContent_Title #mySubscribe").attr("class")=='active'){
+				    			$("#content-list").scrollTop(0);
+				    			$("#content-list").perfectScrollbar('update');
+				    			/** 获取关注信息  **/
+				    			var url = window.onlinefilePath+'/rest/onlinefile_filesws/getSubScribeMsgByUserId?callback=?';
+								var data = {'userId':window.userId,'companyId':window.companyid,"pageIndex":1,"pageLimit":20};
+								var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+								jQuery.getJSON(url, ret.data,
+				    					function(json) {
+				    				$("#contentBody").html(template("mySubscribe_templete",json));
+				    				$("#content-list").perfectScrollbar('update');
+				    				// 分页
+				    				$("#pagingDiv").pagination({
+				    					pages: json.subScribeSize,
+				    					currentPage: 1,
+				    					onPageClick:function(pageNumber, event) {
+				    						getSubScribeMsgsFun(pageNumber);
+				    					}
+				    				});
+				    			});
+				    		}
+//		    				$.dialog.notice({
+//		    					icon : 'succeed',
+//		    					content :'成功禁用'+enableNum+'个用户,飞扬小强正在快速的奔跑，逐一发送邀请邮件，请稍等！！',
+//		    					time : 3
+//		    				});
+							showBottomMsg('成功禁用'+enableNum+'个用户！',1);
+		    				//reloadUsers($('#nowPage').html()) ;
+		    				reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+		    				
+							//因为管理员的分类权限有变化  所以刷新分类列表
+		    				documentCenter.getClassList(window.userId);
+		    				//添加管理员到openfire聊天群组中
+		    				for(var i in success.groups){
+		    					var hexname = hex_md5(success.groups[i].flag);
+		    					var obj = $('#newmessage'+hexname) ;
+		    					//把不存在分类下的管理员加入到分类中。。。
+		    					if(obj.parent().attr('isMember')=="false"){
+			    					var adminUserName=window.userName.replace('@', '\\40');
+			    					var arg = 'type=reset_group&groups='+success.groups[i].flag+'&addgroupusernames='+adminUserName;
+			    					remote.jsjac.chat.ofuserservice(arg, false) ;
+		    					}
+							}
+							//将用户请出公司
+							var arg = 'type=reset_group&groups=company'+window.companyid+'&deletegroupusernames='+emails.replace('@', '\\40');
+			    			remote.jsjac.chat.ofuserservice(arg, false) ;
+			    		}else{
+//			    			$.dialog.notice({icon : 'warning',
+//			    				content :'禁用失败！',
+//			    				time : 3
+//			    			});
+							showBottomMsg('禁用失败！',3);
+			    			return;
+			    		}
+			    	});
+			    }else{
+//			    	$.dialog.notice({
+//						icon : 'warning',
+//						content :'请至少选择一个启用状态的用户，并且非当前登录用户！',
+//						time : 3
+//					});
+					showBottomMsg('请至少选择一个启用状态的用户！',2);
+					//showBottomMsg('请至少选择一个启用状态的用户，并且非当前登录用户！',2);
+			    	return;
+		  		  }
+			}
+		}).showModal();
+	}
+})(jQuery);
+	function reloadUsers(page){
+		$("#pReload").css("background","url(<?php echo $tplPath?>/ESUserInfo/img/load.gif) no-repeat center") ;
+		$("#pReloadMsg").css("visibility", "visible") ;
+		$.ajax({
+		    url : $.appClient.generateUrl({ESUserInfo : 'userListBycompanyId'},'x'),
+		    type : 'POST',
+		    data : {page:page, rp:10},
+		    dataType:"json",
+		    success:function(json){
+				$('#userGrid').html(template('userGridTemplate', json));
+				$('#nowPage').html(json.soPage);
+				$('#searchUserName').val('');
+				$("#bbarMsg").html("显示 " + json.startNo + " 到 " + json.endNo + " 条 / 共" + json.total + "条");
+				$("#pageCount").html("共"+json.pagecount+"页");
+				$('#nowPage').attr("pagecount", json.pagecount);
+				$("#pReload").css("background","url(<?php echo $tplPath?>/ESUserInfo/img/load.png) no-repeat center") ;
+				$("#pReloadMsg").css("visibility", "hidden") ;
+				anewSendInvite();
+		    }
+		});
+		
+	}
+	//分页获取查询用户//selectuserflg作废searchUserName标识模糊查询值
+	function reloadUsersSelect(page,selectuserflg,searchusername){
+		$("#pReload").css("background","url(<?php echo $tplPath?>/ESUserInfo/img/load.gif) no-repeat center") ;
+		$("#pReloadMsg").css("visibility", "visible") ;
+		$.ajax({
+			    url : $.appClient.generateUrl({ESUserInfo : 'userListByUserName'},'x'),
+			    type : 'POST',
+			    data : {page:page,selectuserflg:selectuserflg,searchusername:searchusername,rp:10},
+			    dataType:"json",
+			    success:function(json){
+			    	//置为未选择状态
+			   		$('#checkIdList').prop("checked",false); 
+					$('#userGrid').html(template('userGridTemplate', json));
+					$('#nowPage').html(json.soPage);
+					$("#bbarMsg").html("显示 " + json.startNo + " 到 " + json.endNo + " 条 / 共" + json.total + "条");
+					$("#pageCount").html("共"+json.pagecount+"页");
+					$('#nowPage').attr("pagecount", json.pagecount);
+					$("#pReload").css("background","url(<?php echo $tplPath?>/ESUserInfo/img/load.png) no-repeat center") ;
+					$("#pReloadMsg").css("visibility", "hidden") ;
+					anewSendInvite();
+			    }
+		});
+	}
+	//邀请邮件发送失败，点击重新邀请。
+	function anewSendInvite(){
+		$("div.userListContentDiv div.emailstatus").parent().on("mousemove",function(){
+						$(this).find(".emailstatus").html("点击重新发送");
+		});
+		$("div.userListContentDiv div.emailstatus").parent().on("mouseout",function(){
+						$(this).find(".emailstatus").html("邀请邮件发送失败");
+		});
+		$("div.userListContentDiv div.emailstatus").parent().on("click",function(){
+						var anewEmail=$(this).prev().children('input').val();
+						var anewId=$(this).parent().find("input[name^='userId']").val();
+						var isResendEmail = verifyMailbox(anewEmail);
+						if(isResendEmail){
+							reSendMail(anewId);
+						}
+		});
+	}
+	//验证邮箱是否已激活。
+	function verifyMailbox(email){
+		var isResendEmail = false;
+		$.ajax({
+			url:$.appClient.generateUrl({ESUserInfo : 'do_verifyMailbox'},'x'),
+			type:'POST',
+			async: false,
+			data:{email:email},
+			datatype:"json",
+			success:function(res){
+				var success = $.parseJSON(res);
+				if(success.verifyMailbox == "active"){
+					showBottomMsg('邮箱已激活不能被邀请!',2);
+				}else if (success.verifyMailbox == "nonactive") {
+					isResendEmail = true;
+				}
+			}
+		});
+		return isResendEmail;
+	}
+
+	
+	
+	function editUser(userId){
+		$.ajax({
+		    url : $.appClient.generateUrl({
+		    	ESUserInfo : 'edituser'},'x'),
+		    	type : 'POST',
+			    data : {userId:userId},
+		    success:function(data){
+	    		$.dialog({
+		    		id: 'edituser',
+			    	title:'修改用户',
+			    	modal:true, //蒙层（弹出会影响页面大小） 
+		    	   	fixed:false,
+		    	   	stack: true ,
+		    	    resize: false,
+					opacity : 0.1,
+				    cancel: true,
+				    cancelValue:'取消',
+				    content:data,
+				    padding:0,
+				    okValue:'修改',
+				    ok : function() {
+				    	doEditUser();
+				    	return false;
+				    }
+			    }).show();
+			  },
+		      cache:false
+		});
+	}
+	function doEditUser(){
+		var flag = true;
+		var editFullname = $('#editFullname').val();
+	 	editFullname=editFullname.replace(/[ ]/g,"");
+	 	var editEmail = $('#editEmail').val();
+	 	editEmail=editEmail.replace(/[ ]/g,"");
+	 	var editOrgname = $('#editOrgname').val();
+	 	var editMobilephone = $("#editMobilephone").val();
+	 	editMobilephone=editMobilephone.replace(/[ ]/g,"");
+	 	var editTelephone = $("#editTelephone").val();
+	 	editTelephone=editTelephone.replace(/[ ]/g,"");
+	 	var editFax = $("#editFax").val();
+	 	editFax=editFax.replace(/[ ]/g,"");
+	 	
+	 	if(editFullname==''){
+	 		$("#editFullnameDiv").showTooltips("姓名不能为空！", 5000) ;
+	 		flag = false;
+	 	} else if(nameZZ.test(editFullname)==false){
+	 		$("#editFullnameDiv").showTooltips("姓名只能包含中文和英文字符!", 5000) ;
+	 		flag = false;
+	 	}
+	 	if(editEmail==''){
+	 		$("#editEmailDiv").showTooltips("激活邮箱不能为空!", 5000) ;
+	 		flag = false;
+	 	}
+	 	if(emailaddressZZ.test(editEmail)==false){
+	 		$("#editEmailDiv").showTooltips("邮箱格式不正确!", 5000) ;
+	 		flag = false;
+	 	}
+	 	if(editOrgname==''){
+	 		$("#editOrgnameDiv").showTooltips("请选择或输入用户所属机构！", 5000) ;
+	 		flag = false;
+	 	}
+	 	if(editMobilephone!='' && mobtelZZ.test(editMobilephone)==false){
+	 		$("#editMobilephoneDiv").showTooltips("手机号码格式不正确!", 5000) ;
+	 		flag = false;
+	 	}
+	 	if(editTelephone!='' && teleZZ.test(editTelephone)==false){
+	 		$("#editTelephoneDiv").showTooltips("公司电话格式不正确!", 5000);
+	 		flag = false;
+	 	}
+	 	if(editFax!='' && fexZZ.test(editFax)==false){
+	 		$("#editFaxDiv").showTooltips("传真格式不正确!", 5000);
+	 		flag = false;
+	 	}
+		//选择框的input
+		if(!flag){
+			return flag;
+		}
+		var edituser = $("#editUserForm").serialize();
+		$.ajax({
+			url:$.appClient.generateUrl({ESUserInfo : 'do_editUser'},'x'),
+			type:'POST',
+			data:{edituser:edituser},
+			datatype:"json",
+			success:function(res){
+				var success = $.parseJSON(res);
+				if(success.issuccess==true){
+					showBottomMsg('用户修改成功！',1);
+				//	reloadUsers($('#nowPage').html()) ;
+					reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+				//	art.dialog.list['edituser'].close();
+				$.dialog.list['edituser'].close();
+				}else{
+					if(success.msg!=""){
+						showBottomMsg(success.msg,2);
+					}else{
+						showBottomMsg('修改失败！',3);
+					}
+					return;
+				}
+			}
+		});
+	}
+	function reSendMail(userId){
+		var url = $.appClient.generateUrl({ESUserInfo : 'reSendMail'}, 'x');
+		$.post(url, {emails:'',userId : userId}, function(res) {
+			var success = $.parseJSON(res);
+			if(success.issuccess==true){
+				showBottomMsg('重新发送邀请邮件，请稍等！',1);
+				//reloadUsers($('#nowPage').html()) ;
+				reloadUsersSelect($('#nowPage').html(),0,$('#searchUserName').val());
+			}else{
+				showBottomMsg('发送失败！',3);
+				return;
+			}
+		});
+	}
+	//全选
+	$("#checkIdList").on('click',function(){
+		$("input[name='checkName']").prop('checked',$(this).is(':checked'));
+		//$("input[name='checkName']").attr('checked',$(this).is(':checked'));
+	});
+	//检索用户
+	$("#searchUserOclick").on('click',function(){
+		var page=$('#nowPage').html();
+		var selectuserflg=1;
+		var searchusername=$("#searchUserName").val().trim();
+		if(searchusername == ''){
+			reloadUsers(page) ;
+		}else{
+			$("#closeUserNameButton").show();
+			$("#searchUserOclick").hide();
+			reloadUsersSelect(1,0,searchusername);
+		}
+	});
+	//检索用户
+	$("#closeUserNameButton").on('click',function(){
+		$("#searchUserName").val('');
+		$("#closeUserNameButton").hide();
+		$("#searchUserOclick").show();
+		reloadUsers(1) ;
+	});
+</script>
+
+	
+

@@ -1,0 +1,69 @@
+<?php
+class ProxyOnlinefileOnlinefile_campanyinfows extends AgentProxyAbstract {
+	
+	const SERVICE_NAME = "companyregist";
+	/**根据公司id获得用户信息**/
+	public function getCampanyInfoById($data){
+		$urlParam = array('getCampanyInfoById');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**修改公司信息**/
+	public function editCampanyInfo($data){
+		$urlParam = array('editCampanyInfo');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**获得公司logo路径（删除用）**/
+	public function getImagePath($postData){
+		$urlParam = array('getImagePath');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**上传公司logo**/
+	public function saveHeadImage($postData){
+		$urlParam = array('saveHeadImage');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function registerNewCampany($postData){
+		$urlParam = array('registerNewCampany');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function getCompanyReferrer($param){
+		$urlParam = array('getCompanyReferrer');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	/**20151020 切换公司**/
+	public function switchoverCompany($param){
+		$urlParam = array('switchoverCompany');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	/**
+	 * zhuxiaoqiye liumingchao 20151027	
+	 */
+	public function cancelCompany($param){
+		$urlParam = array('cancelCompany');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	
+	}
+	public function getCompanyUserForTransfer($param){
+		$urlParam = array('getCompanyUserForTransfer');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	public function transferCompany($param){
+		$urlParam = array('transferCompany');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+}
+?>

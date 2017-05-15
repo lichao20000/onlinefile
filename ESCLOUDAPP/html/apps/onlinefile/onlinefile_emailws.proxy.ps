@@ -1,0 +1,113 @@
+<?php
+class ProxyOnlinefileOnlinefile_emailws extends AgentProxyAbstract
+{
+	const SERVICE_NAME="onlinefile_emailws";
+	
+	public function addEmail($map)
+	  {
+		$urlParam = array('addEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function addEmailManual($map)
+	  {
+		$urlParam = array('addEmailManual');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function deleteEmail($map)
+	  {
+		$urlParam = array('deleteEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function deleteAllEmail($map)
+	  {
+		$urlParam = array('deleteAllEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function updateEmail($map)
+	  {
+		$urlParam = array('updateEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function getAttachmentByEmail($map)
+	  {
+		$urlParam = array('getAttachmentByEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function searchEmailAttachment($map)
+	  {
+		$urlParam = array('searchEmailAttachment');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	
+	public function getEmailList($map)
+	  {
+		$urlParam = array('getEmailList');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function getEmailSettingByEmail($map)
+	  {
+		$urlParam = array('getEmailSettingByEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function saveEmailSetting($map)
+	  {
+		$urlParam = array('saveEmailSetting');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function setAsDefaultEmail($map)
+	  {
+		$urlParam = array('setAsDefaultEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	  }
+	
+	public function cacheAllEmailAttachments($map)
+	{
+		$urlParam = array('cacheAllEmailAttachments');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	}
+	
+	public function getDefaultAttachmentByEmail($map)
+	{
+		$urlParam = array('getDefaultAttachmentByEmail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	}
+	
+	public function searchEmialAttachsByKeyWord($map)
+	{
+		$urlParam = array('searchEmailAttachment');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	}
+	
+	public function isSynEmailAttachMent($map)
+	{
+		$urlParam = array('isSynEmailAttachMent');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$map,'application/json;charset=UTF-8');
+	}
+	
+	
+}

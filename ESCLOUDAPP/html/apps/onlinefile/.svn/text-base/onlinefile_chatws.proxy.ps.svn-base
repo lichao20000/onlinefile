@@ -1,0 +1,16 @@
+<?php
+class ProxyOnlinefileOnlinefile_chatws extends AgentProxyAbstract 
+{
+	const SERVICE_NAME = "chat";
+    /**
+     * 获取历史消息
+     * @param unknown $data
+     * @return 
+     */
+	public function getHistoryMessage($data){
+		$urlParam = array('getHistoryMessage');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+}	
+?>

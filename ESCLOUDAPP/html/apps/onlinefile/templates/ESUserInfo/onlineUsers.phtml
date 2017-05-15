@@ -1,0 +1,266 @@
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+<style>
+	.userGridMain {
+		width : 700px;
+		height: 512px;
+		overflow:hidden;
+	}
+	.userGridMain .tbar{
+		width : 100%;
+		height: 30px;
+		padding-left:5px;
+	}
+	.userGridMain .tbar dl{
+		width : 100%;
+		padding:0px;
+		float:left;
+		border:0px;
+		background-color:#ffffff;
+	}
+	.userGridMain .tbar dd{
+		float:left;
+		margin-right:10px;
+		cursor: pointer;
+		background-color:#6F6E81;
+		color:#ffffff;
+		padding:5px;
+	}
+	.userGridMain .bbar{
+		width : 100%;
+		height: 30px;
+		padding-left:5px;
+	}
+	.userGridMain .bbar dl{
+		padding:0px;
+		float:left;
+		border:0px;
+		height: 30px;
+		background-color:#ffffff;
+	}
+	.userGridMain .bbar dd{
+		float:left;
+		margin-right:8px;
+		cursor: pointer;
+		height: 30px;
+		padding-top:7px;
+		padding-bottom:7px;
+		width:16px;
+		height:16px;
+	}
+	.userGridMain .bbar div{
+		width:16px;
+		height:16px;
+	}
+	.userGridList	{
+		width : 700px;
+		height: 480px;
+		overflow:auto;
+		border-top:1px solid #F0F0F0;
+		border-bottom:1px solid #F0F0F0;
+	}
+	#userGrid	{
+		width : 700px;
+		height: 480px;
+		overflow:auto;
+	}
+	#userGrid .checkboxcss{
+		width:20px; 
+		text-align:center;
+	}
+	#userGrid .hover{
+		background-color:#ffc;
+		color:#0066CC;
+		cursor: default;
+	}
+	#userGrid table {
+		width: 100%; 
+		border-right:1px solid #F0F0F0;
+		border-bottom:1px solid #F0F0F0;
+	}
+	#userGrid table th{
+		border-left:1px solid #F0F0F0;
+		height:20px;
+		padding:2px;
+		text-align:center;
+		font-weight:normal;
+	} 
+	#userGrid table td{
+		border-left:1px solid #F0F0F0;
+		border-top:1px solid #F0F0F0;
+		height:20px;
+		padding:2px;
+	} 
+	.userGridMain .bbar .pFirst {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/first.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pPrev {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/prev.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pNext {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/next.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pLast {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/last.gif) no-repeat center;
+	}
+	
+	.userGridMain .bbar .pReload {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/load.png) no-repeat center;
+	}
+	.userGridMain .tbar .adduser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/add.png) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .deleteuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/close.png) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .enableuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/tick.png) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .disableuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/wfdelete.gif) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .importuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/import.gif) no-repeat center left;
+		padding-left:20px;
+	}
+	.userGridMain .tbar .exportuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/export.gif) no-repeat center left;
+		padding-left:20px;
+		color:white;
+	}
+	#nowPage {
+		border:1px solid #6F6E81;
+		height:16px;
+		padding: 1px 4px;
+	}
+</style>
+<script id="onlineUsersGridTemplate" type="text/html">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th>序号</th>
+				<th>用户名</th>
+				<th>姓名</th>
+				<th>最近登陆时间</th>
+				<th>客户机IP</th>
+				<th>强制退出</th>
+			</tr>
+			{{each data.rows as row i}}
+				<tr>
+					<td style="text-align:center;">{{i+1}}</td>
+					<td>{{row.userName.replace("\\40", "@")}}</td>
+					<td>{{data.fullnames[row.userName]}}</td>
+					<td>{{row.hostAddress}}</td>
+					<td>{{row.crateDate}}</td>
+					{{if row.userName.replace("\\40", "@")==self}}
+						<td style="text-align:center;">自己</td>
+					{{ else }}
+						<td style="text-align:center;"><img class="closesession" src="apps/onlinefile/templates/ESUserInfo/img/delete.gif" jid="{{row.jid}}" username="{{row.userName}}"></td>
+					{{/if}}
+				</tr>
+			{{/each}}
+		</table>
+</script>
+<div class="userGridMain">
+	<div class="userGridList">
+		<div id="userGrid">
+		</div>
+	</div>
+	<div class="bbar">
+		<dl>
+			<dd><div class="pFirst" title="首页"></div></dd>
+			<dd><div class="pPrev" title="上一页"></div></dd>
+			<dd><span id="nowPage">1</span></dd>
+			<dd><div class="pNext" title="下一页"></div></dd>
+			<dd><div class="pLast" title="最后一页"></div></dd>
+			<dd><div id="pReload" class="pReload" title="刷新"></div></dd>
+			<dd id="pReloadMsg"  style="width:140px;text-align:left;visibility:hidden;">正在加载，请稍候...</dd>
+			<dd id="bbarMsg" style="width:400px;cursor: default;text-align:right;"></dd>
+		</dl>
+	</div>
+</div>
+
+<script type="text/javascript">
+function onlineReloadUsers(page){
+	$("#pReload").css("background","url(<?php echo $tplPath?>/ESUserInfo/img/load.gif) no-repeat center") ;
+	$("#pReloadMsg").css("visibility", "visible") ;
+	
+	var url = $('#flyingchat').attr('baseurl')+'/rest/chat/getCompanySessions?callback=?';
+	var data = {'userid':window.userId,'username':window.userName,'companyId':window.companyid, 'startNo':(page-1)*20, 'limit':20};
+	var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+	jQuery.getJSON(url, ret.data,
+			function(json) {
+			var allCount = json.count ;
+	    	$('#userGrid').html(template('onlineUsersGridTemplate', {'data':json, 'self':window.userName}));
+			$("#bbarMsg").html("显示 "+(allCount>0?1:0)+" 到 " + (allCount>20?20:allCount) + " 条 / 共" + allCount + "条");
+			$('#nowPage').attr("pagecount", Math.ceil(allCount/20));
+			$("#pReload").css("background","url(<?php echo $tplPath?>/ESUserInfo/img/load.png) no-repeat center") ;
+			$("#pReloadMsg").css("visibility", "hidden") ;
+	}) ;
+}
+(function ($) {
+	onlineReloadUsers(1) ;
+	/** 鼠标经过行颜色改变监听 **/
+	$('#userGrid').on('mouseover', "tr", function(){
+		$(this).children("td").addClass("hover") ;
+	}) ;
+	$('#userGrid').on('mouseout', "tr", function(){
+		$(this).children("td").removeClass("hover") ;
+	}) ;
+	$(".bbar").on("mouseover", "div", function(){
+		$(this).css("border", "1px solid #FFFFFF");
+	});
+	$(".bbar").on("mouseout", "div", function(){
+		$(this).css("border", "");
+	});
+	$(".bbar").on("click", "div", function(){
+		if($(this).attr("class") == "pFirst"){
+			if($('#nowPage').html()*1>1){
+				onlineReloadUsers(1) ;
+				$('#nowPage').html(1) ;
+			}
+		} else if($(this).attr("class") == "pPrev"){
+			if($('#nowPage').html()*1>1){
+				var newpage = $('#nowPage').html()*1-1 ;
+				onlineReloadUsers(newpage) ;
+				$('#nowPage').html(newpage) ;
+			}
+		} else if($(this).attr("class") == "pNext"){
+			if($('#nowPage').attr("pagecount")*1>$('#nowPage').html()*1){
+				var newpage = $('#nowPage').html()*1+1 ;
+				onlineReloadUsers(newpage) ;
+				$('#nowPage').html(newpage) ;
+			}
+		} else if($(this).attr("class") == "pLast"){
+			if($('#nowPage').attr("pagecount")*1>$('#nowPage').html()*1){
+				var newpage = $('#nowPage').attr("pagecount")*1 ;
+				onlineReloadUsers(newpage) ;
+				$('#nowPage').html(newpage) ;
+			}
+		} else if($(this).attr("class") == "pReload"){
+			onlineReloadUsers($('#nowPage').html()) ;
+		}
+	});
+	$('#userGrid').on('click', ".closesession", function(){
+		$('#flyingchat').attr("isCloseUserName", $(this).attr("username").replace("\\40", "@"));
+		
+		var url = $('#flyingchat').attr('baseurl')+'/rest/chat/closeSession?callback=?';
+		var data = {'userid':window.userId,'companyId':window.companyid, 'username':$(this).attr("username")};
+		var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+		jQuery.getJSON(url, ret.data,
+				function(json) {
+				    if(json.isOk){
+						showMsg("强制退出用户成功！", "1");
+				    } else {
+						showMsg("强制退出用户失败！", "2");
+				    }
+		}) ;
+	});
+})(jQuery);
+</script>

@@ -1,0 +1,57 @@
+
+<link rel="stylesheet" href="<?php echo $tplPath;?>/ESIdentify/css/viewfile.css" type="text/css"/>
+
+<div id="eslist">
+
+</div>
+
+<script>
+/**  盒号的Path 例如 esp_5_box_1  最后面的1标识esp_5中的Box的ID号 **/
+var boxPath = '<?php echo $datas[0] ?>';
+var colTmp = '<?php echo $datas[1] ?>';
+var colModels = "[{display: '序号', name : 'num', width : 20, align: 'center',metadata:'num'}, {display: '<input type=\"checkbox\" name=\"paths\">', name : 'ids', width : 20, align: 'center',metadata:'ids'},{display: '操作', name : 'operate', width : 60, align: 'center',metadata:'operate'},"+colTmp.substring(1,colTmp.length);
+var url = $.appClient.generateUrl({ESStoreroom3D : 'set_json',boxPath:boxPath},'x');
+$("#eslist").flexigrid({
+	url: url,
+	dataType: 'json',
+    width:500,
+    height:460,
+	colModel : eval("("+colModels+")"),
+	sortname : "id",
+	sortorder : "asc",
+	usepager : true,
+	title : '条目数据',
+	useRp : true,
+	rp : 20,
+	nomsg : "没有数据",
+	showTableToggleBtn : true,
+	pagetext : '第',
+	outof : '页 /共',
+	pagestat : ' 显示 {from} 到 {to}条 / 共{total} 条'
+	});
+
+
+//展示文件
+function show_file(path)
+{
+var url = $.appClient.generateUrl({ESIdentify:'file_view',path:path},'x');
+$.ajax({
+		url:url,
+		cache:false,
+		success:function(data){
+			$.dialog({
+				id:'artFilesPanel',
+		    	title:'浏览电子文件',
+		    	width: '960px',
+	    	   	fixed:false,
+	    	    resize: false,
+	    	    padding: 0,
+	    	    top: '10px',
+		    	content:data
+		    });
+		}
+	});
+
+}
+</script>
+			       

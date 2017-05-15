@@ -1,0 +1,55 @@
+<?php 
+// 是否已登录
+$isLogin = isLogin(); 
+$loginUrl = "";
+if(!$isLogin) {
+	$ssoAppId = AopConfig::get('sso.appid');
+	$successUrl = urlencode(AopConfig::get('sso.loginurl', url('user/token', true)));
+	$errorUrl = urlencode(AopConfig::get('sso.error'));
+	$baseurl = AopConfig::get('sso.baseurl') ;
+	$returnUrl = isset($_SERVER['HTTP_REFERER']) ? urlencode($_SERVER['HTTP_REFERER']) : '';
+	//登录URL地址
+	$loginUrl = AopConfig::get('sso.login')."?appid=".$ssoAppId."&success=".$successUrl."&error=".$errorUrl."&return=".$returnUrl."&baseurl=".$baseurl;
+}
+?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vml="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>东方飞扬云平台管理系统</title> 
+	<link href="/templates/onlinefile/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="/templates/onlinefile/css/perfect-scrollbar.css" rel="stylesheet"/>
+	<link href="/templates/onlinefile/css/sticky.full.css" rel="stylesheet"/>
+	<link href="/templates/onlinefile/css/onlinefile.css?v=1.01" rel="stylesheet"/>
+	
+	<link href="/apps/onlinefile/templates/public/artDialog/ui-dialog.css?v=1.0" rel="stylesheet"/>
+	<link href="/apps/onlinefile/templates/ESDefault/flexpaper/css/flexpaper.css?v=1.0" rel="stylesheet"/>
+	<link href="/apps/onlinefile/templates/ESDocumentCenter/css/filetype_icon.css?v=1.01" rel="stylesheet"/>
+	<link href="/apps/onlinefile/templates/ESDefault/css/chat.css?v=1.0" rel="stylesheet"/>
+	<link href="/apps/onlinefile/templates/public/SWFUpload/css/swfupload.css" rel="stylesheet"/>
+	
+	<link rel="stylesheet" type="text/css" href="/apps/onlinefile/templates/ESUserCommunity/css/index.css" />
+	
+</head>
+
+<!-- BEGIN BODY -->
+<body >
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.pagewalkthrough.min.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.simplePagination.js"></script>
+	<script type="text/javascript" src='/templates/onlinefile/js/sticky.full.js'></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/bootstrap-contextmenu.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/perfect-scrollbar.jquery.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/template-debug.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.qqFace.js"></script>
+	<script type="text/javascript" src="/templates/onlinefile/js/jquery.jsmartdrag.js"></script>
+	<?php echo $content ?>
+</body>
+<!-- END BODY -->
+</html>

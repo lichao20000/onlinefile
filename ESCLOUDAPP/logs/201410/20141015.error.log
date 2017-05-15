@@ -1,0 +1,1448 @@
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:21:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0739090442657"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:46:41"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0625660419464"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:46:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0096719264984"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:47:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0269842147827"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:47:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0303678512573"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:51:46"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.098814964294434"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:51:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0042369365692139"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:52:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0053780078887939"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:52:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0034630298614502"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:56:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0050280094146729"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 08:58:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0053219795227051"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:01:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0051569938659668"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:03:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0038478374481201"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:07:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0052480697631836"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:08:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0041859149932861"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:12:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0044589042663574"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:13:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0038449764251709"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:22:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.015784978866577"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:23:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0046589374542236"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:37:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.014774084091187"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 09:38:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0051138401031494"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 10:02:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.014011859893799"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 10:03:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.014675140380859"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 10:48:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0038530826568604"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 10:49:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0043621063232422"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getColumnModel/-archive_4-110@_-@77-@78", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.20404887199402"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/orderservice/getGrantAppByUserId/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025260448456"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007147789001"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0042870044708"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0105340480804"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0020189285278"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0009288787842"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:42"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0045199394226"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.001953125"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:47"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0220470428467"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0009050369263"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:52"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0123379230499"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002679824829"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023620128632"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:56:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101330280304"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:02"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99550795555115"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0003459453583"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027370452881"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101461410522"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.007541179657"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0044898986816"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0034151077271"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:18"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0003530979156"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025289058685"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0015468597412"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.013463973999"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.009948015213"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0051419734955"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99982404708862"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0131731033325"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99740386009216"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:42"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0019669532776"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0102558135986"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:47"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022161006927"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0202651023865"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:52"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0074241161346"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0201489925385"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0124800205231"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:57:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0015881061554"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:02"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.002552986145"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0121808052063"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0057020187378"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010302066803"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.003436088562"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002019405365"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0064370632172"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:18"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0001540184021"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0029098987579"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0099360942841"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026619434357"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0038151741028"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0059180259705"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0100450515747"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022261142731"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101020336151"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:42"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0130620002747"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002789497375"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:47"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0164608955383"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0019421577454"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:52"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.003387928009"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.009819984436"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0252599716187"}
+
+INFO - {"user":"admin","time":"2014-10-15 10:58:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0003249645233"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:47"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getColumnModel/-archive_4-110@_-@77-@78", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0055320262909"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/orderservice/getGrantAppByUserId/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002148151398"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002341270447"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025489330292"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0001709461212"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.001837015152"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006630420685"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030429363251"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:01:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006048679352"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0036170482635"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0009548664093"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0062530040741"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.008003950119"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0123178958893"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002458095551"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:18"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0117700099945"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101749897003"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022339820862"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002830028534"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0042629241943"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004608631134"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0057480335236"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0108969211578"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030970573425"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0012428760529"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0020458698273"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0011470317841"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.092579126358"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.000186920166"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023040771484"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0199100971222"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:02:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0018129348755"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99988007545471"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0016949176788"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006809234619"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026619434357"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99999284744263"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0121068954468"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0073020458221"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022869110107"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0003428459167"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0018310546875"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0044949054718"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99818086624146"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0005550384521"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.002543926239"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101361274719"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0127840042114"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101840496063"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0121529102325"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004999637604"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.00181889534"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002858638763"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0116348266602"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0000870227814"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:03:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0123028755188"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99917507171631"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0043029785156"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0008850097656"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0017061233521"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098819732666"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0116319656372"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0001840591431"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0051019191742"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010509490967"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022139549255"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0109868049622"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0117290019989"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.997878074646"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0119071006775"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002789497375"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99790906906128"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0097970962524"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025169849396"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0097119808197"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0138010978699"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002841949463"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0011568069458"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99286913871765"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:04:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0116200447083"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.010097026825"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99859714508057"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002219676971"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0122339725494"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0099229812622"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023498535156"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0005338191986"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0024650096893"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098600387573"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.001188993454"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0100300312042"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010969638824"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006170272827"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027229785919"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0000500679016"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.002828836441"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0009438991547"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0122039318085"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007121562958"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0017948150635"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.9997980594635"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0021381378174"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006098747253"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:05:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0024268627167"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0105772018433"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0125379562378"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002307891846"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0219860076904"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.010085105896"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0019669532776"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0000929832458"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0115418434143"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0009241104126"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.012216091156"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0099818706512"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.001697063446"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101699829102"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.001914024353"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0108368396759"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0068068504333"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99980497360229"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022749900818"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0106101036072"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0075509548187"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007660388947"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0119390487671"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:06:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0075960159302"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0125820636749"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0093569755554"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0121130943298"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0000689029694"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0021538734436"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0103471279144"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0116200447083"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0301129817963"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027770996094"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007419586182"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022358894348"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0001749992371"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.002012014389"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004630088806"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0016069412231"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0000538825989"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:41"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.002837896347"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:07:42"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99994087219238"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getColumnModel/-archive_4-110@_-@77-@78", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.046144008636475"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/orderservice/getGrantAppByUserId/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0159769058228"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0042889118195"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023341178894"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0100049972534"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0093250274658"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0003609657288"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0046260356903"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007719993591"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0082240104675"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0008969306946"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:12:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.003457069397"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0100750923157"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99808382987976"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0105590820312"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99832797050476"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006101131439"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0097370147705"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0012788772583"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.012218952179"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0012719631195"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.010577917099"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0114359855652"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0033459663391"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.000522851944"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.014151096344"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002858638763"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026400089264"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0104260444641"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0149290561676"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0104470252991"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0031268596649"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0012519359589"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0193839073181"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.02987408638"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:13:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0323231220245"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007998943329"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0118339061737"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.000669002533"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027911663055"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006928443909"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0032489299774"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0109388828278"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0142409801483"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0011510848999"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0053780078888"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0014228820801"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030090808868"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0017960071564"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030388832092"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0011219978333"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030460357666"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0013780593872"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0031299591064"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0109369754791"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0038979053497"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0013470649719"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0016520023346"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007359981537"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:14:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023329257965"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0003659725189"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0075621604919"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007419586182"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0033550262451"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098807811737"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026028156281"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0013098716736"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0117449760437"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0107259750366"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0032160282135"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006370544434"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0049200057983"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101549625397"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027508735657"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004930496216"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0096740722656"}
+
+INFO - {"user":"admin","time":"2014-10-15 11:15:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006680488586"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getColumnModel/-archive_4-110@_-@77-@78", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"25.448222160339"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:18"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/orderservice/getGrantAppByUserId/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0104379653931"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010139942169"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0031747817993"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0009620189667"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0190501213074"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99998092651367"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0094799995422"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007300376892"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0044560432434"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101020336151"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0035789012909"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101318359375"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0123319625854"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007421970367"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026578903198"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99981188774109"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99478697776794"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004608631134"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_logservice/saveLog", "method":"POST", "params":"{"userid":"admin","ip":"127.0.0.1","controller":"ESDefault","action":"index","logtype":"access"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99508786201477"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0132529735565"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0119240283966"}
+
+INFO - {"user":"admin","time":"2014-10-15 16:17:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0127840042114"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0365459918976"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99989485740662"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0020110607147"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004208087921"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.012363910675"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0011250972748"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0091161727905"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0201170444489"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0146250724792"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026528835297"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0171110630035"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0106611251831"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:07:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0035848617554"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99997305870056"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.148894071579"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0017189979553"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0044589042664"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.010449886322"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0067160129547"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0209958553314"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0034058094025"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.000394821167"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0042209625244"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0099580287933"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025379657745"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007538795471"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098841190338"}
+
+INFO - {"user":"admin","time":"2014-10-15 18:08:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0018270015717"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-10-15 19:49:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.3599960803986"}
+

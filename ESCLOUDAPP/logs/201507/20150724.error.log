@@ -1,0 +1,8 @@
+INFO - {"user":"805846201@qq.com","time":"2015-07-24 11:38:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/onlinefile/rest/onlinefileuser/openUrl", "method":"POST", "params":"{"classId":"136","groupid":"52","username":"805846201@qq.com","ip":"127.0.0.1","ipandport":"127.0.0.1","companyId":"10"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0133209228516"}
+
+INFO - {"user":"xwd4java@126.com","time":"2015-07-24 15:29:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/onlinefile/rest/onlinefile_filesws/unshareFile", "method":"POST", "params":"{"fileId":"152","userId":"43","classId":"136","companyId":"10","userName":"xwd4java@126.com","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"0", "content-type":"", "message":"0", "reponse":"", "time":"20.136270046234"}
+

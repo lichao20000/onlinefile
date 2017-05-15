@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<![endif]-->
+		<meta charset="utf-8">
+		<meta name="description" content="北京东方飞扬软件股份有限公司-文档知识分享积累系统">
+		<meta name="keywords" content="文档 知识 分享 经验 及时 安全">
+		<title>知识分享系统</title>
+		
+		<!-- for css cache, do not delete-->
+		<link href="/templates/onlinefile/css/perfect-scrollbar.css" rel="stylesheet"/>
+    	<link href="/templates/onlinefile/css/sticky.full.css" rel="stylesheet"/>
+    	<link href="/templates/onlinefile/css/onlinefile.css?v=1.0" rel="stylesheet"/>
+    	
+        <link href="/apps/onlinefile/templates/ESDocumentCenter/css/filetype_icon.css?v=1.0" rel="stylesheet"/> 
+	    <link href="/apps/onlinefile/templates/ESDefault/css/chat.css?v=1.0" rel="stylesheet"/>
+	    <link href="/apps/onlinefile/templates/public/SWFUpload/css/swfupload.css" rel="stylesheet"/>
+	
+		<link rel="stylesheet" href="index/index.css?v=1.0"/>
+	
+	</head>
+	<body>
+		<div id="maindiv" class="pages" loginUrl="//127.0.0.1:8080" indexUrl="//127.0.0.1" openfireurl="http://127.0.0.1:9090">
+			<div class="item odditem" id="item1" style="z-index:10;">
+				<div id="firstPageHeader" class="navbar">
+				    <div class="container">
+				        <div class="navbar-header navbar-brand">
+			                <img class="navbar-logo" src="index/fybot.png" alt="">
+			                <span class="navbar-head">东方飞扬</span>
+				        </div>
+				    </div>
+				    <ul class="nav">
+						<li class="dd-nav-login">用户登录
+							<div class="userlogin">
+								<div class="msg-wrap">
+                        			<div class="msg-warn" style="display: none;"><b></b>公共场所不建议记住密码，以防账号丢失</div>
+                   				</div>
+								<form action="//127.0.0.1:8080/flyingoauth/j_spring_security_check" method=post id="loginForm" name="loginForm" onSubmit="saveUsername(this)">
+								<span class="arrow_shadow"></span><span class="arrow"></span>
+								<input type="text" class="form-control userlogininput" id="fyusername" name="username" placeholder="用户名" onkeyup="cleanPwd4nameChange()" autocomplete="off"/>
+								<input type="password" class="form-control userlogininput" maxlength="20" id="fypassword" name="password" placeholder="密码" autocomplete="off">
+								<input type="text" class="form-control userlogininput" style="display:none;" name="success" value="//127.0.0.1/user/token">
+								<input type="text" class="form-control userlogininput" style="display:none;" name="error" value="//127.0.0.1/Default">
+								<input type="text" class="form-control userlogincode" id="fycode" name="fycode" placeholder="验证码">
+								<img id="loginImgCode" class="dd-img-code userlogincodeimg" title="点击刷新" align="absbottom"></img>
+								<div class="getpassword">
+									<span id="getpasswordDivId" style="color:#2296e8;">忘记密码</span>
+									<span id="remPassword"style="color:#2296e8;">
+										<input id="remPWD" name="chkRememberMe" type="checkbox"></input>
+										<label for="remPWD">记住密码</label>
+									</span>
+								</div>
+								<div class="loginbutton">登录</div>
+								<span class="loginerror"></span>
+								</form>
+							</div>
+						</li>
+						<li class="dd-nav-line">|</li>
+						<li id="heardregister">企业注册</li>
+					</ul>
+				</div>
+				<div class="passiveLogoutLoginerror" style='display: none;border: 1px solid #ddd;position: absolute;top: 35%;left: 35%;padding: 50px 35px;background-color: white;    border-radius: 4px;'>
+					<div id='passivMsg'></div>
+					<div id='closePassiv' style='position: relative;top: 30px;left: -30px;;cursor:pointer;float: right;'>关闭</div>
+				</div>
+				<div class="welcome">
+					<!-- <span class="appdownload">APP下载</span> -->
+					<span target="_blank" class="register">企业注册</span>
+					<div class="startView"><span>开始了解飞扬</span><span class="startIcon"></span></div>
+				</div>
+			</div>
+			<div class="item " id="item2">
+				<div class="itemdesc">
+					<div class="filedesc-left">
+						<p class="filedesc-title">企业知识库</p>
+						<p class="filedesc-title">再无盲点，最强大的后盾</p>
+						<p class="filedesc-text">知识库一旦创建，实时跟踪，实时分享；沉淀企业价值，提升企业文化，再无企业盲点。知识库企业独有，安全放心，仅限本企业成员可见。</p>
+					</div>
+					<div class="filedesc-right">
+						<img width="320px" height="198px" style="border-radius: 50px;" src="index/database.jpg"/>
+					</div>
+				</div>
+			</div>
+			<div class="item odditem" id="item3">
+				<div class="itemdesc">
+					<div class="message-left">
+						<img width="372px" height="514px" src="index/chat.png"/>
+					</div>
+					<div class="message-right">
+						<p class="filedesc-title">即时、便捷、全面</p>
+						<p class="filedesc-title">记载推进企业知识演变史</p>
+						<p class="filedesc-text">随时随地上传起草的文档，群组头脑风暴，思维碰撞，快速便捷最大化的发挥团队价值，实现目标。</p>
+					</div>
+				</div>
+			</div>
+			<div class="item" id="item4">
+				<div class="itemdesc">
+					<div class="saas-left">
+						<p class="filedesc-title">SAAS</p>
+						<p class="filedesc-title">开启企业沉淀新篇章</p>
+						<p class="filedesc-text">采用RESTFul服务架构理念，针对企业的无形价值链进行全面收拢，提供不一样的SAAS体验。</p>
+					</div>
+					<div class="saas-right">
+						<img width="380px" height="201px" style="border-radius: 50px;" src="index/saas.jpg"/>
+					</div>
+				</div>
+			</div>
+			<div class="item odditem" id="item5">
+				<div class="itemdesc">
+					<div class="cloud-left">
+						<img width="380px" height="260px" style="border-radius: 50px;" src="index/cloud.jpg"/>
+					</div>
+					<div class="cloud-right">
+						<p class="filedesc-title">云</p>
+						<p class="filedesc-title">张开臂膀拥抱云端</p>
+						<p class="filedesc-text">您不需要关注云，我们带着您走进云、拥抱云，您只需要关注体验；我们会提供给您安全、可靠的服务，更是贵公司最强大的后盾力量。</p>
+					</div>
+				</div>
+			</div>
+			<div class="item" id="item6" style="background:#ffffff">
+				<div class="navbar">
+				    <div class="container">
+				        <div class="navbar-header navbar-brand">
+			                <img class="navbar-logo" src="index/fybot.png" alt="">
+			                <span class="navbar-head">企业注册</span>
+				        </div>
+				    </div>
+				</div>
+				<div class="formdiv">
+	                <label for="campanyName" class="label">
+	                	企业(团队)名称
+	                </label>
+	                <div class="context">
+	                    <input type="text" style="display:none" id="referrerName" value="">
+	                    <input type="text" class="form-control" id="campanyName" name="campanyName" placeholder="请输入您的企业(团队)名称" >
+	                    <div class="dd-glyphicon dd-hide" id="campanyIsNull"><div class="dd-input-error"></div><span>企业(团队)名称不能为空.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="campanyLength"><div class="dd-input-error"></div><span>公司名称长度只能在4-50个字符之间!</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="campanyValidate"><div class="dd-input-error"></div><span>企业(团队)名称只支持中文、英文、数值、下划线、小括号和中括号.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="campanyHased"><div class="dd-input-error"></div><span>企业名称已被注册,请更换企业名称.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="campanyIsOk"><div class="dd-input-true"></div><span>企业(团队)名称可用.</span></div>
+	                    <p class="dd-input-remind">请您正确的填写贵企业(团队)的名称。</p>
+	                </div>
+	                <label for="registeremail" class="label">
+	                	激活邮箱
+	                </label>
+	                <div class="context" style="height:90px">
+	                    <input type="text" class="form-control" id="registeremail" name="registeremail" maxlength="30" placeholder="请输入您的激活邮箱">
+	                    <div class="dd-glyphicon dd-hide" id="emailIsNull"><div class="dd-input-error"></div><span>激活邮箱不能为空.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="emailFormatError"><div class="dd-input-error"></div><span>邮箱的格式不正确.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="emailHased"><div class="dd-input-error"></div><span>当前邮箱已经注册过企业或用户，请登录后注册新企业.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="emailIsOk"><div class="dd-input-true"></div><span>激活邮箱可用.</span></div>
+	                    <p class="dd-input-remind">请您填写一个正确的邮箱地址，确保您可以接收到激</p>
+	                    <p class="dd-input-remind">活邮件，从而激活服务。</p>
+	                </div>
+	                <label for="registercode" class="label">
+	                	验证码
+	                </label>
+	                <div class="context">
+	                    <input type="text" class="form-control" id="registercode" name="registercode" style="width:165px;" placeholder="请输入右侧的图片验证码">
+	                    <div class="dd-img-code-text">
+                         	<img id="imgCode" class="dd-img-code" title="点击刷新" align="absbottom"></img>
+	                    </div>
+	                    <div class="dd-glyphicon dd-hide" id="codeIsNull"><div class="dd-input-error"></div><span>请输入验证码.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="codeError"><div class="dd-input-error"></div><span>输入的验证码不正确.</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="codeIsOk"><div class="dd-input-true"></div><span>验证码输入正确.</span></div>
+	                </div>
+	                <label class="label">
+	                </label>
+	                <div class="context">
+	                    <input type="checkbox" id="registerinfo" name="registerinfo">
+		                <label for="registerinfo" style="cursor: pointer;">
+		                	已阅读
+		                </label>
+		                <a id="fyAgreement" style="color: #55b5a4;">《飞扬服务协议》</a>
+	                </div>
+	                <label class="label">
+	                </label>
+	                <div class="context" style="height: 40px;">
+	                    <input type="button" value="注册" class="dd-no-submit dd-submit-btn" id="submitBtn">
+	                    <div class="dd-glyphicon dd-hide" id="registError" style="padding-top:8px"><div class="dd-input-error"></div><span>注册失败！</span></div>
+	                    <div class="dd-glyphicon dd-hide" id="registIsOk" style="padding-top:8px"><div class="dd-input-true"></div><span>注册成功！&nbsp;5秒钟后会自动跳转到系统首页。</span></div>
+	                </div>
+	            </div>
+	            <div class="footer">
+					<div class="footer-content">
+						<div class="footer-top">
+							<img class="footer-logo" src="index/flyingsoftlogo.png">
+							<div class="footer-line"></div>
+							<ul class="footer-contact">
+								<li>北京东方飞扬软件股份有限公司</li>
+								<li>版权所有：北京东方飞扬软件股份有限公司  © 2015</li>
+							</ul>
+						</div>
+					    <!-- <div class="copyright">版权所有：北京东方飞扬软件股份有限公司  © 2015</div> -->
+					</div>
+				</div>
+			</div>
+			<ul class="item-nav">
+				<li id="nav1" for="1" class="checkeds"></li>
+				<li id="nav2" for="2" class=""></li>
+				<li id="nav3" for="3" class=""></li>
+				<li id="nav4" for="4" class=""></li>
+				<li id="nav5" for="5" class=""></li>
+				<li id="nav6" for="6" class=""></li>
+			</ul>
+		</div>
+		<div id="findPassbg"></div>
+		<div id="findPasswordDivId" style="width:600px;height:434px;margin:0 auto;border: 1px solid #ccc;border-radius: 5px;background-color: white;z-index: 100;top: 60px;position: absolute;display:none">
+			<div class="modal-header">
+				<button type="button" class="close" id="findPassCloseId"><span aria-hidden="true">×</span></button>
+			    <h5 class="modal-title">重置密码</h5>
+			</div>
+		
+			<div class="modal-body">
+				<div class="form-group">
+				    <label for="name" class="col-sm-3 control-label">用户名<span class="form-required"> * </span>:</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="请输入用户名" name="name" id="findPassusernameId">
+				    </div>
+				</div>
+			    
+				<div class="form-group">
+				    <label for="check-email" class="col-sm-3 control-label">绑定邮箱<span class="form-required"> * </span>:</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="请输入绑定的邮箱" name="check-email" id="findPassCheckEmailId">
+				    </div>
+				    <div class="">
+				    	<div  class="btn-primary"  id="getValidateCodeBtnId">获取验证码</div>
+				    </div>
+				</div>
+				
+				<div class="form-group">
+				    <label for="checkCode" class="col-sm-3 control-label">验证码<span class="form-required"> * </span>:</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control ng-pristine ng-valid" placeholder="请填写验证码" name="checkCode" id="findPassCheckCodeId">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <label for="new-pwd" class="col-sm-3 control-label">新密码<span class="form-required"> * </span>:</label>
+				    <div class="col-sm-6">
+				      <input type="password" class="form-control ng-valid-minlength ng-dirty ng-invalid ng-invalid-required ng-valid-pattern" placeholder="请输入新密码" name="new-pwd" ng-model="forgetPwd.newPwd" required="" ng-minlength="6" ng-pattern="/^(?=.*[0-9].*)(?=.*[A-Z].*)(?=.*[a-z].*).*$/" id="findPassNewPassId">
+				      <!-- style="height:80px;" <span class="help-block">新密码必须包含数字、小写字母、大写字母,长度不低于6位,且不能与账号相同</span> -->
+				    </div>
+				</div>
+				<div class="form-group">
+				    <label for="confirm-pwd" class="col-sm-3 control-label">确认密码<span class="form-required"> * </span>:</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-minlength" placeholder="请输入确认密码" name="confirm-pwd" ng-model="forgetPwd.confirmPwd" required="" ng-minlength="6" onfocus="this.type='password'" id="findPassAgainPassId">
+				    </div>
+				</div>
+				<div class="form-group" style="">
+				    <label for="" class="col-sm-3 control-label"></label>
+				    <div id="findPassErrorDivId" class="col-sm-6" style="width: 250px;height: 50px;margin-left: 22px;border-radius: 5px;line-height: 50px;color: #a94442;background-color: #f2dede;border-color: #ebccd1;border: 1px solid transparent;border-radius: 4px;display:none;">
+				      <span style="height: 50px;display: block;line-height: 49px;">提示信息</span>
+				    </div>
+				</div>
+			</div>
+		
+			<div class="modal-footer">
+			    <div class="btn-primary" style="width: 50px;font-size: 14px;line-height: 35px;margin-left: 500px;" id="findPassSaveBtnId">确定</div>
+			</div>
+		</div>
+		<div>
+		<div id="bingotocreate" style="display:none;z-index: 100;width: 600px;height: 434px;margin: 0px auto;border: 1px solid rgb(204, 204, 204);border-radius: 5px;top: 60px;position: absolute;left: 340px;background-color: white;">
+            <div class="single-panel-header" style="border-bottom: solid 3px #e1e1e1;position: relative;">
+            	<button type="button" class="close" id="createnewcompanyclose"><span aria-hidden="true">×</span></button>
+                <h3 style="line-height: 40px;color: #5c6371;font-size: 24px;margin:10px;">注册新企业</h3>
+            </div>
+            <div class="single-panel-body" style="border-top: solid 1px #e1e1e1;margin-top: 5px;padding-bottom: 20px;padding-top: 20px;">
+
+                	<div class="success-panel ng-scope" style="margin: 0;padding-top: 5%;padding-bottom: 10%;text-align: center;">
+                    <img src="index/imgicon_success.png" class="imgicon-success" style="zoom: 1;display: inline-block;width: 81px;height: 81px;background: transparent center center no-repeat;"></img><br><br>
+                    <span style="font-size: 18px;line-height: 36px;color: #555;">注册成功，验证邮件发送到<em class="ng-binding" style="color: #d14836;" id="emailText"></em></span><br>
+                    <span style="font-size: 18px;line-height: 36px;color: #555;">请查收邮件并激活你的帐号</span><br>
+                    <div id="doMailValidate" class="doMailValidate">进入邮箱激活</div>
+                    <div id="jumpMailValidate" class="jumpMailValidate">暂不验证</div>
+                    <div class="hidden-xs">
+                      <!--   <span style="font-size: 18px;line-height: 36px;color: #555;">花一分钟时间
+                            <a class="color_main" style="color: #d84c31;" href="" target="_blank">观看视频</a>了解我们的协同理念或者现在 <a class="color_main" style="color: #d84c31;" href="/projects">开始工作</a>
+                        </span> -->
+                    </div>
+                    
+                </div><!-- end ngIf: signup_success -->
+            </div>
+
+            <!-- ngIf: !signup_success -->
+
+       </div>
+       </div>
+       <!-- for picture cache, do not delete-->
+       <div id="forPngCache" style="display:none;">
+	     <img src="/apps/onlinefile/templates/ESUserInfo/img/liulanqi/Chrome.png">
+	     <img src="/apps/onlinefile/templates/ESUserInfo/img/liulanqi/Firefox.png">
+		 <img src="/apps/onlinefile/templates/ESUserInfo/img/liulanqi/IE.png">
+         <img src="/apps/onlinefile/templates/ESUserInfo/img/liulanqi/Safari.png">
+		 <img src="/apps/onlinefile/templates/ESDefault/img/recordsSerach.png">
+		 <img src="/apps/onlinefile/templates/ESDefault/images/im/peguserpic-default.png">
+         <img src="/apps/onlinefile/templates/ESDefault/images/addgroup.png">
+	   </div>	
+		<script type="text/javascript" src="/templates/onlinefile/js/jquery.min.js"></script>
+		<script src="index/jquery.showLoading.min.js"></script>
+		<script src="index/index.js?v=1.0"></script>
+		<script src="index/md5.js?v=1.0"></script>
+		<script src="index/placeholder.js?v=1.0"></script>
+		
+		<!-- for JS cache, do not delete -->
+		<script type="text/javascript" src="/templates/onlinefile/js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/jquery.pagewalkthrough.min.js"></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/jquery.simplePagination.js"></script>
+		<script type="text/javascript" src='/templates/onlinefile/js/sticky.full.js'></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/bootstrap-contextmenu.js"></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/perfect-scrollbar.jquery.js"></script>
+		<script type="text/javascript" src="/templates/onlinefile/js/template-debug.js"></script>
+
+        <script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+        <script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+        <script	type="text/javascript" src="/apps/onlinefile/templates/public/artDialog/dialog.js?v=1.0"></script>
+        <script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/js/jsjac.uncompressed.js?v=1.0"></script>
+        <script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/js/send.message.editor.js?v=1.0"></script>
+        <script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/js/remote.jsjac.chat.js?v=1.0"></script>
+        <script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/js/local.chat.js?v=1.0"></script>
+		<script type="text/javascript" src='/apps/onlinefile/templates/ESDocumentCenter/js/documentCenter.js?v=1.0'></script>
+		<script	type="text/javascript" src='/apps/onlinefile/templates/ESDefault/js/custom-plug-in.js?v=1.0'></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/js/esDefault.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/flexpaper/js/flexpaper.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESDefault/flexpaper/js/flexpaper_handlers.js?v=1.0"></script>
+		<script type="text/javascript" src='/apps/onlinefile/templates/ESUserInfo/js/ZeroClipboard.min.js'></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESUserInfo/js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/public/SWFUpload/js/swfupload.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/public/SWFUpload/js/swfupload.queue.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/public/SWFUpload/js/fileprogress.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/public/SWFUpload/js/handlers.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/public/js/ajaxfileupload.js?v=1.0"></script>
+		
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESUserCommunity/js/jquery.form.min.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESUserCommunity/ckeditor/ckeditor.js?v=1.0"></script>
+		<script type="text/javascript" src="/apps/onlinefile/templates/ESUserCommunity/ckfinder/ckfinder.js?v=1.0"></script>
+	</body>
+</html>

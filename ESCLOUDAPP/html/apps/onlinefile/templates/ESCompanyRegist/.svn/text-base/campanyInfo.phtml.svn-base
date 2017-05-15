@@ -1,0 +1,84 @@
+<div id="campanyInfo" style="overflow-y: auto;">
+
+					<dl id="acount" class="frame" style="min-height: 400px;padding: 10px 35px;border: solid 1px #e1e1e1;-webkit-box-shadow: 0 0 3px #eee,inset 0 0 3px #fff;box-shadow: 0 0 3px #eee,inset 0 0 3px #fff;"> 
+
+					   <div class="collapse navbar-collapse">
+					    	<ul class="nav navbar-nav navbar-right" style="float: left!important;">
+					          <li class="active" id = "campanyinfo_perfect"><a>基本设置</a></li>
+					          <li id = "logoimage"><a>Logo设置</a></li>
+					        </ul>
+					     <!--    <button type="button" id="cancelCompany" class="btn btn-danger loginoutbnt" style="float: right;" >注销企业</button> --> 
+					    </div>
+				   		 <hr style="margin-top: 3px;"/>
+				   	 <div class="panel-section" id="logoimagediv" style="display: none;"> 
+				      <div id="head">
+					  <form  id="imagesform" method="post" enctype="multipart/form-data" style = "text-align:center;">
+						<div id="preview">
+						    <img id="campanylogoimg" border=0 src="<?php echo $campanyLogo;?>" style="margin-top: -5px; max-width:600px;max-height:150px;background-color: #393939;"/>
+						    <div style="clear: both; height: 10px;text-align: center;"></div>
+						    <p>Logo建议大小：200x50；</p>
+						    <p>只支持jpeg、jpg、png、bmp格式！</p>
+						</div>
+						<div style="position:relative;height:40px;widh:100%;">
+							<input id="campanylogoinput" type="file" name="myfile" class="logo" style="width:108px;height:34px;position:absolute;opacity: 0;z-index:2;margin-top: 20px;margin-left: 250px;"/>
+						    <button id="uploadlogo"  class="btn btn-success mr_15" style="position:absolute;z-index:1;margin-left:-47px;margin-top: 20px;">上传公司logo</button>
+				  		</div>
+						</form>  
+					  </div>
+				     </div> 
+				   	
+				   <dd id="campanyinfoDDId"> 
+				    <div data-ng-hide="part_loading_done" class="part-loading mt_20 ng-hide"></div> 
+				    <div data-ng-show="part_loading_done" class="">
+				     <div class="panel-section" > 
+				      <form name="company_update_form"  class="form-horizontal wt-form w_660 ng-pristine ng-valid ng-valid-required" > 
+				       <input type="hidden" id="companyid" name="companyid" value="<?php echo $campanyInfo->ID;?>">
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">公司名称：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="companyname"  name="companyname" type="text" value="<?php echo $campanyInfo->NAME;?>" maxlength="51"  class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="公司名称"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;"/> 
+				        </div> 
+				       </div>  
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">公司地址：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="addresses" name="addresses" value="<?php echo $campanyInfo->ADDRESSES;?>" type="text" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="公司地址"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div>
+				         <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">公司电话：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="companyphone"  name="companyphone" value="<?php echo $campanyInfo->PHONE;?>" type="text" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="公司电话"   style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div>
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">公司传真：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="companyfax"  name="companyfax"  value="<?php echo $campanyInfo->FAX;?>" type="text" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="传真"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div> 
+				        <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0">邮政编码：</label> 
+				        <div class="col-xs-10" style="width: 30%;"> 
+				         <input id="postcode"  name="postcode"  value="<?php echo $campanyInfo->POSTCODE;?>" type="text" class="form-control ng-pristine valid ng-animate ng-invalid-remove ng-valid-add ng-invalid-required-remove ng-invalid-remove-active ng-valid ng-valid-add-active ng-invalid-required-remove-active ng-valid-required"  placeholder="邮政编码"  style="width:463px;-webkit-transition-timing-function: initial, initial; transition-timing-function: initial, initial; -webkit-transition-delay: initial, initial; transition-delay: initial, initial;" /> 
+				        </div> 
+				       </div> 
+				       <div class="form-group"> 
+				        <label class="col-xs-2 control-label p_0"></label> 
+				        <div class="col-xs-10"> 
+				         <button  class="btn btn-success mr_15" id="saveCampanyInfo_perfect"  data-loading-text="保存中...">保存 </button> 
+				         <div class="alert alert-success mb_0" style="width: 30%;display:inline;display:none;" id="campany_perfect_alert"> 
+				        	    信息保存成功。 
+				          </div>
+				        </div> 
+				       </div> 
+				      </form> 
+				     </div> 
+				    </div> 
+				   </dd> 
+				  </dl>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>

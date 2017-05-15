@@ -1,0 +1,1196 @@
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-26 08:27:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.1668841838837"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"12.054070949554"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007228851318"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:54"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0258009433746"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0282158851624"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0225439071655"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0270981788635"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.006902217865"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:07:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99602699279785"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0156719684601"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0271608829498"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0203449726105"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0115721225739"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0384881496429"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0269451141357"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0412230491638"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:18"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.011666059494"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0171709060669"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0240349769592"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0124139785767"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0316050052643"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0401659011841"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0082879066467"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.024395942688"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0129981040955"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0029809474945"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:46"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0100769996643"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.028902053833"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0267078876495"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0458550453186"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:08:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0128390789032"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:02"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0110008716583"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0270490646362"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0296740531921"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0415368080139"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025510787964"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.00204205513"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:18"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0024430751801"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002360343933"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0126128196716"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:09:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.003350019455"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:37:58"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-01-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.10088300704956"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:42:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-02-02-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.020814180374146"}
+
+INFO - {"user":"admin","time":"2014-09-26 10:55:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-06-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.032809019088745"}
+
+INFO - {"user":"admin","time":"2014-09-26 11:23:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-07-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.032576084136963"}
+
+INFO - {"user":"admin","time":"2014-09-26 11:25:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-01-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.047528982162476"}
+
+INFO - {"user":"admin","time":"2014-09-26 11:50:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-02-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.089346885681152"}
+
+INFO - {"user":"admin","time":"2014-09-26 12:32:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-01-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.19512987136841"}
+
+INFO - {"user":"admin","time":"2014-09-26 12:50:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/setBussModelAddCloseBox/-archive_4-146@_-@85/4/10111111111111111111-02-01-01/admin/127.0.0.1", "method":"POST", "params":"["3"]", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.RuntimeException: Data truncation: Data too long for column 'C2106' at row 1
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4444)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'C2106' at row 1
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3595)
+	com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1990)
+	com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2151)
+	com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2625)
+	com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2119)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2415)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2333)
+	com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2318)
+	com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:477)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessDaoImpl.setRepositorypathForTag(BusinessDaoImpl.java:4439)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:318)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	$Proxy209.setRepositorypathForTag(Unknown Source)
+	cn.flying.rest.BusinessEditWS.driver.impl.BusinessManager.setRepositorypathForTag(BusinessManager.java:1255)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessService.saveArchiveBox(BusinessService.java:3836)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.setBussModelAddCloseBox(BusinessEditWSImpl.java:3070)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.078017950057983"}
+
+INFO - {"user":"admin","time":"2014-09-26 12:54:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_repositoryws/checkRepositorypathThickness", "method":"POST", "params":"{"repositorypath":"1011111110-100-01","thickness":"2","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NumberFormatException: null</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NumberFormatException: null</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NumberFormatException: null
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NumberFormatException: null
+	java.lang.Integer.parseInt(Integer.java:417)
+	java.lang.Integer.parseInt(Integer.java:499)
+	cn.flying.rest.RepositoryWS.service.impl.RepositoryWSImpl.checkRepositorypathThickness(RepositoryWSImpl.java:511)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.070409059524536"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-26 13:09:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_logservice/saveAccessModel", "method":"POST", "params":"{"userid":"U_ANONYMOUS","ip":"127.0.0.1","model":"\u6a21\u677f\u5b9a\u4e49"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.findUserByUserid(UserQueryServiceImpl.java:252)
+	cn.flying.rest.LogWS.impl.LogWSImpl.saveAccessModel(LogWSImpl.java:547)
+	sun.reflect.GeneratedMethodAccessor301.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.011464834213257"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-26 13:09:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_logservice/saveLog", "method":"POST", "params":"{"userid":"U_ANONYMOUS","ip":"127.0.0.1","controller":"ESTemplate","action":"index","logtype":"access"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.findUserByUserid(UserQueryServiceImpl.java:252)
+	cn.flying.rest.LogWS.impl.LogWSImpl.saveLog(LogWSImpl.java:229)
+	sun.reflect.GeneratedMethodAccessor244.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.012859106063843"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-26 13:09:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.getUserByUserName(UserQueryServiceImpl.java:1120)
+	sun.reflect.GeneratedMethodAccessor245.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.021544933319092"}
+
+INFO - {"user":"admin","time":"2014-09-26 14:54:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"0","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0250091552734"}
+
+INFO - {"user":"admin","time":"2014-09-26 14:54:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0114300251007"}
+
+INFO - {"user":"123@qq.com","time":"2014-09-26 17:26:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_logservice/saveLog", "method":"POST", "params":"{"userid":"123@qq.com","ip":"127.0.0.1","controller":"ESDefault","action":"index","logtype":"access"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.findUserByUserid(UserQueryServiceImpl.java:252)
+	cn.flying.rest.LogWS.impl.LogWSImpl.saveLog(LogWSImpl.java:229)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.50184988975525"}
+
+INFO - {"user":"123@qq.com","time":"2014-09-26 17:26:46"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/123@qq.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.getUserByUserName(UserQueryServiceImpl.java:1120)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.020395994186401"}
+
+INFO - {"user":"123@qq.com","time":"2014-09-26 17:27:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_logservice/saveLog", "method":"POST", "params":"{"userid":"123@qq.com","ip":"127.0.0.1","controller":"ESDefault","action":"index","logtype":"access"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.findUserByUserid(UserQueryServiceImpl.java:252)
+	cn.flying.rest.LogWS.impl.LogWSImpl.saveLog(LogWSImpl.java:229)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.013766050338745"}
+
+INFO - {"user":"123@qq.com","time":"2014-09-26 17:27:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/123@qq.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.getUserByUserName(UserQueryServiceImpl.java:1120)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.046980857849121"}
+
+INFO - {"user":"123@qq.com","time":"2014-09-26 17:27:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_logservice/saveLog", "method":"POST", "params":"{"userid":"123@qq.com","ip":"127.0.0.1","controller":"ESDefault","action":"index","logtype":"access"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.findUserByUserid(UserQueryServiceImpl.java:252)
+	cn.flying.rest.LogWS.impl.LogWSImpl.saveLog(LogWSImpl.java:229)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.011221170425415"}
+
+INFO - {"user":"123@qq.com","time":"2014-09-26 17:27:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/123@qq.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.userqueryservice.service.UserQueryServiceImpl.getUserByUserName(UserQueryServiceImpl.java:1120)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.096604108810425"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-26 20:19:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.189178943634"}
+

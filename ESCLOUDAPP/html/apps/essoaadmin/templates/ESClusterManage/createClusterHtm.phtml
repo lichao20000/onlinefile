@@ -1,0 +1,20 @@
+<div id="createClusterDetail" class="clusterDetailCls">
+<form id="clusterForm" method="post" enctype="multipart/form-data">
+					<div style="clear: both; height: 70px;"></div>
+					<label for="createClusterTitle" style="float: left;margin-left: 53px;">集群名称:</label>
+					<div id="createClusterTitleShowDiv" style="width: 200px;float: left;margin-left: 10px;"><input type="text" name="createClusterTitle" id="createClusterTitleId"  verify="text/30/1/0"  value="<?php echo $title?>" /></div>
+					<div style="clear: both; height: 10px;"></div>
+					<label for="createClusterIp" style="float: left;margin-left: 53px;">Ip地址:</label>
+					<div id="createClusterIpShowDiv" style="width: 200px;float: left;margin-left: 22px;"><input type="text" name="createClusterIp" id="createClusterIpId"   verify="ip/3/1/0" value="<?php echo $ip?>" /></div>
+					<div style="clear: both; height: 10px;"></div>
+					<label for="createClusterPort" style="float: left;margin-left: 53px;">端口号:</label> 
+					<div id="createClusterPortShowDiv" style="width: 200px;float: left;margin-left: 22px;"><input type="text" name="createClusterPort" id="createClusterPortId"  verify="portNum/5/1/0"  value="<?php echo $port?>" /></div>
+					<div style="clear: both; height: 10px;"></div>
+					<label for="createClusterMaxUse" style="float: left;margin-left: 53px;">最大人数:</label> 
+					<div id="createClusterMaxUseShowDiv" style="width: 200px;float: left;margin-left: 10px;"><input type="text" name="createClusterMaxUse" id="createClusterMaxUseId" verify="number/30/1/0"   value="<?php echo $maxPerson?>" /></div>
+					<div style="clear: both; height: 20px;"></div>
+					<label  for="createClusterUsed" style="float: left;margin-left: 53px;">启用:</label> 
+					<input type="checkbox" name="createClusterUsed" id="createClusterUsedId"  <?php if($enable=='1') echo 'checked'?> style="float: left;margin-left: 100px;"/>
+					<div style="clear: both; height: 20px;"></div>
+</form>
+</div>

@@ -1,0 +1,39 @@
+<form id="editwarehouse" action=""	method="post">
+<div class="estransfer">
+<ul>
+<li><span>库房编号</span><input type="text" name="code" value="<?php echo $data->code;?>"></li>
+<li><span>负责人</span><input type="text" name="manager" value="<?php echo $data->manager;?>"></li>
+<li><span>位置</span><input type="text" name="position" value="<?php echo $data->position;?>"></li>
+<li><span>面积</span><input type="text" name="area" value="<?php echo $data->area;?>"></li>
+<li><span>消防设备</span><input type="text" name="fireequipment" value="<?php echo $data->fireequipment;?>"></li>
+<li><span>空调</span><input type="text"  name="aircondition"  value="<?php echo $data->aircondition;?>"></li>
+<li><span>监控设备</span><input type="text" name="monitorequipment" value="<?php echo $data->monitorequipment;?>"></li>
+<li><span>加湿/去湿器</span><input type="text" name="equipment" value="<?php echo $data->equipment;?>"></li>
+<li><span>排架数量</span><input type="text" name="framenumber" value="<?php echo $data->framenumber;?>"></li>
+<li><span>列</span><input type="text" name="col" value="<?php echo $data->col;?>"></li>
+<li><span>层</span><input type="text" name="layer" value="<?php echo $data->layer;?>"></li>
+<li><span>每格宽度(CM)</span><input type="text" name="gridwidth" value="<?php echo $data->gridwidth;?>"></li>
+<li style="width:520px"><span>库房描述</span><textarea name="description" style="width:425px;height:50px;float:left"><?php echo $data->description;?></textarea></li>
+</ul>
+</div>
+</form>
+<script type="text/javascript">
+$(function(){
+	if(state==0){
+		$('#editwarehouse input').attr("readonly","readonly");
+		$('#editwarehouse textarea').attr("readonly","readonly");
+		$('#housesave').hide();
+	}else{
+		$('#editwarehouse input').removeAttr("readonly");
+		$('#editwarehouse textarea').removeAttr("readonly");
+		$('#housesave').show();
+	}
+
+});
+
+
+$("#editwarehouse input[name='col']").attr("readonly","true");
+$("#editwarehouse input[name='layer']").attr("readonly","true");
+$("#editwarehouse input[name='framenumber']").attr("readonly","true");
+$("#editwarehouse input[name='gridwidth']").attr("readonly","true");
+</script>

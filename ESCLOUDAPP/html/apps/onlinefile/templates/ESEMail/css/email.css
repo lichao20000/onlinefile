@@ -1,0 +1,124 @@
+.emailContainerCls{
+	width:640px;
+	height:500px;
+	margin-left:10px;
+}
+
+.leftSectionCls , .rightSectionCls{
+	float:left;
+	height:400px;
+	margin-top:10px;
+}
+
+.leftSectionCls{
+	width:200px;
+	overflow:hidden;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	position:relative;
+}
+.rightSectionCls{
+	width:425px;
+	margin-left:5px;
+}
+
+.emailManageTitleCls{
+	width:640px;
+	height:50px;
+	text-align:center;
+	margin-top:10px;
+}
+
+.emailList,.emailList_selected{
+	width:200px;
+	heigt:40px;
+	algin:center;
+	line-height:25px;
+	text-align:center;
+	cursor:pointer;
+	border-radius: 5px;
+}
+
+.emailList:hover{
+	background-color: #E0E0E0;
+}
+
+.emailList_selected{
+	background-color: #E0E0E0;
+}
+
+.tabEmailCls {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.tabEmailCls a{
+	font-size: 12px;
+}
+
+.emailAddress-label,.emailAddressCls,.emailpassword-label,.passwordCls,.showNameCls,.emailshow-label{
+	/* float:left; */
+}
+.emailAddressCls{
+	margin-left:23px;
+}
+.passwordCls{
+	margin-left:55px;
+}
+.showNameCls{
+	
+	margin-left:30px;
+}
+.saveEmailBaseSettingCls{
+	font-size:12px;
+	width:60px;
+}
+
+.setAsDefaultEmailCls{
+	font-size:12px;
+	width:80px;
+}
+
+.emailBaseSettingFormCls{
+	text-align: center;
+}
+
+.buttonContainerCls{
+	height:30px;
+	padding-top:6px;
+}
+
+.emailAddressCls,.passwordCls{
+	width:250px;
+}
+
+.emailTypeCls{
+	margin-left:30px;
+}
+.emailAccountCls{
+	margin-left:53px;
+}
+.receiveEmailServerCls{
+	margin-left: 22px;
+}
+
+.sendEmailServerCls{
+	margin-left:16px;
+}
+
+.emailTypeCls,.emailAccountCls,.receiveEmailServerCls,.sendEmailServerCls{
+	width:160px;
+}
+.saveEmailServerSettingCls{
+	width:60px;
+}
+.receiveEmailServerPortCls{
+	 width: 30px;
+ 	 margin-left: 0px;
+}
+
+
+
+

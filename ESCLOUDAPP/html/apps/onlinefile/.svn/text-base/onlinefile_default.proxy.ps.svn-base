@@ -1,0 +1,59 @@
+<?php
+class ProxyOnlinefileOnlinefile_default extends AgentProxyAbstract {
+
+	public function getBaseUrl(){
+		return $this->getUri('chat', '');
+	}
+	
+	public function saveNotSeeMessage($data) {
+		$urlParam = array('saveNotSeeMessage');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	public function saveHistoryMessage($data) {
+		$urlParam = array('saveHistoryMessage');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/** lujixiang 20151113   将申请文件的消息发送方式改为post，修复乱码 **/
+	public function saveHistoryMessageReturnID($data) {
+		$urlParam = array('saveHistoryMessageReturnID');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	public function changeGroupAdmin($data) {
+		$urlParam = array('changeGroupAdmin');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	public function getGroupUserIsAdminInfo($data) {
+		$urlParam = array('getGroupUserIsAdminInfo');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	public function deleteGroup($data) {
+		$urlParam = array('deleteGroup');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	public function getCompanyUsersForGroupSet($data) {
+		$urlParam = array('getCompanyUsersForGroupSet');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	public function outGroup($data) {
+		$urlParam = array('outGroup');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	public function resetGroup($data) {
+		$urlParam = array('resetGroup');
+		$url = implode('/', $urlParam);
+		return $this->post("chat",$url,$data,"application/json;charset=UTF-8");
+	}
+	
+}
+?>

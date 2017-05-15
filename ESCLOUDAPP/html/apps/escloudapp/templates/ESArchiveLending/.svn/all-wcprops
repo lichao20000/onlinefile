@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7205/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending
+END
+approveToUser.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/3722/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/approveToUser.phtml
+END
+datalist.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6265/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/datalist.phtml
+END
+filter.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6274/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/filter.phtml
+END
+filterStore.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6274/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/filterStore.phtml
+END
+showMessageFormUsingForm.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 243
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6846/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/showMessageFormUsingForm.phtml
+END
+modify.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6718/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/modify.phtml
+END
+approveBefore.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5554/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/approveBefore.phtml
+END
+apply.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6928/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/apply.phtml
+END
+resPage.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/2268/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/resPage.phtml
+END
+record.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4593/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/record.phtml
+END
+add.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6526/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/add.phtml
+END
+showMessageForRegister.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 241
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6775/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/showMessageForRegister.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4167/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESArchiveLending/index.phtml
+END

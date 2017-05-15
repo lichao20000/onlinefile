@@ -1,0 +1,83 @@
+<?php
+class ProxyOnlinefileOnlinefile_documentclassws extends AgentProxyAbstract {
+	const SERVICE_NAME = "onlinefile_documentclass";
+	public function getCateList($map) {
+		$urlParam = array ('getCateList');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function addCate($map) {
+		$urlParam = array ('addCate');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function delCate($map) {
+		$urlParam = array ('delCate');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function editCate($map) {
+		$urlParam = array ('editCate');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function getCateById($map) {
+		$urlParam = array ('getCateById');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	/*----------------------------------------------------------------------------------*/
+	public function getUserListClass($map) {
+		$urlParam = array ('getUserListClass');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function addClassByName($map) {
+		$urlParam = array ('addClassByName');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function deleteFileClassById($map) {
+		$urlParam = array ('deleteFileClassById');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function deleteClassById($map) {
+		$urlParam = array ('deleteClassById');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function reClassNameById($map) {
+		$urlParam = array ('reClassNameById');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function gerClassList($map) {
+		$urlParam = array ('gerClassList');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function editClassId($map) {
+		$urlParam = array ('editClassId');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	public function addClassByNameAndCreateGroup($map) {
+		$urlParam = array ('addClassByNameAndCreateGroup');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	
+	public function editClassInfo($map) {
+		$urlParam = array ('editClassInfo');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	
+	/*20150810 改为post*/
+	public function getClassInfo($map) {
+		$urlParam = array ('getClassInfo');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+}

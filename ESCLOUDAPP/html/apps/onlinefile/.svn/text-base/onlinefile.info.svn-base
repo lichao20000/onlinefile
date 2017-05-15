@@ -1,0 +1,9 @@
+﻿appid = onlinefile
+apptoken = wwwwww
+name = 文档共享平台
+description =文档共享平台
+version = 1.0
+tag = 专业应用
+is_public = 1
+icon = onlinefile.png
+

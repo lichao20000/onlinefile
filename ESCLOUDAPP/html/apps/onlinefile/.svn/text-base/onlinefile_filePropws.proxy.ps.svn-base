@@ -1,0 +1,36 @@
+<?php
+class ProxyOnlinefileOnlinefile_filePropws extends AgentProxyAbstract
+{
+   const SERVICE_NAME = "onlinefile_filePropws";
+	public function addFileProp($filePropInfo)
+	{
+		$urlParam = array('addFileProp');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$filePropInfo,"application/json;charset=UTF-8");
+	}
+	public function getEditFileProp($filePropInfo)
+	{
+		$urlParam = array('getFilePropById');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$filePropInfo,"application/json;charset=UTF-8");
+	}
+	public function delFileProp($filePropInfo)
+	{
+		$urlParam = array('delFileProp');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$filePropInfo,"application/json;charset=UTF-8");
+	}
+	public function getFilePropLst($queryPropInfo)
+	{
+		$urlParam = array('getFilePropLst');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$queryPropInfo,"application/json;charset=UTF-8");
+	}
+	public function editFileProp($filePropInfo)
+	{
+		$urlParam = array('updateFilePropById');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$filePropInfo,"application/json;charset=UTF-8");
+	}
+	
+}

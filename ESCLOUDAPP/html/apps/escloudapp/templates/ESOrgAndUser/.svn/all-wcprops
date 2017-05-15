@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6810/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser
+END
+listRole.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/3751/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/listRole.phtml
+END
+modifyPasswordPage.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5004/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/modifyPasswordPage.phtml
+END
+add_org.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6071/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/add_org.phtml
+END
+set_Org.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6797/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/set_Org.phtml
+END
+users.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/2514/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/users.phtml
+END
+add_user.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6059/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/add_user.phtml
+END
+edit_org.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6071/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/edit_org.phtml
+END
+editMyUserinfo.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6413/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/editMyUserinfo.phtml
+END
+edit_user.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6059/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/edit_user.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5856/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESOrgAndUser/index.phtml
+END

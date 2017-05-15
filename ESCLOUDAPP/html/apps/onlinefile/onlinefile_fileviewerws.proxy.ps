@@ -1,0 +1,20 @@
+<?php
+class ProxyOnlinefileOnlinefile_fileviewerws extends AgentProxyAbstract 
+{
+		const SERVICE_NAME = "mainFileServer";
+		
+		public function getOnlineViewUrl($postData)
+		{
+			$urlParam = array('getOnlineViewUrl');
+			$url = implode('/', $urlParam);
+			return $this->post(self::SERVICE_NAME,$url,$postData,'application/json;charset=UTF-8');
+		}
+		public function imgOnlineBrowse($postData)
+		{
+			$urlParam = array('imgOnlineBrowse');
+			$url = implode('/', $urlParam);
+			return $this->post(self::SERVICE_NAME,$url,$postData,'application/json;charset=UTF-8');
+		}		
+
+}	
+?>

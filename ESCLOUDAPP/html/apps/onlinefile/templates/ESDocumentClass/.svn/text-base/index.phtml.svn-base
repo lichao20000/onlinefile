@@ -1,0 +1,234 @@
+<link href='<?php echo $tplPath?>/ESDocumentClass/css/style.css' rel="stylesheet" />
+<link href='<?php echo $tplPath?>/ESDocumentClass/css/jquery.contextmenu.css' rel="stylesheet" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="<?php echo $tplPath;?>/public/ztree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+<script type="text/javascript" src="<?php echo $tplPath;?>/public/flexigrid/js/cookie.js"></script>
+<!-- <div id="ESDocumentClassSetDiv">
+  <table id="documentClassTable"></table>
+</div> -->
+
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESDocumentClass/js/template.js"></script>
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESDocumentClass/js/jquery.contextmenu.js"></script>
+<!-- 路径div-->
+<header class="headerheader">
+<!-- 菜单 -->
+<div id="getIndex" title="主目录"></div><div id="goBack" title="返回上一层"></div><div id="rename" title="重命名"></div><div id="delete" title="删除"></div>
+<div id="escPath"><div id="markPath"></div></div>
+<!-- 			<div class="header_nav"> -->
+<!-- 															<a href="https://slack.com/signin" class="btn header_btn float_right">Sign in</a> -->
+<!-- 										<div class="header_links float_right"> -->
+<!-- 						<a href="/is">Tour</a> -->
+<!-- 						<a href="http://slackhq.com" target="new">Blog</a> -->
+<!-- 						<a href="http://twitter.com/@slackhq" target="new">Twitter</a> -->
+<!-- 					</div> -->
+<!-- 							</div> -->
+		
+		
+	</header>
+
+<!-- 隐藏值 -->
+<input type="hidden" id="showPersonId" value="1"/>
+<input type="hidden" id="ESDCparentId" value=""/>
+<!-- 主界面 -->
+<div id = "ESDocumentClassSetDiv" class = "storeContainer" >
+
+</div>
+<script type="text/javascript">
+//去左空格; 
+function ltrim(s){
+	return s.replace( /^\s*/, ""); 
+} 
+//去右空格; 
+function rtrim(s){ 
+	return s.replace( /\s*$/, ""); 
+} 
+//去左右空格; 
+function trim(s){
+	return rtrim(ltrim(s)); 
+}
+//组织右键的默认菜单
+$(document).bind("contextmenu",function(e){
+       return false;
+   });
+
+//右键菜单
+function getmenu(){
+	$('#ESDocumentClassSetDiv').contextPopup({
+//	 	  title: 'My Popup Menu',
+		  items: [
+		    {label:'新建分类',     icon:"<?php echo $tplPath;?>/ESDocumentClass/img/new.png", action:function() { addClassify() } },
+		    {label:'删除', icon:'<?php echo $tplPath;?>/ESDocumentClass/img/copy.png',    action:function() { alert('删除操作') } },
+		    {label:'重命名', icon:'<?php echo $tplPath;?>/ESDocumentClass/img/copy.png',    action:function() { alert('重命名') } },
+		    {label:'成员管理', icon:'<?php echo $tplPath;?>/ESDocumentClass/img/copy.png',    action:function() { alert('成员管理') } },
+	]});
+}
+function getSecondmenu(){
+	$('#ESDocumentClassSetDiv').contextPopup({
+//	 	  title: 'My Popup Menu',
+		  items: [
+		    {label:'新建分类',     icon:"<?php echo $tplPath;?>/ESDocumentClass/img/new.png", action:function() { addClassify() } },
+		    {label:'删除', icon:'<?php echo $tplPath;?>/ESDocumentClass/img/copy.png',    action:function() { alert('clicked 2') } },
+		    {label:'重命名', icon:'<?php echo $tplPath;?>/ESDocumentClass/img/copy.png',    action:function() { alert('clicked 3') } },
+	]});
+}
+
+
+
+//新建菜单
+ function addClassify(){
+ 	var htmltext='<div class = "storelogomoudle" value = "" name ="" onclick="oneClick(this)" ondblclick="dbClick(this)"><div class = "storelogo" ></div><div class = "storeCode" isclick="0"></div><input id="putname" type="text" name="" value="" style="width:50px;" onblur="saveName(this)" ></div>';
+ 	$('#ESDocumentClassSetDiv').children('div:last-child').after(htmltext);
+ 	$('#ESDocumentClassSetDiv').children('div:last-child').find('input').val("请输入分类名");
+ 	$('#ESDocumentClassSetDiv').children('div:last-child').find('input').focus().select();
+ }
+ //鼠标离开焦点后保存修改的用分类名
+ 
+ function saveName(obj){
+	var value = obj.value;
+	if(trim(value) != ""){
+		$(obj).css("display","none");
+		$(obj).prev(".storeCode").html(value);//input的值交给div   判断是否有chongfuzhi
+		$(obj).prev(".storeCode").css("display","block");
+		if(value.length>=6){
+			var name = value.substring(0,4);
+			$(obj).prev(".storeCode").html(name+"..");
+		}
+	}else{
+		$(obj).val("请输入分类名");
+		$(obj).focus().select();
+	}
+	//此处应与后台交互，发请求保存当前用户输入的分类名称  ajax
+
+}
+//当单击的时候
+function oneClick(obj){
+	//点击某个时把其他都恢复
+	if($(obj).find(".storeCode").attr("isclick")=='0'){
+		$("#ESDocumentClassSetDiv .storeCode").attr("isclick","0");
+		$("#ESDocumentClassSetDiv .storeCode").css("background-color","white");
+		$(".storelogomoudle").css("background-color","white");
+	}
+	
+	if($(obj).find(".storeCode").attr("isclick")=="1"){
+		$(obj).find(".storeCode").css("background-color","white");
+		$(obj).css("background-color","white");
+		$(obj).find(".storeCode").hide();
+		$(obj).find("input").show();
+		$(obj).find("input").focus().select();
+		$(obj).find(".storeCode").attr("isclick","0");
+	}else{
+		$(obj).find(".storeCode").css("background-color","#7EC0EE");
+		$(obj).css("background-color","#7EC0EE");
+		$(obj).find(".storeCode").attr("isclick","1");
+	}
+}
+//双击
+function dbClick(obj){
+	//escpath 把点击的文件夹名字保存到path
+ 	var name = $(obj).attr("name");
+	var id = $(obj).attr("value");
+	//alert(id);
+	$(obj).find(".storeCode").css("background-color","white");
+	$(obj).css("background-color","white");
+	$(obj).find(".storeCode").attr("isclick","0");
+	$(obj).find(".storeCode").show();
+	$(obj).find("input").hide();
+	getById(id);
+	//escpath
+ 	var path = "<a id='apath' value='"+id+"' onclick='pathClick(this)'>"+"/"+name+"</a>";
+ 	$("#markPath").before(path);
+}
+//点击路径中的某个a链接
+function pathClick(obj){
+	var id = $(obj).attr("value");
+	alert(id);
+	//alert($(obj).html());
+	//调用getById(id)   之后还要把之后的path删掉     继续写
+	getById(id)
+	
+}
+
+//回到首目录
+$("#getIndex").click(function(){
+		//var pid = $("#ESDCparentId").val();	
+		getById("");
+		//回到首页时 清空path路径
+		$("#escPath").html('<div id="markPath"></div>');
+});
+//双击时根据pid查询
+$("#goBack").click(function(){
+		var pid =  $('#ESDCparentId').val();
+		//alert(pid);
+		getById("") //暂时写成空  因为后台是加数据
+	 });
+//上来就查询
+toIndex()
+function toIndex(){
+	getById("");
+	//escpath
+//  	var path = "<a id='apath' value=''></a>";
+//  	$("#escPath").append(path);
+}
+function getById(id){
+	//发送ajax  把此分类id传到后台进行查询
+	var url = $.appClient.generateUrl({ESDocumentClass : "getClassById"}, 'x');
+	$.ajax({
+		url:url,
+		type:"post",
+		data:{id:id},
+		 success:function(data){
+			 $("#ESDocumentClassSetDiv").empty();
+			 var json =  $.parseJSON(data);
+			 var temp = 1;
+				$(json).each(function(index,item){
+					var html = '<div class = "storelogomoudle" value = "'+item.id+'" name ="'+item.name+'" onclick="oneClick(this)" ondblclick="dbClick(this)"><div class = "storelogo"></div><div class = "storeCode"  isclick="0">'+item.name+'</div><input id="putname" type="text" name="" value="'+item.name+'" style="width:50px; display:none;" onblur="saveName(this)" ></div>';
+					$("#ESDocumentClassSetDiv").append(html);
+					if(temp ==1){
+						$("#ESDCparentId").val(item.pid);
+						//alert(item.pid);
+						temp++;
+					}
+				});
+		 }
+		
+	});
+	if(id==""){
+		getmenu();$("#showPersonId").val("1");
+	}else{
+		//此为控制出现菜单的多少
+		$("#showPersonId").val("2"); //2标示不出现成员管理的选项
+	}
+	
+	
+}
+//重命名
+$("#rename").click(function(){
+	rename();
+});
+
+function rename(){
+	$(".storelogomoudle").each(function(){
+		var isclick = $(this).find('.storeCode').attr('isclick');
+		if(isclick == '1'){
+			$(this).find(".storeCode").hide();
+			$(this).find("input").show();
+			$(this).find(".storeCode").css("background-color","white");
+			$(this).css("background-color","white");
+			$(this).find("input").focus().select();
+		}
+	});
+}
+//删除分类
+$("#delete").click(function(){
+	deleteByid();
+});
+
+function deleteByid(){
+	$(".storelogomoudle").each(function(){
+		var isclick = $(this).find('.storeCode').attr('isclick');
+		if(isclick == '1'){
+			alert("删除成功!");
+		}
+	});
+}
+</script>

@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7265/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate
+END
+structure.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/structure.phtml
+END
+codevaluerules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6932/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/codevaluerules.phtml
+END
+report.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6932/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/report.phtml
+END
+structurenode.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/structurenode.phtml
+END
+formfield.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/formfield.phtml
+END
+associationrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4955/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/associationrules.phtml
+END
+addrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/addrules.phtml
+END
+sortrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6715/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/sortrules.phtml
+END
+project.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/project.phtml
+END
+pathchoose.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7265/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/pathchoose.phtml
+END
+listfield.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/listfield.phtml
+END
+comadd.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/comadd.phtml
+END
+fieldsBatchSpecify.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5469/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/fieldsBatchSpecify.phtml
+END
+fieldvaluerules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/fieldvaluerules.phtml
+END
+chooseModels.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6517/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/chooseModels.phtml
+END
+scanningrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6715/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/scanningrules.phtml
+END
+comprehensivefield.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/comprehensivefield.phtml
+END
+boxRule.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4726/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/boxRule.phtml
+END
+reportingrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/3922/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/reportingrules.phtml
+END
+combinationfield.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6932/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/combinationfield.phtml
+END
+getModelTags.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/3973/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/getModelTags.phtml
+END
+fileidentificationrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/fileidentificationrules.phtml
+END
+quoteModel.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6932/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/quoteModel.phtml
+END
+keywordsrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/keywordsrules.phtml
+END
+zeropaddingrules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6715/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/zeropaddingrules.phtml
+END
+lookModelContent.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1677/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/lookModelContent.phtml
+END
+structureaddnode.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/structureaddnode.phtml
+END
+twodimensioncoderules.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/twodimensioncoderules.phtml
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6932/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/index.phtml
+END
+searchfield.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6159/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/ESTemplate/searchfield.phtml
+END

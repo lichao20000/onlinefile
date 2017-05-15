@@ -1,0 +1,63 @@
+<?php
+/** 
+ * （重要的事情说3遍）
+ * 不要把本地的配置上传到svn，请保持svn上为线上配置，本地开发请自行修改，不要增加部署难度 :]
+ * 不要把本地的配置上传到svn，请保持svn上为线上配置，本地开发请自行修改，不要增加部署难度 :]
+ * 不要把本地的配置上传到svn，请保持svn上为线上配置，本地开发请自行修改，不要增加部署难度 :]
+ * 另外，注释请不要使用 ‘//{中文}’方式，用ssh连linux会引起换行异常，不方便维护~~！
+ * 另外，注释请不要使用 ‘//{中文}’方式，用ssh连linux会引起换行异常，不方便维护~~！
+ * 另外，注释请不要使用 ‘//{中文}’方式，用ssh连linux会引起换行异常，不方便维护~~！
+ * (新增的配置可以是本地的)
+ */
+$config = array();
+$config['cache.file.path'] = '/offline/feiyang';
+$config['cache.lifetime'] = 3600;
+
+$config['https'] = true;
+$config['debug'] = true;
+$config['router.static'] = false;
+
+$config['template'] = 'cu';
+//$config['frontpage'] = 'escloudapp';
+
+$config['sso.appid'] = 'np046';
+$config['sso.baseurl'] = 'https://essoa.flyingsoft.cn/flyingoauth';
+//$config['sso.login'] = 'http://127.0.0.1:8080/oauth/login.jsp?appid=%s&success=%s&error=%s&return=%s';
+$config['sso.login'] = 'https://essoa.flyingsoft.cn/Default';
+//$config['sso.login'] = 'http://127.0.0.1:8080/flyingoauth/login.jsp';
+$config['sso.logout'] = 'https://essoa.flyingsoft.cn/flyingoauth/logout?returnUrl=%s';
+/** xiaoxiong 20140506 设置用户注销后的跳转界面 **/
+$config['sso.logoutReturnUrl'] = 'https://essoa.flyingsoft.cn';
+/** xiaoxiong 20150225 添加平台登陆后默认展现的子应用 **/
+$config['defaultapp'] = 'onlinefile';
+//$config['defaultapp'] = 'escloudapp';
+
+/** 如果本地调试，使用本机的ip和端口 */
+//$config['sso.error'] = 'http://127.0.0.1/user/error';
+/** 服务器测试，则使用服务器的ip和端口 */
+//$config['sso.error'] = 'http://16.187.151.69:89/user/error';
+
+/** 全部使用远程服务 */
+// $config['service.baseurl'] = 'http://10.0.3.154:8080/eip_naming/rest/namingservice';
+/** 全部使用本地服务 */
+// $config['service.baseurl'] = 'http://127.0.0.1:8080/eipmock/rest/namingservice-local';
+/** 平台服务使用远程，其他使用本地**/
+$config['service.baseurl'] = 'https://essoa.flyingsoft.cn/namingService/rest/namingService';
+
+$config['nativemysql'] = array(
+  'host' => '127.0.0.1',
+  'user' => 'ccda',
+  'passwd' => 'ccda',
+);
+
+
+$config['callback.user'] = 'java_server';
+$config['callback.password'] = 'java_server';
+
+$config['curl.proxy.host'] = '132.34.194.5';
+$config['curl.proxy.port'] = 3128;
+
+/** xiaoxiong 20150330 添加线上系统openfire相关配置信息 **/
+$config['openfireservername'] = 'essoa.flyingsoft.cn';
+$config['openfirebaseurl'] = 'https://essoa.flyingsoft.cn:9091';
+$config['sso.onlinefile'] = 'https://essoa.flyingsoft.cn/onlinefile';

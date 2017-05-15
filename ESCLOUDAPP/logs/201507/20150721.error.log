@@ -1,0 +1,92 @@
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 14:36:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.053544998168945"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 14:37:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0070040225982666"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 14:37:34"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0079600811004639"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 14:38:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.007835865020752"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:02:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.008141040802002"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:03:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0079100131988525"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:03:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0048389434814453"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:03:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0082697868347168"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:12:29"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0069301128387451"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:12:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0078840255737305"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:14:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0044169425964355"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:14:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0083141326904297"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:20:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0070841312408447"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:20:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0085849761962891"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:23:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0065000057220459"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:23:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0078208446502686"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:25:22"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0097570419311523"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:28:28"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.010061025619507"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:39:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.014755964279175"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:39:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.016335010528564"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:40:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0073840618133545"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:41:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.016658067703247"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-07-21 15:42:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/userqueryservice/getUserByUserName/xwd4java@163.com", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"204", "content-type":"", "message":"0", "reponse":"", "time":"0.0074670314788818"}
+

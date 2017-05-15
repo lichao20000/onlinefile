@@ -1,0 +1,363 @@
+<?php
+class ProxyOnlinefileOnlinefile_userinfows extends AgentProxyAbstract {
+	const SERVICE_NAME = "onlinefileuser";
+	/**
+	 * 根据id获取用户
+	 * @param unknown $curuserId
+	 * @return Ambigous <return_type, mixed, string>
+	 */
+	public function getUserByUserid($curuserId){
+		$urlparam=array('getUserByUserid', $curuserId);
+		$url=implode('/', $urlparam);
+		return $this->get(self::SERVICE_NAME, $url);
+	}
+	
+	/**
+	 * 添加用户  发送邮件
+	 * 
+	 */
+	public function addUser($data) {
+		$urlParam = array('addUser');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 添加用户  发送邮件(2)
+	 * 
+	 */
+	public function inviteAddUser($data) {
+		$urlParam = array('inviteAddUser');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 设置个性选择值
+	 * 
+	 */
+	public function singleSetUser($data) {
+		$urlParam = array('singleSetUser');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 文件评论回车设置
+	 * 
+	 */
+	public function commentEnterSet($data) {
+		$urlParam = array('commentEnterSet');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 获取 个性选择值
+	 * 
+	 */
+	public function getSingleSet($data) {
+		$urlParam = array('getSingleSet');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 检验username是否存在
+	 *
+	 */
+	public function userIsExist($data) {
+		$urlParam = array('userIsExist');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	
+	/**public function isFirstLogin($id,$companyId){
+		$urlparam=array('isFirstLogin', $id,$companyId);
+		$url=implode('/', $urlparam);
+		return $this->get(self::SERVICE_NAME, $url);
+	}**/
+	
+	/**
+	 * 根据用户名获取用户一些基本信息
+	 * @param unknown $companyId
+	 * @param unknown $userName
+	 */
+	public function getUserInitInfo($companyId,$userName){
+		$urlparam=array('getUserInitInfo', $companyId,$userName);
+		$url=implode('/', $urlparam);
+		return $this->get(self::SERVICE_NAME, $url);
+	}
+	
+	public function getOnlineUploadUrl($postData){
+		$urlParam=array('getNewUploadUrl');
+		$url=implode('/',$urlParam);
+ 		return $this->post("mainFileServer", $url, $postData, "application/json;charset=UTF-8");
+	}
+	
+	
+	/**
+	 * 修改/完善用户信息 
+	 *
+	 */
+	public function editUserInfo($data) {
+		$urlParam = array('editUserInfo');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 验证邮件是否已激活
+	 *
+	 */
+	public function verifyMailbox($data) {
+		$urlParam = array('verifyMailbox');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 验证邮件集合是否已激活
+	 *
+	 */
+	public function verifyMailboxS($data) {
+		$urlParam = array('verifyMailboxS');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 修改密码
+	 *
+	 */
+	public function modifyPassword($data){
+		$urlParam = array('modifyPassword');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 修根据用户id查机构
+	 *
+	 */
+	public function getOrgByUserId($data){
+		$urlParam = array('getOrgByUserId');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 修改密码
+	 *
+	 */
+	public function showActivate($data){
+		$urlParam = array('showActivate');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 真正激活用户
+	 *
+	 */
+	public function activateAccount($data){
+		$urlParam = array('activateAccount');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 真正激活用户
+	 *
+	 */
+	public function activateAccountByLink($data){
+		$urlParam = array('activateAccountByLink');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 根据用户id获得用户信息
+	 *
+	 */
+	public function getUserInfoByUserName($data){
+		$urlParam = array('getUserInfoByUserName');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 管理员查看用户列表
+	 *
+	 */
+	public function userList($data){
+		$urlParam = array('userList');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 管理员通过用户名称检索用户列表
+	 *
+	 */
+	public function userListByUserName($data){
+		$urlParam = array('userListByUserName');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 当前公司下员工总数
+	 *
+	 */
+	public function getCountAll($data){
+		$urlParam = array('getCountAll');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 删除用户
+	 *
+	 */
+	public function deleteUserList($data){
+		$urlParam = array('deleteUserList');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 保存头像地址
+	 */
+	public function saveHeadImage($postData){
+		$urlParam = array('saveHeadImage');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 获得头像地址（删除用）
+	 */
+	public function getImagePath($postData){
+		$urlParam = array('getImagePath');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+
+	/**
+	 * 改变用户启用禁用状态改
+	 *
+	 */
+	public function changeIsEnableStatus($data){
+		$urlParam = array('changeIsEnableStatus');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 重新发送邮件
+	 *
+	 */
+	public function reSendMail($data){
+		$urlParam = array('reSendMail');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 根据用户id获得用户信息
+	 *
+	 */
+	public function getUserInfoByUserId($data){
+		$urlParam = array('getUserInfoByUserId');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 修改用户
+	 *
+	 */
+	public function editUser($data) {
+		$urlParam = array('editUser');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 校验并上传文件
+	 */
+	public function validateAndParseExcel(){
+		$urlParam=array('validateAndParseExcel');
+		$url=implode('/',$urlParam);
+		$restUrl = $this->getUri(self::SERVICE_NAME, $url);
+		return $restUrl;
+	}
+	/**
+	 * 获取上传文件的结构信息,导入数据第二步标签页用到.
+	 */
+	public function initImportStep2ByPage($data){
+		$urlParam = array('initImportStep2ByPage');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME, $url, $data, "application/json;charset=UTF-8");
+	}
+	/**
+	 * 向数据库写入导入数据
+	 */
+	public function realImport($data){
+		$urlParam=array('realImport');
+		$url=implode('/',$urlParam);
+		return $this->post(self::SERVICE_NAME, $url, $data, "application/json;charset=UTF-8");
+	}
+	/**
+	 * 关闭清楚缓存
+	 */
+	public function closeImport($data){
+		$urlParam=array('closeImport');
+		$url=implode('/',$urlParam);
+		return $this->post(self::SERVICE_NAME, $url, $data, "application/json;charset=UTF-8");
+	}
+	/**
+	 * 查看用户名和邮箱是否存在
+	 */
+	public function forgetpassword($data){
+		$urlParam=array('forgetpassword');
+		$url=implode('/',$urlParam);
+		return $this->post(self::SERVICE_NAME, $url, $data, "application/json;charset=UTF-8");
+	}
+	/**
+	 * 验证时间（修改密码的邮件是否过期）
+	 */
+	public function toforgetpassword($data){
+		$urlParam=array('toforgetpassword');
+		$url=implode('/',$urlParam);
+		return $this->post(self::SERVICE_NAME, $url, $data, "application/json;charset=UTF-8");
+	}
+	/**
+	 * 忘记密码功能  之 修改密码
+	 */
+	public function fromforgetpasswordtochange($data){
+		$urlParam=array('fromforgetpasswordtochange');
+		$url=implode('/',$urlParam);
+		return $this->post(self::SERVICE_NAME, $url, $data, "application/json;charset=UTF-8");
+	}
+	public function openUrl($map) {
+		$urlParam = array ('openUrl');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $map, 'application/json;charset=UTF-8' );
+	}
+	
+	public function invitationCampany($data) {
+		$urlParam = array('invitation');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	public function getUserCompanys($userid) {
+		$urlParam = array('getUserCompanys', $userid);
+		$url = implode('/', $urlParam);
+		return $this->get(self::SERVICE_NAME,$url);
+	}
+	/**
+	 * 移交分类之 验证输入的密码是否是正确的
+	 */
+	public function checkPasswordIsRight($data) {
+		$urlParam = array ('checkPasswordIsRight');
+			$url = implode ( '/', $urlParam );
+			return $this->post ( self::SERVICE_NAME, $url, $data, 'application/json;charset=UTF-8' );
+	}
+	
+	public function getLoginLog($param) {
+		$urlParam = array ('getLoginLog');
+		$url = implode ( '/', $urlParam );
+		return $this->post ( self::SERVICE_NAME, $url, $param, 'application/json;charset=UTF-8' );
+	}
+}
+
+?>

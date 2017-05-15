@@ -1,0 +1,80 @@
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 08:51:17"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.204540014267"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 14:16:12"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.1954879760742"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-09-11 16:53:49"}
+REQUEST - {"url":"http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl", "method":"POST", "params":"3-0-3dc72f70425910338581dc0ea1767cac", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - Could not find resource for relative : /mainFileServer/getOnlineViewUrl of full path: http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>Could not find resource for relative : /mainFileServer/getOnlineViewUrl of full path: http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>", "time":"0.0031371116638184"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-09-11 16:54:47"}
+REQUEST - {"url":"http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl", "method":"POST", "params":"3-0-3dc72f70425910338581dc0ea1767cac", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - Could not find resource for relative : /mainFileServer/getOnlineViewUrl of full path: http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>Could not find resource for relative : /mainFileServer/getOnlineViewUrl of full path: http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>", "time":"0.0083038806915283"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-09-11 16:55:06"}
+REQUEST - {"url":"http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl", "method":"POST", "params":"3-0-49e79fe03e911033b960dc0ea1767cac", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - Could not find resource for relative : /mainFileServer/getOnlineViewUrl of full path: http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>Could not find resource for relative : /mainFileServer/getOnlineViewUrl of full path: http://168.168.169.100:8080/fileStoreMainServer/rest/mainFileServer/getOnlineViewUrl</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>", "time":"0.007145881652832"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 18:34:41"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0842502117157"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 20:33:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99477314949036"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 20:33:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0175540447235"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 21:23:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025401115417"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 21:23:02"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026028156281"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 21:23:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0036389827728"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 22:00:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028469562531"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 22:00:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0142779350281"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 22:00:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026118755341"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 22:47:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0136651992798"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 22:47:39"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0168440341949"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 22:47:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0037059783936"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 23:25:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0076160430908"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 23:25:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0004968643188"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2015-09-11 23:25:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028939247131"}
+

@@ -1,0 +1,69 @@
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+<div id="safetyLog" >
+	<div id="safetyLogDivId" >
+			<div id="loginLogHeaderDivId" style="height: 30px;text-align: left;line-height: 30px;background-color: #F9F9F7;border: 1px solid #e1e1e1;font-size: 12px;margin: 0px 10px;">
+				<div class="safetyLogHeaderNameDiv" style="position: relative;float: left;width: 10%;padding-left: 10px;">序号</div>
+				<div class="safetyLogHeaderT" style="position: relative;float: left;width: 20%;padding-left: 10px;">用户名</div>
+				<div class="safetyLogHeaderSizeDiv" style="position: relative;float: left;width: 40%;padding-left: 10px;">操作信息</div>
+				<div class="safetyLogHeaderTimeDiv" style="position: relative;float: left;width: 30%;padding-left: 10px;">操作时间</div>
+			</div>
+			<div id="safetyLogMainDivId" style="padding: 0px 10px;overflow-y:auto;">
+		 	</div>
+ 			<div id="content-footer" class="panel-footer file-panel-footer" style="background-color:white;">
+				<nav class="pagingBarNavCls">
+					<div id="pagingDiv" class="pagingDiv">
+						<ul class="pagination paging"><li><a href="#page-1" class="page-link prev"><span aria-hidden="true">?</span></a></li>
+						<li><a href="#page-1" class="page-link pagenumber">1</a></li><li><a href="#page-3" class="page-link next"><span aria-hidden="true">?</span></a></li></ul>
+					</div>
+				</nav>
+			 </div>
+	</div>
+</div>
+	<script type="text/html" id="safetyLog_template">
+	{{each lst as item i}}
+		<div class="safetyLogContentDiv" style="height: 30px;text-align: left;border-bottom: 1px solid #e1e1e1;line-height: 30px;">
+			<div class="safetyLogContentNum" style="overflow: hidden;text-overflow: ellipsis;position: relative;float: left;width: 10%;padding-left: 10px;overflow: hidden;">{{startno+i}}</div>
+			<div class="safetyLogContentType" style="overflow: hidden;text-overflow: ellipsis;position: relative;float: left;width: 20%;padding-left: 10px;white-space: nowrap;" title="{{item.userid}}">{{item.userid}}</div>
+			<div class="safetyLogContentAddress" style="overflow: hidden;text-overflow: ellipsis;position: relative;float: left;width: 40%;padding-left: 10px;white-space: nowrap;" title="{{item.loginfo}}">{{upDateLoginfo(item.loginfo)}}</div>
+			<div class="safetyLogContentTime" style="overflow: hidden;text-overflow: ellipsis;position: relative;float: left;width: 30%;padding-left: 10px;white-space: nowrap;" title="{{item.time}}">{{item.time}}</div>
+		</div>
+	{{/each}}
+	</script>
+<script type="text/javascript">
+(function ($) {
+	getSafetyLog(window.userName,1) ;
+})(jQuery);
+	function getSafetyLog(name,page){
+	    var url = window.onlinefilePath+'/rest/onlinefileuser/getSafetyLog?callback=?';
+		var data = {"userid":window.userName, "start":page, "limit":"10" };
+		var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+		jQuery.getJSON(url, ret.data,
+			function(json) {
+				json.startno = (page*1-1)*10+1 ; 
+				$("#safetyLogMainDivId").html(template("safetyLog_template",json));
+				// 分页
+				$("#safetyLog #pagingDiv").pagination({
+					pages: json.totle,
+					currentPage: page,
+					onPageClick:function(page, event) {
+						getSafetyLog(window.userName,page);
+						return false;
+					}
+			});
+		});
+	}
+</script>
+<script type="text/javascript">
+template.helper('upDateLoginfo', function(data){
+	var str='';
+	if(data !=null && data != ''){
+		if(data.length > 20){
+			str = data.substr(0, 20)+'...';
+		}else{
+			str = data;
+		}
+	}
+	return str;	
+});
+</script>

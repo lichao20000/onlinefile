@@ -1,0 +1,462 @@
+<style>
+.body_main{margin:100px 0 0 0;;overflow-y: auto;overflow-x: hidden;}
+.box_main{background:#ffffff;border-width:0 1px 0 1px;width: 00px;min-height:50px;}/*border:solid #D0D0D0;*/
+.box_bottom{position:absolute;width:991px;height:7px;padding:0;}/**background:url('../img/box_bottom.png') no-repeat scroll center top transparent;*/
+/*Tooltips*/
+.tooltips_main{position:absolute;left:0;margin:-5px 0 0 2px;z-index:999;}
+.tooltips_box,.tooltips,.msg{display:inline-block;*display:inline;*zoom:1;position:relative;border-style:solid;border-color:#FF1F1F;}
+.tooltips,.msg{border-width:0 1px;*left:-2px;background-color:#FFCFCF;}
+.tooltips_box{border-width:1px;line-height:1.5;}
+.tooltips{margin:0 -2px;}
+.msg{margin:1px -2px;padding:0 6px;color:#2F2C2C;text-shadow:0 1px 0 #FFFFFF;font-size:12px;}
+.ov{background:url('../img/tri.gif') no-repeat scroll 0 0 transparent;position:absolute;left:30%;overflow:hidden;width:15px;height:15px;margin:16px 0 0 0;display:inline;}
+div[id^="team"] {margin-top: 0px;
+float: left;
+display: inline;}
+.box_main .register{float:left;padding:10px}  /** 可能跟其他页面有冲突*/
+.box_main .register .form_submit{float:left;width:888px;}/*删除了一条直线 **/
+.box_main .register .form_submit .fieldset1{float:left;}
+.box_main .register .form_submit .fieldset1 .field-group{float:left;height:40px;}
+.box_main .register .form_submit .fieldset1 .field-group .titl{float:left;width:120px;text-align:right;margin:4px 0 0 0;font-size:14px;}
+.box_main .register .form_submit .fieldset1 .field-group .control-group{float:left;width:350px;margin:0 10px;}
+.box_main .register .form_submit .fieldset1 .field-group .tips{float:left;width:250px;color:#8E8E8E;}
+.box_main .register .div_submit{position:absolute;float:left;margin:320px 820px;}/*width:875px;*/
+.box_main .register .div_submit .div_submit_button{float:right;}
+/*end regist*/
+.fieldset1 .input_add_background{background:url("../img/input.jpg") no-repeat scroll 100% 100% transparent;background-position: center;height:30px;width:157px;float:left;margin:0 2px 0 0;}
+.fieldset1 .input_add_background input.register_input_ot{background-color:#f9f9f9;border:0 none;color:#4F4F4F;font-size:12px;height:18px;outline:medium none;width: 145px;padding:1px;margin:5px;}
+.fieldset1 .input_add_long_background{/* background:url("../img/input_long.jpg") no-repeat scroll 100% 100% transparent; */background-position: center;height:30px;width:286px;float:left;margin:0 0 15px 0;display:inline;}
+.fieldset1 .input_add_long_light_background{background:url("../img/input_long_light.jpg") no-repeat scroll 100% 100% transparent;background-position: center;height:30px;width:286px;float:left;}
+.fieldset1 .input_add_long_background input.register_input{/* background-color:#f9f9f9;border:0 none; */color:#4F4F4F;font-size:12px;height:18px;outline:medium none;width: 270px;padding:1px;margin:5px;}
+.fieldset1 .input_text{display:inline-block;position:absolute;vertical-align:top;margin:6px 0 0 10px;z-index:2;font-style:italic;color:#BFBFBF;}
+#touxiang {
+    width: 45px;
+height: 45px;
+margin-left: 140px;
+float: left;
+margin-right: 190px;
+margin-top: -370px;
+position: relative;
+border: 5px solid #dedede;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+}
+#user_logo {
+	
+	width: 215px;
+height: 100px;
+margin-left: 210px;
+float: left;
+margin-right: 90px;
+margin-top: -10px;
+position: relative;
+}
+
+/*-----------------*/
+.editSelect .selectInputSpan {
+	/* width: 364px; */
+height: 26px;
+float: left;
+border: 0pt;
+font-size: 9pt;
+padding: 0px;
+margin: 0px;
+background-color: white;
+	
+}
+.inputtext2 {
+	MARGIN-LEFT: 5px;
+height: 22px;
+border: 1px solid #A69F9F;
+background-repeat: no-repeat;
+background-position: 99% 50%;
+}
+
+.editSelect .selectSpan{
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-top: 1pt solid #B5A9A9;
+border-right: 1pt solid #B5A9A9;
+border-bottom: 1pt solid #B5A9A9;
+overflow: hidden;
+width: 17px;
+height: 22px;
+float: left;
+clip: rect(-1px, 384px, 384px, 364px);
+
+	
+}
+.editSelect .selectSpan select{
+	width: 275px !important;
+	height: 22px !important;
+	border: 0pt !important;
+	margin: 0px 0px 0px -257px !important;
+}
+</style>
+<script	type="text/javascript" src="<?php echo $tplPath;?>/public/artDialog/jquery.artDialog.js?skin=simple"></script>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<?php global $user;?>
+<div id="user_logo">
+<table id="signatureTable" title="" style="margin-top: 30px">
+	<tr><td style="color: rgb(39, 37, 37);border: 5px solid white;font-size: 15px;"><?php echo $userinfo['USERNAME'];?></td></tr>
+	<tr style="display: block;" id="signatureTest" ><td style="float: left; margin-top: 5px; width: 250px;cursor:pointer;" ><?php echo $userinfo['SIGNATURE'];?></td></tr>
+	<tr style="display: none;cursor:pointer;" id="signatureInput"><td style="float: left; margin-top: 5px;" ><input  type="text" name="signatureInput" style="width: 210px;cursor:pointer;" maxLength="50" value="<?php echo $userinfo['SIGNATURE'];?>"/></td></tr>
+</table>
+</div>
+<div class='body_main'> 
+	<div class='box_main'>
+		<div id="adduser" class="register">
+			<form id="form" action="#" method="post" onSubmit="return check();">
+			<!-- 作为个人签名的隐藏字段 -->
+			<input type="hidden" name="signature" id="signature" value="<?php echo $userinfo['SIGNATURE'];?>">
+			<input id="inp_name"  name="id"
+					value="<?php echo $userinfo['ID'];?>" type="hidden">
+				<div id="form_submit" class="form_submit">
+					<div class="fieldset1">
+					<div id="team_1">
+							<div class="field-group">
+								<label class="required titl">中文名:</label>
+								<span class="control-group" id="fullname_input">
+									<div class="input_add_long_background">
+										<input class="register_input" type="text" id="fullname" name="fullname" maxLength="50" value="<?php echo $userinfo['FULLNAME'];?>">
+									</div>
+								</span>
+							</div>
+							
+							<div class="field-group">
+								<label class="required titl">手机号:</label>
+								<span class="control-group" id="mobilephone_input">
+									<div class="input_add_long_background">
+										<input class="register_input" type="text" id="mobilephone" name="mobilephone" maxLength="50" value="<?php echo $userinfo['MOBILEPHONE'];?>" >
+									</div>
+								</span>
+							</div>
+							<div class="field-group">
+								<label class="required titl">公司电话:</label>
+								<span class="control-group" id="telephone_input">
+									<div class="input_add_long_background">
+										<input class="register_input" type="text" id="telephone" name="telephone" maxLength="50" value="<?php echo $userinfo['TELEOHONE'];?>" >
+									</div>
+								</span>
+							</div>
+							<div class="field-group">
+								<label class="required titl">Email:</label>
+								<span class="control-group" id="email_input">
+									<div class="input_add_long_background">
+										<input class="register_input" type="text" id="email" name="email" maxLength="50"  value="<?php echo $userinfo['EMAIL'];?>">
+									</div>
+								</span>
+								<label class="tips"></label>
+							</div>
+							<div class="field-group">
+								<label class="required titl">职位:</label>
+								<span class="control-group" id="position_input">
+									<div class="input_add_long_background">
+										<input class="register_input" type="text" id="position" name="position" maxLength="50" value="<?php echo $userinfo['POSITION'];?>" >
+									</div>
+								</span>
+							</div>
+							<div class="field-group">
+								<label class="required titl">传真地址:</label>
+								<span class="control-group" id="fax_input">
+									<div class="input_add_long_background">
+										<input class="register_input" type="text" id="fax" name="fax" maxLength="50"  value="<?php echo $userinfo['FAX'];?>">
+									</div>
+								</span>
+							</div>
+							<div class="field-group">
+								<label class="required titl">机构:</label>
+								<span class="control-group" id="org_input">
+									
+									<div class="editSelect">
+										<div class="selectInputSpan" id="org_input" style="width: 262px;">
+											<input type="text" name="period" class="inputtext2" value="<?php echo $userinfo['ORGNAME']==""?"编辑此处添加新机构":$userinfo['ORGNAME'];?>" verify="unspecial/50/1/0"  style="width: 255px; height: 22px;"/>
+										</div>
+										<div class="selectSpan">
+											<select  onchange="inputshow(this);" name="org" class="org">
+ 												<option value="-1">编辑此处添加新机构</option>
+														 <?php foreach ($orglist as $k=>$val) { ?>
+											<option value="<?php echo $val->id;?>" <?php echo $val->id == $userinfo['ORGID'] ? "selected=selected":"";?>><?php echo $val->orgname;?></option>
+												 <?php };?>
+											</select>
+										</div>
+									</div>
+									
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	 
+	</div>
+
+</div>
+<img id="touxiang" class="imagediv" title="点击修改头像" src="<?php echo $userinfo['PORTRAIT'] == ""?"apps/onlinefile/templates/ESDefault/images/im/fybot.png":$userinfo['PORTRAIT'];?>" style="border: 1px solid; color: rgb(237, 200, 200);cursor:pointer;" ></img>
+
+<!-- ------------------------------------------------------------------------------------------background-image: url(apps/onlinefile/templates/ESDocumentCenter/img/photos/thumb2.png)----------------- -->
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESUserInfo/js/jquery.form.min.js"></script>
+<script type="text/javascript">
+function inputshow(obj){
+	var checkText=$(".org").find("option:selected").text();
+	$(obj).parent().parent().find('input').val(checkText);
+}
+
+//去左空格; 
+function ltrim(s){
+	return s.replace( /^\s*/, ""); 
+} 
+//去右空格; 
+function rtrim(s){ 
+	return s.replace( /\s*$/, ""); 
+} 
+//去左右空格; 
+function trim(s){
+	return rtrim(ltrim(s)); 
+}
+$(document).ready(function(){
+	$("#btnCancel").click(function(){cancelQueue();});
+});
+
+//如果是空就自动填充
+if(trim($("#signatureTest td").html())==""){
+	$("#signatureTest td").html("编辑个人签名");
+	$("#signatureTable").attr("title","编辑个人签名");
+}
+//点击的时候显示出div
+$("#signatureTest").click(function(){
+	var text = $("#signatureTest td").html();
+	if(trim(text) == "编辑个人签名"){
+		text = "";
+	}
+	if($(this).css("display")=="block"){
+		$(this).css("display","none");
+		$("#signatureInput").css("display","block");
+		//$("#signature").val(trim(text));
+		$("#signatureInput input").focus().select();
+	}
+});
+//设置title
+ if($("#signature").val()!=""){
+// 	alert("a");
+ 	$("#signatureTable").attr("title",$("#signature").val());
+	
+ } 
+
+//鼠标离开input时把里面的value加到td中
+$("#signatureInput input").live('blur',function(){
+	var text = $("#signatureInput input").val();
+	if(trim(text) == ""){
+		text = "编辑个人签名";
+	}
+	if($("#signatureInput").css("display")=="block"){
+		$("#signatureInput").css("display","none");
+		$("#signatureTest").css("display","block");
+		$("#signatureTest td").html(trim(text));
+		$("#signatureTable").attr("title",trim(text));
+		if(trim(text).length >=45){
+			$("#signatureTest").css("display","none");
+			$("#signatureInput").css("display","block");
+			$("#signatureInput input").val(trim(text));
+			alert("长度不能超过45个汉字");
+		}else if(trim(text).length >20 && trim(text).length <45){
+			$("#signatureTest").css("display","block");
+			$("#signatureInput").css("display","none");
+			$('#signature').val($('input[name=signatureInput]').val());
+			/*-----------------签名字段------------------------*/
+			//需要在form表单里面再天下一个隐藏字段  存储个人签名
+			$("#signature").val(trim(text));
+			//添加省略号
+			var s = text.substring(0,15);
+			$("#signatureTest td").html(s+"...");  
+		}
+	}
+});
+
+
+//保存按钮
+$("#saveBtn1").live('click',function(){//$("input[name=accept]")
+	$('#signature').val($('input[name=signatureInput]').val());
+	/*-----------------签名字段------------------------*/
+	var fullname = $("#fullname").val();
+	var mobilephone = $("#mobilephone").val();
+	var telephone = $("#telephone").val();
+	var email = $("#email").val();
+	var position = $("#email").val();
+	var fax = $("#fax").val();
+	if(trim(fullname)==""||trim(mobilephone)==""||trim(telephone)==""||trim(email)==""||trim(position)==""||trim(fax)==""){
+		if(trim(fullname)==""){
+			showTooltips('fullname_input','中文名不能为空');
+		}
+		if(trim(mobilephone)==""){
+			showTooltips('mobilephone_input','手机号码不能为空');
+		}
+		if(trim(telephone)==""){
+			showTooltips('telephone_input','公司电话不能为空!');
+		}
+		if(trim(email)==""){
+			showTooltips('email_input','邮箱不能为空!');
+		}
+		if(trim(position)==""){
+			showTooltips('position_input','职位');
+		}
+		if(trim(fax)==""){
+			showTooltips('fax_input','传真不能为空!');
+		}
+		return false;
+	}else if(nameZZ.test(fullname)==false){
+			showTooltips('fullname_input','中文名只能是中文或字母!');
+		return false;
+	}else if(emailaddressZZ.test(email)==false){
+		showTooltips('email_input','邮箱格式不正确!');
+		return false;
+	}else if(mobtelZZ.test(mobilephone)==false){
+		showTooltips('mobilephone_input','手机号码格式不正确!');
+		return false;
+	}else if(teleZZ.test(telephone)==false){
+		showTooltips('telephone_input','公司电话格式不正确!');
+		return false;
+	}else if(fexZZ.test(fax)==false){
+		showTooltips('fax_input','传真格式不正确!');
+		return false;
+	}
+	url = "<?php echo $esaction->generateUrl(Array('ESUserInfo'=>'do_edit'),'x');?>";
+	var form=$('#editUserInfo');
+	var data=form.serialize();
+	//alert(data);
+	$.ajax({
+		url:url,
+		type: "POST",
+		data:{
+			param:data
+		},
+		dataType:"json",
+		error:function(){
+			$.dialog.notice({icon:'error',content:'编辑失败，请重试！',time:3});
+		},
+		success:function(datas){	
+			if(datas!=null){
+				alert("修改成功");
+// 				$('#userInfo').flexOptions({newp: 1}).flexReload();
+// 				$.dialog.notice({icon:'succeed',content:'编辑成功！',time:3});
+			}else{
+				$.dialog.notice({icon:'error',content:'编辑失败，请重试！',time:3});
+			}
+			
+		}
+	});
+});
+
+ var nameZZ= /^[\u4e00-\u9fa5a-zA-Z]+$/;
+ var mobtelZZ =/^1[3|4|5|8][0-9]\d{8}$/;
+ var lengthZZ= /.{50}|^\s*$/g;
+ var teleZZ = /^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$/;
+ var emailaddressZZ = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+ var fexZZ =/^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/; 
+
+ $("#fullname").live('blur',function(){
+		//alert(num);
+	 	var fullname = $(this).val();
+	 	fullname=fullname.replace(/[ ]/g,"");
+	 	if(fullname==''){
+	 		showTooltips('fullname_input','中文名不能为空');
+	 		return;
+	 	}else{
+	 		hideTooltips('fullname_input');
+	 	}
+	 	if(nameZZ.test(fullname)==false){
+	 		showTooltips('fullname_input','中文名只能是中文或字母!');
+	 		return;
+	 	}
+	 });
+//  $("#mobilephone").live('blur',function(){
+// 	 	var mobilephone = $(this).val();
+// 	 	mobilephone=mobilephone.replace(/[ ]/g,"");
+// 	 	if(mobilephone==''){
+// 	 		showTooltips('mobilephone_input','手机号码不能为空');
+// 	 		return;
+// 	 	}else{
+// 	 		hideTooltips('mobilephone_input');
+// 	 	}
+// 	 	if(mobtelZZ.test(mobilephone)==false){
+// 	 		showTooltips('mobilephone_input','手机号码格式不正确!');
+// 	 		return;
+// 	 	}
+// 	 });
+// $("#email").live('blur',function(){
+//  	var email = $(this).val();
+//  	email=email.replace(/[ ]/g,"");
+//  	if(email==''){
+//  		showTooltips('email_input','邮箱不能为空!');
+//  		return;
+//  	}else{
+//  		hideTooltips('email_input');
+//  	}
+//  	if(emailaddressZZ.test(email)==false){
+//  		showTooltips('email_input','邮箱格式不正确!');
+//  		return;
+//  	}else{
+//  		hideTooltips('email_input')
+//  	}
+// });
+// $("#telephone").live('blur',function(){
+//  	var telephone = $(this).val();
+//  	telephone=telephone.replace(/[ ]/g,"");
+//  	if(telephone==''){
+//  		showTooltips('telephone_input','公司电话不能为空!');
+//  		return;
+//  	}else{
+//  		hideTooltips('telephone_input');
+//  	}
+//  	if(teleZZ.test(telephone)==false){
+//  		showTooltips('telephone_input','公司电话格式不正确!');
+//  		return;
+//  	}else{
+//  		hideTooltips('telephone_input');
+//  	}
+// });
+// $("#fax").live('blur',function(){
+//  	var fax = $(this).val();
+//  	fax=fax.replace(/[ ]/g,"");
+//  	if(fax==''){
+//  		showTooltips('fax_input','传真不能为空!');
+//  		return;
+//  	}else{
+//  		hideTooltips('fax_input');
+//  	}
+//  	if(fexZZ.test(fax)==false){
+//  		showTooltips('fax_input','传真格式不正确!');
+//  		return;
+//  	}else{
+//  		hideTooltips('fax_input');
+//  	}
+// });
+
+//此为红色提示框的js
+function showTooltips(msgid,msg,time){
+	if (msgid==''){ return; }
+	if (msg==''){ msg='Error!'; }
+	$('#'+msgid).prepend("<div class='for_fix_ie6_bug' style='position:relative;'><div class='tooltips_main'><div class='tooltips_box'><div class='tooltips'><div class='msg'>"+msg+"</div></div><div class='ov'></div></div></div></div>");
+	$('#'+msgid+' .tooltips_main').fadeIn("slow").animate({ marginTop: "-23px"}, {queue:true, duration:400});
+	try{
+		if(typeof time != "undefined"){
+			setTimeout('hideTooltips("'+msgid+'")',time);
+		}
+	}catch(err){}
+	
+}
+function hideTooltips(msgid){
+	try{
+		$('#'+msgid).find('.tooltips_main').fadeOut("slow");
+		$('#'+msgid).find('.tooltips_main').remove();
+	}catch(e){}
+}
+function hideAllTooltips(){
+	$('.tooltips_main').fadeOut("slow");
+	$('.tooltips_main').remove();
+}
+</script>

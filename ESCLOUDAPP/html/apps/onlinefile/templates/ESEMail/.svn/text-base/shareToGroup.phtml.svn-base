@@ -1,0 +1,53 @@
+<link href='<?php echo $tplPath?>/ESEMail/css/group.css'
+	rel="stylesheet" />
+
+<script
+	type="text/javascript"
+	src='<?php echo $tplPath?>/ESEMail/js/shareToGroup.js'></script>
+<div class="groupContainerCls" id="groupContainer">
+	<div class="emailList_selected">讨论组1</div>
+	<div class="emailList">讨论组2</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+	<div class="emailList">讨论组3</div>
+</div>
+<style>
+.emailList, .emailList_selected {
+	width: 250px;
+	heigt: 40px;
+	algin: center;
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.emailList_selected {
+	background-color: #ccc;
+}
+
+.groupContainerCls {
+	height: 400px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+</style>

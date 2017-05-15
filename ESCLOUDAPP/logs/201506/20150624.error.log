@@ -1,0 +1,68 @@
+INFO - {"user":"xwd4java@126.com","time":"2015-06-24 10:40:33"}
+REQUEST - {"url":"http://127.0.0.1:8080/onlinefile/rest/onlinefileuser/addUser", "method":"POST", "params":"{"divNum":"2","email1":"xwd4java@163.com","email2":"","message":" ","classId":"136","ID":"xwd4java@126.com","ip":"127.0.0.1","companyid":"10","ipandport":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.onlinefile.users.service.impl.UserWSImpl.addUser(UserWSImpl.java:548)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.52 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>", "time":"0.28375291824341"}
+
+INFO - {"user":"admin","time":"2015-06-24 13:42:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/onlinefile/rest/onlinefileuser/getUserInitInfo/0/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - java.lang.NullPointerException</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>java.lang.NullPointerException</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NullPointerException
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>root cause</b> <pre>java.lang.NullPointerException
+	cn.flying.rest.onlinefile.users.service.impl.UserWSImpl.getUserInitInfo(UserWSImpl.java:271)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.52 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>", "time":"0.5642261505127"}
+

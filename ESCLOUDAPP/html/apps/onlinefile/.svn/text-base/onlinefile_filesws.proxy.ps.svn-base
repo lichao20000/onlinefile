@@ -1,0 +1,302 @@
+<?php
+class ProxyOnlinefileOnlinefile_filesws extends AgentProxyAbstract
+{
+	const SERVICE_NAME="onlinefile_filesws";
+	
+	/**
+	 * 分享一个文件给某个用户
+	 */
+	public function shareFileToUser($postData) {
+		$url = "shareFileToUser";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 取消分享一个文件给某个用户
+	 */
+	public function unShareFileToUser($postData) {
+		$url = "unShareFileToUser";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 分享多个文件给某个用户
+	 */
+	public function shareFilesToUser($postData) {
+		$url = "shareFilesToUser";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 分享一个文件给某个用户或联系人群组
+	 */
+	public function shareFileToGroupOrUser($postData) {
+		$url = "shareFileToGroupOrUser";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 取消分享 
+	 */
+	public function unshareFile($postData) {
+		$url = "unshareFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 点赞/取消赞文件
+	 */
+	public function praiseFile($postData) {
+		$url = "praiseFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 收藏/取消收藏文件
+	 */
+	public function collectFile($postData) {
+		$url = "collectFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 逻辑删除文件
+	 */
+	public function deleteFile($postData) {
+		$url = "deleteFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 取消一个文件的分享
+	 */
+	public function cancelShareFile($postData) {
+		$url = "cancelShareFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function editFileOtherProp($postData) {
+		$url = "editFileOtherProp";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function getFileOtherProp($companyId,$fileId,$ip,$username)
+	{
+		$urlParam = array('getFileOtherProp',$companyId,$fileId,$ip,$username);
+		$url = implode('/', $urlParam);
+		return $this->get(self::SERVICE_NAME,$url);
+	}
+	
+	public function addSubScribeMsgByUserId($postData) {
+		$url = "addSubScribeMsgByUserId";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function addSubScribeMsgByDocs($postData) {
+		$url = "addSubScribeMsgByDocs";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function delSubScribeMsgByUserId($postData) {
+		$url = "delSubScribeMsgByUserId";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function shareToFolderPath($postData) {
+		$url = "shareToFolderPath";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 *wangwenshuo 20151020 复制到 
+	 */
+	public function copyToFolderPath($postData) {
+		$url = "copyToFolderPath";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 文件恢复
+	 */
+	public function fileRestore($postData) {
+		$url = "fileRestore";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 文件彻底删除
+	 */
+	public function fileDestroy($postData) {
+		$url = "fileDestroy";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 清空回收站  wangwenshuo 20150906
+	 */
+	public function cleanRecycleBin($postData) {
+		$url = "cleanRecycleBin";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 标记/取消标记为常用分类
+	 */
+	public function starClass($postData) {
+		$url = "starClass";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 撤销分享一个文件给某个用户或联系人群组
+	 */
+	public function backoutFile($postData) {
+		$url = "backoutFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 发表文件评论
+	 */
+	public function newFileComment($postData) {
+		$url = "newFileComment";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 删除文件评论
+	 */
+	public function deleteComment($postData) {
+		$url = "deleteComment";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 上传文件成功后调用，往db里插入file数据
+	 */
+	public function insertNewFileAfterUpload($postData) {
+		$url = "insertNewFileAfterUpload";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 获取常用分类
+	 */
+	public function getClassStarList($param) {
+		$url = "getClassStarList";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 获取普通分类
+	 */
+	public function getClassList($param) {
+		$url = "getClassList";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 获取评论列表
+	 */
+	public function getFileCommentList($param) {
+		$url = "getFileCommentList";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	/**
+	 * 获取历史版本
+	 */
+	public function getFileList4Version($param) {
+		$url = "getFileList4Version";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 登录时，初始化常用和普通分类
+	 */
+	public function initClassList($param) {
+		$url = "initClassList";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 
+	 */
+	public function setFileOpenlevel($param) {
+		$url = "setFileOpenlevel";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	
+	
+	/**
+	 * 发送文件评论
+	 */
+	public function onSendComment($jsonData) {
+		$urlParam = array('onSendComment');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$jsonData,'application/json;charset=UTF-8');
+	}
+	
+	/**
+	 * 回复文件评论
+	 */
+	public function onReplyComment($jsonData) {
+		$urlParam = array('onReplyComment');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$jsonData,'application/json;charset=UTF-8');
+	}
+	
+	/**
+	 * 获取文件评论
+	 */
+	public function getFileCommentsListByFileId($jsonData) {
+		$urlParam = array('getFileCommentsListByFileId');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$jsonData,'application/json;charset=UTF-8');
+	}
+	
+	/**
+	 * 展开更多文件评论
+	 */
+	public function getMoreReplyComments($jsonData) {
+		$urlParam = array('getMoreReplyComments');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$jsonData,'application/json;charset=UTF-8');
+	}
+	
+	
+	
+	
+	/**	
+	 * 验证文件是否被删除或取消共享
+	 */
+	public function checkFileDeleteAndOpenLevel($param) {
+		$url = "checkFileDeleteAndOpenLevel";
+		return $this->post(self::SERVICE_NAME, $url,$param,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 我的文档文件分享到分类 wangwenshuo 20151119
+	 */
+	public function fileShareToClass($postData) {
+		$url = "fileShareToClass";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * 文件搜索
+	 */
+	public function searchFile($postData) {
+		$url = "searchFile";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	public function dragFileToDocumnet($postData) {
+		$url = "dragFileToDocumnet";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+	/**
+	 * lujixiang 20151210 新增文件删除,并更新版本号
+	 */
+	public function deleteFileAndUpdateVersion($postData) {
+		$url = "deleteFileAndUpdateVersion";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+	
+}

@@ -1,0 +1,592 @@
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 08:33:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.3233709335327"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:33:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.086923837661743"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:33:23"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.085812091827393"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:38:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.052748918533325"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:42:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.075790166854858"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:42:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.0056500434875488"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:52:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.085690021514893"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 11:52:53"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"404", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/6.0.18 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS</u></p><p><b>description</b> <u>The requested resource (/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.18</h3></body></html>", "time":"0.0059418678283691"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 12:40:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.4736931324005"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 12:41:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0134580135345"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 12:46:08"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030941963196"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 12:51:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0069189071655"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 13:11:24"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0457248687744"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 13:11:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.003448009491"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 13:48:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0242719650269"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 13:48:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0205719470978"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 14:24:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0273048877716"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 14:24:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.023689031601"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 15:00:57"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.031730890274"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 15:00:59"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0189819335938"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 15:37:19"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0173890590668"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 15:37:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0336358547211"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 16:13:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.033704996109"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 16:13:42"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0288288593292"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 16:50:04"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0518319606781"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 16:50:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0180821418762"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 17:26:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0281751155853"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 17:26:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0182778835297"}
+
+INFO - {"user":"U_ANONYMOUS","time":"2014-09-13 19:25:27"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.2059180736542"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:12:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getComputeFieldRuleVal/160/4", "method":"POST", "params":"{"2721":[{"2717":""},{"2710":"\u6c38\u4e45"}],"0":{"treeNodeId":"209"}}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:64)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:68)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:33)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.Gson.fromJson(Gson.java:551)
+	com.google.gson.Gson.fromJson(Gson.java:498)
+	com.google.gson.Gson.fromJson(Gson.java:467)
+	com.google.gson.Gson.fromJson(Gson.java:417)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.getComputeFieldRuleVal(BusinessEditWSImpl.java:6195)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.IllegalStateException: This is not a JSON Array.
+	com.google.gson.JsonElement.getAsJsonArray(JsonElement.java:99)
+	com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:659)
+	com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:624)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:68)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:33)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.Gson.fromJson(Gson.java:551)
+	com.google.gson.Gson.fromJson(Gson.java:498)
+	com.google.gson.Gson.fromJson(Gson.java:467)
+	com.google.gson.Gson.fromJson(Gson.java:417)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.getComputeFieldRuleVal(BusinessEditWSImpl.java:6195)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.12647414207458"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:12:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getComputeFieldRuleVal/160/4", "method":"POST", "params":"{"2721":[{"2717":""},{"2710":"\u957f\u671f"}],"0":{"treeNodeId":"209"}}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:64)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:68)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:33)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.Gson.fromJson(Gson.java:551)
+	com.google.gson.Gson.fromJson(Gson.java:498)
+	com.google.gson.Gson.fromJson(Gson.java:467)
+	com.google.gson.Gson.fromJson(Gson.java:417)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.getComputeFieldRuleVal(BusinessEditWSImpl.java:6195)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.IllegalStateException: This is not a JSON Array.
+	com.google.gson.JsonElement.getAsJsonArray(JsonElement.java:99)
+	com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:659)
+	com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:624)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:68)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:33)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.Gson.fromJson(Gson.java:551)
+	com.google.gson.Gson.fromJson(Gson.java:498)
+	com.google.gson.Gson.fromJson(Gson.java:467)
+	com.google.gson.Gson.fromJson(Gson.java:417)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.getComputeFieldRuleVal(BusinessEditWSImpl.java:6195)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.011454105377197"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:12:13"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaapp/rest/escloud_businesseditws/getComputeFieldRuleVal/160/4", "method":"POST", "params":"{"2721":[{"2717":"2012"},{"2710":"\u957f\u671f"}],"0":{"treeNodeId":"209"}}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"500", "content-type":"text/html", "message":"0", "reponse":"<html><head><title>Apache Tomcat/7.0.39 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;</h1><HR size="1" noshade="noshade"><p><b>type</b> Exception report</p><p><b>message</b> <u>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b> <pre>org.jboss.resteasy.spi.UnhandledException: com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;
+	org.jboss.resteasy.core.SynchronousDispatcher.handleApplicationException(SynchronousDispatcher.java:351)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleException(SynchronousDispatcher.java:220)
+	org.jboss.resteasy.core.SynchronousDispatcher.handleInvokerException(SynchronousDispatcher.java:196)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:551)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>com.google.gson.JsonParseException: The JsonDeserializer com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter@33306bdf failed to deserialize json object {&quot;treeNodeId&quot;:&quot;209&quot;} given the type java.util.List&lt;java.util.Map&lt;java.lang.String, java.lang.String&gt;&gt;
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:64)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:68)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:33)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.Gson.fromJson(Gson.java:551)
+	com.google.gson.Gson.fromJson(Gson.java:498)
+	com.google.gson.Gson.fromJson(Gson.java:467)
+	com.google.gson.Gson.fromJson(Gson.java:417)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.getComputeFieldRuleVal(BusinessEditWSImpl.java:6195)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>root cause</b> <pre>java.lang.IllegalStateException: This is not a JSON Array.
+	com.google.gson.JsonElement.getAsJsonArray(JsonElement.java:99)
+	com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:659)
+	com.google.gson.DefaultTypeAdapters$CollectionTypeAdapter.deserialize(DefaultTypeAdapters.java:624)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:68)
+	com.google.gson.MapTypeAdapter.deserialize(MapTypeAdapter.java:33)
+	com.google.gson.JsonDeserializerExceptionWrapper.deserialize(JsonDeserializerExceptionWrapper.java:51)
+	com.google.gson.JsonDeserializationVisitor.invokeCustomDeserializer(JsonDeserializationVisitor.java:92)
+	com.google.gson.JsonDeserializationVisitor.visitUsingCustomHandler(JsonDeserializationVisitor.java:80)
+	com.google.gson.ObjectNavigator.accept(ObjectNavigator.java:101)
+	com.google.gson.JsonDeserializationContextDefault.fromJsonObject(JsonDeserializationContextDefault.java:76)
+	com.google.gson.JsonDeserializationContextDefault.deserialize(JsonDeserializationContextDefault.java:54)
+	com.google.gson.Gson.fromJson(Gson.java:551)
+	com.google.gson.Gson.fromJson(Gson.java:498)
+	com.google.gson.Gson.fromJson(Gson.java:467)
+	com.google.gson.Gson.fromJson(Gson.java:417)
+	cn.flying.rest.BusinessEditWS.service.impl.BusinessEditWSImpl.getComputeFieldRuleVal(BusinessEditWSImpl.java:6195)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	java.lang.reflect.Method.invoke(Method.java:597)
+	org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	org.jboss.resteasy.core.ResourceMethod.invokeOnTarget(ResourceMethod.java:257)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:222)
+	org.jboss.resteasy.core.ResourceMethod.invoke(ResourceMethod.java:211)
+	org.jboss.resteasy.core.SynchronousDispatcher.getResponse(SynchronousDispatcher.java:536)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:513)
+	org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:125)
+	org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:208)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:50)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+</pre></p><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.39 logs.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.39</h3></body></html>", "time":"0.014194011688232"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:56:37"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.3182320594788"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:56:38"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0001130104065"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:56:43"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0079751014709"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:56:44"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098180770874"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:56:48"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030558109283"}
+
+INFO - {"user":"admin","time":"2014-09-13 21:56:49"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0113298892975"}
+
+INFO - {"user":"admin","time":"2014-09-13 22:44:09"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.032543182373"}
+
+INFO - {"user":"admin","time":"2014-09-13 22:44:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0102989673615"}
+
+INFO - {"user":"admin","time":"2014-09-13 22:44:14"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028121471405"}
+
+INFO - {"user":"admin","time":"2014-09-13 22:44:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99991297721863"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:00:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0024950504303"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:00:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99982595443726"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:00:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0021970272064"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:00:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99988889694214"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0022349357605"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101659297943"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0068559646606"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0104510784149"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028860569"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99970197677612"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0111129283905"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0103158950806"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.00221991539"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0007472038269"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026950836182"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002579689026"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0065929889679"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0015242099762"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0026409626007"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:36"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0105781555176"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:40"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.9995698928833"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:41"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99893188476562"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:45"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.006961107254"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:46"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.008889913559"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:50"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0032300949097"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:51"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098178386688"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:55"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0124609470367"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:01:56"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.000226020813"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:00"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0021259784698"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:01"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0002071857452"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:05"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028920173645"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:06"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0006160736084"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:10"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0128901004791"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:11"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0101430416107"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:15"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.999596118927"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:16"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0097479820251"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:20"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0025448799133"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:21"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.01060795784"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:25"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0040781497955"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:26"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0001218318939"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:30"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0027401447296"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:31"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/escloud_baseLogServiceImpl/np000/admin", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0010018348694"}
+
+INFO - {"user":"admin","time":"2014-09-13 23:02:35"}
+REQUEST - {"url":"http://127.0.0.1:8080/essoaadmin/rest/messageservice/getSoaMsg", "method":"POST", "params":"{"currPage":"1","limit":"5","userId":"admin","remoteAddr":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0023679733276"}
+

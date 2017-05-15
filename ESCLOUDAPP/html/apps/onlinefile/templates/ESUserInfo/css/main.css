@@ -1,0 +1,132 @@
+@CHARSET "UTF-8";
+#addReport table td{padding-top:10px;}
+
+/*salk按钮*/
+
+#user_menu {
+	float: left;
+	width: 300px;
+	height: 70px;
+	background-color: #3e313c;
+	padding:5px 0px 5px 0px;
+	
+}
+/* 头像大小*/
+#current_user_avatar .member_image {
+width: 48px;
+height: 48px;
+}
+/* 头像底色*/
+span.member_image.thumb_48 {
+background: #100B0F;
+color: #ab9ba9;
+width: 48px;
+float: left;
+position: relative;
+}
+/* 头像圆角*/
+.member_image {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+background-size: 100%;
+background-repeat: no-repeat;
+display: inline-block;
+}
+/*头像的位置*/
+#current_user_avatar  {
+	padding-left: 5px;
+	padding-top: 11px;
+}
+
+/* 用户名颜色*/
+#current_user_name {
+color: white;
+font-weight: 900;
+line-height: 1.5rem;
+max-width: 120px;
+padding-left: 10px;    /*用户名位置*/
+}
+/* 用户名位置*/
+.overflow_ellipsis {
+display: block;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+/* 在线图片位置和大小*/
+
+#connection_icon {
+width: 12px;
+height: 12px;
+/* position: absolute; */
+/* top: 38px;
+left: 63px; */
+/* margin-top: -130px; */
+padding-top: -115px;
+padding-left: 10px;
+}
+
+/*在线状态*/
+#connection_status {
+/* margin-left: 1rem; */
+line-height: 1.1rem;
+padding-left: -40px;
+color: #ab9ba9;
+}
+
+/*箭头*/
+
+#user_menu i {
+color: #FDF7FC;
+top: 1.5rem;
+right: 1rem;
+font-size: 1rem;
+-webkit-transitionDISABLED: color .1s ease-out;
+-moz-transitionDISABLED: color .1s ease-out;
+-o-transitionDISABLED: color .1s ease-out;
+transitionDISABLED: color .1s ease-out;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.fa-chevron-up:before {
+	content: "\f077";
+}
+/*弹出菜单*/
+
+
+.subtle_silver {
+  color: #9e9ea6 !important;
+}
+
+#menu_items_user li a:hover{background:#439fe0;border-bottom:1px solid #2a80b9;color:white;text-decoration:none;overflow:hidden;text-shadow:0 1px 0 rgba(0,0,0,0.2)}
+
+.fa-sign-out:before {
+content: "\f08b";
+}
+.fa-cog:before {
+content: "\f013";
+}
+.fa-wrench:before {
+content: "\f0ad";
+}
+.icon-shuffle:before {
+    content: "\ea30";
+}
+.fa-user:before {
+content: "\f007";
+}
+.fa-random:before {
+content: "\f074";
+}

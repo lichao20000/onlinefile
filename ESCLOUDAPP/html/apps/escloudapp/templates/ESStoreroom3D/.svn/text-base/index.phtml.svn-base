@@ -1,0 +1,31 @@
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESStoreroom3D/js/common.js"></script>
+<?php echo $app->draw('nav',array('esaction'=>$esaction, 'app'=>$app));?>
+<?php echo $app->draw('appmenu',array('esaction'=>$esaction, 'app'=>$app, 'expand'=>2));?>
+<link href="<?php echo $tplPath?>/ESStoreroom3D/css/style.css" rel="stylesheet" type="text/css">
+<div style="width:760px;height:450px;float:left;overflow-x:auto;overflow-y:hidden" id = "store3dBody">
+<div id = "navContainer"><div class = "nav" value = "0" name = "首页">首页</div></div>
+<div style = "clear:both"></div>
+<div id = "storeContainer" class = "storeContainer">
+<?php foreach ($storeList as $value){
+	echo '<div class = "storelogomoudle" value = "'.$value['id'].'" name = "'.$value['name'].'"espath = "'.$value['espath'].'">';
+		echo '<div	class = "storelogo"></div>';
+		if(mb_strlen($value['name'],'utf-8')<3)
+			echo '<div	class = "storeCode">库房['.$value['name'].']</div>';
+		if(mb_strlen($value['name'],'utf-8')>=3){
+			$temp = mb_substr($value['name'], 0,2,'utf-8');
+			echo '<div	class = "storeCode" title="'.$value['name'].'">库房['.$temp.'...]</div>';
+		}
+	echo '</div>';
+}?>
+</div>
+</div>
+<script  type="text/javascript">
+$(document).ready(function(){
+	$("#estabs").esTabs("open", {title:"库房实体显示", content:"#store3dBody"});
+	$("#estabs").esTabs("select", "库房实体显示");
+});
+/** 窗体自适应 **/
+$("#store3dBody").css("height",$(document).height() - 120).css("background-color","#fff").css("width","96%").css("margin-left","2%");
+$("#storeContainer").css("height",$(document).height() - 160);
+ 
+</script>

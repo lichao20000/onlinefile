@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data
+END
+StoreMgr.js
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/StoreMgr.js
+END
+Record.js
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/Record.js
+END
+DataField.js
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/DataField.js
+END
+SimpleStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/SimpleStore.js
+END
+MemoryProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/MemoryProxy.js
+END
+DataReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/DataReader.js
+END
+JsonReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/JsonReader.js
+END
+HttpProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/HttpProxy.js
+END
+DataProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/DataProxy.js
+END
+Store.js
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/Store.js
+END
+ScriptTagProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 236
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/ScriptTagProxy.js
+END
+GroupingStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 235
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/GroupingStore.js
+END
+Tree.js
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/Tree.js
+END
+Connection.js
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/Connection.js
+END
+ArrayReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 233
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/ArrayReader.js
+END
+SortTypes.js
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/SortTypes.js
+END
+XmlReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/XmlReader.js
+END
+JsonStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1843/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/templates/public/ext/source/data/JsonStore.js
+END

@@ -1,0 +1,44 @@
+INFO - {"user":"U_ANONYMOUS","time":"2015-10-27 08:54:03"}
+REQUEST - {"url":"http://127.0.0.1:8080/namingService/rest/namingService/findApp/0/userqueryservice/np000/U_ANONYMOUS", "method":"GET", "params":"", "content-type":""}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0619561672211"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:22:45"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/userList", "method":"POST", "params":"{"startNo":0,"limit":"10","username":"xwd4java@163.com","companyId":"32","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0708630084991"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:22:47"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0020270347595"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:22:48"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030419826508"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:22:49"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0098209381104"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:22:50"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.001412153244"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:22:59"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/userList", "method":"POST", "params":"{"startNo":0,"limit":"10","username":"xwd4java@163.com","companyId":"32","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0036351680756"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:23:00"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0161588191986"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:23:01"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"0.99956393241882"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:23:03"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0030851364136"}
+
+INFO - {"user":"xwd4java@163.com","time":"2015-10-27 16:23:04"}
+REQUEST - {"url":"http://168.168.169.100:8080/onlinefile/rest/onlinefileuser/getOrgByUserId", "method":"POST", "params":"{"companyId":"32","username":"xwd4java@163.com","ip":"127.0.0.1"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0028879642487"}
+

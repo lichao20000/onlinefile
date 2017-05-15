@@ -1,0 +1,374 @@
+10
+
+dir
+14349
+https://168.168.169.8/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/onlinefile/templates/public/generic/web/locale
+https://168.168.169.8/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0
+
+
+
+2016-03-22T01:29:09.545697Z
+14349
+liuwei
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a6813211-4bbf-4347-aa7e-747b12b18c71
+
+ach
+dir
+
+af
+dir
+
+ak
+dir
+
+an
+dir
+
+ar
+dir
+
+as
+dir
+
+ast
+dir
+
+az
+dir
+
+be
+dir
+
+bg
+dir
+
+bn-BD
+dir
+
+bn-IN
+dir
+
+br
+dir
+
+bs
+dir
+
+ca
+dir
+
+cs
+dir
+
+csb
+dir
+
+cy
+dir
+
+da
+dir
+
+de
+dir
+
+el
+dir
+
+en-GB
+dir
+
+en-US
+dir
+
+en-ZA
+dir
+
+eo
+dir
+
+es-AR
+dir
+
+es-CL
+dir
+
+es-ES
+dir
+
+es-MX
+dir
+
+et
+dir
+
+eu
+dir
+
+fa
+dir
+
+ff
+dir
+
+fi
+dir
+
+fr
+dir
+
+fy-NL
+dir
+
+ga-IE
+dir
+
+gd
+dir
+
+gl
+dir
+
+gu-IN
+dir
+
+he
+dir
+
+hi-IN
+dir
+
+hr
+dir
+
+hu
+dir
+
+hy-AM
+dir
+
+id
+dir
+
+is
+dir
+
+it
+dir
+
+ja
+dir
+
+ka
+dir
+
+kk
+dir
+
+km
+dir
+
+kn
+dir
+
+ko
+dir
+
+ku
+dir
+
+lg
+dir
+
+lij
+dir
+
+locale.properties
+file
+
+
+
+
+2016-03-22T09:49:58.177000Z
+f91e7e8bc10148bcdcb953758a59a9fb
+2016-03-22T01:29:09.545697Z
+14349
+liuwei
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4314
+
+lt
+dir
+
+lv
+dir
+
+mai
+dir
+
+mk
+dir
+
+ml
+dir
+
+mn
+dir
+
+mr
+dir
+
+ms
+dir
+
+my
+dir
+
+nb-NO
+dir
+
+nl
+dir
+
+nn-NO
+dir
+
+nso
+dir
+
+oc
+dir
+
+or
+dir
+
+pa-IN
+dir
+
+pl
+dir
+
+pt-BR
+dir
+
+pt-PT
+dir
+
+rm
+dir
+
+ro
+dir
+
+ru
+dir
+
+rw
+dir
+
+sah
+dir
+
+si
+dir
+
+sk
+dir
+
+sl
+dir
+
+son
+dir
+
+sq
+dir
+
+sr
+dir
+
+sv-SE
+dir
+
+sw
+dir
+
+ta
+dir
+
+ta-LK
+dir
+
+te
+dir
+
+th
+dir
+
+tl
+dir
+
+tn
+dir
+
+tr
+dir
+
+uk
+dir
+
+ur
+dir
+
+vi
+dir
+
+wo
+dir
+
+xh
+dir
+
+zh-CN
+dir
+
+zh-TW
+dir
+
+zu
+dir
+

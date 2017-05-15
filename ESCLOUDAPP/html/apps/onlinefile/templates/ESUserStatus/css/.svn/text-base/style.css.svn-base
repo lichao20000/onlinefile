@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+#user_menu {
+	float: left;
+	width: 220px;
+	padding: 7px 0 9px 8px;
+	height: 4rem;
+	position: fixed;
+}
+
+#current_user_name {
+	color: white;
+	font-weight: 900;
+	line-height: 1.5rem;
+	margin-top: .2rem;
+	max-width: 120px;
+}
+
+#connection_icon {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 38px;
+	left: 63px;
+}
+
+#connection_status {
+	margin-left: 1rem;
+	line-height: 1.1rem;
+}

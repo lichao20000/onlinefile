@@ -1,0 +1,31 @@
+<?php
+class ProxyOnlinefileOnlinefile_publishCommunity extends AgentProxyAbstract {
+	
+	const SERVICE_NAME = "wechat";
+	
+	/**用户发帖**/
+	public function publishCommunityCard($data){
+		$urlParam = array('publishCommunitylist');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**用户评论**/
+	public function showReplylist($data){
+		$urlParam = array('showReplylist');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	/**获取用户评论总数**/
+	public function getCommentTotal($data){
+		$urlParam = array('getCommentTotal');
+		$url = implode('/', $urlParam);
+		return $this->post(self::SERVICE_NAME,$url,$data,"application/json;charset=UTF-8");
+	}
+	
+	/**用户点赞**/
+	public function praiseCard($postData){
+		$url = "praiseCard";
+		return $this->post(self::SERVICE_NAME, $url,$postData,"application/json;charset=UTF-8");
+	}
+}
+?>

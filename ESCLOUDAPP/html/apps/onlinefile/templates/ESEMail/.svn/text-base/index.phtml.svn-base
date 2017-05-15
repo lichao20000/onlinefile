@@ -1,0 +1,133 @@
+<link
+	href='<?php echo $tplPath?>/ESEMail/css/style.css' rel="stylesheet" />
+
+<link
+	rel="stylesheet" type="text/css"
+	href="<?php echo $tplPath;?>/public/autovalidate/style.css" />
+	
+<script
+	type="text/javascript"
+	src="<?php echo $tplPath;?>/public/autovalidate/validate.js"></script>
+	
+<script type="text/javascript" src='<?php echo $tplPath?>/ESEMail/js/index.js'></script>
+<script type="text/javascript" src='<?php echo $tplPath?>/public/js/spin.js'></script>
+<img class="emailAnimateCls" src="<?php echo $tplPath;?>/ESEMail/img/emailAnimate.png"> 
+<div id="emailAllSection">
+	<div class="emailFunCls" id="emailtitle">
+		<div id="showAndClosrBtn" class="showAndClosrBtnCls" title="隐藏邮箱附件"></div>
+		<input type="button" name="syncEmail" value="同步" title = "同步当前邮箱，可能需要占用您几分钟时间！" class="syncEmailListCls" id="syncEmailListBtn" />
+		<div id="dropdown">
+			<p id="myemailBtn">
+				我的邮箱<i class="iconfa-caret-down" style="margin-left: 5px;"></i>
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript"
+		src="<?php echo $tplPath;?>/public/js/jquery.appclient.js?baseurl=<?php echo $esaction->generateUrl(array());?>"></script>
+	<script type="text/javascript"
+		src="<?php echo $tplPath;?>/public/artDialog/jquery.artDialog.js?skin=default"></script>
+	<div class = "emailSearchLogoCls" id= "emailSearchLogo" ></div>
+	<input class = "emailsearchInputCls" type="text" id = "searchEmailAttachment"/>
+	<a title="返回" class="emailsearchClear hidden" id="emailsearchClear"></a>
+	<div id = "logoForEmailEmpty" title = "返回邮件列表" class = "logoForEmailEmptyCls"><div class = "logoEmptyWarningCls"></div></div>
+	<div class="contaier" id="attachmentListContainer">
+		<div id = "titleForEmailEmpty" class = "titleForEmailEmptyCls"><div class = "emailEmptyWarningCls"></div><font color="#58a2d8" style = "font-size:14px;float:left;">亲,您可以点我添加一个邮箱哦!</font></div>
+		<div id = "titleForEmailAttachMentEmpty" class = "titleForEmailAttachMentEmptyCls"><div class = "emailAttachMentsEmptyWarningCls"></div><font color="#58a2d8" style = "font-size:14px;float:left;">亲,这封邮件貌似没有附件!</font></div>
+		<div id = "titleForEmailListEmpty" class = "titleForEmailListEmptyCls"><div class = "emailListEmptyWarningCls"></div><font color="#58a2d8" style = "font-size:14px;float:left;">亲,最多查看最近三个月的邮件哦!</font></div>
+		<div id = "emailContentText" class = "emailContentTextCls"><div id = "emailContentTextContainer" class = "emailContentTextContainerCls"></div></div>
+		<div id="attachmentList_scroller" class="perfect-scroller">
+			<ul id="attachMentListUl">
+			<!-- 
+			
+				<li><a class="email_list_icon"><span class="filetype_icon s24 doc"></span>
+				</a>
+					<h3>标题1</h3>
+					<p>Lorem ipsum dolor sit amet...</p> <img
+					class="downloadEmailAttach" title="下载到本地"
+					src="<?php echo $tplPath;?>/ESEMail/img/icons/download.png"> <img
+					class="shareToGroup" title="分享到群组"
+					src="<?php echo $tplPath;?>/ESEMail/img/icons/shared.png"> <img
+					id="arrowRightId" class="arrowRightIdCls"
+					src="<?php echo $tplPath?>/ESEMail/img/arrowRight.png"> <span
+					class="titleForLi">标题：XXX 附件内容：关于财政收入的分配></span>
+				</li>
+				 -->
+			</ul>
+			
+		</div>
+		<div class="pagingBarForAttachMent" id = "pagingBarForAttachMent">
+			<input id = "emailPageingTotalInput" type="hidden" name="total" value="0"/> <!-- 总页数 -->
+			<a class="previous" id = "previousBtnEmail" title="上一页"><i class="iconfa-chevron-left"></i></a> 
+			<span class="pages"> 
+			<a class="page_num" id = "pageIndex_email">第1页
+					<i class="iconfa-caret-down"></i>
+			</a>
+				<div id="pages-menu-attachMent" class="footless no_min_width menu"
+					style="display: none;max-height: 150px; width: 80px;">
+					<!-- <div id="email_page_menu_items_scroller" class="perfect-scroller"
+						style="max-height: 150px; width: 80px;">  -->
+						<ul id="email_page_items" class = "email_page_itemsCls">
+						</ul>
+						<!--
+					</div> -->
+					<div id="menu_footer"></div>
+				</div>
+			</span> 
+			<a class="next" id = "nextBtnEmail" title="下一页"><i class="iconfa-chevron-right"></i></a>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	var pageIndex = $("#pageIndex_email").text().replace("第","").replace("页","").trim();
+	var pageLimit = 20;
+	resetEmailListHeight();
+ 	emailAction.getDefaultAttachmentByEmail(window.userId,1);
+ 	emailAction.cacheDefaultAllEmailAttachments(window.userId);
+ 	emailAction.getDefaultEmailList(window.userId);
+});
+</script>
+
+<script id="emailAttachMents_list_item_template" type="text/html">
+	{{each emailAttechMents}}
+			{{if $value.containAttachMent == "true" }}
+				<li value = "{{$value.emailIndex}}"><a class="email_list_icon"><span class="filetype_icon s24 email"></span>
+					</a>
+						<h3>{{$value.subject}}</h3>
+						<img class="containAttachMent" title="查看附件详细信息" src="<?php echo $tplPath;?>/ESEMail/img/attachMent.png"> 
+						<img id="arrowRightId" class="arrowRightIdCls" src="<?php echo $tplPath?>/ESEMail/img/arrowRight.png"> 
+						<span class="titleForLi">标题:<font  color="#58a2d8">{{$value.subjectTitle}}</font><br><div style = "height:3px;"></div>发送者:<font  color="#58a2d8">{{$value.sender}}</font><div style = "height:3px;"></div>发送时间:<font  color="#58a2d8">{{$value.sendTime}}</font></div></span>
+				</li>
+			{{else}}
+				<li value = "{{$value.emailIndex}}"><a class="email_list_icon"><span class="filetype_icon s24 email"></span>
+					</a>
+						<h3>{{$value.subject}}</h3>
+						<!-- 
+						<img class="downloadEmailAttach" title="下载到本地" src="<?php echo $tplPath;?>/ESEMail/img/icons/download.png"> 
+						<img class="shareToGroup" title="分享到群组" src="<?php echo $tplPath;?>/ESEMail/img/icons/shared.png">
+						--> 
+						<img id="arrowRightId" class="arrowRightIdCls" src="<?php echo $tplPath?>/ESEMail/img/arrowRight.png"> 
+						<span class="titleForLi">标题:<font  color="#58a2d8">{{$value.subjectTitle}}</font><br><div style = "height:3px;"></div>发送者:<font  color="#58a2d8">{{$value.sender}}</font><div style = "height:3px;"></div>发送时间:<font  color="#58a2d8">{{$value.sendTime}}</font></div></span>
+				</li>
+			{{/if}}
+
+	{{/each}}
+</script>
+
+<script id="emailSingleAttachMents_list_item_template" type="text/html">
+	{{each emailAttechMents}}
+			<div class = "emaiAttatchmentsBorder" value = "{{$value.emailIndex}}|{{$value.attachMentIndex}}">
+					<a class="email_list_icon"><span class="filetype_icon s24 {{$value.type}}"></span></a>
+					<h3>{{$value.subject}}</h3>
+					<p>{{#$value.mailText}}</p>
+					<img class="downloadEmailAttach" title="保存到左侧文档中心" src="<?php echo $tplPath;?>/ESEMail/img/icons/download.png"> 
+					<!-- <img class="shareToGroup" title="分享到群组" src="<?php echo $tplPath;?>/ESEMail/img/icons/shared.png"> -->
+					<img id="arrowRightId" class="arrowRightIdCls" src="<?php echo $tplPath?>/ESEMail/img/arrowRight.png"> 
+					<span class="titleForLi">标题:<font  color="#58a2d8">{{$value.subjectTitle}}</font><br><div style = "height:3px;"></div>发送者:<font  color="#58a2d8">{{$value.sender}}</font><div style = "height:3px;"></div>发送时间:<font  color="#58a2d8">{{$value.sendTime}}</font></div></span>
+			</div>
+	{{/each}}
+</script>
+
+<script id="emailAttachMents_page_template" type="text/html">
+	{{#emailAttechMentPages | pages_li}}
+</script>

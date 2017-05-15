@@ -1,0 +1,8 @@
+INFO - {"user":"xwd4java@126.com","time":"2015-06-26 17:52:07"}
+REQUEST - {"url":"http://127.0.0.1:8080/onlinefile/rest/onlinefileuser/openUrl", "method":"POST", "params":"{"classId":"136","groupid":"52","username":"xwd4java@126.com","ip":"127.0.0.1","ipandport":"127.0.0.1","companyId":"10"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.018886089325"}
+
+INFO - {"user":"xwd4java@126.com","time":"2015-06-26 17:53:32"}
+REQUEST - {"url":"http://127.0.0.1:8080/onlinefile/rest/onlinefileuser/openUrl", "method":"POST", "params":"{"classId":"136","groupid":"52","username":"xwd4java@126.com","ip":"127.0.0.1","ipandport":"127.0.0.1","companyId":"10"}", "content-type":"application/json;charset=UTF-8"}
+RESPONSE - {"code":"-100", "content-type":"text/plain", "message":"0", "reponse":"请求超时,服务无响应", "time":"1.0035259723663"}
+

@@ -1,0 +1,49 @@
+<div id="filePropDetail" class="filePropDetailCls">
+			<div style="clear: both; height: 30px;"></div>
+			<label class="filePropTitle-label" for="createfilePropTitle" style="float: left;margin-left: 50px;">字段名:</label>
+			<div id="createfilePropTitleShowDiv" style="float: left;width: 200px;margin-left: 40px;"><input type="text" name="createfilePropTitle" id="createfilePropTitleId" class="width200px textborder"  value="" /></div>
+			<input type="hidden" id="createfilePropMustID" value="0">
+			<div style="clear: both; height: 10px;"></div>
+			<label class="filePropType-label" for="createfilePropType">类型:</label>
+			<select name="createfilePropType" id="createfilePropTypeID" class="width60 marginleft47px bordercolorccc">
+				<option value="文本" selected>文本</option>
+				<option value="数值">数值</option>
+				<option value="日期">日期</option>
+				<option value="浮点">浮点</option>
+				<option value="时间">时间</option>
+				<option value="布尔">布尔</option>
+			</select>
+			<div style="clear: both; height: 10px;"></div>
+			<label class="filePropLength-label" for="createfilePropLength" style="float: left;margin-left: 50px;">字段长度:</label>
+			<div id="createfilePropLengthShowDiv" style="float: left;width: 200px;margin-left: 28px;"><input type="text" name="createfilePropLength" id="createfilePropLengthId" class="width200px textborder"  value="" /></div>
+			<div style="clear: both; height: 10px;"></div>
+			<label class="filePropDotLength-label" for="createfilePropDotLength" style="float: left;margin-left: 50px;">小数位数:</label> 
+			<div id="createfilePropDotLengthShowDiv" style="float: left;width: 200px;margin-left: 28px;"><input type="text" disabled="false"  name="createfilePropDotLength" id="createfilePropDotLengthId" class="width200px textborder"  value="0" /></div>
+			<div style="clear: both; height: 10px;"></div>
+			<label class="filePropDescription-label" for="createfilePropDescription">描述:</label>
+			<textarea rows="3" class="width200px marginleft47px bordercolorccc" id="createfilePropDescriptionID"></textarea>
+			<div style="clear: both; height: 10px;"></div>
+</div>
+<script>
+
+$("#createfilePropTypeID").die().live('change',function(){
+	var val = $("#createfilePropTypeID").val();
+	$("#createfilePropLengthId").removeAttr('disabled');
+	if("浮点"!= val){
+		$("#createfilePropDotLengthId").val('0');
+		$("#createfilePropDotLengthId").attr('disabled','false');
+		if("日期" == val || "时间" == val){
+			$("#createfilePropLengthId").val('0');
+			$("#createfilePropLengthId").attr('disabled','false');
+		}else if("布尔" == val){
+			$("#createfilePropLengthId").val('1');
+			$("#createfilePropLengthId").attr('disabled','false');
+		}else{
+			$("#createfilePropLengthId").val('');
+		}
+	}else{
+		$("#createfilePropDotLengthId").removeAttr('disabled');
+	}
+	
+});
+</script>

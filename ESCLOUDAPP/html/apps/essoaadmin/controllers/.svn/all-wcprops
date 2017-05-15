@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8795/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers
+END
+ESLoginNetSegmentAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7205/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESLoginNetSegmentAction.php
+END
+ESClusterManageAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8248/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESClusterManageAction.php
+END
+ESUserRegistrationAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESUserRegistrationAction.php
+END
+ESDefaultAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8795/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESDefaultAction.php
+END
+ESFileEquipmentAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7205/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESFileEquipmentAction.php
+END
+ESRoleAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESRoleAction.php
+END
+ESUserInstanceAuthAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESUserInstanceAuthAction.php
+END
+ESLogAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESLogAction.php
+END
+ESOrgRegisterAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESOrgRegisterAction.php
+END
+ESTaskSchedulAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESTaskSchedulAction.php
+END
+ESSyncConfigAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESSyncConfigAction.php
+END
+ESConsoleServerAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6157/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESConsoleServerAction.php
+END
+ESOrgAndUserAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7649/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESOrgAndUserAction.php
+END
+ESAppSettingAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5774/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/essoaadmin/controllers/ESAppSettingAction.php
+END

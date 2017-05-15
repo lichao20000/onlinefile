@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/11372/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp
+END
+filestoreservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/filestoreservice.proxy.ps
+END
+escloud_folderservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7205/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_folderservice.proxy.ps
+END
+escloud_fileoperationws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7205/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_fileoperationws.proxy.ps
+END
+escloud_userinfows.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_userinfows.proxy.ps
+END
+escloud_usingformws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6475/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_usingformws.proxy.ps
+END
+escloud_reportservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6176/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_reportservice.proxy.ps
+END
+escloud_consumerservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_consumerservice.proxy.ps
+END
+escloud_receivews.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_receivews.proxy.ps
+END
+escloud_cachews.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1600/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_cachews.proxy.ps
+END
+escloud_formstart.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6866/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_formstart.proxy.ps
+END
+escloud_keywordservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_keywordservice.proxy.ps
+END
+escloud_userinfoservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_userinfoservice.proxy.ps
+END
+escloud_workflowmonitor.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/2581/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_workflowmonitor.proxy.ps
+END
+escloud_metadataws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5281/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_metadataws.proxy.ps
+END
+escloud_transferws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_transferws.proxy.ps
+END
+escloud_businesseditws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7205/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_businesseditws.proxy.ps
+END
+escloud_repositoryws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6354/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_repositoryws.proxy.ps
+END
+escloud_triggerws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4020/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_triggerws.proxy.ps
+END
+escloud_desktopappservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4371/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_desktopappservice.proxy.ps
+END
+escloud_formws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_formws.proxy.ps
+END
+escloud_organcorrespondingws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_organcorrespondingws.proxy.ps
+END
+escloud_fileEquipmentws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/2880/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_fileEquipmentws.proxy.ps
+END
+escloud_publishws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6577/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_publishws.proxy.ps
+END
+escloud_researchformws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4387/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_researchformws.proxy.ps
+END
+escloud_organduserws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6795/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_organduserws.proxy.ps
+END
+escloud_extraKeyword.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5150/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_extraKeyword.proxy.ps
+END
+escloud_yearnewspaperservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6658/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_yearnewspaperservice.proxy.ps
+END
+escloudapp.info
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6190/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloudapp.info
+END
+escloud_inoroutboundws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_inoroutboundws.proxy.ps
+END
+escloud_structureModelws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4744/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_structureModelws.proxy.ps
+END
+escloud_rolews.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6467/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_rolews.proxy.ps
+END
+escloud_logservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5175/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_logservice.proxy.ps
+END
+escloud_essclassws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5444/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_essclassws.proxy.ps
+END
+escloud_appConfigws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/1462/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_appConfigws.proxy.ps
+END
+escloud_usingcollectionws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5095/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_usingcollectionws.proxy.ps
+END
+escloud_discussws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5068/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_discussws.proxy.ps
+END
+escloud_archiveorganws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_archiveorganws.proxy.ps
+END
+escloud_identificationws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5839/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_identificationws.proxy.ps
+END
+escloud_formbuilder.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/3298/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_formbuilder.proxy.ps
+END
+escloud_recordtypews.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_recordtypews.proxy.ps
+END
+escloud_menuservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4361/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_menuservice.proxy.ps
+END
+escloudapp.png
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloudapp.png
+END
+escloud_searchws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/4338/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_searchws.proxy.ps
+END
+taskapp.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/taskapp.proxy.ps
+END
+escloud_luceneservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/3033/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_luceneservice.proxy.ps
+END
+escloudapp.ps
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6884/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloudapp.ps
+END
+escloud_formaccredit.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/2581/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_formaccredit.proxy.ps
+END
+escloud_structurews.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6722/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_structurews.proxy.ps
+END
+escloud_authservice.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6344/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_authservice.proxy.ps
+END
+escloud_workflowws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6263/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_workflowws.proxy.ps
+END
+escloud_collectionws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/5095/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_collectionws.proxy.ps
+END
+escloud_yearlyInspectionws.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/37/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_yearlyInspectionws.proxy.ps
+END
+escloud_businesstreews.proxy.ps
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/6626/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%89%8D%E5%8F%B0PHP/ESCLOUDAPP/html/apps/escloudapp/escloud_businesstreews.proxy.ps
+END

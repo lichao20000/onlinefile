@@ -1,0 +1,137 @@
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+<div id="userinfomainCommunity">
+	<div id="userinfomainCommunity_title">
+	</div>
+	<div id="userinfomainCommunity_info">
+	</div>
+</div>
+
+<div id="typeofreply">
+	<div class="pl_title" style="margin-left: 5px;margin-left: 2%;">
+	<h4>评论</h4>
+	</div>
+	<div id="reply_list" style="overflow: overlay;"></div>
+	<div class="reply_title" style="border-top-color: rgb(225, 225, 225);border-top-style: solid;border-top-width: 1px;">
+		<h4 style="margin-left: 10px;">回复</h4>
+	</div>
+	<textarea id="replytextarea"></textarea>
+	<div><button id="the_submit_btn">发表评论</button></div>
+</div>
+
+<script type="text/javascript">
+
+/**编辑发帖内容**/
+function editComunityContext(){
+	$('#userinfomainCommunity').hide();
+	$('#typeofreply').hide();
+	$('#typeofCommnity').show();
+	$("#commnitytitleids").focus();
+	$(".abtntobottom").attr("cardId",<?php echo $nameid;?>);
+	//修改选项
+	$("#typetoshowCommunity li").each(function(){ //遍历全部option
+		if($(this).attr("class") == 'click_after'){
+			var type=$(this).text();
+			if(type != '所有帖子'){
+				$("#community_type_select option").each(function(){ //遍历全部option
+			        var txt = $(this).text(); //获取option的内容
+			       if($.trim(type) == $.trim(txt)){
+			    	   $(this).attr("selected", true);
+			       }
+			    });
+			}
+		}
+	});
+	userCommunity.editComunityContext(<?php echo $nameid;?>);
+}
+
+
+
+//点击帖子标题获取帖子标题内容
+function unloadCommunityinfo(){
+
+    var url = window.onlinefilePath+'/rest/wechat/getCommunityArticle?callback=?';
+	var data = {'userid':<?php echo $nameid;?>,'flag':<?php echo $flag?>,'plId':window.userId,'userName':window.userName};
+	var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+	jQuery.getJSON(url, ret.data,
+			function(json) {
+			$('#userinfomainCommunity_title').html(template('titleusercommunity', {'data':json.alllist,'username':window.userName}));
+			if(json.count >= 0){
+				$('#myCommunity_callBackInfo').html(template('newCallBackInfo',{'count':json.count}));
+			}
+			$('#userinfomainCommunity_info').html(json.alllist.info);
+			var _w = parseInt($('#userinfomainCommunity_info').width());
+			$('#userinfomainCommunity_info img').each(function(i){
+				var img = $(this);
+				var realWidth;//真实的宽度
+				var realHeight;//真实的高度
+				$("<img/>").attr("src", $(img).attr("src")).load(function() {
+					realWidth = this.width;
+					realHeight = this.height;
+					if(realWidth >= _w){
+						$(img).css("width","100%").css("height","auto");
+					}
+					else{
+						$(img).css("width",realWidth+'px').css("height",realHeight+'px');
+					}
+				});
+				
+			});
+	});
+}
+
+var replyUserName = "";
+
+/**点击回复按钮**/
+function js_method(pl_name,replyUserName){
+	this.replyUserName = replyUserName
+    if(pl_name != '' && pl_name != undefined && pl_name.indexOf('\\') != -1){
+ 	  pl_name = pl_name.replace('\\', "");
+    }
+    CKEDITOR.instances.replytextarea.setData(pl_name+': ');
+}
+
+/**点击评论按钮**/
+$('#the_submit_btn').unbind('click').click(function(){
+		var reply_cont = CKEDITOR.instances.replytextarea.getData();
+		reply_cont = trim(reply_cont);
+		var plname =  window.userName;
+		if(reply_cont == ''){
+			showBottomMsg("亲,回复内容不能为空哦!",2);
+			return false;
+		}
+
+		$.ajax({
+			url: $.appClient.generateUrl({ESUserCommunity : 'showReplylist'},'x'),
+			type: 'POST',
+			data: {'pl_context_id':<?php echo $nameid;?>,'pl_name':plname,'pl_info':reply_cont,'replyUserName':replyUserName},	
+			datatype:"json",
+	   		success:function(datas){
+	   			var ajaxobj=eval("("+datas+")");  
+	   			if(ajaxobj['sucess'] == "OK"){
+	   				//判断评论是否显示
+	   				$('.pl_title').show();
+					showBottomMsg('评论成功!',1);
+					onlineReply(<?php echo $nameid;?>);
+					CKEDITOR.instances.replytextarea.setData('');
+				}else{
+					showBottomMsg('评论失败!',2);
+				}
+	    	}
+
+		});
+		
+});
+
+//查看用户新的回复信息
+(function ($){
+	unloadCommunityinfo();
+	onlineReply(<?php echo $nameid;?>);
+})(jQuery);
+
+/**加载ckeditor**/
+$(function(){
+	CKEDITOR.replace('replytextarea');
+});
+</script>
+

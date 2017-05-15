@@ -1,0 +1,86 @@
+ .moudle,.storelogomoudle,.shelflogomoudle,.collogomoudle,.layerlogomoudle,.boxlogomoudle{
+ 	float :left;
+ 	margin-left:20px;
+ 	margin-top:30px;
+ 	width:55px;
+ 	height:60px;
+ 	cursor:pointer;
+ }
+
+ .storeCode{
+ 	margin-top:5px;
+ 	text-align:center;
+ }
+ 
+ .nav,.connector{
+ 	float:left;
+ }
+ .nav{
+ 	cursor:pointer;
+ 	color:#4a8bc2;
+ 	margin-left:5px;
+ }
+ #navContainer{
+ 	margin-left:20px;
+ 	
+ }
+ .shelf{
+ 	float:right;
+ 	position:absolute;
+ 	right:20px;
+ 	color:#4a8bc2;
+ 	cursor:pointer;
+ }	
+ .activeSelected {
+   border:1px solid red;
+}
+.storeContainer{
+	overflow-x:scroll;
+	white-space:nowrap;
+	margin-left:15px;
+}
+
+ .storelogo,.collogo,.layerlogo,.shelflogo{
+    width:50px;
+ 	height:50px;
+ 	cursor:pointer;
+ 	
+ }
+.storelogo{
+ 	background:url(../images/store.png) no-repeat no-repeat;
+ }
+.shelflogo{
+	background:url(../images/shelf.png) no-repeat no-repeat;
+}
+.collogo{
+	background:url(../images/col.png) no-repeat no-repeat;
+}
+.layerlogo{
+	background:url(../images/layer.png) no-repeat no-repeat;
+}
+.shelfCol{
+	float:left;
+	width:80px;
+	background-color:#4a8bc2;
+}
+.shelfLayer{
+	width:60px;
+	height:60px;
+	margin-top:10px;
+	margin-left:10px;
+	background-color:white;
+}
+.shelfDetails{
+	margin-left:20px;
+	color:white;
+}
+.boxCls{
+	float:left;
+	width:15px;
+	height:60px;
+	margin-left:3px;
+	cursor:pointer;
+	background-color:#41b3e5;
+}
+
+.link {display:inline-block; width:16px; height:16px; background:url(../images/file.png) no-repeat no-repeat; cursor:pointer;}

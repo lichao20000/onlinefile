@@ -1,0 +1,106 @@
+
+
+/*添加用户样式*/
+@charset "utf-8";
+.clear{clear:both !important}
+
+
+/*index start*/
+.body_main{margin:100px 0 0 0;;overflow-y: auto;overflow-x: hidden;}
+.box_main{background:#ffffff;border-width:0 1px 0 1px;width: 00px;min-height:50px;}/*border:solid #D0D0D0;*/
+.box_bottom{position:absolute;width:991px;height:7px;padding:0;}/**background:url('../img/box_bottom.png') no-repeat scroll center top transparent;*/
+/*Tooltips*/
+.tooltips_main{position:absolute;left:0;margin:-5px 0 0 2px;z-index:999;}
+.tooltips_box,.tooltips,.msg{display:inline-block;*display:inline;*zoom:1;position:relative;border-style:solid;border-color:#FF1F1F;}
+.tooltips,.msg{border-width:0 1px;*left:-2px;background-color:#FFCFCF;}
+.tooltips_box{border-width:1px;line-height:1.5;}
+.tooltips{margin:0 -2px;}
+.msg{margin:1px -2px;padding:0 6px;color:#2F2C2C;text-shadow:0 1px 0 #FFFFFF;font-size:12px;}
+.ov{background:url('../img/tri.gif') no-repeat scroll 0 0 transparent;position:absolute;left:30%;overflow:hidden;width:15px;height:15px;margin:16px 0 0 0;display:inline;}
+/*regist*/
+/* #zhixian {border-bottom: 1px dashed #BFBFBF;
+padding: 76px;
+width: 600px;
+margin-left: auto;
+margin-right: auto;} */
+div[id^="team"] {margin-top: 0px;
+float: left;
+display: inline;}
+.box_main .register{float:left;padding:10px}  /** 可能跟其他页面有冲突*/
+.box_main .register .form_submit{float:left;width:888px;}/*删除了一条直线 **/
+.box_main .register .form_submit .fieldset1{float:left;}
+.box_main .register .form_submit .fieldset1 .field-group{float:left;height:40px;}
+.box_main .register .form_submit .fieldset1 .field-group .titl{float:left;width:120px;text-align:right;margin:4px 0 0 0;font-size:14px;}
+.box_main .register .form_submit .fieldset1 .field-group .control-group{float:left;width:350px;margin:0 10px;}
+.box_main .register .form_submit .fieldset1 .field-group .tips{float:left;width:250px;color:#8E8E8E;}
+.box_main .register .div_submit{position:absolute;float:left;margin:320px 820px;}/*width:875px;*/
+.box_main .register .div_submit .div_submit_button{float:right;}
+/*end regist*/
+.fieldset1 .input_add_background{background:url("../img/input.jpg") no-repeat scroll 100% 100% transparent;background-position: center;height:30px;width:157px;float:left;margin:0 2px 0 0;}
+.fieldset1 .input_add_background input.register_input_ot{background-color:#f9f9f9;border:0 none;color:#4F4F4F;font-size:12px;height:18px;outline:medium none;width: 145px;padding:1px;margin:5px;}
+.fieldset1 .input_add_long_background{/* background:url("../img/input_long.jpg") no-repeat scroll 100% 100% transparent; */background-position: center;height:30px;width:286px;float:left;margin:0 0 15px 0;display:inline;}
+.fieldset1 .input_add_long_light_background{background:url("../img/input_long_light.jpg") no-repeat scroll 100% 100% transparent;background-position: center;height:30px;width:286px;float:left;}
+.fieldset1 .input_add_long_background input.register_input{/* background-color:#f9f9f9;border:0 none; */color:#4F4F4F;font-size:12px;height:18px;outline:medium none;width: 270px;padding:1px;margin:5px;}
+.fieldset1 .input_text{display:inline-block;position:absolute;vertical-align:top;margin:6px 0 0 10px;z-index:2;font-style:italic;color:#BFBFBF;}
+
+.box_main .register .form_submit .fieldset1 .field-group select{
+width: 280px;
+border: transparent;
+margin: 5px;
+background-color: transparent;
+	
+
+	}
+.box_main .register .form_submit .fieldset1 .field-group option{
+	width:100px; height:28px; padding-bottom:3px;
+	
+}
+#touxiang {
+	
+/* 	width: 45px;
+height: 45px;
+color: red;
+background-color: #3e313c;
+margin-left: 100px;
+float: left;
+margin-right: 90px;
+margin-top: -370px;
+position: relative;
+border: 5px solid #dedede;
+    -moz-border-radius: 7px;      Gecko browsers
+    -webkit-border-radius: 7px;   Webkit browsers
+    border-radius:7px; */
+    
+    width: 45px;
+height: 45px;
+/* color: red; */
+/* background-color: #3e313c; */
+margin-left: 140px;
+float: left;
+margin-right: 190px;
+margin-top: -330px;
+position: relative;
+border: 5px solid #dedede;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+}
+#user_logo {
+	
+	width: 215px;
+height: 100px;
+/* color: red; */
+/* background-color: #3e313c; */
+margin-left: 210px;
+float: left;
+margin-right: 90px;
+margin-top: -10px;
+position: relative;
+}
+.touxiang{background: url('//s.doubanio.com/f/shire/2845e06e4eea41dc937dc5fd8cc37fbc77046a4b/pics/albumback_s.gif') 1px 1px no-repeat;
+padding: 5px 8px 8px 5px;}
+
+.align_center {
+text-align: center !important;
+}
+.signatureTest { border:solid 1px #c00;}

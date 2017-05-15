@@ -1,0 +1,173 @@
+<style>
+.fileditNew {
+	width: 100%;
+	height: 115px;
+	float: left;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.fileditdivNew {
+	width: 250px;
+	height: 25px;
+	float: left;
+	margin-left: 10px;
+	padding: 5px 20px 5px 20px;
+}
+
+.fileditdivNew input {
+	width: 150px;
+}
+
+.fileditdivAreaNew {
+	width: 250px;
+	height: 68px;
+	float: left;
+	margin-left: 50px;
+	padding: 5px 20px 5px 20px;
+}
+
+.filednameNew {
+	width: 120px;
+	line-height: 25px;
+	text-indent: 5px;
+	float: left;
+}
+
+.filedvalueNew {
+	width: 60px;
+	height: 25px;
+	float: left
+}
+
+.SSLLabelCls {
+	margin-left: 280px;
+	width: 70px;
+}
+
+.SSLInputCls {
+	height: 25px;
+	width: 50px;
+	/* margin-left: 0px; */
+	float: right;
+	margin-right: -140px;
+	margin-top: -17px;
+}
+
+.SSLInputCls input {
+	width: 50px;
+}
+</style>
+<div id='tempEmail' style="height: 30px;">
+	<form id="addEmailManualForm" action="" method="post">
+		<div class='fileditdivNew'>
+			<p class='filednameNew'>&nbsp;接收服务器类型：</p>
+			<p class='filedvalueNew'>
+				<select>
+					<option value="POP">POP</option>
+					<!-- <option value="IMAP">IMAP</option> -->
+				</select>
+		
+		</div>
+
+		<div class='fileditdivNew'>
+			<p class='filednameNew'>&nbsp;邮箱：</p>
+			<p class='filedvalueNew'>
+				<input class='input' type="text" id="emailManualInput" name="email" verify="email/100/1/0"/>
+			</p>
+
+		</div>
+		<div class='fileditdivNew'>
+			<p class='filednameNew'>&nbsp;密码：</p>
+			<p class='filedvalueNew'>
+				<input class='input' type='password' id="passwordManualInput"
+					name="password" verify="text/50/1/0"></input>
+			</p>
+
+		</div>
+		<div class='fileditdivNew'>
+			<p class='filednameNew'>&nbsp;pop服务器：</p>
+			<p class='filedvalueNew'>
+				<input class='input' type='text' id="popServerInput"
+					name="popServerInput" value="pop.163.com" verify="text/50/1/0"></input>
+			</p>
+			<div class='SSLLabelCls'>&nbsp;SSL端口：</div>
+			<div class='SSLInputCls'>
+				<input class='input' type='text' id="popSSLPortInput"
+					name="password" value="995" verify="number/5/1/0"></input>
+			</div>
+		</div>
+		<div class='fileditdivNew'>
+			<p class='filednameNew'>&nbsp;smtp服务器：</p>
+			<p class='filedvalueNew'>
+				<input class='input' type='text' id="smtpServerInput"
+					name="smtpServerInput" value="smtp.163.com" verify="text/50/1/0"></input>
+			</p>
+			<div class='SSLLabelCls'>&nbsp;SSL端口：</div>
+			<div class='SSLInputCls'>
+				<input class='input' type='text' id="smtpSSLPortInput"
+					name="password" value="994" verify="number/5/1/0"></input>
+			</div>
+		</div>
+	</form>
+</div>
+<script type="text/javascript">
+/**  密码验证  **/
+$("#passwordManualInput").blur(function(){
+	if($("#passwordManualInput").val() == null || $("#passwordManualInput").val()==''){
+		$("#passwordManualInput").addClass("invalid-text").attr("title","此项不能为空");
+	}else{
+		$("#passwordManualInput").removeClass("invalid-text").attr("title","");
+	}
+});
+/**  账号验证  **/
+$("#emailManualInput").blur(function(){
+	reg=/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/; 
+	if((!reg.test(this.value))){
+		$("#emailManualInput").addClass("invalid-text").attr("title","请输入合法的邮箱");
+	}else if($("#emailManualInput").val() == null || $.trim($("#emailManualInput").val())==''){
+		$("#emailManualInput").addClass("invalid-text").attr("title","此项不能为空");	
+	}else{
+		$("#emailManualInput").removeClass("invalid-text").attr("title","");
+	}
+});
+
+/**     收件服务器验证      **/
+$("#popServerInput").blur(function(){
+	if($("#popServerInput").val() == null || $.trim($("#popServerInput").val())==''){
+		$("#popServerInput").addClass("invalid-text").attr("title","此项不能为空");
+	}else{
+		$("#popServerInput").removeClass("invalid-text").attr("title","");
+	}
+});
+
+/**    收件端口验证验证      **/
+$("#popSSLPortInput").blur(function(){
+	if($("#popSSLPortInput").val() == null || $.trim($("#popSSLPortInput").val())==''){
+		$("#popSSLPortInput").addClass("invalid-text").attr("title","此项不能为空");
+	}else{
+		$("#popSSLPortInput").removeClass("invalid-text").attr("title","");
+	}
+});
+
+
+/**     发邮件服务器验证      **/
+$("#smtpServerInput").blur(function(){
+	if($("#smtpServerInput").val() == null || $.trim($("#smtpServerInput").val())==''){
+		$("#smtpServerInput").addClass("invalid-text").attr("title","此项不能为空");
+	}else{
+		$("#smtpServerInput").removeClass("invalid-text").attr("title","");
+	}
+});
+
+/**     发邮件端口验证      **/
+$("#smtpSSLPortInput").blur(function(){
+	if($("#smtpSSLPortInput").val() == null || $.trim($("#smtpSSLPortInput").val())==''){
+		$("#smtpSSLPortInput").addClass("invalid-text").attr("title","此项不能为空");
+	}else{
+		$("#smtpSSLPortInput").removeClass("invalid-text").attr("title","");
+	}
+});
+
+	
+</script>

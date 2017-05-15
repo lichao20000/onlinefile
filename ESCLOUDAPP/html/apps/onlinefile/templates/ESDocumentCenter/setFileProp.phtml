@@ -1,0 +1,84 @@
+<div class="setfilePropMainDiv" id="">
+	<div class="setfilePropOneLineDiv">
+		<span class="setfilePropspan">分享到：</span>
+		<div id="shareId" class="chzn-container chzn-container-single" style="width:200px">
+			<a id="sharebtnId" class="chzn-single" tabindex="-1"><span>#general</span><div><b></b></div></a>
+			<div class="chzn-drop" id="drop">
+				<div class="chzn-search"><input type="text" autocomplete="off"></div>
+                <ul class="chzn-results">
+	                <li class="group-result" style="display: list-item;">Channels</li>
+					<li class="active-result group-option result-selected highlighted">#general</li>
+					<li class="active-result group-option">#random</li>
+					<li class="group-result" style="display: list-item;">People</li>
+					<li class="active-result group-option">guolanrui</li>
+					<li class="active-result group-option">longjunhao</li>
+					<li class="active-result group-option">slackbot(remains private)</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="setfilePropOneLineDiv">
+		<span class="setfilePropspan">文件类别：</span>
+		<div id="typeId" class="chzn-container chzn-container-single" style="width:200px">
+			<a id="typebtnId" class="chzn-single" tabindex="-1"><span>所有文件类型</span><div><b></b></div></a>
+			<div class="chzn-drop">
+                <ul class="chzn-results">
+					<li class="active-result group-option result-selected">所有文件类型</li>
+					<li class="active-result group-option">图片</li>
+					<li class="active-result group-option">PDF文件</li>
+					<li class="active-result group-option">DOC文件</li>
+					<li class="active-result group-option">文本</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="setfilePropOneLineDiv">
+		<span class="setfilePropspan">描述：</span>
+		<textarea rows="3" class="setfilePropTextarea" id="" ></textarea>
+	</div>
+</div>
+<script>
+$(function(){
+	$('.chzn-results .active-result.group-option').mouseover(function(){
+		$('.chzn-results .active-result.group-option').removeClass('highlighted');
+		$(this).addClass('highlighted');
+	}).mouseout(function(){
+		$('.chzn-results .active-result.group-option').removeClass('highlighted');
+	});
+
+	$('.chzn-results .active-result.group-option').die().live('click', function(){
+		$('.chzn-results .active-result.group-option').remove('result-selected');
+		$(this).addClass('result-selected');
+
+		var showLabel = $(this).closest('.chzn-container.chzn-container-single').find('.chzn-single');
+		showLabel.find('span').text($(this).text());
+		showLabel.parent().removeClass('chzn-with-drop');
+		return false;
+	});
+
+	
+	$('.chzn-container.chzn-container-single').die().live('click', function(){
+		if ($(this).hasClass('chzn-with-drop')) {
+			$(this).removeClass('chzn-with-drop');
+		} else {
+			// 关闭其他的
+			$('.chzn-container.chzn-container-single').removeClass('chzn-with-drop');
+			$('.chzn-container.chzn-container-single').removeClass('chzn-container-active');
+			$(this).addClass('chzn-with-drop');
+			$(this).addClass('chzn-container-active');
+		}
+		return false;
+	});
+
+	$(document).click(function(event) {
+		var containerDivs = $('.chzn-container.chzn-container-single');
+		if (containerDivs.hasClass('chzn-with-drop') || containerDivs.hasClass('chzn-container-active')) {
+			containerDivs.removeClass('chzn-with-drop');
+			containerDivs.removeClass('chzn-container-active');
+		}
+	});
+
+});
+
+
+</script>

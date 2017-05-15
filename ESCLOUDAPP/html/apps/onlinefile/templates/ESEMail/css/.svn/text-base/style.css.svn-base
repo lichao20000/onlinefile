@@ -1,0 +1,520 @@
+h4 {
+	font-size: 14px;
+	color: #333;
+}
+
+dl {
+	border: dashed 1px #666;
+	font-size: 14px;
+	padding: 4px;
+	background: #FDFBDB;
+}
+
+dt {
+	clear: left;
+	float: left;
+	padding: 4px 0;
+}
+
+dd {
+	margin-right: 30px;
+	text-align: right;
+	padding: 4px 0;
+	font-size: 12px;
+	color: #666;
+}
+
+/* form validate */
+textarea.invalid-text, input.invalid-text, select.invalid-text {
+	border: 2px #DD0000 solid;
+}
+
+.email_list_icon {
+  background: #f9f9f9;
+  border-color: #e8e8e8;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  overflow: hidden;
+  float: left;
+  margin: 0 15px 0 0;
+  width: 25px;
+}
+
+
+/**  searchBar **/
+.credits {
+	margin-bottom: 80px;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #ccc;
+}
+.emailListMenus{
+  position: absolute;
+  max-width: 400px;
+  color: #555459;
+  z-index: 150;
+  -webkit-box-shadow: 0 2px 10px rgba(64,54,63,0.5);
+  -moz-box-shadow: 0 2px 10px rgba(64,54,63,0.5);
+  box-shadow: 0 2px 10px rgba(64,54,63,0.5);
+  font-size: 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.contaier {
+	margin: 0px;
+	margin-top: 5px;
+	height: 100%;
+	color:rgb(85, 84, 89);
+}
+
+.contaier ul {
+	list-style-type: none;
+	width: 100%;
+}
+
+.contaier h3 {
+	/*font: bold 15px/1.5 Helvetica, Verdana, sans-serif;*/
+	color:rgb(85, 84, 89);
+	height:22px;
+	margin-top:5px;
+}
+
+#attachMentListUl li a {
+	float: left;
+	margin: 0 15px 0 0;
+	width: 25px;
+}
+
+.contaier li p {
+	font: 200 12px/1.5 Georgia, Times New Roman, serif;
+	color: #000;
+	margin-top: 3px;
+}
+
+.titleForLi {
+	background-color: #ffffff;
+	width: 150px;
+	border: solid 1px #eaeaea;
+	border-radius: 5px;
+	height: 90px;
+	position: fixed;
+	/* text-align: center; */
+	padding: 20px 12px 10px;
+	font-style: normal;
+	z-index: 2;
+	display: none;
+ 	margin-left: -233px; 
+ 	margin-top: -60px; 
+ 	color: #000000;
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(170, 170, 170, 1);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(170, 170, 170, 1);
+	box-shadow: 0px 2px 10px 0px rgba(170, 170, 170, 1);
+}
+
+.arrowRightIdCls {
+	position: fixed;
+	display: none;
+	margin-left: -62px;
+	z-index: 2;
+	margin-top: -60px;
+}
+
+.downloadEmailAttach {
+	float: right;
+	margin-top: -20px;
+	margin-right: 13px;
+}
+
+.containAttachMent {
+	float: right;
+	margin-top: -26px;
+	margin-right: 6px;
+}
+
+.emailAnimateCls{
+	position:absolute;
+	right:0px;
+	top:0px;
+	z-index:999;
+	display:none;
+}
+
+.shareToGroup {
+	float: right;
+	margin-top: -20px;
+	margin-right: 13px;
+}
+
+.contaier li {
+	padding: 10px;
+	overflow: auto;
+	/* border: solid 1px #eaeaea; */
+	border-radius: 5px;
+	margin-bottom: 5px;
+	/* opacity: 0.6; */
+	background-color: #ffffff;
+}
+
+.contaier li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+/* search form 
+-------------------------------------- */
+.searchform {
+	display: inline-block;
+	zoom: 1; /* ie7 hack for display:inline-block */
+	*display: inline;
+	border: solid 1px #d2d2d2;
+	padding: 3px 5px;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+	background: #f1f1f1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),
+		to(#ededed));
+	background: -moz-linear-gradient(top, #fff, #ededed);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+		endColorstr='#ededed'); /* ie7 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+		endColorstr='#ededed'); /* ie8 */
+}
+
+.searchform input {
+	font: normal 12px/100% Arial, Helvetica, sans-serif;
+	margin-bottom: 0px;
+}
+
+.searchform .searchfield {
+	background: #fff;
+	padding: 6px 6px 6px 8px;
+	width: 185px;
+	border: solid 1px #bcbbbb;
+	outline: none;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.searchform .searchbutton {
+	color: #fff;
+	border: solid 1px #494949;
+	font-size: 12px;
+	height: 27px;
+	width: 27px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	background: #5f5f5f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e),
+		to(#454545));
+	background: -moz-linear-gradient(top, #9e9e9e, #454545);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e',
+		endColorstr='#454545'); /* ie7 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e',
+		endColorstr='#454545'); /* ie8 */
+}
+
+#dropdown {
+	position: relative;
+	float: right;
+	width: 90px;
+}
+
+#dropdown p {
+	width: 80px;
+	height: 45px;
+	line-height: 45px;
+/* 	padding-left: 4px; */
+/* 	padding-right: 30px; */
+ 	padding-right: 10px; 
+	cursor: pointer;
+	color: #90959A;
+	font-size: 14px;
+/* 	font-weight: bold; */
+}
+
+.manageEmailAddress_Cls {
+	/* width: 150px; */
+	margin-top: 10px;
+	height: 45px;
+	line-height: 45px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.emailFunCls {
+	height: 45px;
+	line-height: 30px;
+	width:250px;
+	/* background-color: #fbfaf8; */
+	/*border-bottom: 1px solid #e0e0e0;*/
+}
+
+.container, .main {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+}
+
+.main {
+	margin-top: 50px
+}
+
+input {
+	font-size: 13px;
+	color: #555860;
+}
+
+.search {
+/* 	position: relative; */
+/* 	margin: 0 auto; */
+}
+
+.emailsearchInputCls {
+	height: 26px;
+	width: 250px;
+	padding: 0 25px 0 25px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a8acbc #babdcc #c0c3d2;
+	border-radius: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+	-moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+	-ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+	-o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+	box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+}
+
+.emailSearchLogoCls{
+  width: 20px;
+  height: 20px;
+  background: url("../img/searchInput.png") 8px 6px
+ no-repeat;
+  float: left;
+  position: absolute;
+  cursor: pointer;
+}
+.emailsearchClear {
+  width: 20px;
+  height: 22px;
+  background: url("../img/searchClear.png") 4px 5px no-repeat;
+  float: left;
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+}
+
+.emailsearchInputCls:focus {
+	outline: none;
+	border-color: #66b1ee;
+	-webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+	-moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+	-ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+	-o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+	box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+}
+
+.showAndClosrBtnCls {
+	margin-top: 6px;
+	margin-left: 2px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	background: url("../img/hideEmail.png");
+	display:none;
+}
+
+#attachmentList_scroller {
+ 	position: relative; 
+/* 	height: 520px; */
+	overflow-x: hidden;
+ 	overflow-y: hidden; 
+/* 	background-color: #f7f7f7; */
+}
+
+.pagingBarForAttachMent {
+  background-color: #fff;
+  display: block;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  clear: both;
+  cursor: pointer;
+  /* text-align: center; */
+}
+
+.pagingBarForAttachMent a.previous {
+	line-height: 35px;
+	padding: 5px 35px;
+  	margin-right: 20px;
+	border-right: 1px solid #ddd;
+}
+
+.pagingBarForAttachMent a.next {
+	line-height: 35px;
+	padding: 5px 20px;
+  	margin-left: 20px;
+	border-left: 1px solid #ddd;
+}
+
+.pagingBarForAttachMent a:hover {
+	color: orange;
+}
+
+#email_page_items li a:hover{background:#439fe0;border-bottom:1px solid #2a80b9;color:white;text-decoration:none;overflow:hidden;text-shadow:0 1px 0 rgba(0,0,0,0.2)}
+#email_menu_items li a:hover{background:#439fe0;border-bottom:1px solid #2a80b9;color:white;text-decoration:none;overflow:hidden;text-shadow:0 1px 0 rgba(0,0,0,0.2)}
+
+.titleForEmailEmptyCls,.titleForEmailAttachMentEmptyCls,.titleForEmailListEmptyCls{
+	width:250px;
+	height:20px;
+	display: none;
+	cursor:pointer;
+}
+.emailEmptyWarningCls,.emailAttachMentsEmptyWarningCls,.emailListEmptyWarningCls{
+	height:24px;
+	width:24px;
+	padding:0px;
+	background: url("../img/emailwarning.png");
+	background-repeat:no-repeat;
+	float:left;
+	margin-top: -4px;
+    margin-right: 5px;
+}
+.emailListEmptyWarningCls{
+	margin-left:5px;
+}
+
+.logoEmptyWarningCls{
+	background: url("../img/back.png");
+	background-repeat:no-repeat;
+	width:36px;
+	height:36px;
+	float:left;
+	margin-top: 10px;
+  	text-align: center;
+  	margin-left: 100px;
+}
+
+.logoForEmailEmptyCls{
+	display:none;
+	float:left;
+	cursor:pointer;
+}
+
+.emailEmptyWarningCls{
+	margin-left: 10px;
+}
+
+.emailAttachMentsEmptyWarningCls{
+	margin-left: 25px;
+}
+
+.backToEmailListCls{
+  width: 250px;
+  height: 36px;
+  font-color: black;
+  cursor: pointer;
+  text-align: center;
+  /* margin-top: 10px; */
+  padding-top: 20px;
+  color: #58a2d8;
+  background: url("../img/back.png");
+  background-repeat: no-repeat;
+}
+
+.backToEmailListCls:hover{
+	background-color: #eee;
+}
+
+.backLogoCls{
+	background: url("../img/back.png");
+  	background-repeat: no-repeat;
+  	width: 32px;
+  	height: 32px;
+}
+
+.backLogoCls,.backToEmailListCls{
+	float:left;
+}
+
+.backEmailConatainerCls:hover{
+	  width: 250px;
+ 	 height: 56px;
+	background-color: #eee;
+	cursor:pointer;
+}
+
+.syncEmailListCls{
+  float: left;
+  margin-left: 45px;
+  border-radius: 5px;
+  background-color: white;
+  width: 40px;
+  height: 26px;
+  border: solid 1px #eee;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.syncEmailListCls:hover{
+	background-color: #eee;
+}
+
+
+.emaiAttatchmentsBorder {
+	padding: 10px;
+	overflow: auto;
+	/* border: solid 1px #eaeaea; */
+	border-radius: 5px;
+	margin-bottom: 5px;
+	/* opacity: 0.6; */
+	background-color: #ffffff;
+}
+.emaiAttatchmentsBorder:hover{
+	background: #eee;
+	cursor: pointer;
+}
+
+.emailContentTextCls{
+	width:250px;
+	height:300px;
+	display: none;
+	overflow:hidden;
+	position:absolute;
+	top:130px;
+	border: 1px solid #eee;
+  	border-radius: 5px;
+}
+
+.emailContentTextContainerCls{
+	width:100%;
+}
+
+
+

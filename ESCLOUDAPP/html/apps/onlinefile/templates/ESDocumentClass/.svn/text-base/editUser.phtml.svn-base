@@ -1,0 +1,186 @@
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/sha1.js"></script>
+<script	type="text/javascript" src="/apps/onlinefile/templates/public/js/security.js"></script>
+<style>
+.menus {
+  position: absolute;
+ /*  max-width: 400px; */
+  color: #555459;
+  z-index: 150;
+  -webkit-box-shadow: 0 2px 10px rgba(64,54,63,0.5);
+  -moz-box-shadow: 0 2px 10px rgba(64,54,63,0.5);
+  box-shadow: 0 2px 10px rgba(64,54,63,0.5);
+  font-size: 12px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 370px;
+}
+.popover_menus{background-color:#fff;border-top:1px solid #cecece;border-right:1px solid rgba(0,0,0,0.1);border-left:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);box-shadow:0 0 1px rgba(0,0,0,0.1),0 2px 4px rgba(0,0,0,0.1);border-radius:6px;background-clip:padding-box;overflow:visible}
+.popover_menus .arrow,.popover_menus .arrow_shadow{position:absolute;top:-5px;left:21px;-webkit-transform:scaleY(0.8);-moz-transform:scaleY(0.8);-o-transform:scaleY(0.8);-ms-transform:scaleY(0.8);transform:scaleY(0.8)}
+.popover_menus .arrow:after,.popover_menus .arrow_shadow:after{content:'';display:block;width:11px;height:11px;background-clip:padding-box;background-color:#fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.popover_menus .arrow_shadow:after{z-index:-1;box-shadow:0 0 0 1px #cecece,0 0 2px rgba(0,0,0,0.1)}
+.popover_menus.showing_header .arrow:after,.popover_menus.showing_header .arrow_shadow:after{background-color:#fafafa}
+.popover_menus .content{background:white;border-radius:6px;position:relative}
+
+#menu_headers .menu_simple_headers {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 5px 5px 6px 8px;
+  background: #fff;
+  color: #555459;
+  font-weight: 900;
+}
+
+.menus.popover_menus .menu_simple_headers {
+  position: relative;
+}
+
+.menus.popover_menus .menu_simple_headers,.menus.popover_menus .menu_footers{border-radius:6px}
+
+#menu_footers{border-top:0}
+#menu_footers .menu_footers{background:#fff;padding:5px 8px 5px;}
+
+.groupusers	{
+	height: 280px;
+	overflow:auto;
+	border:1px solid rgb(180, 180, 180);
+	border-radius: 4px;
+}
+.groupusers	.checkboxcss{
+	width:20px; 
+	text-align:center;
+}
+.groupusers	.hover{
+	background-color:#ffc;
+	color:#0066CC;
+	cursor: default;
+}
+.groupusers	table {
+	width: 100%; 
+	border-right:1px solid #F0F0F0;
+	border-bottom:1px solid #F0F0F0;
+}
+.groupusers	table th{
+	border-left:1px solid #F0F0F0;
+	border-top:1px solid #F0F0F0;
+	height:20px;
+	padding:2px;
+	text-align:left;
+} 
+.groupusers	table td{
+	border-left:1px solid #F0F0F0;
+	border-top:1px solid #F0F0F0;
+	height:20px;
+	padding:2px;
+} 
+</style>
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESDocumentClass/js/index.js"></script>
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESDocumentClass/js/template.js"></script>
+
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESDocumentClass/js/jquery.contextmenu.js"></script>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<div id="menu_custom_class" class="menus popover_menus flex_menu" style=""><span class="arrow_shadow"></span><span class="arrow"></span>
+	<div id="menu_headers"><div id="flex_menu_header" class="menu_simple_headers"></div></div>
+	<div id="menu_items_scrollers" class="ps-container">
+	<form id="addClass" method="post" enctype="multipart/form-data">
+			<div id="groupnamedivid">
+		<label for="groupname" style="display:none;">群组名称：</label>
+		<input type="text" id="manageruserid" style="display:none;" value="<?php echo $userId;?>" />
+		<input type="text" id="groupid" style="display:none;" value="<?php echo $groupid;?>" />
+		<input type="text" id="groupflag" style="display:none;" value="<?php echo $flag;?>" />
+		<input type="text" name="groupname" id="groupnameid" style="width: 260px; height: 20px;display:none;" oldvalue="<?php echo $groupname;?>" value="<?php echo $groupname;?>"/>
+		</div>
+			<div style="clear: both; height: 10px;"></div>
+			<div style="clear: both; height: 20px; margin-left: 15px;" id="grouplable" >分类成员设置：</div>
+			<div class="groupusers" id="createGroupUserlist" style="height: 190px;overflow: auto;border: 1px solid rgb(180, 180, 180);border-radius: 4px;width: 332px;margin-left: 15px;">
+				
+			
+			</div>
+			
+		</form>
+		<a id="modifuClassUser" style="display: inline-block; padding: 2px 2px; background: #2ab27b; border-radius: 4px; font-weight: normal; letter-spacing: 1px; font-size: 15px; line-height: 26px; color: white; text-shadow: 0 1px 1px black; text-shadow: 0 1px 1px rgba(0,0,0,0.25); text-decoration: none;margin-left: 270px;margin-top: 5px;">完成</a> 
+		<a id="closeUserClass" style="display: inline-block; padding: 2px 2px; background: #2ab27b; border-radius: 4px; font-weight: normal; letter-spacing: 1px; font-size: 15px; line-height: 26px; color: white; text-shadow: 0 1px 1px black; text-shadow: 0 1px 1px rgba(0,0,0,0.25); text-decoration: none;">取消</a>
+	<div class="ps-scrollbar-x" style="left: 0px; bottom: 3px; width: 0px;"></div><div class="ps-scrollbar-y" style="right: 1px; height: 0px;"></div></div>
+	<div id="menu_footers"><div id="flex_menu_footer" class="menu_footers"></div></div>
+</div>
+<script id="editgroupusersTemplate" type="text/html">
+	{{if userItems.length>0}}
+		<table id="groupuserstable" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th class="checkboxcss"><input type="checkbox" id="allcompanyusers"></th>
+				<th>用户名</th>
+				<th>姓名</th>
+				<th>组名</th>
+			</tr>
+			{{each userItems as userItem i}}
+				{{each users[i] as user}}
+					<tr>
+						{{if '1'==user.checked}}
+							<td class="checkboxcss" column="checkbox"><input type="checkbox" oldvalue="true" checked=true value="{{user.ID}}" username="{{user.USERNAME}}"></td>
+						{{else}}
+							<td class="checkboxcss" column="checkbox"><input type="checkbox" value="{{user.ID}}" username="{{user.USERNAME}}"></td>
+						{{/if}}
+						<td>{{user.USERNAME}}</td>
+						<td>{{user.FULLNAME}}</td>
+						<td>{{userItem}}</td>
+					</tr>
+				{{/each}}
+			{{/each}}
+		</table>
+	{{/if}}
+</script>
+<script type="text/javascript">
+(function ($) {
+	$('#createGroupUserlist').on('click', "#allcompanyusers", function(){
+		if($(this).is(':checked')){
+			$("input[type='checkbox']").each(function(){
+				$(this).attr("checked", "true");
+			});
+		} else {
+			$("input[type='checkbox']").each(function(){
+				$(this).removeAttr("checked");
+			});
+		}
+	});
+	$('#createGroupUserlist').on('click', "input[type='checkbox']", function(){
+		if($(this).is(':checked')){
+			$(this).attr("checked", "true");
+		} else {
+			$(this).removeAttr("checked");
+		}
+	});
+	$('#createGroupUserlist').on('click', "td", function(){
+		if($(this).attr("column") == "checkbox"){
+			return;
+		}
+		var checkbox = $(this).parent().find("input[type='checkbox']") ;
+		if(checkbox.is(':checked')){
+			checkbox.removeAttr("checked");
+		} else {
+			checkbox.attr("checked", "true");
+		}
+	}) ;
+	/** 鼠标经过行颜色改变监听 **/
+	$('#createGroupUserlist').on('mouseover', "tr", function(){
+		$(this).children("td").addClass("hover") ;
+	}) ;
+	$('#createGroupUserlist').on('mouseout', "tr", function(){
+		$(this).children("td").removeClass("hover") ;
+	}) ;
+	
+	var baseurl = $("#flyingchat").attr("baseurl") ; 
+	var companyId = $("#flyingchat").attr("companyId") ;
+	var username = $("#flyingchat").attr("username") ;
+	
+	var url = baseurl+'/rest/chat/getCompanyUsersForGroupSet/'+companyId+'/'+username+'?callback=?';
+	var data = {'userid':window.userId,groupid:"<?php echo $groupid;?>"};
+	var ret = addSecurityPart(url, data, window.token, window.u, window.jsessionid);
+	jQuery.getJSON(url, ret.data,
+			function(json) {
+				$('#createGroupUserlist').html(template('editgroupusersTemplate', json));
+	});
+})(jQuery);
+</script>

@@ -1,0 +1,63 @@
+#filePropDiv{ margin-top:30px;}
+.editbtn {display:inline-block; width:16px; height:16px; background:url(../../public/img/edit.jpg) no-repeat no-repeat; cursor:pointer;}
+.delbtn {display:inline-block; width:16px; height:16px; background:url(../../public/img/del.gif) no-repeat no-repeat; cursor:pointer;}
+.filePropMainDiv{margin:20px;width:730px;heigth:800px;}
+.filePropOneLineDiv{line-height: 34px;position: relative;padding-bottom:15px;}
+.filePropspan{width: 85px;text-align: right;font-size: 14px;color: #999;padding-right: 40px;float: left;}
+.filePropText{
+	width: 238px;
+	height: 16px;
+	padding: 10px 25px 10px 5px;
+	border: 1px solid #cccccc;
+	float: none;
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+}
+.filePropSelect{
+	width: 270px;
+	height: 38px;
+	padding: 10px 10px 10px 5px;
+	border: 1px solid #cccccc;
+	float: none;
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+}
+.filePropTextarea{
+	width: 253px;
+	padding: 10px 10px 10px 5px;
+	border: 1px solid #cccccc;
+	float: none;
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+}
+.fileProplable{
+	width: 255px;
+	height: 16px;
+	position: absolute;
+	line-height: 16px;
+	padding: 10px 25px 10px 5px;
+	margin-left: 15px;
+	background: #f4f4f4;
+	border: 1px solid #cccccc;
+	float: none;
+	font-size: 12px;
+	color: #999;
+	overflow: hidden;
+}
+.ftx04{
+	color:#F00;
+	padding-right:5px;
+}
+.fileProplable2Line{
+	line-height: 12px;
+	font-size: 8px;
+	font-size: 12px \9;
+	padding-bottom: 13px;
+	padding-top: 7px;
+}
+.borderRed{
+	border-color:red;
+}

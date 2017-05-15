@@ -1,0 +1,20 @@
+<style>
+.exportuser {
+		background: url(<?php echo $tplPath?>/ESUserInfo/img/export.gif) no-repeat center left;
+		padding-left:20px;
+	}
+</style>
+<script type="text/javascript" src="<?php echo $tplPath;?>/ESUserInfo/js/jquery.form.js"></script>
+<div id="importStep1Div">
+	<form id="importStep1" action="" enctype="multipart/form-data" method="post">
+		<div style="border:solid 1px #AAAAAA;padding:7px 0 10px 20px;margin:20px;width:460px;height:60px;">
+			<span style="position: relative;left:10px; top:-17px;background-color:#FFF;font-weight:bold;color:#909090;">选择文件&nbsp;&nbsp;&nbsp;
+			<a href="/files/download/用户导入.xlsx" class="exportuser">模板下载</a></span>
+			<div style="margin-bottom:12px;padding-bottom: 5px;">
+				<div style="width:80px;height:20px;line-height:16px;float:left;margin-left:11px;">用户导入:<input type="file" style="width:360px;margin-left:70px;margin-top:-20px;" name="importFile" id="importFile"/></div>
+			</div>
+		</div>
+		<input type="hidden" name="userId" value="<?php echo $userId;?>">
+	</form>
+</div>
+
