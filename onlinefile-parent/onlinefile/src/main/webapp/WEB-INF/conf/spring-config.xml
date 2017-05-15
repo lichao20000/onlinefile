@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-lazy-init="true"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/util
+	   http://www.springframework.org/schema/util/spring-util.xsd
+       ">
+
+	<tx:annotation-driven />
+	<context:annotation-config />
+	<context:component-scan base-package="cn.flying.rest.*" annotation-config="true" />
+
+	<!-- Quartz定时任务服务 Start -->
+	
+	<bean id="taskJob" class="cn.flying.rest.onlinefile.quartz.util.DataConversionTask"/>
+	<bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="group" value="job_work"/>
+	    <property name="name" value="job_work_name"/>
+	    <!--false表示等上一个任务执行完后再开启新的任务-->
+	    <property name="concurrent" value="false"/>
+	    <property name="targetObject">
+	        <ref bean="taskJob"/>
+	    </property>
+	    <property name="targetMethod">
+	        <value>run</value>
+	    </property>
+	</bean>
+	
+	<!--  调度触发器 -->
+	<bean id="myTrigger"
+	      class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+	    <property name="name" value="work_default_name"/>
+	    <property name="group" value="work_default"/>
+	    <property name="jobDetail">
+	        <ref bean="jobDetail" />
+	    </property>
+	    <property name="cronExpression">
+	        <value>0 30 17 * * ?</value>
+	    </property>
+	</bean>
+	
+	<!-- 调度工厂 -->
+	<bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="triggers">
+	        <list>
+	            <ref bean="myTrigger"/>
+	        </list>
+	    </property>
+	</bean>
+	
+	<!-- Quartz定时任务服务 END -->
+
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>WEB-INF/conf/config.properties</value>
+			</list>
+		</property>
+	</bean>
+	<util:properties id="staticprops" location="WEB-INF/conf/config.properties" />
+
+	<!-- 20150813 wanghongqing 更换连接池　如测试稳定，该段注释，将于2015年9月1日删除  -->
+<!-- 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass"
+			value="${flyingsoft.rest.fyplatform.connection.driver_class}" />
+		<property name="jdbcUrl" value="${flyingsoft.rest.fyplatform.connection.url}" />
+		<property name="user"
+			value="${flyingsoft.rest.fyplatform.connection.username}" />
+		<property name="password"
+			value="${flyingsoft.rest.fyplatform.connection.password}" />
+		<property name="initialPoolSize" value="${c3p0.initialPoolSize}" />
+		<property name="minPoolSize" value="${c3p0.minPoolSize}" />
+		<property name="maxPoolSize" value="${c3p0.minPoolSize}" />
+		<property name="maxIdleTime" value="${c3p0.maxIdleTime}" />
+		<property name="maxStatements" value="${c3p0.maxStatements}" />
+		<property name="acquireIncrement" value="${c3p0.acquireIncrement}" />
+		<property name="idleConnectionTestPeriod" value="${c3p0.idleConnectionTestPeriod}" />
+		<property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}" />
+		<property name="breakAfterAcquireFailure" value="${c3p0.breakAfterAcquireFailure}" />
+		<property name="testConnectionOnCheckout" value="${c3p0.testConnectionOnCheckout}" />
+	</bean> -->
+	<!-- 20150813 wanghongqing 更换阿里巴巴　druid连接池 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		init-method="init" destroy-method="close">
+		<!-- 数据库基本信息配置 -->
+		<property name="driverClassName" value="${flyingsoft.rest.fyplatform.druid.driverClassName}" />
+		<property name="url" value="${flyingsoft.rest.fyplatform.druid.url}" />
+		<property name="username" value="${flyingsoft.rest.fyplatform.druid.username}" />
+		<property name="password" value="${flyingsoft.rest.fyplatform.druid.password}" />
+		<!-- 初始化连接数量 -->
+		<property name="initialSize" value="${flyingsoft.rest.fyplatform.druid.initialSize}" />
+		<!-- 最大并发连接数 -->
+		<property name="maxActive" value="${flyingsoft.rest.fyplatform.druid.maxActive}" />
+		<!-- 最大空闲连接数 -->
+		<property name="maxIdle" value="${flyingsoft.rest.fyplatform.druid.maxIdle}" />
+		<!-- 最小空闲连接数 -->
+		<property name="minIdle" value="${flyingsoft.rest.fyplatform.druid.minIdle}" />
+		<!-- 配置获取连接等待超时的时间 -->
+		<property name="maxWait" value="${flyingsoft.rest.fyplatform.druid.maxWait}" />
+		<!-- 超过时间限制是否回收 -->
+		<property name="removeAbandoned" value="${flyingsoft.rest.fyplatform.druid.removeAbandoned}" />
+		<!-- 超过时间限制多长； -->
+		<property name="removeAbandonedTimeout" value="${flyingsoft.rest.fyplatform.druid.removeAbandonedTimeout}" />
+		<!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+		<property name="timeBetweenEvictionRunsMillis" value="${flyingsoft.rest.fyplatform.druid.timeBetweenEvictionRunsMillis}" />
+		<!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+		<property name="minEvictableIdleTimeMillis" value="${flyingsoft.rest.fyplatform.druid.minEvictableIdleTimeMillis}" />
+		<!-- 用来检测连接是否有效的sql，要求是一个查询语句 -->
+		<property name="validationQuery" value="${flyingsoft.rest.fyplatform.druid.validationQuery}" />
+		<!-- 申请连接的时候检测 -->
+		<property name="testWhileIdle" value="${flyingsoft.rest.fyplatform.druid.testWhileIdle}" />
+		<!-- 申请连接时执行validationQuery检测连接是否有效，配置为true会降低性能 -->
+		<property name="testOnBorrow" value="${flyingsoft.rest.fyplatform.druid.testOnBorrow}" />
+		<!-- 归还连接时执行validationQuery检测连接是否有效，配置为true会降低性能 -->
+		<property name="testOnReturn" value="${flyingsoft.rest.fyplatform.druid.testOnReturn}" />
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 据说是oracle才会用到 -->
+<!-- 		<property name="poolPreparedStatements" value="${flyingsoft.rest.fyplatform.druid.poolPreparedStatements}" />
+		<property name="maxPoolPreparedStatementPerConnectionSize" value="${druid.maxPoolPreparedStatementPerConnectionSize}" /> -->
+		<!--属性类型是字符串，通过别名的方式配置扩展插件，常用的插件有： 监控统计用的filter:stat 日志用的filter:log4j 防御SQL注入的filter:wall -->
+		<property name="filters" value="${flyingsoft.rest.fyplatform.druid.filters}" />
+	</bean> 
+	<!-- sessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>cn.flying.rest.*</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.query.substitutions">${hibernate.query.substitutions}</prop>
+				<prop key="hibernate.default_batch_fetch_size">${hibernate.default_batch_fetch_size}</prop>
+				<prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
+				<prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop>
+				<prop key="hibernate.bytecode.use_reflection_optimizer">${hibernate.bytecode.use_reflection_optimizer}</prop>
+
+				<prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+				<prop key="hibernate.cache.region.factory_class">${hibernate.cache.region.factory_class}</prop>
+				<!--<prop key="net.sf.ehcache.configurationResourceName">${net.sf.ehcache.configurationResourceName}</prop> -->
+				<prop key="hibernate.cache.use_structured_entries">${hibernate.cache.use_structured_entries}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<!--配置事务的传播特性 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- 对增、删、改方法进行事务支持 -->
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="create*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="edit*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="remove*" propagation="REQUIRED" />
+			<!-- 对查找方法进行只读事务 -->
+			<tx:method name="loadByUsername*" propagation="SUPPORTS"
+				read-only="true" />
+			<!-- 对其它方法进行只读事务 -->
+			<tx:method name="*" propagation="SUPPORTS" read-only="true" />
+			<!-- 要求事务的方法 -->
+			<tx:method name="setBusiModel" propagation="REQUIRED" />
+			<tx:method name="batchEdit" propagation="REQUIRED" />
+			<tx:method name="excuteSelectedBatchEdit" propagation="REQUIRED" />
+			<tx:method name="getBatchDataCondition" propagation="REQUIRED" />
+			<!-- <tx:method name="batchDelete" propagation="REQUIRED" />--><!-- 档案著录暂未使用 -->
+			<tx:method name="setBackForRecycle" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+	<!--那些类的哪些方法参与事务 -->
+	<!-- 可见execution(* *..BookManager.save(..)) 第一颗* 代表ret-type-pattern 返回值可任意， 
+		*..BookManager 代表任意Pacakge里的BookManager类。 如果写成com.xyz.service.* 则代表com.xyz.service下的任意类 
+		com.xyz.service..* com.xyz.service则代表com.xyz.service及其子package下的任意类 save代表save方法，也可以写save* 
+		代表saveBook()等方法 (..) 匹配0个参数或者多个参数的，任意类型 (x,..) 第一个参数的类型必须是X (x,,,s,..) 匹配至少4个参数，第一个参数必须是x类型，第二个和第三个参数可以任意，第四个必须是s类型 -->
+
+	<bean name="executor"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor"
+		destroy-method="shutdown" lazy-init="true">
+		<property name="corePoolSize" value="5" />
+		<property name="maxPoolSize" value="30" />
+		<property name="keepAliveSeconds" value="60" />
+	</bean>
+	
+</beans>

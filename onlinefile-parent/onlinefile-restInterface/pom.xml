@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>onlinefile</groupId>
+    <artifactId>onlinefile-parent</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>onlinefile-restInterface</artifactId>
+  <name>onlinefile-restInterface</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+	  <groupId>onlinefile</groupId>
+	  <artifactId>onlinefile-entity</artifactId>
+	  <version>1.0</version>
+	</dependency>
+    <dependency>
+		<groupId>javaee</groupId>
+		<artifactId>javaee</artifactId>
+		<version>5.0</version>
+	</dependency>
+  </dependencies>
+</project>

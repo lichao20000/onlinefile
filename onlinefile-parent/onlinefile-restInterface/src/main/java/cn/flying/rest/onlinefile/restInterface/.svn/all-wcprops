@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14295/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface
+END
+CompanyRegistWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 279
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/13913/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/CompanyRegistWS.java
+END
+DBAutoUpgradeWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 278
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7294/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/DBAutoUpgradeWS.java
+END
+FilePropertiesWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 279
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8166/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/FilePropertiesWS.java
+END
+UserWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 270
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14247/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/UserWS.java
+END
+WechatWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 272
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/11985/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/WechatWS.java
+END
+LuceneWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 272
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14246/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/LuceneWS.java
+END
+MessageQueueConsumerWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 286
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14043/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/MessageQueueConsumerWS.java
+END
+DocumentClassWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 279
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/11611/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/DocumentClassWS.java
+END
+EmailWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 271
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/13798/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/EmailWS.java
+END
+MessageQueueProducerWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 286
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14043/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/MessageQueueProducerWS.java
+END
+MessageQueueConsumerFileWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 290
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14043/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/MessageQueueConsumerFileWS.java
+END
+QuartzWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 272
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12394/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/QuartzWS.java
+END
+ChatWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 270
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/13412/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/ChatWS.java
+END
+FilesWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 271
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14217/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/FilesWS.java
+END
+AppVersionWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 276
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14295/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-restInterface/src/main/java/cn/flying/rest/onlinefile/restInterface/AppVersionWS.java
+END

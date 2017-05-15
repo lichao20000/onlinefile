@@ -1,0 +1,4282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE update SYSTEM "databaseUpdate_dtd.dtd">
+<update dataType="Mysql" description="Mysql数据库升级sql语句">
+	<version edition="1" description="创建用户在线，接到消息后没有看的消息存储表">
+		<sql creator="xiaoxiong" createDate="20150305" note="创建用户在线，接到消息后没有看的消息存储表">
+			DROP TABLE IF
+			EXISTS `company`;
+			CREATE TABLE `company` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`NAME` varchar(100) DEFAULT NULL,
+			`ADDRESSES` varchar(500) DEFAULT NULL,
+			`PHONE` varchar(13) DEFAULT NULL,
+			`FAX` varchar(13) DEFAULT NULL,
+			`POSTCODE` varchar(20) DEFAULT NULL,
+			`URL` varchar(100) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `users`;
+			CREATE TABLE `users` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`COMPANYID` int(8) NOT NULL,
+			`USERNAME` varchar(100) DEFAULT NULL,
+			`FULLNAME` varchar(20) DEFAULT NULL,
+			`PASSWORD` varchar(50) DEFAULT NULL,
+			`PORTRAIT` varchar(100) DEFAULT NULL,
+			`TELEOHONE` varchar(13) DEFAULT NULL,
+			`MOBILEPHONE` varchar(11) DEFAULT NULL,
+			`FAX` varchar(13) DEFAULT NULL,
+			`STATUS` int(1) DEFAULT NULL,
+			`ENABLED` int(1) DEFAULT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `users_ibfk_1` (`COMPANYID`),
+			CONSTRAINT `users_ibfk_1` FOREIGN KEY (`COMPANYID`) REFERENCES `company` (`ID`)
+			ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB DEFAULT
+			CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `companymanager`;
+			CREATE TABLE `companymanager` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`COMPANYID` int(8) NOT NULL,
+			`USERID` int(8) NOT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `companymanager_ibfk_1` (`COMPANYID`),
+			KEY `USERID` (`USERID`),
+			CONSTRAINT `companymanager_ibfk_1` FOREIGN KEY (`COMPANYID`) REFERENCES
+			`company` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+			CONSTRAINT `companymanager_ibfk_2` FOREIGN KEY (`USERID`) REFERENCES `users`
+			(`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB DEFAULT
+			CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `groups`;
+			CREATE TABLE `groups` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`COMPANYID` int(8) NOT NULL,
+			`GROUPNAME` varchar(50) DEFAULT NULL,
+			`REMARK` varchar(256) DEFAULT NULL,
+			`CREATETIME` varchar(30) DEFAULT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `COMPANYID` (`COMPANYID`),
+			CONSTRAINT `groups_ibfk_1` FOREIGN KEY (`COMPANYID`) REFERENCES `company`
+			(`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB DEFAULT
+			CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `emailset`;
+			CREATE TABLE `emailset` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`TYPE` varchar(30) DEFAULT NULL,
+			`RECEIVESERVER` varchar(100) DEFAULT NULL,
+			`SENDSERVER` varchar(100) DEFAULT NULL,
+			`RECEIVESERVERPORT` varchar(100) DEFAULT NULL,
+			`SENDSERVERPORT` varchar(100) DEFAULT NULL,
+			`EMAIL` varchar(100) DEFAULT NULL,
+			`PASSWORD` varchar(100) DEFAULT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `USERID` (`USERID`),
+			CONSTRAINT `emailset_ibfk_1` FOREIGN KEY (`USERID`) REFERENCES `users` (`ID`)
+			ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB DEFAULT
+			CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `fileuserrelation`;
+			CREATE TABLE `fileuserrelation` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`COMPANYID` int(8) NOT NULL,
+			`FILEID` int(8) NOT NULL,
+			`USERID` int(8) NOT NULL,
+			`GROUPID` int(8) NOT NULL,
+			`ISCOLLECT` int(1) NOT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `COMPANYID` (`COMPANYID`),
+			KEY `USERID` (`USERID`),
+			KEY `GROUPID` (`GROUPID`),
+			CONSTRAINT `fileuserrelation_ibfk_1` FOREIGN KEY (`COMPANYID`) REFERENCES
+			`company` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+			CONSTRAINT `fileuserrelation_ibfk_2` FOREIGN KEY (`USERID`) REFERENCES `users`
+			(`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+			CONSTRAINT `fileuserrelation_ibfk_3` FOREIGN KEY (`GROUPID`) REFERENCES
+			`groups` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB
+			DEFAULT CHARSET=utf8;
+
+
+			DROP TABLE IF EXISTS `groupusersrelation`;
+			CREATE TABLE
+			`groupusersrelation` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`GROUPID` int(8) NOT NULL,
+			`USERID` int(8) NOT NULL,
+			`JOINTIME` varchar(30) DEFAULT NULL,
+			`ISADMIN` int(1) NOT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `GROUPID` (`GROUPID`),
+			KEY `USERID` (`USERID`),
+			CONSTRAINT `groupusersrelation_ibfk_1` FOREIGN KEY (`GROUPID`) REFERENCES
+			`groups` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+			CONSTRAINT `groupusersrelation_ibfk_2` FOREIGN KEY (`USERID`) REFERENCES
+			`users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB
+			DEFAULT CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `wechatset`;
+			CREATE TABLE `wechatset` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `USERID` (`USERID`),
+			CONSTRAINT `wechatset_ibfk_1` FOREIGN KEY (`USERID`) REFERENCES `users` (`ID`)
+			ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB DEFAULT
+			CHARSET=utf8;
+
+			DROP TABLE IF EXISTS `emailattachments`;
+			CREATE TABLE `emailattachments` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`EMAILINDEX` int(8) NOT NULL,
+			`EMAIL` varchar(300) DEFAULT NULL,
+			`SUBJECT` varchar(500) DEFAULT NULL,
+			`SUBJECTTITLE` varchar(1000) DEFAULT NULL,
+			`SENDER` varchar(800) DEFAULT NULL,
+			`RECEIVER` varchar(800) DEFAULT NULL,
+			`SENDTIME` varchar(30) DEFAULT NULL,
+			`MAILTEXT` varchar(800) DEFAULT NULL,
+			`CONTAINATTACHMENT` varchar(20) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+			DROP TABLE IF EXISTS `EMAILDEFAULT`;
+			CREATE TABLE `EMAILDEFAULT` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`EMAIL` varchar(300) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+			CREATE TABLE
+			`notseemessage` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`COMPANYID` int(8) DEFAULT NULL,
+			`FROMUSER` varchar(100) DEFAULT NULL,
+			`USERNAME` varchar(100) DEFAULT NULL,
+			`CONTENT` varchar(4000) DEFAULT NULL,
+			`DATE` varchar(10) DEFAULT NULL,
+			`TIME` varchar(10) DEFAULT NULL,
+			PRIMARY KEY (`ID`),
+			KEY `COMPANYID` (`COMPANYID`),
+			CONSTRAINT `notseemessage_ibfk_1` FOREIGN KEY (`COMPANYID`) REFERENCES
+			`company` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+			) ENGINE=InnoDB
+			DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="2" description="给群组表groups添加flag群组标示列">
+		<sql creator="xiaoxiong" createDate="20150310" note="用于与openfire的群组标示对应">
+			ALTER TABLE
+			GROUPS ADD COLUMN FLAG varchar(30);
+		</sql>
+	</version>
+	<version edition="3" description="给用户在线，接到消息后没有看的消息存储表添加ISGROUP列">
+		<sql creator="xiaoxiong" createDate="20150310" note="用于标示是否为群聊消息">
+			ALTER TABLE
+			notseemessage ADD COLUMN ISGROUP int(1);
+		</sql>
+	</version>
+	<version edition="4" description="给用户在线，接到消息后没有看的消息存储表添加GROUPFLAG列">
+		<sql creator="xiaoxiong" createDate="20150310" note="用于记录消息所属的群聊标示">
+			ALTER TABLE
+			notseemessage ADD COLUMN GROUPFLAG varchar(50);
+		</sql>
+	</version>
+	<version edition="5" description="给company表增加SERVER_ID 列">
+		<sql creator="guolanrui" createDate="20150313" note="给company表增加SERVER_ID 列">
+			ALTER TABLE
+			company ADD COLUMN SERVER_ID int(8);
+		</sql>
+	</version>
+	<version edition="6" description="增加服务">
+		<sql creator="guolanrui" createDate="20150313" note="增加服务 ">
+			INSERT INTO
+			platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'companyregist',
+			'cn.flying.rest.onlinefile.restInterface.CompanyRegistWS',
+			'http://127.0.0.1:8080/onlinefile/rest/companyregist', '1', 'wwwwww',
+			'1', '0', null);
+			INSERT INTO
+			platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefileuser',
+			'cn.flying.rest.onlinefile.restInterface.UserWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefileuser', '1',
+			'wwwwww', '1', '0', null);
+			INSERT INTO
+			platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefile_documentclass',
+			'cn.flying.rest.onlinefile.restInterface.DocumentClassWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefile_documentclass',
+			'1', 'wwwwww', '1', '0', null);
+		</sql>
+	</version>
+	<version edition="7" description="增加服务">
+		<sql creator="xiaoxiong" createDate="20150316" note="删除聊天消息数据存储表 ">
+			DROP TABLE
+			chatrecords_0;
+		</sql>
+		<sql creator="xiaoxiong" createDate="20150316" note="重新创建聊天消息数据存储表">
+			CREATE TABLE
+			chatrecords_0 (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`FROMUSER` varchar(100) DEFAULT NULL,
+			`USERNAME` varchar(100) DEFAULT NULL,
+			`CONTENT` varchar(4000) DEFAULT NULL,
+			`DATE` varchar(10) DEFAULT NULL,
+			`TIME` varchar(10) DEFAULT NULL,
+			`ISGROUP` int(1) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="8" description="增加邮箱服务">
+		<sql creator="liuhezeng" createDate="20150313" note="增加邮箱服务 ">
+			INSERT INTO
+			platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefile_emailws',
+			'cn.flying.rest.onlinefile.restInterface.EmailWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefile_emailws', '1',
+			'wwwwww', '1', '0', null);
+		</sql>
+	</version>
+	<version edition="9" description="给user表添加FIR_LOGIN列">
+		<sql creator="gaoyide" createDate="20150319" note="给user表添加FIR_LOGIN列 ">
+			ALTER TABLE USERS ADD COLUMN FIR_LOGIN INT(1) DEFAULT '1' COMMENT
+			'是否为首次登录。1为是，0为否';
+		</sql>
+	</version>
+	<version edition="10" description="文件自定义属性表">
+		<sql creator="liqiubo" createDate="20150320" note="文件自定义属性表">
+			CREATE TABLE
+			`userfileproptype` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT ,
+			`USERID`
+			int(8) NULL ,
+			`TYPE` varchar(20) NULL ,
+			`COMPANYID` int(8) NULL ,
+			`ISNULL` varchar(1) NULL ,
+			`LENGTH` int(8) NULL ,
+			`DOTLENGTH` int(8)
+			NULL ,
+			`DESCRIPTION` varchar(256) NULL ,
+			`ISSYSTEM` varchar(1) NULL ,
+			`TITLE` varchar(128) NULL ,
+			PRIMARY KEY (`ID`)
+			);
+		</sql>
+		<sql creator="liqiubo" createDate="20150320" note="增加服务 ">
+			INSERT INTO `platformservice` VALUES ('onlinefile',
+			'onlinefile_filePropws',
+			'cn.flying.rest.onlinefile.restInterface.FilePropertiesWS',
+			'http://168.168.169.95:8080/onlinefile/rest/onlinefile_filePropws',
+			'1', 'wwwwww', '2', '0', null);
+			INSERT INTO `platformservice` VALUES ('onlinefile',
+			'onlinefile_clusterManagews',
+			'cn.flying.rest.onlinefile.restInterface.ClusterWS',
+			'http://168.168.169.95:8080/onlinefile/rest/onlinefile_clusterManagews',
+			'1', 'wwwwww', '2', '0', null);
+		</sql>
+	</version>
+	<version edition="11" description="FILES_0添加idseq属性">
+		<sql creator="longjunhao" createDate="20150323" note="添加字段idseq">
+			alter table
+			files_0 add IDSEQ varchar(250);
+		</sql>
+	</version>
+	<version edition="12" description="FILES_0添加isfile属性">
+		<sql creator="longjunhao" createDate="20150324" note="添加字段isfile">
+			alter table
+			files_0 add ISFILE char(1);
+		</sql>
+	</version>
+	<version edition="13" description="FILES_0添加isfile属性">
+		<sql creator="liqiubo" createDate="20150324" note="添加字段isfile">
+			ALTER TABLE
+			`files_0`
+			ADD COLUMN `FILEID` varchar(50) NULL AFTER `ISDELETE`;
+
+			ALTER TABLE `files_0`
+			ADD COLUMN `DIRID` varchar(10) NULL AFTER `FILEID`;
+
+			ALTER TABLE `files_0`
+			ADD COLUMN `storageId` varchar(10) NULL AFTER
+			`DIRID`;
+		</sql>
+	</version>
+	<version edition="14" description="FILES_0添加version字段">
+		<sql creator="longjunhao" createDate="20150324" note="添加字段version">
+			alter table
+			files_0 add VERSION int default 1;
+		</sql>
+	</version>
+	<version edition="15" description="用户表users添加CODE，EMAIAL，SIGNATURE，POSITION字段">
+		<sql creator="liumingchao" createDate="20150330"
+			note="添加CODE，EMAIAL，SIGNATURE，POSITION字段">
+			alter table users add CODE varchar(100);
+			alter table users add
+			EMAIL varchar(100);
+			alter table users add SIGNATURE varchar(100)
+			default '';
+			alter table users add POSITION varchar(100);
+		</sql>
+	</version>
+	<version edition="16" description="用户表uorg机构表">
+		<sql creator="liumingchao" createDate="20150330" note="添加关系表">
+			CREATE TABLE
+			`user_org` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`ORGID` int(8) NOT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="17" description="uorg">
+		<sql creator="liumingchao" createDate="20150331" note="org表">
+			CREATE TABLE
+			`org` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`COMPANYID` int(8) NOT NULL,
+			`ORGNAME` varchar(50) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+		</sql>
+	</version>
+	<version edition="18" description="groups表添加classId列">
+		<sql creator="longjunhao" createDate="20150403" note="groups表添加classId列">
+			alter table
+			groups add CLASSID int(8) default 0;
+		</sql>
+	</version>
+	<version edition="19" description="users表添加isadmin列">
+		<sql creator="xiaoxiong" createDate="20150403" note="标示当前用户为企业的管理员">
+			alter table
+			users add ISADMIN int(1) default 0;
+		</sql>
+	</version>
+	<version edition="20" description="邮箱设置表">
+		<sql creator="liuhezeng" createDate="20150413" note="邮箱设置表">
+			DROP TABLE IF
+			EXISTS `emailattachments`;
+			CREATE TABLE `emailattachments` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`EMAILINDEX` int(8) NOT NULL,
+			`EMAIL` varchar(300) DEFAULT NULL,
+			`SUBJECT` varchar(500) DEFAULT NULL,
+			`SUBJECTTITLE` varchar(1000) DEFAULT NULL,
+			`SENDER` varchar(800) DEFAULT NULL,
+			`RECEIVER` varchar(800) DEFAULT NULL,
+			`SENDTIME` varchar(30) DEFAULT NULL,
+			`MAILTEXT` varchar(800) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="21" description="常用邮箱表">
+		<sql creator="liuhezeng" createDate="20150413" note="常用邮箱表">
+			DROP TABLE IF
+			EXISTS `EMAILDEFAULT`;
+			CREATE TABLE `EMAILDEFAULT` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`EMAIL` varchar(300) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="22" description="文件表添加一个标识是否为最新版本">
+		<sql creator="longjunhao" createDate="20150416" note="是否最新版本">
+			alter table
+			files_0 add ISLAST int(1) default 1;
+		</sql>
+	</version>
+	<version edition="23" description="放弃user_org表，直接在users表中添加orgid">
+		<sql creator="liumingchao" createDate="20150416" note="用户表">
+			alter table
+			users add ORGID int(8) default 0;
+		</sql>
+	</version>
+	<version edition="24" description="">
+		<sql creator="liqiubo" createDate="20150416" note="">
+			ALTER TABLE
+			`files_0`
+			MODIFY COLUMN `ISFILE` enum('1','0') CHARACTER SET utf8
+			COLLATE utf8_general_ci NULL DEFAULT '1' ,
+			MODIFY COLUMN `ISLAST`
+			enum('1','0') NULL DEFAULT '1' ;
+		</sql>
+		<sql creator="liqiubo" createDate="20150416" note="">
+			ALTER TABLE
+			`files_0` MODIFY COLUMN `ISDELETE` enum('1','0') NOT NULL;
+		</sql>
+		<sql creator="liqiubo" createDate="20150416" note="">
+			ALTER TABLE
+			`files_0`
+			DROP COLUMN `DIRID`,
+			DROP COLUMN `storageId`;
+		</sql>
+	</version>
+	<version edition="25" description="">
+		<sql creator="liqiubo" createDate="20150417" note="为files_0表建索引">
+			ALTER TABLE
+			`files_0` ADD INDEX `ISFILE` (`ISFILE`) ;
+		</sql>
+	</version>
+	<version edition="26" description="添加邮箱附件标识">
+		<sql creator="liuhezeng" createDate="2015421" note="添加邮箱附件标识">
+			ALTER TABLE
+			emailattachments ADD COLUMN CONTAINATTACHMENT varchar(20);
+		</sql>
+	</version>
+	<version edition="27" description="修改邮箱内容字段长度">
+		<sql creator="liuhezeng" createDate="2015423" note="修改邮箱内容字段长度">
+			alter table
+			emailattachments modify column mailtext TEXT ;
+		</sql>
+	</version>
+	<version edition="28" description="删除无用字段">
+		<sql creator="liuhezeng" createDate="2015423" note="删除无用字段">
+			alter table
+			emaildefault drop column EMAILID;
+		</sql>
+	</version>
+	<version edition="29" description="user表增加createtime字段">
+		<sql creator="liumingchao" createDate="20150416" note="user表增加createtime字段">
+			alter table
+			users add CREATETIME varchar(30);
+		</sql>
+	</version>
+	<version edition="30" description="files表增加openlevel字段，标准公开级别">
+		<sql creator="LIQIUBO" createDate="20150506" note="files表增加openlevel字段，标准公开级别">
+			ALTER TABLE
+			`files_0` ADD COLUMN `OPENLEVEL` enum('3','2','1','0') NULL DEFAULT
+			'0' ;
+		</sql>
+	</version>
+	<version edition="31"
+		description="emailattachments添加邮件体数量（PARTCOUNT）字段和附件数量（ATTACHMENTCOUNT）字段">
+		<sql creator="WANGWENSHUO" createDate="20150507"
+			note="emailattachments添加邮件体数量（PARTCOUNT）字段和附件数量（ATTACHMENTCOUNT）字段">
+			ALTER TABLE EMAILATTACHMENTS ADD COLUMN (PARTCOUNT INT(4));
+			ALTER TABLE EMAILATTACHMENTS ADD COLUMN (ATTACHMENTCOUNT INT(4));
+		</sql>
+	</version>
+	<version edition="32" description="添加用户信息订阅关联表">
+		<sql creator="liuhezeng" createDate="20150512" note="添加用户信息订阅关联表">
+			DROP TABLE IF
+			EXISTS `USERSUBSCRIBE`;
+			CREATE TABLE `USERSUBSCRIBE` (
+			`ID` int(8) NOT NULL AUTO_INCREMENT,
+			`USERID` int(8) NOT NULL,
+			`SUBSCRIBENAME` varchar(300) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="33" description="用户社区信息表">
+		<sql creator="zhangyining" createDate="20150512" note="用户社区信息表">
+			DROP TABLE
+			IF EXISTS `commnuity_info`;
+			CREATE TABLE `commnuity_info` (
+			`id` int(11) NOT NULL AUTO_INCREMENT,
+			`item_id` int(11) DEFAULT NULL,
+			`title` varchar(255) NOT NULL,
+			`info` varchar(5000) NOT NULL,
+			PRIMARY KEY (`id`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+		</sql>
+	</version>
+	<version edition="34" description="用户社区回复信息表">
+		<sql creator="zhangyining" createDate="20150515" note="用户社区回复信息表">
+			DROP TABLE
+			IF EXISTS `community_callback`;
+			CREATE TABLE `community_callback` (
+			`pl_id` int(11) NOT NULL AUTO_INCREMENT,
+			`pl_context_id` int(11) DEFAULT NULL,
+			`pl_name` varchar(225) DEFAULT '',
+			`pl_date` varchar(255) DEFAULT '',
+			`pl_info` varchar(255) DEFAULT '',
+			`pl_imgurl` varchar(255) DEFAULT '',
+			`pl_callback` varchar(255) DEFAULT '',
+			PRIMARY KEY (`pl_id`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="35" description="用户社区发帖信息表">
+		<sql creator="zhangyining" createDate="20150515" note="用户社区发帖信息表">
+			DROP TABLE
+			IF EXISTS `community_msg`;
+			CREATE TABLE `community_msg` (
+			`user_id` int(20) NOT NULL AUTO_INCREMENT,
+			`user_name` varchar(200) NOT NULL DEFAULT '',
+			`c_title` varchar(200) DEFAULT '',
+			`publish_date` varchar(200) NOT NULL DEFAULT '',
+			`publish_type` varchar(200) DEFAULT '',
+			PRIMARY KEY (`user_id`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="36" description="user表加入找回密码响应字段">
+		<sql creator="liqiubo" createDate="20150515" note="user表加入找回密码响应字段">
+			ALTER TABLE
+			`users` ADD COLUMN `checktime` varchar(14) NULL , ADD COLUMN
+			`checkcode` varchar(6) NULL ;
+		</sql>
+	</version>
+	<version edition="37" description="创建企业推荐表">
+		<sql creator="xiaoxiong" createDate="20150516" note="记录一个企业是谁推荐过来的">
+			CREATE TABLE
+			`companyreferrer` (
+			`companyId` int(10) DEFAULT NULL,
+			`referrer` varchar(100) DEFAULT NULL
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="38" description="给企业表添加一个申请码">
+		<sql creator="xiaoxiong" createDate="20150516" note="用来判断是否激活，不允许再次激活">
+			ALTER TABLE
+			company ADD COLUMN appDate varchar(50);
+		</sql>
+	</version>
+	<version edition="39" description="给用户表加上被邀请的分组id">
+		<sql creator="xiaoxiong" createDate="20150519" note="给用户表加上被邀请的分组id">
+			ALTER TABLE
+			USERS ADD COLUMN CLASSID int(8)DEFAULT NULL;
+		</sql>
+	</version>
+	<version edition="40" description="给企业表添加一个企业logo路径">
+		<sql creator="xiaoxiong" createDate="20150516" note="用来判断是否激活，不允许再次激活">
+			ALTER TABLE
+			company ADD COLUMN IMG_URL varchar(100);
+		</sql>
+	</version>
+	<version edition="41" description="系统中能够设置屏蔽用户上下线的提示消息">
+		<sql creator="xiayongcai" createDate="20150604" note="用来设置用户的个性设置">
+			CREATE TABLE
+			`user_singleset` (
+			`UID` int(8) NOT NULL COMMENT '用户ID',
+			`ISUPREMIND` varchar(2) DEFAULT '0' COMMENT '上线提醒，0默认不提示，1为提示',
+			`ISDOWREMIND` varchar(2) DEFAULT '0' COMMENT '下线提醒，0默认不提示，1为提示',
+			PRIMARY KEY (`UID`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="42" description="为信息订阅添加字段">
+		<sql creator="liuhezeng" createDate="20150604" note="为信息订阅添加字段">
+			ALTER TABLE
+			USERSUBSCRIBE ADD COLUMN SUBSCRIBETIME varchar(20);
+			ALTER TABLE
+			USERSUBSCRIBE ADD COLUMN SUBSCRIBEDATE varchar(20);
+		</sql>
+	</version>
+	<version edition="43" description="为个性设置表增加企业字段">
+		<sql creator="xiayongcai" createDate="20150610" note="为个性设置表增加企业字段">
+			ALTER TABLE
+			USER_SINGLESET ADD COLUMN COMPANYID int(8);
+		</sql>
+	</version>
+	<version edition="44" description="创建用户与企业关联表">
+		<sql creator="xiaoxiong" createDate="20150612" note="创建用户与企业关联表">
+			CREATE TABLE
+			`company_users` (
+			`COMPANYID` int(20) DEFAULT NULL,
+			`USERID` int(20) DEFAULT NULL,
+			`ISADMIN` int(1) DEFAULT NULL
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="45" description="同步用户与企业关联表信息">
+		<sql creator="xiaoxiong" createDate="20150612" note="同步用户与企业关联表信息">
+			INSERT INTO
+			company_users (SELECT COMPANYID,ID,ISADMIN FROM USERS);
+		</sql>
+	</version>
+	<version edition="46" description="增加企业用户表中中的classid字段">
+		<sql creator="xiaoxiong" createDate="20150612" note="同步用户与企业关联表信息">
+			ALTER TABLE
+			company_users ADD COLUMN CLASSID int(8) default 0;
+		</sql>
+	</version>
+	<version edition="47" description="增加用户常用分类关联表">
+		<sql creator="longjunhao" createDate="20150616" note="增加用户常用分类关联表">
+			create table
+			user_class_star (
+			id int(8) AUTO_INCREMENT,
+			userid int(8),
+			companyid int(8),
+			classid int(8),
+			PRIMARY KEY (id)
+			)
+		</sql>
+	</version>
+	<version edition="48" description="修改fullname长度">
+		<sql creator="liumingchao" createDate="20150629" note="修改fullname长度">
+			alter table
+			users modify column FULLNAME varchar(30) ;
+		</sql>
+	</version>
+	<version edition="49" description="用户社区增加评论字段用户评论id">
+		<sql creator="liuwei" createDate="20150702" note="添加字段pl_userid">
+			ALTER TABLE
+			community_callback ADD COLUMN pl_userid int(11) DEFAULT NULL;
+		</sql>
+	</version>
+	<version edition="50" description="增加用户发帖总数统计字段">
+		<sql creator="liuwei" createDate="20150702" note="添加字段统计字段total">
+			ALTER TABLE
+			community_msg ADD COLUMN total int(20) DEFAULT 0;
+		</sql>
+	</version>
+	<version edition="51" description="用户社区增加最後評論人">
+		<sql creator="liuwei" createDate="20150702" note="添加字段最后评论人last_reply_name">
+			ALTER TABLE
+			community_msg ADD COLUMN last_reply_name varchar(200);
+		</sql>
+	</version>
+	<version edition="52" description="用户社区增加最後评论时间">
+		<sql creator="liuwei" createDate="20150702" note="添加字段最后评论人last_reply_time">
+			ALTER TABLE
+			community_msg ADD COLUMN last_reply_time varchar(200);
+		</sql>
+	</version>
+	<version edition="53" description="用户社区删除最後評論人">
+		<sql creator="liuwei" createDate="20150702" note="删除字段最后评论人last_reply_name">
+			ALTER TABLE
+			community_msg DROP last_reply_name
+		</sql>
+	</version>
+	<version edition="54" description="用户社区增加最後評論人">
+		<sql creator="liuwei" createDate="20150708" note="添加字段最后评论人last_reply_name">
+			ALTER TABLE
+			community_msg ADD COLUMN last_reply_name varchar(200);
+		</sql>
+	</version>
+	<version edition="55" description="文件表添加一个标识文件拥有者">
+		<sql creator="wangwenshuo" createDate="20150706" note="文件拥有者">
+			alter table
+			files_0 add OWNER int(8);
+			alter table files_trash_0 add OWNER int(8);
+		</sql>
+	</version>
+	<version edition="56" description="修改用户社plinfo长度">
+		<sql creator="liuwei" createDate="20150709" note="修改用户社plinfo长度">
+			alter table
+			community_callback modify column pl_info varchar(5000) ;
+		</sql>
+	</version>
+	<version edition="57" description="将文件表中加入字段onwer补充版本55">
+		<procedure creator="xiewenda" createDate="20150713" note="将文件表中加入字段onwer">
+			<![CDATA[
+					DROP PROCEDURE IF EXISTS `files_add_field_onwer`;
+			]]>
+		</procedure>
+		<procedure creator="xiewenda" createDate="20150713" note="将文件表中加入字段onwer">
+			<![CDATA[
+					CREATE DEFINER=`root`@`localhost` PROCEDURE `files_add_field_onwer`()
+					BEGIN		
+					    DECLARE done INT DEFAULT 0;
+							DECLARE done1 INT DEFAULT 0;
+					    DECLARE tablename VARCHAR(200);
+					    DECLARE rs CURSOR FOR 
+							select `TABLE_NAME` from information_schema.`TABLES` where TABLE_SCHEMA like 'onlinefile'  and (`TABLE_NAME` like 'files_%');
+						    DECLARE CONTINUE  HANDLER  FOR SQLSTATE  '02000'   SET  done  =   1 ; 
+							DECLARE CONTINUE  HANDLER  FOR SQLEXCEPTION SET  done1  =   1 ;
+						open rs;		
+					    REPEAT
+					        FETCH rs INTO tablename;
+					        SET @s = CONCAT('ALTER TABLE ',tablename,' add column `OWNER` int(8) comment "等同于creator字段" ');
+					    PREPARE stmt FROM @s;
+					    EXECUTE stmt;
+					    UNTIL done END REPEAT;
+					    CLOSE rs;
+					END
+					;;
+			]]>
+		</procedure>
+		<procedure creator="xiewenda" createDate="20150713" note="将文件表中加入字段onwer">
+			<![CDATA[
+					call files_add_field_onwer();
+			]]>
+		</procedure>
+	</version>
+
+	<version edition="58" description="用户社区增加点赞统计字段">
+		<sql creator="liuwei" createDate="20150715" note="添加点赞统计字段 praisecount">
+			ALTER TABLE
+			community_msg ADD COLUMN praisecount int(10) DEFAULT 0;
+		</sql>
+	</version>
+	<version edition="59" description="增加用户社区点赞表">
+		<sql creator="liuwei" createDate="20150715" note="增加用户社区点赞表">
+			CREATE TABLE
+			`community_praise` (
+			`ID` int(10) NOT NULL AUTO_INCREMENT,
+			`CARDID` int(10) DEFAULT NULL,
+			`USERID` int(10) DEFAULT NULL,
+			PRIMARY KEY (`ID`)
+			) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+		</sql>
+	</version>
+	<version edition="60" description="添加邮件大小字段">
+		<sql creator="liuhezeng" createDate="20150724" note="添加邮件大小字段">
+			ALTER TABLE
+			emailattachments ADD COLUMN size int(10) DEFAULT 0;
+		</sql>
+	</version>
+
+	<version edition="61" description="用户社区添加消息提示状态">
+		<sql creator="liuwei" createDate="20150724" note="用户社区添加消息提示状态">
+			ALTER TABLE
+			community_callback add COLUMN pl_state int(1) DEFAULT 0
+		</sql>
+	</version>
+	<version edition="62" description="files_trash表增加openlevel字段，标准公开级别">
+		<sql creator="wangwenshuo" createDate="20150803"
+			note="files_trash表增加openlevel字段，标准公开级别">
+			ALTER TABLE `files_trash_0` ADD COLUMN `OPENLEVEL`
+			enum('3','2','1','0') NULL DEFAULT '0' ;
+		</sql>
+	</version>
+
+	<version edition="63" description="为文档权限表fileuserrelation添加审批用户名,用于以后作权限审核使用">
+		<sql creator="lujixiang" createDate="20150804" note="为fileuserrelation表添加审核用户名">
+			ALTER TABLE
+			fileuserrelation ADD COLUMN APPROVEUSERNAME varchar(100) NOT NULL ;
+		</sql>
+	</version>
+
+	<version edition="64" description="账户信息公司电话字段长度太小">
+		<sql creator="wangwenshuo" createDate="20150817" note="设置账户信息公司电话字段长度为18">
+			ALTER TABLE
+			users MODIFY COLUMN TELEOHONE varchar(18);
+		</sql>
+	</version>
+	<version edition="65" description="企业用户关联表添加状态字段">
+		<sql creator="longjunhao" createDate="20150818" note="添加状态字段">
+			ALTER TABLE
+			company_users ADD COLUMN STATUS int(1) DEFAULT NULL;
+		</sql>
+		<sql creator="longjunhao" createDate="20150818" note="添加CODE验证码字段">
+			ALTER TABLE
+			company_users ADD COLUMN CODE varchar(100) DEFAULT NULL;
+		</sql>
+	</version>
+
+	<version edition="66" description="添加回收站文件批量恢复存储过程">
+		<procedure creator="lujixiang" createDate="20150824" note="工具函数-获取分隔字符串个数">
+			<![CDATA[
+					CREATE FUNCTION `func_get_split_string_total`(f_string varchar(1000), f_delimiter varchar(5)) RETURNS int(11)
+					BEGIN
+					  return 1+(length(f_string) - length(replace(f_string,f_delimiter,'')));
+					END;
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20150824"
+			note="工具函数-获取指定分割位置的字符串">
+			<![CDATA[
+				CREATE FUNCTION `func_get_split_string`(
+					f_string varchar(1000),f_delimiter varchar(5),f_order int
+				) RETURNS varchar(255) 
+				BEGIN
+				  declare result varchar(255) default '';
+				  set result = reverse(substring_index(reverse(substring_index(f_string,f_delimiter,f_order)),f_delimiter,1));
+				  return result;
+				END;
+
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20150824" note="批量文件恢复存储过程">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare hasparent int default 1; -- 父文件夹是否存在,如果不存在直接创建所有父文件夹
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '1' ;	-- 父文件夹id
+					declare tempgroup varchar(10) default ''; -- 分类
+				
+					set failIds = '';
+					set indexIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+								-- 获取恢复路径,只能使用set,不能使用select into
+								set @v_sql = concat('set @pathname = (select pathname from files_trash_', companyId, ' where id = ', tempId, ')' );
+								prepare stmt from @v_sql;
+								execute stmt ;
+								deallocate prepare stmt;
+				
+								
+								if @pathname is null or @pathname = '' then 
+										set failIds = concat(failIds, tempId, ',' ) ;
+										iterate whid;
+								else
+										-- 获取源文档id和idseq
+										set @y_sql = concat('select fromid, idseq, isfile, filename into @fromid, @fromidseq, @isfile, @filename from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+				
+										-- 如果是文件夹,则拼接路径
+										if @isfile = 0 then 
+												set @pathname = concat(@pathname, '/', @filename) ; 
+										end if;
+										-- 分割文件路径
+										set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+										-- 获取分类
+										set tempgroup = func_get_split_string(@fromidseq, '.', 2);
+										
+										-- 逐级创建文件夹 --start
+										whpath : while j < pathcount
+										do
+												set j = j + 1;
+												set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+												if temppath is null or temppath = '' then iterate whpath;
+												else
+														-- 判断该路径是否为分类
+														if j = 2 then
+														
+																set idseq = '1.' ;
+																set classid = tempgroup;
+														
+														-- 当前路径为文件夹
+														else	
+																set idseq = concat(idseq, classid, '.' );
+																-- 判断是否直接建立文件夹
+																if hasparent = 0 then 
+																		set @z_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																		prepare zstmt from @z_sql;
+																		execute zstmt ;
+																		deallocate prepare zstmt;
+																		set classid = last_insert_id();
+																		set indexIds = concat(indexIds, classid, ',') ;
+																else 
+																		-- 判断文件夹是否存在
+																		set @u_sql = concat("set @fileid = (select id from files_", companyId, " where filename = '", temppath, "' and isdelete = '0' and  idseq = '", idseq,  "')" );
+																		prepare ustmt from @u_sql;
+																		execute ustmt ;
+																		deallocate prepare ustmt;
+																		-- 如果文件夹存在
+																		if @fileid is not null then
+																				
+																				-- 获取文件idseq
+																				set @v_sql = concat("select idseq into @tempidseq from files_", companyId, " where id = ", @fileid );
+																				prepare vstmt from @v_sql;
+																				execute vstmt ;
+																				deallocate prepare vstmt;
+																				set idseq = @tempidseq;
+																				set classid = @fileid;
+																		else
+																				set @w_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																				prepare wstmt from @w_sql;
+																				execute wstmt ;
+																				deallocate prepare wstmt;
+																				set classid = last_insert_id();
+																				set hasparent = 0 ;
+																				set indexIds = concat(indexIds, classid, ',') ;
+																		end if;
+																		
+																end if;
+				
+														end if;
+				
+												end if;
+				
+										end while;
+										-- 逐级创建文件夹 --end
+				
+										-- 删除回收站
+										set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+										prepare hstmt from @h_sql;
+										execute hstmt ;
+										deallocate prepare hstmt;
+				
+										set idseq = concat(idseq, classid, '.' );
+										-- 如果为文档，更新文档的idseq和删除状态
+										if @isfile = 1 then
+				
+												-- 获取源文档id和idseq								
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0', idseq ='", idseq, "', classid = ", classid, " where id = ", @fromid );
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										else
+										
+												-- 更新此文档的子文件夹
+												set @replacepath = concat(@fromidseq, @fromid, '.') ;
+												set @a_sql = concat("update files_", companyId, " set idseq = replace(idseq,'", @replacepath, "','", idseq, "'), classid = '", classid, "', isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select fromid from files_trash_", companyId, " where idseq like '", @replacepath, "%' )");
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										end if;
+				
+										set hasparent = 1 ;
+										set classid = '1' ;
+										set idseq = '' ;
+										set j = 1 ;
+					
+								end if;
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+	</version>
+
+	<version edition="67" description="修改回收站文件批量恢复存储过程">
+		<procedure creator="lujixiang" createDate="20150826" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `func_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20150826" note="批量文件恢复存储过程">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare hasparent int default 1; -- 父文件夹是否存在,如果不存在直接创建所有父文件夹
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '1' ;	-- 父文件夹id
+					declare tempgroup varchar(10) default ''; -- 分类
+				
+					set failIds = '';
+					set indexIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+								-- 获取恢复路径,只能使用set,不能使用select into
+								set @v_sql = concat('set @pathname = (select pathname from files_trash_', companyId, ' where id = ', tempId, ')' );
+								prepare stmt from @v_sql;
+								execute stmt ;
+								deallocate prepare stmt;
+				
+								
+								if @pathname is null or @pathname = '' then 
+										set failIds = concat(failIds, tempId, ',' ) ;
+										iterate whid;
+								else
+										-- 获取源文档id和idseq
+										set @y_sql = concat('select fromid, idseq, isfile, filename into @fromid, @fromidseq, @isfile, @filename from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+				
+										-- 如果是文件夹,则拼接路径
+										if @isfile = 0 then 
+												set @pathname = concat(@pathname, '/', @filename) ; 
+										end if;
+										-- 分割文件路径
+										set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+										-- 获取分类
+										set tempgroup = func_get_split_string(@fromidseq, '.', 2);
+										
+										-- 逐级创建文件夹 --start
+										whpath : while j < pathcount
+										do
+												set j = j + 1;
+												set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+												if temppath is null or temppath = '' then iterate whpath;
+												else
+														-- 判断该路径是否为分类
+														if j = 2 then
+														
+																set idseq = '1.' ;
+																set classid = tempgroup;
+														
+														-- 当前路径为文件夹
+														else	
+																set idseq = concat(idseq, classid, '.' );
+																-- 判断是否直接建立文件夹
+																if hasparent = 0 then 
+																		set @z_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																		prepare zstmt from @z_sql;
+																		execute zstmt ;
+																		deallocate prepare zstmt;
+																		set classid = last_insert_id();
+																		set indexIds = concat(indexIds, classid, ',') ;
+																else 
+																		-- 判断文件夹是否存在
+																		set @u_sql = concat("set @fileid = (select id from files_", companyId, " where filename = '", temppath, "' and isdelete = '0' and isfile = '0' and  idseq = '", idseq,  "')" );
+																		prepare ustmt from @u_sql;
+																		execute ustmt ;
+																		deallocate prepare ustmt;
+																		-- 如果文件夹存在
+																		if @fileid is not null then
+																				
+																				-- 获取文件idseq
+																				set @v_sql = concat("select idseq into @tempidseq from files_", companyId, " where id = ", @fileid );
+																				prepare vstmt from @v_sql;
+																				execute vstmt ;
+																				deallocate prepare vstmt;
+																				set idseq = @tempidseq;
+																				set classid = @fileid;
+																		else
+																				set @w_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																				prepare wstmt from @w_sql;
+																				execute wstmt ;
+																				deallocate prepare wstmt;
+																				set classid = last_insert_id();
+																				set hasparent = 0 ;
+																				set indexIds = concat(indexIds, classid, ',') ;
+																		end if;
+																		
+																end if;
+				
+														end if;
+				
+												end if;
+				
+										end while;
+										-- 逐级创建文件夹 --end
+				
+										-- 删除回收站
+										set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+										prepare hstmt from @h_sql;
+										execute hstmt ;
+										deallocate prepare hstmt;
+				
+										set idseq = concat(idseq, classid, '.' );
+										-- 如果为文档，更新文档的idseq和删除状态
+										if @isfile = 1 then
+				
+												-- 获取源文档id和idseq								
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0', idseq ='", idseq, "', classid = ", classid, " where id = ", @fromid );
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										else
+										
+												-- 更新此文档的子文件夹
+												set @replacepath = concat(@fromidseq, @fromid, '.') ;
+												set @a_sql = concat("update files_", companyId, " set idseq = replace(idseq,'", @replacepath, "','", idseq, "'), classid = '", classid, "', isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select fromid from files_trash_", companyId, " where idseq like '", @replacepath, "%' )");
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										end if;
+				
+										set hasparent = 1 ;
+										set classid = '1' ;
+										set idseq = '' ;
+										set j = 1 ;
+					
+								end if;
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+
+	</version>
+
+
+	<version edition="68" description="修改回收站文件批量恢复存储过程-子文档恢复错误">
+		<procedure creator="lujixiang" createDate="20150826" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `func_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20150826"
+			note="批量文件恢复存储过程-子文档恢复错误">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare hasparent int default 1; -- 父文件夹是否存在,如果不存在直接创建所有父文件夹
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '1' ;	-- 父文件夹id
+					declare tempgroup varchar(10) default ''; -- 分类
+				
+					set failIds = '';
+					set indexIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+								-- 获取恢复路径,只能使用set,不能使用select into
+								set @v_sql = concat('set @pathname = (select pathname from files_trash_', companyId, ' where id = ', tempId, ')' );
+								prepare stmt from @v_sql;
+								execute stmt ;
+								deallocate prepare stmt;
+				
+								
+								if @pathname is null or @pathname = '' then 
+										set failIds = concat(failIds, tempId, ',' ) ;
+										iterate whid;
+								else
+										-- 获取源文档id和idseq
+										set @y_sql = concat('select fromid, idseq, isfile, filename into @fromid, @fromidseq, @isfile, @filename from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+				
+										-- 如果是文件夹,则拼接路径
+										if @isfile = 0 then 
+												set @pathname = concat(@pathname, '/', @filename) ; 
+										end if;
+										-- 分割文件路径
+										set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+										-- 获取分类
+										set tempgroup = func_get_split_string(@fromidseq, '.', 2);
+										
+										-- 逐级创建文件夹 --start
+										whpath : while j < pathcount
+										do
+												set j = j + 1;
+												set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+												if temppath is null or temppath = '' then iterate whpath;
+												else
+														-- 判断该路径是否为分类
+														if j = 2 then
+														
+																set idseq = '1.' ;
+																set classid = tempgroup;
+														
+														-- 当前路径为文件夹
+														else	
+																set idseq = concat(idseq, classid, '.' );
+																-- 判断是否直接建立文件夹
+																if hasparent = 0 then 
+																		set @z_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																		prepare zstmt from @z_sql;
+																		execute zstmt ;
+																		deallocate prepare zstmt;
+																		set classid = last_insert_id();
+																		set indexIds = concat(indexIds, classid, ',') ;
+																else 
+																		-- 判断文件夹是否存在
+																		set @u_sql = concat("set @fileid = (select id from files_", companyId, " where filename = '", temppath, "' and isdelete = '0' and isfile = '0' and  idseq = '", idseq,  "')" );
+																		prepare ustmt from @u_sql;
+																		execute ustmt ;
+																		deallocate prepare ustmt;
+																		-- 如果文件夹存在
+																		if @fileid is not null then
+																				
+																				-- 获取文件idseq
+																				set @v_sql = concat("select idseq into @tempidseq from files_", companyId, " where id = ", @fileid );
+																				prepare vstmt from @v_sql;
+																				execute vstmt ;
+																				deallocate prepare vstmt;
+																				set idseq = @tempidseq;
+																				set classid = @fileid;
+																		else
+																				set @w_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																				prepare wstmt from @w_sql;
+																				execute wstmt ;
+																				deallocate prepare wstmt;
+																				set classid = last_insert_id();
+																				set hasparent = 0 ;
+																				set indexIds = concat(indexIds, classid, ',') ;
+																		end if;
+																		
+																end if;
+				
+														end if;
+				
+												end if;
+				
+										end while;
+										-- 逐级创建文件夹 --end
+				
+										-- 删除回收站
+										set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+										prepare hstmt from @h_sql;
+										execute hstmt ;
+										deallocate prepare hstmt;
+				
+										set idseq = concat(idseq, classid, '.' );
+										-- 如果为文档，更新文档的idseq和删除状态
+										if @isfile = 1 then
+				
+												-- 获取源文档id和idseq								
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0', idseq ='", idseq, "', classid = ", classid, " where id = ", @fromid );
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										else
+										
+												-- 更新此文档的子文件夹
+												set @replacepath = concat(@fromidseq, @fromid, '.') ;
+												set @a_sql = concat("update files_", companyId, " set idseq = replace(idseq,'", @replacepath, "','", idseq, "'), classid = '", classid, "', isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select temp.id from (select f.id id from files_", companyId, " f inner join files_trash_", companyId, " t on t.idseq like '", @replacepath, "%' and (f.idseq like concat('", @replacepath, "', t.fromid, '.') or f.idseq = '", @replacepath, "' )) temp )");
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										end if;
+				
+										set hasparent = 1 ;
+										set classid = '1' ;
+										set idseq = '' ;
+										set j = 1 ;
+					
+								end if;
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+
+	</version>
+
+
+
+	<version edition="69" description="修改回收站文件批量恢复存储过程-子文档恢复错误">
+		<procedure creator="lujixiang" createDate="20150826" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `func_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20150826"
+			note="批量文件恢复存储过程-子文档恢复错误">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare hasparent int default 1; -- 父文件夹是否存在,如果不存在直接创建所有父文件夹
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '1' ;	-- 父文件夹id
+					declare tempgroup varchar(10) default ''; -- 分类
+				
+					set failIds = '';
+					set indexIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+								-- 获取恢复路径,只能使用set,不能使用select into
+								set @v_sql = concat('set @pathname = (select pathname from files_trash_', companyId, ' where id = ', tempId, ')' );
+								prepare stmt from @v_sql;
+								execute stmt ;
+								deallocate prepare stmt;
+				
+								
+								if @pathname is null or @pathname = '' then 
+										set failIds = concat(failIds, tempId, ',' ) ;
+										iterate whid;
+								else
+										-- 获取源文档id和idseq
+										set @y_sql = concat('select fromid, idseq, isfile, filename into @fromid, @fromidseq, @isfile, @filename from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+				
+										-- 如果是文件夹,则拼接路径
+										if @isfile = 0 then 
+												set @pathname = concat(@pathname, '/', @filename) ; 
+										end if;
+										-- 分割文件路径
+										set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+										-- 获取分类
+										set tempgroup = func_get_split_string(@fromidseq, '.', 2);
+										
+										-- 逐级创建文件夹 --start
+										whpath : while j < pathcount
+										do
+												set j = j + 1;
+												set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+												if temppath is null or temppath = '' then iterate whpath;
+												else
+														-- 判断该路径是否为分类
+														if j = 2 then
+														
+																set idseq = '1.' ;
+																set classid = tempgroup;
+														
+														-- 当前路径为文件夹
+														else	
+																set idseq = concat(idseq, classid, '.' );
+																-- 判断是否直接建立文件夹
+																if hasparent = 0 then 
+																		set @z_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																		prepare zstmt from @z_sql;
+																		execute zstmt ;
+																		deallocate prepare zstmt;
+																		set classid = last_insert_id();
+																		set indexIds = concat(indexIds, classid, ',') ;
+																else 
+																		-- 判断文件夹是否存在
+																		set @u_sql = concat("set @fileid = (select id from files_", companyId, " where filename = '", temppath, "' and isdelete = '0' and isfile = '0' and  idseq = '", idseq,  "')" );
+																		prepare ustmt from @u_sql;
+																		execute ustmt ;
+																		deallocate prepare ustmt;
+																		-- 如果文件夹存在
+																		if @fileid is not null then
+																				
+																				-- 获取文件idseq
+																				set @v_sql = concat("select idseq into @tempidseq from files_", companyId, " where id = ", @fileid );
+																				prepare vstmt from @v_sql;
+																				execute vstmt ;
+																				deallocate prepare vstmt;
+																				set idseq = @tempidseq;
+																				set classid = @fileid;
+																		else
+																				set @w_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																				prepare wstmt from @w_sql;
+																				execute wstmt ;
+																				deallocate prepare wstmt;
+																				set classid = last_insert_id();
+																				set hasparent = 0 ;
+																				set indexIds = concat(indexIds, classid, ',') ;
+																		end if;
+																		
+																end if;
+				
+														end if;
+				
+												end if;
+				
+										end while;
+										-- 逐级创建文件夹 --end
+				
+										-- 删除回收站
+										set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+										prepare hstmt from @h_sql;
+										execute hstmt ;
+										deallocate prepare hstmt;
+				
+										set idseq = concat(idseq, classid, '.' );
+										-- 如果为文档，更新文档的idseq和删除状态
+										if @isfile = 1 then
+				
+												-- 获取源文档id和idseq								
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0', idseq ='", idseq, "', classid = ", classid, " where id = ", @fromid );
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										else
+										
+												-- 更新此文档的子文件夹
+												set @replacepath = concat(@fromidseq, @fromid, '.') ;
+												set @a_sql = concat("update files_", companyId, " set idseq = replace(idseq,'", @replacepath, "','", idseq, "'), classid = '", classid, "', isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select temp.id from (select f.id id from files_", companyId, " f inner join files_trash_", companyId, " t on t.idseq like '", @replacepath, "%' and (f.idseq like concat('", @replacepath, "', t.fromid, '.%') or f.id = t.fromid) ) temp )");
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										end if;
+				
+										set hasparent = 1 ;
+										set classid = '1' ;
+										set idseq = '' ;
+										set j = 1 ;
+					
+								end if;
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+
+	</version>
+
+
+	<version edition="70" description="修改回收站文件批量恢复存储过程-添加返回更新后文件夹和文件id">
+		<procedure creator="lujixiang" createDate="20150827" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `func_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20150827"
+			note="批量文件恢复存储过程-添加返回更新后文件夹和文件id">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255), out fileIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare hasparent int default 1; -- 父文件夹是否存在,如果不存在直接创建所有父文件夹
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '1' ;	-- 父文件夹id
+					declare tempgroup varchar(10) default ''; -- 分类
+				
+					set failIds = '';
+					set indexIds = '';
+					set fileIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+								-- 获取恢复路径,只能使用set,不能使用select into
+								set @v_sql = concat('set @pathname = (select pathname from files_trash_', companyId, ' where id = ', tempId, ')' );
+								prepare stmt from @v_sql;
+								execute stmt ;
+								deallocate prepare stmt;
+				
+								
+								if @pathname is null or @pathname = '' then 
+										set failIds = concat(failIds, tempId, ',' ) ;
+										iterate whid;
+								else
+										-- 获取源文档id和idseq
+										set @y_sql = concat('select fromid, idseq, isfile, filename into @fromid, @fromidseq, @isfile, @filename from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+				
+										-- 如果是文件夹,则拼接路径
+										if @isfile = 0 then 
+												set @pathname = concat(@pathname, '/', @filename) ; 
+										end if;
+										-- 分割文件路径
+										set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+										-- 获取分类
+										set tempgroup = func_get_split_string(@fromidseq, '.', 2);
+										
+										-- 逐级创建文件夹 --start
+										whpath : while j < pathcount
+										do
+												set j = j + 1;
+												set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+												if temppath is null or temppath = '' then iterate whpath;
+												else
+														-- 判断该路径是否为分类
+														if j = 2 then
+														
+																set idseq = '1.' ;
+																set classid = tempgroup;
+														
+														-- 当前路径为文件夹
+														else	
+																set idseq = concat(idseq, classid, '.' );
+																-- 判断是否直接建立文件夹
+																if hasparent = 0 then 
+																		set @z_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																		prepare zstmt from @z_sql;
+																		execute zstmt ;
+																		deallocate prepare zstmt;
+																		set classid = last_insert_id();
+																		set indexIds = concat(indexIds, classid, ',') ;
+																else 
+																		-- 判断文件夹是否存在
+																		set @u_sql = concat("set @fileid = (select id from files_", companyId, " where filename = '", temppath, "' and isdelete = '0' and isfile = '0' and  idseq = '", idseq,  "')" );
+																		prepare ustmt from @u_sql;
+																		execute ustmt ;
+																		deallocate prepare ustmt;
+																		-- 如果文件夹存在
+																		if @fileid is not null then
+																				
+																				-- 获取文件idseq
+																				set @v_sql = concat("select idseq into @tempidseq from files_", companyId, " where id = ", @fileid );
+																				prepare vstmt from @v_sql;
+																				execute vstmt ;
+																				deallocate prepare vstmt;
+																				set idseq = @tempidseq;
+																				set classid = @fileid;
+																		else
+																				set @w_sql = concat("insert into files_", companyId, "(classid, filename, creator, owner, createtime, size, praisecount, collectcount, isdelete, idseq, isfile, version, islast, openlevel) values(", classid, ",'", temppath , "'," , userId, ",", userId, ",", "DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%S')", ",0,0,0,'0','", idseq, "','0',1,'1','0')"   );
+																				prepare wstmt from @w_sql;
+																				execute wstmt ;
+																				deallocate prepare wstmt;
+																				set classid = last_insert_id();
+																				set hasparent = 0 ;
+																				set indexIds = concat(indexIds, classid, ',') ;
+																		end if;
+																		
+																end if;
+				
+														end if;
+				
+												end if;
+				
+										end while;
+										-- 逐级创建文件夹 --end
+				
+										-- 删除回收站
+										set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+										prepare hstmt from @h_sql;
+										execute hstmt ;
+										deallocate prepare hstmt;
+				
+										set idseq = concat(idseq, classid, '.' );
+										-- 如果为文档，更新文档的idseq和删除状态
+										if @isfile = 1 then
+												set fileIds = concat(fileIds, @fromid, ',');
+												-- 获取源文档id和idseq								
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0', idseq ='", idseq, "', classid = ", classid, " where id = ", @fromid );
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										else
+												set fileIds = concat(fileIds, classid, ',');
+												-- 更新此文档的子文件夹
+												set @replacepath = concat(@fromidseq, @fromid, '.') ;
+												set @a_sql = concat("update files_", companyId, " set idseq = replace(idseq,'", @replacepath, "','", idseq, "'), classid = func_get_split_string(replace(idseq,'", @replacepath, "','", idseq, "'), '.', func_get_split_string_total(replace(idseq,'", @replacepath, "','", idseq, "'), '.')-1) , isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select temp.id from (select f.id id from files_", companyId, " f inner join files_trash_", companyId, " t on t.idseq like '", @replacepath, "%' and (f.idseq like concat('", @replacepath, "', t.fromid, '.%') or f.id = t.fromid) ) temp )");
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										end if;
+				
+										set hasparent = 1 ;
+										set classid = '1' ;
+										set idseq = '' ;
+										set j = 1 ;
+					
+								end if;
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+
+	</version>
+
+
+
+
+	<version edition="71" description="修改文件恢复算法">
+		<procedure creator="lujixiang" createDate="20150915" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `func_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20150915" note="新建新的文件恢复算法">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255), out fileIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare islast varchar(1) default '0' ; -- 文档恢复为最新
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '' ;	-- 父文件夹id
+				
+					set failIds = '';
+					set indexIds = '';
+					set fileIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+								-- 获取恢复路径,只能使用set,不能使用select into
+								set @v_sql = concat('set @pathname = (select pathname from files_trash_', companyId, ' where id = ', tempId, ')' );
+								prepare stmt from @v_sql;
+								execute stmt ;
+								deallocate prepare stmt;
+				
+								
+								if @pathname is null or @pathname = '' then 
+										set failIds = concat(failIds, tempId, ',' ) ;
+										iterate whid;
+								else
+										-- 获取源文档id和idseq
+										set @y_sql = concat('select fromid, idseq, isfile, filename into @fromid, @fromidseq, @isfile, @filename from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+				
+										-- 如果是文件夹,则拼接路径
+										if @isfile = 0 then 
+												set @pathname = concat(@pathname, '/', @filename) ; 
+										end if;
+										-- 分割文件路径
+										set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+										
+										-- 逐级更新文件夹 --start
+										set @point = 1 ;
+										set j = 1 ;
+										set idseq = '' ;
+										whpath : while j < pathcount
+										do
+												set j = j + 1;
+												set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+												if temppath is null or temppath = '' then iterate whpath;
+												else
+																set classid = func_get_split_string(@fromidseq, '.', @point);
+																set idseq = concat(idseq, classid, '.');		
+
+																-- 获取文件夹信息
+																set @u_sql = concat("select id, isdelete into @fileId, @isDelete from files_", companyId, " where filename = '", temppath, "' and isfile = '0' and idseq = '", idseq,  "'");
+																prepare ustmt from @u_sql;
+																execute ustmt ;
+																deallocate prepare ustmt;
+																-- 该文件夹已经被删除,需要设置为可见
+																if @isDelete = '1' then
+																		set @de_sql = concat("update files_", companyId, " set isdelete = '0' where id = ", @fileId);
+																		prepare de_stmt from @de_sql;
+																		execute de_stmt ;
+																		deallocate prepare de_stmt;
+																		set indexIds = concat(indexIds, @fileId, ',') ;		
+																end if;
+																		
+															 set @point = @point + 1 ;
+				
+												end if;
+												
+										end while;
+										-- 逐级创建文件夹 --end
+				
+										-- 删除回收站
+										set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+										prepare hstmt from @h_sql;
+										execute hstmt ;
+										deallocate prepare hstmt;
+
+										set fileIds = concat(fileIds, @fromid, ',');
+										-- 如果为文档，更新文档的idseq和删除状态
+										if @isfile = 1 then
+												
+												-- 针对版本号对恢复的文档做特殊处理 --start
+								
+												-- 获取文件的版本号
+												set @version_sql = concat('set @version = (select version from files_', companyId, ' where id = ', @fromid, ')' );
+												prepare version_stmt from @version_sql;
+												execute version_stmt ;
+												deallocate prepare version_stmt;
+
+												-- 获取当前文档的可见的最高版本号
+												set @max_sql = concat('set @max = ( select version from files_', companyId, ' where (filename,idseq) in ( select filename, idseq  from files_', companyId, ' where id = ', @fromid, ') and islast = "1" )' );
+												prepare max_stmt from @max_sql;
+												execute max_stmt ;
+												deallocate prepare max_stmt;
+
+												if @max is null or @version >= @max  then 
+													set islast = '1' ;
+													-- 将该文档的所有最新设为0
+													set @update_sql = concat('update files_', companyId,' set islast = "0" where (filename,idseq) in ( select a.filename, a.idseq from ( select filename, idseq from files_', companyId, ' where id = ', @fromid, ')a )' );
+													prepare update_stmt from @update_sql;
+													execute update_stmt ;
+													deallocate prepare update_stmt;
+
+												end if;
+
+
+												-- 针对版本号对恢复的文档做特殊处理 --end
+												-- 获取源文档id和idseq		
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0', islast = '", islast, "' where id = ", @fromid );
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										else
+												-- 更新此文档的子文件夹
+												set @replacepath = concat(@fromidseq, @fromid, '.') ;
+												set @a_sql = concat("update files_", companyId, " set isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select temp.id from (select f.id id from files_", companyId, " f inner join files_trash_", companyId, " t on t.idseq like '", @replacepath, "%' and t.isdelete = '0' and (f.idseq like concat('", @replacepath, "', t.fromid, '.%') or f.id = t.fromid) ) temp )");
+												select @a_sql;
+												prepare astmt from @a_sql;
+												execute astmt ;
+												deallocate prepare astmt;
+										end if;
+
+					
+								end if;
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+
+	</version>
+
+
+
+	<version edition="72" description="修改文件恢复-添加私密文件修复">
+		<procedure creator="lujixiang" createDate="20150916" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `func_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20150916" note="修改文件恢复-添加私密文件修复">
+			<![CDATA[
+				CREATE PROCEDURE `func_batch_restore_file_folder`(in trashIds varchar(255), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255), out fileIds varchar(255)) 
+				BEGIN
+					
+					declare cnt int default 0;	-- 恢复的文件个数
+					declare delimiter varchar(5) default ',';
+					declare tempId varchar(10) default '';
+					declare i int default 0;
+					
+					declare pathcount int default 0;		-- 文件路径个数
+					declare pathdelimiter varchar(5) default '/';
+					declare temppath varchar(50) default '';
+					declare j int default 1 ;
+					declare islast varchar(1) default '0' ; -- 文档恢复为最新
+					declare idseq varchar(50) default '';	
+					declare classid varchar(50) default '' ;	-- 父文件夹id
+				
+					set failIds = '';
+					set indexIds = '';
+					set fileIds = '';
+				
+					if trashIds is null or trashIds = '' then 
+						set failIds = '';
+						set indexIds = '';
+					else 
+						
+						-- 分割id
+						set cnt = func_get_split_string_total(trashIds, delimiter);
+						whid : while i < cnt
+						do 
+							set i = i + 1;
+							set tempId = func_get_split_string(trashIds, delimiter, i);
+							if tempId is not null and tempId <> '' then 
+									
+							
+									-- 获取源文档id和idseq
+										set @pathname = '' ;
+										set @y_sql = concat('select fromid, idseq, isfile, filename, pathname into @fromid, @fromidseq, @isfile, @filename, @pathname from files_trash_', companyId, ' where id = ', tempId );
+										prepare ystmt from @y_sql;
+										execute ystmt ;
+										deallocate prepare ystmt;
+										
+										if @pathname is null or @pathname = '' then
+												
+												-- 判断是否为私密文件
+												if @isfile = 1 then
+														set @a_sql = concat("update files_", companyId, " set isdelete = '0' where id = ", @fromid );
+														prepare astmt from @a_sql;
+														execute astmt ;
+														deallocate prepare astmt;
+
+												-- 删除回收站
+												set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+												prepare hstmt from @h_sql;
+												execute hstmt ;
+												deallocate prepare hstmt;
+												
+												else 
+														set failIds = concat(failIds, tempId, ',' ) ;
+												end if;							
+										
+										else
+				
+											-- 如果是文件夹,则拼接路径
+											if @isfile = 0 then 
+													set @pathname = concat(@pathname, '/', @filename) ; 
+											end if;
+											-- 分割文件路径
+											set pathcount = func_get_split_string_total(@pathname, pathdelimiter);
+											
+											-- 逐级更新文件夹 --start
+											set @point = 1 ;
+											set j = 1 ;
+											set idseq = '' ;
+											whpath : while j < pathcount
+											do
+													set j = j + 1;
+													set temppath = func_get_split_string(@pathname, pathdelimiter, j);
+													if temppath is null or temppath = '' then iterate whpath;
+													else
+																	set classid = func_get_split_string(@fromidseq, '.', @point);
+																	set idseq = concat(idseq, classid, '.');		
+
+																	-- 获取文件夹信息
+																	set @u_sql = concat("select id, isdelete into @fileId, @isDelete from files_", companyId, " where filename = '", temppath, "' and isfile = '0' and idseq = '", idseq,  "'");
+																	prepare ustmt from @u_sql;
+																	execute ustmt ;
+																	deallocate prepare ustmt;
+																	-- 该文件夹已经被删除,需要设置为可见
+																	if @isDelete = '1' then
+																			set @de_sql = concat("update files_", companyId, " set isdelete = '0' where id = ", @fileId);
+																			prepare de_stmt from @de_sql;
+																			execute de_stmt ;
+																			deallocate prepare de_stmt;
+																			set indexIds = concat(indexIds, @fileId, ',') ;		
+																	end if;
+																			
+																 set @point = @point + 1 ;
+					
+													end if;
+													
+											end while;
+											-- 逐级创建文件夹 --end
+					
+											-- 删除回收站
+											set @h_sql = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", tempId);
+											prepare hstmt from @h_sql;
+											execute hstmt ;
+											deallocate prepare hstmt;
+
+											set fileIds = concat(fileIds, @fromid, ',');
+											-- 如果为文档，更新文档的idseq和删除状态
+											if @isfile = 1 then
+													
+													-- 针对版本号对恢复的文档做特殊处理 --start
+									
+													-- 获取文件的版本号
+													set @version_sql = concat('set @version = (select version from files_', companyId, ' where id = ', @fromid, ')' );
+													prepare version_stmt from @version_sql;
+													execute version_stmt ;
+													deallocate prepare version_stmt;
+
+													-- 获取当前文档的可见的最高版本号
+													set @max_sql = concat('set @max = ( select version from files_', companyId, ' where (filename,idseq) in ( select filename, idseq  from files_', companyId, ' where id = ', @fromid, ') and islast = "1" )' );
+													prepare max_stmt from @max_sql;
+													execute max_stmt ;
+													deallocate prepare max_stmt;
+
+													if @max is null or @version >= @max  then 
+														set islast = '1' ;
+														-- 将该文档的所有最新设为0
+														set @update_sql = concat('update files_', companyId,' set islast = "0" where (filename,idseq) in ( select a.filename, a.idseq from ( select filename, idseq from files_', companyId, ' where id = ', @fromid, ')a )' );
+														prepare update_stmt from @update_sql;
+														execute update_stmt ;
+														deallocate prepare update_stmt;
+
+													end if;
+
+
+													-- 针对版本号对恢复的文档做特殊处理 --end
+													-- 获取源文档id和idseq		
+													set @a_sql = concat("update files_", companyId, " set isdelete = '0', islast = '", islast, "' where id = ", @fromid );
+													prepare astmt from @a_sql;
+													execute astmt ;
+													deallocate prepare astmt;
+											else
+													-- 更新此文档的子文件夹
+													set @replacepath = concat(@fromidseq, @fromid, '.') ;
+													set @a_sql = concat("update files_", companyId, " set isdelete = '0' where idseq like '", @replacepath, "%' and id not in(select temp.id from (select f.id id from files_", companyId, " f inner join files_trash_", companyId, " t on t.idseq like '", @replacepath, "%' and t.isdelete = '0' and (f.idseq like concat('", @replacepath, "', t.fromid, '.%') or f.id = t.fromid) ) temp )");
+													select @a_sql;
+													prepare astmt from @a_sql;
+													execute astmt ;
+													deallocate prepare astmt;
+											end if;
+										
+										end if;
+
+								
+							end if;
+						end while;
+						
+					end if;
+				END ;
+			]]>
+		</procedure>
+
+	</version>
+	<version edition="73" description="添加邀请表">
+		<sql creator="liumingchao" createDate="20150916" note="添加邀请表">
+			CREATE TABLE
+			`invitedetail` (
+			`COMPANYID` int(8) DEFAULT NULL,
+			`USERID` int(8) DEFAULT NULL,
+			`GROUPID` int(8) DEFAULT NULL,
+			`FLAG` varchar(30) DEFAULT NULL,
+			`CLASSID` int(8) DEFAULT NULL
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		</sql>
+
+	</version>
+	<version edition="74" description="添加服务接口">
+		<sql creator="liukang" createDate="20150928" note="往platformservice添加服务接口">
+			INSERT INTO
+			fyplatformdb.platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefile_messagequeue_producer',
+			'cn.flying.rest.onlinefile.restInterface.MessageQueueProducerWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefile_messagequeue_producer',
+			'1', 'wwwwww', '1', '0', null);
+			INSERT INTO
+			fyplatformdb.platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefile_messagequeue_consumer',
+			'cn.flying.rest.onlinefile.restInterface.MessageQueueConsumerWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefile_messagequeue_consumer',
+			'1', 'wwwwww', '1', '0', null);
+			INSERT INTO
+			fyplatformdb.platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefile_quartz',
+			'cn.flying.rest.onlinefile.restInterface.QuartzWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefile_quartz', '1',
+			'wwwwww', '1', '0', null);
+		</sql>
+	</version>
+
+	<version edition="75" description="修改用户社plinfo长度">
+		<sql creator="liuwei" createDate="20150709" note="修改用户社plinfo长度">
+			alter table
+			community_callback modify column pl_info varchar(20000) ;
+		</sql>
+	</version>
+
+	<version edition="76" description="将文件表中type字段默认值设为空字符,文件夹数据条目类型设置为folder">
+		<procedure creator="xiewenda" createDate="20151023"
+			note="将文件表中type字段默认值设为空字符,文件夹数据条目类型设置为folder">
+			<![CDATA[
+					DROP PROCEDURE IF EXISTS `files_type_floder`;
+			]]>
+		</procedure>
+		<procedure creator="xiewenda" createDate="20151023"
+			note="将文件表中type字段默认值设为空字符,文件夹数据条目类型设置为folder">
+			<![CDATA[
+					CREATE PROCEDURE `files_type_floder`()
+					BEGIN		
+							DECLARE done INT DEFAULT 0;
+							DECLARE done1 INT DEFAULT 0;
+							DECLARE tablename VARCHAR(200);
+							DECLARE rs CURSOR FOR 
+							select `TABLE_NAME` from information_schema.`TABLES` where TABLE_SCHEMA like 'onlinefile'  and (`TABLE_NAME` like 'files_%');
+							DECLARE CONTINUE  HANDLER  FOR SQLSTATE  '02000'   SET  done  =   1 ; 
+							DECLARE CONTINUE  HANDLER  FOR SQLEXCEPTION SET  done1  =   1 ;
+							open rs;		
+							REPEAT
+									FETCH rs INTO tablename;
+					 				SET @s = CONCAT('update ',tablename,' set TYPE = "folder" where ISFILE = "0" ');
+					        		SET @s1 = CONCAT('alter table ',tablename,' alter column TYPE set default "" ');
+					 		 PREPARE stmt FROM @s;
+					     	 PREPARE stmt1 FROM @s1;
+					 		 EXECUTE stmt;
+					         EXECUTE stmt1;
+							UNTIL done END REPEAT;
+							CLOSE rs;
+					END
+					;;
+			]]>
+		</procedure>
+		<procedure creator="xiewenda" createDate="20150713" note="将文件表中加入字段onwer">
+			<![CDATA[
+					call files_type_floder();
+			]]>
+		</procedure>
+	</version>
+
+	<version edition="77" description="再次添加服务接口">
+		<sql creator="liukang" createDate="20151021" note="往platformservice添加服务接口">
+			INSERT INTO
+			fyplatformdb.platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'onlinefile_messagequeue_consumer_file',
+			'cn.flying.rest.onlinefile.restInterface.MessageQueueConsumerFileWS',
+			'http://127.0.0.1:8080/onlinefile/rest/onlinefile_messagequeue_consumer_file',
+			'1', 'wwwwww', '1', '0', null);
+		</sql>
+	</version>
+	<version edition="78" description="添加公司是否删除字段">
+		<sql creator="liumingchao" createDate="20151027" note="添加公司是否删除字段">
+			ALTER TABLE company_users ADD COLUMN ISDEL int(1) DEFAULT 0;
+		</sql>
+	</version>
+	<version edition="79" description="修改用户社区评论回复id字段">
+		<sql creator="liuwei" createDate="20151103" note="修改用户社区评论回复id字段">
+			ALTER TABLE community_callback DROP COLUMN `pl_userid`;
+			ALTER TABLE community_callback ADD COLUMN pl_username varchar(50) DEFAULT null;
+			ALTER TABLE community_callback ADD COLUMN pl_replyname varchar(50) DEFAULT null;
+			ALTER TABLE community_callback DROP COLUMN `pl_callback`;
+		</sql>
+	</version>
+	<version edition="80" description="增加个人企业个性设置表字段">
+		<sql creator="xiayongcai" createDate="20151112" note="增加个性设置左侧个人空间以及企业分类的控制">
+			ALTER TABLE user_singleset ADD COLUMN ISOPENSPACE  varchar(2) DEFAULT '1' COMMENT '默认展开个人空间，0不展开，1默认为展开';
+			ALTER TABLE user_singleset ADD COLUMN ISOPENGROUP  varchar(2) DEFAULT '1' COMMENT '默认展开企业分类，0不提示，1默认为展开';
+		</sql>
+	</version>
+	<version edition="81" description="文件分享表 修改company为字符串类型 以便保存user_N">
+		<sql creator="wangwenshuo" createDate="20151130" note="文件分享表 修改company为字符串类型 以便保存user_N">
+			ALTER TABLE fileuserrelation MODIFY COLUMN COMPANYID varchar(100) NOT NULL;
+		</sql>
+	</version>
+	<version edition="82" description="files_n表中彻底删除的文件做处理">
+		<procedure creator="xiewenda" createDate="20151201"
+			note="files_n表中彻底删除的文件做处理">
+			<![CDATA[
+					DROP PROCEDURE IF EXISTS `modifyDestoryOfFiles`;
+			]]>
+		</procedure>
+		<procedure creator="xiewenda" createDate="20151201"
+			note="files_n表中彻底删除的文件做处理">
+			<![CDATA[
+					CREATE PROCEDURE `modifyDestoryOfFiles`()
+					BEGIN		
+					    DECLARE done INT DEFAULT 0;
+							DECLARE done1 INT DEFAULT 0;
+					    DECLARE companyId VARCHAR(200);
+					    DECLARE rs CURSOR FOR 
+							select id from company;
+						   DECLARE CONTINUE  HANDLER  FOR SQLSTATE '02000'  SET  done  =   1 ; 
+						   DECLARE CONTINUE  HANDLER  FOR SQLEXCEPTION set done1= 0;
+						  open rs;		
+					    REPEAT
+					        FETCH rs INTO companyId;
+					        SET @s = CONCAT('update files_',companyId,' set CLASSID=-1,IDSEQ="" where ID in (select FROMID from files_trash_',companyId,' where ISDELETE = "1")');
+					    PREPARE stmt FROM @s;
+					    EXECUTE stmt;
+					    UNTIL done END REPEAT;
+					    CLOSE rs;
+					END
+					;;
+			]]>
+		</procedure>
+		<procedure creator="xiewenda" createDate="20151201" note="将文件表中加入字段onwer">
+			<![CDATA[
+					call modifyDestoryOfFiles();
+			]]>
+		</procedure>
+	</version>
+	<version edition="83" description="用户个性设置添加字段">
+		<sql creator="liuwei" createDate="20151202" note="用户个性设置添加字段是否回车发送ISENTERSEND">
+			ALTER TABLE user_singleset ADD COLUMN ISENTERSEND  varchar(2) DEFAULT '1';
+		</sql>
+	</version>
+	<version edition="84" description="文件分享表 新增两个字段分别：isDownload,isLook 分别控制浏览、下载权限默认为1">
+		<sql creator="xiayongcai" createDate="20151130" note="文件分享表 新增两个字段分别：isDownload,isLook 分别控制浏览、下载权限默认为1">
+			ALTER TABLE fileuserrelation MODIFY COLUMN COMPANYID varchar(100) NOT NULL;
+			ALTER TABLE fileuserrelation ADD COLUMN isDownload  int(1)  DEFAULT '1' COMMENT '上传鍀文件默认是可下载，分别为1：可下载，0不能下载';
+			ALTER TABLE fileuserrelation ADD COLUMN isLook  int(1)  DEFAULT '1' COMMENT '上传鍀文件默认是可在线查看文档鍀，分别为1：可查看，0不能查看';
+		</sql>
+	</version>
+	<version edition="85" description="修正我的文档数据库idseq错误">
+		<procedure creator="wangwenshuo" createDate="20151202"
+			note="修正我的文档数据库idseq错误">
+			<![CDATA[
+					DROP PROCEDURE IF EXISTS `mydocument_files_idseq_error`;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20151202"
+			note="修正我的文档数据库idseq错误">
+			<![CDATA[
+					CREATE PROCEDURE `mydocument_files_idseq_error`()
+					BEGIN		
+							DECLARE done INT DEFAULT 0;
+							DECLARE done1 INT DEFAULT 0;
+							DECLARE tablename VARCHAR(200);
+							DECLARE tablename1 VARCHAR(200);
+							DECLARE rs CURSOR FOR 
+							select `TABLE_NAME` from information_schema.`TABLES` where TABLE_SCHEMA like 'onlinefile'  and (`TABLE_NAME` like 'files_user_%');
+							
+							DECLARE rs1 CURSOR FOR 
+							select `TABLE_NAME` from information_schema.`TABLES` where TABLE_SCHEMA like 'onlinefile'  and (`TABLE_NAME` like 'files_trash_user_%');
+			
+							DECLARE CONTINUE  HANDLER  FOR SQLSTATE  '02000'   SET  done  =   1 ; 
+							DECLARE CONTINUE  HANDLER  FOR SQLEXCEPTION SET  done1  =   1 ;
+			
+							open rs;		
+							REPEAT
+									FETCH rs INTO tablename;
+									SET @s0  = CONCAT('update ',tablename,'  set IDSEQ="1." where id=2');
+									SET @s = CONCAT('update ',tablename,'  set IDSEQ=REPLACE(IDSEQ, "1.2.2.", "1.2.") where id>2');
+							 PREPARE stmt0 FROM @s0;
+							 PREPARE stmt FROM @s;
+							 EXECUTE stmt0;
+							 EXECUTE stmt;
+							UNTIL done END REPEAT;
+							CLOSE rs;
+							
+							SET done = 0;
+							SET done1 = 0;
+							open rs1;		
+							REPEAT
+									FETCH rs1 INTO tablename1;
+									SET @s1 = CONCAT('update ',tablename1,'  set PATHNAME=REPLACE(PATHNAME, "/我的文档/我的文档","/我的文档") ,IDSEQ=REPLACE(IDSEQ, "1.2.2.", "1.2.") ');
+							 PREPARE stmt1 FROM @s1;
+							 EXECUTE stmt1;
+							UNTIL done END REPEAT;
+							CLOSE rs1;
+					END
+					;;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20151202" note="将文件表中加入字段onwer">
+			<![CDATA[
+					call mydocument_files_idseq_error();
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="86" description="修改消息通知默认值">
+		<sql creator="liuwei" createDate="20151209" note="修改默认值">
+			ALTER TABLE user_singleset ALTER ISUPREMIND SET DEFAULT '1'
+			ALTER TABLE user_singleset ALTER ISDOWREMIND SET DEFAULT '1'
+		</sql>
+	</version>
+	
+	<version edition="87" description="新增文件删除存储过程">
+		<procedure creator="lujixiang" createDate="20151210" note="新增文件删除存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_delete_file` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20151210" note="新增文件删除存储过程">
+			<![CDATA[
+				create procedure proc_delete_file(in companyId varchar(10), in fileId varchar(100), out success int)
+					begin
+						-- 存储过程功能:更新文件版本号，并将最高版本置为显示文档
+						-- 传入参数：companyId: 公司id; fileId: 文件id; idseq : idseq
+						-- 返回参数: success: 更新结果(1:成功；0:失败)
+						declare _id int(8);
+						declare done int  default 1 ;
+						-- 按时间顺序排列文档
+						declare rs_cursor cursor for (select id from view_temp_file order by createtime asc);
+						
+						declare continue handler for not found set done = 0 ;
+				
+						declare exit handler for sqlexception begin 
+							set success = 0 ; 
+							rollback ; 
+						end ;
+						
+						-- 开启事务
+						start transaction;	
+			
+						-- 删除文件
+						set @sql_delete = concat("update files_", companyId, " set isdelete = '1' where id = ", fileId);
+						prepare stmt from @sql_delete ;
+						execute stmt ;
+						deallocate prepare stmt ;		
+				
+						-- 获取fileName和idSeq已获取改文档所有版本
+						set @sql_select = concat("select filename, idseq, version into @filename, @idseq, @version from files_", companyId, " where id = ", fileId);
+						prepare stmt from @sql_select ;
+						execute stmt ;
+						deallocate prepare stmt ;	
+				
+						-- 获取同一文档的所有版本
+						drop view if exists view_temp_file ;
+				
+						set @sql_view = concat("create view view_temp_file as select * from files_", companyId, " where filename = '", @filename, "' and idseq='", @idseq, "' and isdelete = '0'");
+						prepare stmt from @sql_view ;
+						execute stmt ;
+						deallocate prepare stmt ;			
+						
+						open rs_cursor; 
+						fetch rs_cursor into _id; 
+			
+						-- 更新版本号
+						set @version = 1 ;
+						while( done = 1 ) do
+			
+								set @maxId = _id ;
+								set @sql_version = concat("update files_", companyId, " set version = ", @version, " where id = ", _id ) ; 
+								prepare stmt from @sql_version ;
+								execute stmt ;
+								deallocate prepare stmt ; 
+								fetch rs_cursor into _id; 
+								set @version = @version + 1;
+						end while;
+			
+						close rs_cursor ;
+			
+						-- 如果不是单版本删除,将最高版本号置为显示文档
+						if @version > 1 then 
+							set @sql_last = concat("update files_", companyId, " set islast = '1' where id = ", @maxId) ; 
+							prepare stmt from @sql_last ;
+							execute stmt ;
+							deallocate prepare stmt ; 			
+						end if;
+						-- 提交事务,重要，防止发生死锁
+						commit ;
+						-- 操作成功
+						set success = 1 ; 
+					end;
+			]]>
+		</procedure>
+	</version>
+	<version edition="88" description="针对文件权限已存在的数据进行升级">
+			<sql creator="xiayongcai" createDate="20151215" note="针对文件权限已存在的数据进行升级">
+				UPDATE `fileuserrelation` SET isDownload=IFNULL(isDownload,1),isLook=IFNULL(isLook,1);
+		    </sql>
+	</version>
+	
+	<version edition="89" description="修改文件删除存储过程">
+		<procedure creator="lujixiang" createDate="20151216" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_delete_file` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151216" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_get_folder_path` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20151216" note="新增获取中文路径存储过程">
+			<![CDATA[
+				create procedure proc_get_folder_path(in companyId varchar(10), in idseq varchar(250), out path varchar(1000))
+
+				lable_at_start : 
+
+				begin
+					set path = '' ;
+					set @delimiter = '.' ;
+					
+					
+					if companyId is null or companyId = '' or idseq is null or idseq = '' then
+
+							set path = '' ;
+							leave lable_at_start ;
+					end if;
+
+					set @count = func_get_split_string_total(idseq, @delimiter) ;
+					set @i = 1 ;
+
+					loop_while : while @i <  @count + 1
+							do
+
+									set @tempId = func_get_split_string(idseq, @delimiter, @i) ;
+									set @i = @i + 1 ;
+
+									if @tempId is null or @tempId = '' or @tempId = '1' then
+												iterate loop_while;
+									end if ;
+									
+									set @sql_path = concat("set @path = ( select filename from files_", companyId, " where isdelete = '0' and isfile = '0' and id = ", @tempId," ) ") ;
+									prepare stmt from @sql_path ;
+									execute stmt ;
+									deallocate prepare stmt ;
+
+							
+									if @path is null then
+												set path = '' ;
+												leave lable_at_start ;
+									else
+												set path = concat(path, '/', @path) ;									
+									end if;								
+
+					end while loop_while ;
+					
+				end lable_at_start;
+			]]>
+		</procedure>
+		
+		<procedure creator="lujixiang" createDate="20151216" note="修改文件删除存储过程">
+			<![CDATA[
+				create procedure proc_delete_file(in companyId varchar(10), in fileId varchar(100), in userId varchar(8), out success int)
+				label_at_start :
+					begin
+						-- 存储过程功能:更新文件版本号，并将最高版本置为显示文档
+						-- 传入参数：companyId: 公司id; fileId: 文件id; idseq : idseq
+						-- 返回参数: success: 更新结果(1:成功；0:失败)
+						declare _id int(8);
+						declare done int  default 1 ;
+						-- 按时间顺序排列文档
+						declare rs_cursor cursor for (select id from view_temp_file order by createtime asc);
+						
+						declare continue handler for not found set done = 0 ;
+				
+						declare exit handler for sqlexception begin 
+							set success = 0 ; 
+							rollback ; 
+						end ;
+						
+						
+						-- 视图创建要放在开启事务之前,因为创建视图操作无法回滚,并且会自动提交事务,导致其他操作无法回滚
+
+						-- 获取fileName和idSeq已获取改文档所有版本
+						set @sql_select = concat("select filename, idseq, version into @filename, @idseq, @version from files_", companyId, " where id = ", fileId);
+						prepare stmt from @sql_select ;
+						execute stmt ;
+						deallocate prepare stmt ;
+						
+						-- 获取同一文档的所有版本
+						drop view if exists view_temp_file ;
+
+						set @sql_view = concat("create view view_temp_file as select * from files_", companyId, " where filename = '", @filename, "' and idseq='", @idseq, "' and isdelete = '0'");
+						prepare stmt from @sql_view ;
+						execute stmt ;
+						deallocate prepare stmt ;			
+
+						-- 开启事务
+						start transaction;	
+			
+						-- 删除文件
+						set @sql_delete = concat("update files_", companyId, " set isdelete = '1' where id = ", fileId);
+						prepare stmt from @sql_delete ;
+						execute stmt ;
+						deallocate prepare stmt ;									
+				
+						open rs_cursor; 
+						fetch rs_cursor into _id; 
+			
+						-- 更新版本号
+						set @version = 1 ;
+						while( done = 1 ) do
+			
+								set @maxId = _id ;
+								set @sql_version = concat("update files_", companyId, " set version = ", @version, " where id = ", _id ) ; 
+								prepare stmt from @sql_version ;
+								execute stmt ;
+								deallocate prepare stmt ; 
+								fetch rs_cursor into _id; 
+								set @version = @version + 1;
+						end while;
+			
+						close rs_cursor ;
+			
+						-- 如果不是单版本删除,将最高版本号置为显示文档
+						if @version > 1 then 
+							set @sql_last = concat("update files_", companyId, " set islast = '1' where id = ", @maxId) ; 
+							prepare stmt from @sql_last ;
+							execute stmt ;
+							deallocate prepare stmt ; 			
+						end if;
+
+						-- 将删除的文件放入回收站	
+						call proc_get_folder_path(companyId, @idseq, @pathname);
+						if @pathname = '' then
+								set success = 0 ; 
+								rollback ;
+								leave label_at_start ;
+						end if ;
+	
+						set @sql_transh = concat("insert into files_trash_", companyId, "(fromid, filename, type, creator, owner, deleteuserid, deletetime, isdelete, idseq, pathname, isfile, openlevel) select id, filename, type, creator, owner, '", userId, "', date_format(now(),'%Y-%c-%d %h:%i:%s'), '0', idseq, '", @pathname, "', isfile, openlevel from files_", companyId, " where id = ",fileId );
+						prepare stmt from @sql_transh ;
+						execute stmt ;
+						deallocate prepare stmt ; 	
+
+						-- 提交事务,重要，防止发生死锁
+						commit ;
+
+						-- 操作成功
+						set success = 1 ; 
+					end label_at_start;
+			]]>
+		</procedure>
+	</version>	
+	<version edition="90" description="逻辑修改 回复回收站彻底删除后的字段">
+		<procedure creator="xiewenda" createDate="20151216" note="逻辑修改 回复回收站彻底删除后的字段">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `mondifyFilesByDestory` ;	
+			]]>
+		</procedure>
+
+		<procedure creator="xiewenda" createDate="20151216" note="逻辑修改 回复回收站彻底删除后的字段">
+			<![CDATA[
+				CREATE PROCEDURE `mondifyFilesByDestory`(in companyId varchar(10), out success int)
+					BEGIN
+							DECLARE done1 INT DEFAULT 0;
+							DECLARE cId VARCHAR(200);
+							DECLARE fId INT DEFAULT 0;
+							DECLARE iSq VARCHAR(200);
+							DECLARE rs1 CURSOR For (select FROMID,IDSEQ,CLASSID from tempdataview);
+							DECLARE CONTINUE  HANDLER  FOR SQLSTATE '02000'  SET  done1  = 1;											 
+							DECLARE CONTINUE  HANDLER  FOR SQLEXCEPTION set done1 = 1;
+							-- 创建临时数据视图
+							DROP VIEW IF EXISTS tempdataview;
+							SET @s = CONCAT("CREATE VIEW tempdataview as select FROMID,IDSEQ,substring_index(substring_index(IDSEQ,'.',-2),'.',1) CLASSID from files_trash_",companyId);
+							PREPARE stmt FROM @s;
+							EXECUTE stmt;
+							open rs1;
+							REPEAT
+							FETCH rs1 INTO fId,iSq,cId;
+							SET @s1 = CONCAT("update files_",companyId," set classId = ",cId," ,idseq = '",iSq,"' where id= ",fId);								
+							PREPARE stmt1 FROM @s1;
+							EXECUTE stmt1;
+							UNTIL done1 END REPEAT;
+							CLOSE rs1;
+						END;
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="91" description="逻辑修改 回复回收站彻底删除后的字段">
+		<procedure creator="xiewenda" createDate="20151216" note="逻辑修改 回复回收站彻底删除后的字段">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `restoreDestoryFilesForFiles_N` ;	
+			]]>
+		</procedure>
+
+		<procedure creator="xiewenda" createDate="20151216" note="逻辑修改 回复回收站彻底删除后的字段">
+			<![CDATA[
+                CREATE PROCEDURE `restoreDestoryFilesForFiles_N`()
+					BEGIN		
+					    DECLARE done INT DEFAULT 0;
+						DECLARE done2 INT DEFAULT 0;
+					    DECLARE companyId VARCHAR(200);
+					    DECLARE rs CURSOR FOR select id from company;						
+						DECLARE CONTINUE  HANDLER  FOR SQLSTATE '02000'  SET  done  = 1; 					
+						DECLARE CONTINUE  HANDLER  FOR SQLEXCEPTION set done = 0;
+						open rs;		
+					    REPEAT               
+								FETCH rs INTO companyId;								
+								CALL mondifyFilesByDestory(companyId,done2);
+					   UNTIL done END REPEAT;
+					   CLOSE rs;
+					END;
+			]]>
+		</procedure>
+		
+		<procedure creator="xiewenda" createDate="20151216" note="逻辑修改 回复回收站彻底删除后的字段">
+			<![CDATA[
+					call restoreDestoryFilesForFiles_N();
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="92" description="数据升级添加files_x 和 files_user_x 字段">
+		<procedure creator="xiayongcai" createDate="20151222" note="添加三个字段、更新时间、序号编号、唯一编号">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `addFile_xAndFile_user_xColumn` ;	
+			]]>
+		</procedure>
+
+		<procedure creator="xiayongcai" createDate="20151222" note="添加三个字段、更新时间、序号编号、唯一编号">
+			<![CDATA[
+                CREATE PROCEDURE `addFile_xAndFile_user_xColumn`()
+					BEGIN		
+					    DECLARE _table_name VARCHAR(100); 
+						DECLARE Done INT DEFAULT 0;
+						DECLARE v_sql0 VARCHAR(1000);
+						DECLARE v_sql1 VARCHAR(1000); 
+						DECLARE v_sql2 VARCHAR(1000); 
+						DECLARE v_sql3 VARCHAR(1000); 
+						DECLARE rs_cursor CURSOR FOR  (SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA LIKE 'onlinefile'  AND ((TABLE_NAME LIKE 'files__') OR (TABLE_NAME LIKE 'files___') OR (TABLE_NAME LIKE 'files____') OR (TABLE_NAME LIKE 'files_____') OR (TABLE_NAME LIKE 'files_user__') OR (TABLE_NAME LIKE 'files_user___')OR (TABLE_NAME LIKE 'files_user____') OR (TABLE_NAME LIKE 'files_user_____')));
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _table_name; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+							SET v_sql0= CONCAT('SELECT COUNT(*) INTO @Tiem FROM information_schema.columns WHERE  TABLE_SCHEMA LIKE "onlinefile" AND table_name ="',_table_name,'" AND column_name ="updatetime"');
+							SET @v_sql0=v_sql0;
+							PREPARE stmt0 FROM @v_sql0;
+							EXECUTE stmt0;
+							DEALLOCATE PREPARE stmt0;
+						 -- 添加更新时间
+						 IF @Tiem = '' THEN
+							   SET v_sql1= CONCAT('ALTER TABLE ', _table_name ,' add column UPDATETIME varchar(200) comment "更新时间"');
+							   SET @v_sql1=v_sql1;
+							   PREPARE stmt1 FROM @v_sql1;
+							   EXECUTE stmt1;
+							   DEALLOCATE PREPARE stmt1;
+						-- 添加序号标识
+							   SET v_sql2= CONCAT('ALTER TABLE ', _table_name ,' add column SERIALNUMBER varchar(200) comment "序号编号(针对分类排序编号)"');
+							   SET @v_sql2=v_sql2;
+							   PREPARE stmt2 FROM @v_sql2;
+							   EXECUTE stmt2;
+							   DEALLOCATE PREPARE stmt2;
+						-- 添加唯一标识	   
+							   SET v_sql3= CONCAT('ALTER TABLE ', _table_name ,' add column SOLENUMBER varchar(2000) comment "唯一编号(本表中包括文件夹or文件)"');
+							   SET @v_sql3=v_sql3;
+							   PREPARE stmt3 FROM @v_sql3;
+							   EXECUTE stmt3;
+							   DEALLOCATE PREPARE stmt3;
+						   END IF;
+					             FETCH rs_cursor INTO _table_name; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+					END;
+			]]>
+		</procedure>
+		
+		<procedure creator="xiayongcai" createDate="20151222" note="添加三个字段、更新时间、序号编号、唯一编号">
+			<![CDATA[
+					call addFile_xAndFile_user_xColumn();
+			]]>
+		</procedure>
+	</version>
+	
+	
+	<version edition="93" description="数据升级修改files_x 和 files_user_x 字段类型SOLENUMBER">
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级修改files_x 和 files_user_x 字段类型SOLENUMBER">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFile_xAndFile_user_xColumn` ;	
+			]]>
+		</procedure>
+
+		<procedure creator="xiayongcai" createDate="20151224" note="数据升级修改files_x 和 files_user_x 字段类型SOLENUMBER">
+			<![CDATA[
+                CREATE PROCEDURE `updateFile_xAndFile_user_xColumn`()
+					BEGIN		
+						DECLARE _table_name VARCHAR(100); 
+						DECLARE Done INT DEFAULT 0;
+						DECLARE v_sql1 VARCHAR(1000); 
+						DECLARE rs_cursor CURSOR FOR  (SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA LIKE 'onlinefile'  AND ((TABLE_NAME LIKE 'files__') OR (TABLE_NAME LIKE 'files___') OR (TABLE_NAME LIKE 'files____') OR (TABLE_NAME LIKE 'files_____') OR (TABLE_NAME LIKE 'files_user__') OR (TABLE_NAME LIKE 'files_user___')OR (TABLE_NAME LIKE 'files_user____') OR (TABLE_NAME LIKE 'files_user_____')));
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _table_name; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+						 --  修改字段类型
+							   SET v_sql1= CONCAT('ALTER TABLE ', _table_name ,' MODIFY column SOLENUMBER INT(200) comment "唯一编号"');
+							   SET @v_sql1=v_sql1;
+							   PREPARE stmt1 FROM @v_sql1;
+							   EXECUTE stmt1;
+							   DEALLOCATE PREPARE stmt1;
+					             FETCH rs_cursor INTO _table_name; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+				END;	
+			]]>
+		</procedure>
+		
+		<procedure creator="xiayongcai" createDate="20151224" note="数据升级修改files_x 和 files_user_x 字段类型SOLENUMBER">
+			<![CDATA[
+					call updateFile_xAndFile_user_xColumn();
+			]]>
+		</procedure>
+	</version>
+	
+	
+	
+
+	<version edition="94" description="数据升级,修改更新时间与文件唯一编号(1)">
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改更新时间与文件唯一编号(1)">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFileAndFolder_updateTimeAndSoleNumber1` ;	
+			]]>
+		</procedure>
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改更新时间与文件唯一编号(1)">
+			<![CDATA[
+                CREATE PROCEDURE `updateFileAndFolder_updateTimeAndSoleNumber1`(IN _table_name VARCHAR(200))
+					BEGIN		
+					    DECLARE _name VARCHAR(2000); 
+						DECLARE _type VARCHAR(100); 
+						DECLARE _creatime VARCHAR(100);
+						DECLARE _classid VARCHAR(100);
+						DECLARE num INT DEFAULT 0;
+						DECLARE Done INT DEFAULT 0;
+						DECLARE v_sql VARCHAR(1000); 
+						DECLARE v_sql1 VARCHAR(1000); 
+						DECLARE rs_cursor CURSOR FOR  (SELECT o.classid,o.filename,o.TYPE,o.CREATETIME  FROM webuserview o GROUP BY o.classId,o.filename,o.type ORDER BY o.createtime ASC,o.id ASC );
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						DROP VIEW IF EXISTS webuserview; 
+						SET @sqlstr = "CREATE VIEW webuserview as ";   
+						SET @v_sql= CONCAT(@sqlstr,'(SELECT o.classid,o.filename,o.TYPE,o.CREATETIME,o.id FROM ', _table_name ,'  o WHERE o.classid <> "1" and o.classid <> "0"  ORDER BY createtime ASC,id ASC)');
+						PREPARE stmt FROM @v_sql;
+						EXECUTE stmt;
+						DEALLOCATE PREPARE stmt;
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _classid,_name,_type,_creatime; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+							SET num = num+1;
+							   SET v_sql1= CONCAT('UPDATE  ', _table_name ,' o SET o.SOLENUMBER ="',num,'",  o.updatetime="',_creatime,'"  WHERE o.CLASSID="',_classid,'"  AND o.FILENAME ="', _name, '"  AND o.TYPE="',_type,'"');
+							   SET @v_sql1=v_sql1;
+							   PREPARE stmt1 FROM @v_sql1;
+							   EXECUTE stmt1;
+							   DEALLOCATE PREPARE stmt1;
+					             FETCH rs_cursor INTO _classid,_name,_type,_creatime; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+					END;
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="95" description="数据升级,修改更新时间与文件唯一编号(2)">
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改更新时间与文件唯一编号(2)">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFileAndFolder_updateTimeAndSoleNumber` ;	
+			]]>
+		</procedure>
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改更新时间与文件唯一编号(2)">
+			<![CDATA[
+                CREATE PROCEDURE `updateFileAndFolder_updateTimeAndSoleNumber`()
+					BEGIN		
+					   	DECLARE _table_name VARCHAR(100); 
+						DECLARE Done INT DEFAULT 0;
+						DECLARE rs_cursor CURSOR FOR  (SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA LIKE 'onlinefile'  AND ((TABLE_NAME LIKE 'files__') OR (TABLE_NAME LIKE 'files___') OR (TABLE_NAME LIKE 'files____') OR (TABLE_NAME LIKE 'files_____') OR (TABLE_NAME LIKE 'files_user__') OR (TABLE_NAME LIKE 'files_user___')OR (TABLE_NAME LIKE 'files_user____') OR (TABLE_NAME LIKE 'files_user_____')));
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _table_name; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+							CALL updateFileAndFolder_updateTimeAndSoleNumber1(_table_name);
+					             FETCH rs_cursor INTO _table_name; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+					END;
+			]]>
+		</procedure>
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改更新时间与文件唯一编号(2)">
+			<![CDATA[
+					call updateFileAndFolder_updateTimeAndSoleNumber();
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="96" description="数据升级,修改文件序号（1）">
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改文件序号（1）">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFileAndFolder_SerialNumber1` ;	
+			]]>
+		</procedure>
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改文件序号（1）">
+			<![CDATA[
+                CREATE PROCEDURE `updateFileAndFolder_SerialNumber1`(IN _table_name VARCHAR(200),IN is_file VARCHAR(20))
+					BEGIN		
+					   	DECLARE _solenumber VARCHAR(100);
+						DECLARE _classid VARCHAR(100);
+						DECLARE is_classid VARCHAR(100);
+						DECLARE num INT DEFAULT 0;
+						DECLARE Done INT DEFAULT 0;
+						DECLARE v_sql VARCHAR(1000); 
+						DECLARE v_sql1 VARCHAR(1000); 
+						DECLARE rs_cursor CURSOR FOR  (SELECT o.classId,o.solenumber FROM  webuserview o   GROUP BY o.classId,o.solenumber ORDER BY o.classId);
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						
+					
+						DROP VIEW IF EXISTS webuserview; 
+						SET @sqlstr = "CREATE VIEW webuserview as ";
+						-- 排除删除文件、彻底删除文件、分类   
+						SET @v_sql= CONCAT(@sqlstr,'(SELECT * FROM ', _table_name ,'  WHERE ISFILE="',is_file,'" AND classId <> "-1" AND classId <> "0" AND classId <> "1"  AND ISDELETE="0"  ORDER BY createtime ASC ,ID ASC)');
+						PREPARE stmt FROM @v_sql;
+						EXECUTE stmt;
+						DEALLOCATE PREPARE stmt;
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _classid,_solenumber; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+						       IF (is_classid <> _classid) THEN 
+						       SET num=0;
+						       END IF ;
+						       SET is_classid=_classid;
+							SET num = num+1;
+							   SET v_sql1= CONCAT('UPDATE  ', _table_name ,' o SET SERIALNUMBER=LPAD(',num,',4,"0")  WHERE o.CLASSID="',_classid,'"  AND o.SOLENUMBER="',_solenumber,'"');
+							   SET @v_sql1=v_sql1;
+							   PREPARE stmt1 FROM @v_sql1;
+							   EXECUTE stmt1;
+							   DEALLOCATE PREPARE stmt1;
+					            FETCH rs_cursor INTO _classid,_solenumber; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+					END;
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="97" description="数据升级,修改文件序号（2）">
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改文件序号（2）">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFileAndFolder_SerialNumber` ;	
+			]]>
+		</procedure>
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改文件序号（2）">
+			<![CDATA[
+                CREATE PROCEDURE `updateFileAndFolder_SerialNumber`()
+					BEGIN		
+					   	DECLARE _table_name VARCHAR(100); 
+						DECLARE Done INT DEFAULT 0;
+						DECLARE rs_cursor CURSOR FOR  (SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA LIKE 'onlinefile'  AND ((TABLE_NAME LIKE 'files__') OR (TABLE_NAME LIKE 'files___') OR (TABLE_NAME LIKE 'files____') OR (TABLE_NAME LIKE 'files_____') OR (TABLE_NAME LIKE 'files_user__') OR (TABLE_NAME LIKE 'files_user___')OR (TABLE_NAME LIKE 'files_user____') OR (TABLE_NAME LIKE 'files_user_____')));
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _table_name; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+							-- 更新文件
+							CALL updateFileAndFolder_SerialNumber1(_table_name,'1');
+							-- 更新文件夹
+							CALL updateFileAndFolder_SerialNumber1(_table_name,'0');
+					             FETCH rs_cursor INTO _table_name; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+					END;
+			]]>
+		</procedure>
+		<procedure creator="xiayongcai" createDate="20151222" note="数据升级,修改文件序号（2）">
+			<![CDATA[
+					call updateFileAndFolder_SerialNumber();
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="98" description="添加我的文档删除存储过程">
+		<procedure creator="lujixiang" createDate="20151224" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_personal_file_handler` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151224" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_personal_file` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20151224" note="新增单个我的文档恢复存储过程">
+			<![CDATA[
+				create procedure proc_restore_personal_file_handler(in trashId varchar(10), in userId varchar(10), out success int)
+
+					lable_at_proc :
+					begin		
+			
+							declare _id int(8);
+							declare done int  default 1 ;
+							declare rs_cursor cursor for (select id from view_personal_restore_file order by createtime asc);
+							declare continue handler for not found set done = 0 ;
+							declare exit handler for sqlexception begin 
+								set success = 0 ; 
+								rollback ; 
+							end ;
+						
+							set success = 0 ;
+			
+							set @sql_trash_select = concat("set @fromid = (select fromid from files_trash_user_", userId," where id = ", trashId, " )");
+							prepare pstmt from @sql_trash_select ;
+							execute pstmt ;
+							deallocate prepare pstmt ;
+			
+							if @fromid is null then						
+									leave lable_at_proc ;
+							end if ;
+			
+							set @sql_select_allversion = concat("set @md5 = (select md5 from files_user_", userId," where id = ", @fromid, " )");
+							prepare pstmt from @sql_select_allversion ;
+							execute pstmt ;
+							deallocate prepare pstmt ;
+							
+							-- 获取同一文档的所有版本
+							drop view if exists view_personal_restore_file ;
+							set @sql_view = concat("create view view_personal_restore_file as select id, createtime from files_user_", userId, " where md5 = '", @md5, "' and isdelete = '0'") ;
+							prepare pstmt from @sql_view ;
+							execute pstmt ;
+							deallocate prepare pstmt ;				
+							
+							start transaction ;
+							
+							set @sql_update_trash = concat("update files_trash_user_", userId, " set isdelete = '1' where id = ", trashId) ;
+							prepare pstmt from @sql_update_trash ;
+							execute pstmt ;
+							deallocate prepare pstmt ;	
+			
+							set @sql_update_file = concat("update files_user_", userId, " set isdelete = '0' where id = ", @fromid) ;
+							prepare pstmt from @sql_update_file ;
+							execute pstmt ;
+							deallocate prepare pstmt ;	
+			
+							open rs_cursor; 
+							fetch rs_cursor into _id; 
+			
+							set @version = 1 ;
+							while( done = 1 ) do
+						
+									set @maxId = _id ;
+									set @sql_version = concat("update files_user_", userId, " set version = ", @version, " where id = ", _id ) ; 
+									prepare stmt from @sql_version ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _id; 
+									set @version = @version + 1;
+							end while;
+			
+							close rs_cursor ;
+			
+							-- 如果不是单版本删除,将最高版本号置为显示文档
+							if @maxId is not null then 
+									set @sql_last = concat("update files_user_", userId, " set islast = '1' where id = ", @maxId) ; 
+									prepare stmt from @sql_last ;
+									execute stmt ;
+									deallocate prepare stmt ; 			
+							end if;
+			
+							commit ;
+							set success = 1 ;
+			
+			
+					end lable_at_proc ;
+			]]>
+		</procedure>
+		
+		<procedure creator="lujixiang" createDate="20151224" note="新增我的文档批量恢复存储过程">
+			<![CDATA[
+				create procedure proc_restore_personal_file(in trashIds varchar(1000), in userId varchar(20), out successNum int)
+
+					lable_at_proc_restore_personal_file :
+					begin 
+		
+							set successNum = 0 ; 
+							
+							-- 检测参数是否正确 
+							if trashIds is null or trashIds = '' then 
+								leave lable_at_proc_restore_personal_file ;				
+							elseif userId is null or userId = '' then
+								leave lable_at_proc_restore_personal_file ;				
+							end if ;	
+		
+							-- 循环处理每个待恢复的文件--start
+							set @delimiter = ',' ;					
+							set @cnt = func_get_split_string_total(trashIds, @delimiter) ;
+							
+							set @i = 0 ;
+							
+							loop_file : while @i < @cnt do
+						
+									set @i = @i + 1 ;
+									set @tempTrashId = func_get_split_string(trashIds, @delimiter, @i) ;
+									call proc_restore_personal_file_handler(@tempTrashId, userId, @success);
+									if @success = 1 then
+											set successNum = successNum + 1 ;	
+									end if ;
+									
+							end while loop_file ;
+					end lable_at_proc_restore_personal_file ;
+			]]>
+		</procedure>
+	</version>
+	
+	
+	
+	<version edition="99" description="修改我的文档删除存储过程">
+		<procedure creator="lujixiang" createDate="20151229" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_personal_file_handler` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151229" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_personal_file` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20151224" note="修改单个我的文档恢复存储过程">
+			<![CDATA[
+				create procedure proc_restore_personal_file_handler(in trashId varchar(10), in userId varchar(10), out success int)
+
+					lable_at_proc :
+					begin		
+			
+							declare _id int(8);
+							declare done int  default 1 ;
+							declare rs_cursor cursor for (select id from view_personal_restore_file order by createtime asc);
+							declare continue handler for not found set done = 0 ;
+							declare exit handler for sqlexception begin 
+								set success = 0 ; 
+								rollback ; 
+							end ;
+						
+							set success = 0 ;
+			
+							set @sql_trash_select = concat("set @fromid = (select fromid from files_trash_user_", userId," where id = ", trashId, " )");
+							prepare pstmt from @sql_trash_select ;
+							execute pstmt ;
+							deallocate prepare pstmt ;
+			
+							if @fromid is null then						
+									leave lable_at_proc ;
+							end if ;
+			
+							set @sql_select_allversion = concat("set @md5 = (select md5 from files_user_", userId," where id = ", @fromid, " )");
+							prepare pstmt from @sql_select_allversion ;
+							execute pstmt ;
+							deallocate prepare pstmt ;
+							
+							-- 获取同一文档的所有版本
+							drop view if exists view_personal_restore_file ;
+							set @sql_view = concat("create view view_personal_restore_file as select id, createtime from files_user_", userId, " where md5 = '", @md5, "' and isdelete = '0'") ;
+							prepare pstmt from @sql_view ;
+							execute pstmt ;
+							deallocate prepare pstmt ;				
+							
+							start transaction ;
+							
+							set @sql_update_trash = concat("update files_trash_user_", userId, " set isdelete = '1' where id = ", trashId) ;
+							prepare pstmt from @sql_update_trash ;
+							execute pstmt ;
+							deallocate prepare pstmt ;	
+			
+							set @sql_update_file = concat("update files_user_", userId, " set isdelete = '0' where id = ", @fromid) ;
+							prepare pstmt from @sql_update_file ;
+							execute pstmt ;
+							deallocate prepare pstmt ;	
+			
+							open rs_cursor; 
+							fetch rs_cursor into _id; 
+			
+							set @version = 1 ;
+							while( done = 1 ) do
+						
+									set @maxId = _id ;
+									set @sql_version = concat("update files_user_", userId, " set version = ", @version, ", islast = '0' where id = ", _id ) ; 
+									prepare stmt from @sql_version ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _id; 
+									set @version = @version + 1;
+							end while;
+			
+							close rs_cursor ;
+			
+							-- 如果不是单版本删除,将最高版本号置为显示文档
+							if @maxId is not null then 
+									set @sql_last = concat("update files_user_", userId, " set islast = '1' where id = ", @maxId) ; 
+									prepare stmt from @sql_last ;
+									execute stmt ;
+									deallocate prepare stmt ; 			
+							end if;
+			
+							commit ;
+							set success = 1 ;
+			
+			
+					end lable_at_proc ;
+			]]>
+		</procedure>
+		
+		<procedure creator="lujixiang" createDate="20151229" note="修改我的文档批量恢复存储过程">
+			<![CDATA[
+				create procedure proc_restore_personal_file(in trashIds varchar(1000), in userId varchar(20), out successNum int)
+
+					lable_at_proc_restore_personal_file :
+					begin 
+		
+							set successNum = 0 ; 
+							
+							-- 检测参数是否正确 
+							if trashIds is null or trashIds = '' then 
+								leave lable_at_proc_restore_personal_file ;				
+							elseif userId is null or userId = '' then
+								leave lable_at_proc_restore_personal_file ;				
+							end if ;	
+		
+							-- 循环处理每个待恢复的文件--start
+							set @delimiter = ',' ;					
+							set @cnt = func_get_split_string_total(trashIds, @delimiter) ;
+							
+							set @i = 0 ;
+							
+							loop_file : while @i < @cnt do
+						
+									set @i = @i + 1 ;
+									set @tempTrashId = func_get_split_string(trashIds, @delimiter, @i) ;
+									call proc_restore_personal_file_handler(@tempTrashId, userId, @success);
+									if @success = 1 then
+											set successNum = successNum + 1 ;	
+									end if ;
+									
+							end while loop_file ;
+					end lable_at_proc_restore_personal_file ;
+			]]>
+		</procedure>
+	</version>
+	
+	
+	<version edition="100" description="修复公司级文档">
+		<procedure creator="lujixiang" createDate="20151230" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_generate_folder_path` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151230" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_folder` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151230" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_file` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151230" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_batch_restore_file_folder` ;	
+				
+			]]>
+		</procedure>
+
+		<procedure creator="lujixiang" createDate="20151230" note="新增恢复路径存储过程">
+			<![CDATA[
+				
+				
+				create procedure proc_generate_folder_path(in ideseq varchar(1000), in companyId varchar(10), out success int )
+					lable_at_start:
+					begin
+				
+						declare exit handler for sqlexception begin 
+							set success = 0 ; 
+							rollback ;
+						end ;
+				
+						start transaction ;
+				
+						-- 重新构造路径(/理科/数学/微积分/ --> 理科/数学/微积分 )
+						set @delimiter_arch = "." ;
+						
+						-- 判断分类是否有效
+						set @classId = func_get_split_string(ideseq, @delimiter_arch, 2);
+						
+						set @sql_class = concat("set @fileId = ( select id from files_", companyId, " where id = ", @classId, " and isfile = '0' and isdelete = '0' )" ) ;
+						prepare stmt from @sql_class ;
+						execute stmt ;
+						deallocate prepare stmt ;
+				
+				    	-- 未找到分类,直接退出存储过程
+						if @fileId is null then set ideseq = '';  leave lable_at_start ;	end if ;
+				
+						-- 创建文件夹路径(更新文件夹isdelete字段为0)
+						set @count = func_get_split_string_total(ideseq, @delimiter_arch) ;
+						set @j = 2 ;			
+						
+						loop_folder : while @j < @count 
+								do
+									 set @j = @j + 1 ;	
+									 set @tempParentId = func_get_split_string(ideseq, @delimiter_arch, @j) ;
+									 if @tempParentId is null or @tempParentId = '' then set @j = @j + 1 ; iterate loop_folder ; end if ;
+									 set @sql_folder = concat("set @fileId = (select id from files_", companyId, " where id = ", @tempParentId, " )") ;
+									 prepare stmt from @sql_folder ;
+									 execute stmt ;
+									 deallocate prepare stmt ;
+										
+				           			 -- 未找到文件夹数据,停止创建路径并退出
+									 if @fileId is null then 
+												set success = 0 ; 
+												rollback ;
+												leave lable_at_start ; 
+									 end if ;
+									 
+									 -- 更新文件夹字段isdelete
+									 set @sql_update = concat("update files_", companyId, " set isdelete = '0' where id = ", @tempParentId, "") ;
+									 prepare stmt from @sql_update ;
+									 execute stmt ;
+									 deallocate prepare stmt ;
+									
+				
+						end while loop_folder ;
+				
+				    -- 设置恢复的文件夹路径idseq
+						commit ;
+						set success = 1 ;
+						
+				
+					end lable_at_start;
+
+			]]>
+		</procedure>
+		
+		<procedure creator="lujixiang" createDate="20151230" note="新增公司文档恢复">
+			<![CDATA[
+				
+				create procedure proc_restore_file(in companyId varchar(10),in trashId varchar(10), in fileId int, out success int)
+				
+				
+					begin
+							-- 存储过程功能:恢复文件,并更新版本号
+							-- 传入参数：companyId: 公司id; fileId: 文件id; 
+							-- 返回参数: success: 更新结果(1:成功；0:失败)
+							declare _id int(8);
+							declare done int  default 1 ;
+							-- 按时间顺序排列文档
+							declare rs_cursor cursor for (select id from view_temp_file order by createtime asc);			
+							declare continue handler for not found set done = 0 ;	
+							declare exit handler for sqlexception begin
+										set success = 0 ; 	
+										rollback ;
+							end ;
+				
+							set @sql_file = concat("select filename, idseq into @fileName, @idseq from files_", companyId, ' where id = ', fileId);
+							prepare stmt from @sql_file ;
+							execute stmt ;
+							deallocate prepare stmt ;			
+				
+							-- 获取同一文档（包括所有有效的版本号）
+							drop view if exists view_temp_file ;
+					
+							set @sql_view = concat("create view view_temp_file as select * from files_", companyId, " where filename = '", @fileName, "' and idseq='", @idseq, "' and isdelete = '0'");
+							prepare stmt from @sql_view ;
+							execute stmt ;
+							deallocate prepare stmt ;		
+				
+							start transaction ;
+				
+							-- 恢复文件
+							set @sql_restore = concat("update files_", companyId, " set isdelete = '0' where id = ", fileId) ; 
+							prepare stmt from @sql_restore ;
+							execute stmt ;
+							deallocate prepare stmt ; 	
+				
+							-- 删除回收站文件
+							set @sql_trash = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", trashId) ; 
+							prepare stmt from @sql_trash ;
+							execute stmt ;
+							deallocate prepare stmt ; 	
+				
+				
+							open rs_cursor; 
+							fetch rs_cursor into _id; 
+				
+							-- 更新版本号
+							set @version = 1 ;
+							while( done = 1 ) do
+				
+									set @maxId = _id ;
+									set @sql_version = concat("update files_", companyId, " set version = ", @version, ", islast = '0' where id = ", _id ) ; 
+									prepare stmt from @sql_version ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _id; 
+									set @version = @version + 1;
+							end while;
+				
+							close rs_cursor ;
+				
+							-- 将最高版本号置为显示文档
+							set @sql_last = concat("update files_", companyId, " set islast = '1' where id = ", @maxId) ; 
+							prepare stmt from @sql_last ;
+							execute stmt ;
+							deallocate prepare stmt ; 	
+				
+							-- 操作成功
+							set success = 1 ; 
+							commit ;
+					end;
+	
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151230" note="新增公司文件夹恢复">
+			<![CDATA[
+				
+				create procedure proc_restore_folder(in companyId varchar(10), in trashId varchar(10), in folderId varchar(10), in idseq varchar(1000), out success int)
+
+				begin
+		
+								declare _id int(8) ;
+								declare done int  default 1 ;
+								declare rs_cursor cursor for select fromid from view_temp_restore_folder ;						
+								declare continue handler for not found set done = 0 ;
+								declare exit handler for sqlexception begin
+										set success = 0 ; 	
+										rollback ;
+								end ;
+		
+								set success = 0 ;
+								set @idseq_folder = concat(idseq, folderId, '.');	
+		
+								-- 获取之前已被删除的子文件夹和文件
+								drop view if exists view_temp_restore_folder ;					
+								
+								set @sql_create_view = concat("create view view_temp_restore_folder as select fromid from files_trash_", companyId, " where isdelete = '0' and idseq like '", @idseq_folder, "%' ");
+								prepare stmt from @sql_create_view ;
+								execute stmt ;
+								deallocate prepare stmt ;					
+		
+								start transaction ;
+		
+								-- 恢复文件夹
+								set @sql_folder_restore = concat("update files_", companyId, " set isdelete = '0' where id = ", folderId );
+								prepare stmt from @sql_folder_restore ;
+								execute stmt ;
+								deallocate prepare stmt ;	
+		
+								-- 删除回收站
+								set @sql_trash = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", trashId);
+								prepare stmt from @sql_trash ;
+								execute stmt ;
+								deallocate prepare stmt ;	
+		
+		
+								-- *************************************恢复子文件夹和子文件   --start           **************************
+								-- 1)	恢复该文件下所有子文件夹和子文件
+								-- 2)	获取文件夹已删掉的文件夹和文件，遍历删除
+		
+								-- 恢复该文件夹下所有的子文件夹和文件(即将isdelete置为0, idseq 更新)
+										
+								set @sql_child_restore = concat("update files_", companyId, " set isdelete = '0' where idseq like '", @idseq_folder, "%'" );
+								prepare stmt from @sql_child_restore ;
+								execute stmt ;
+								deallocate prepare stmt ;	
+		
+								open rs_cursor; 
+								fetch rs_cursor into _id; 
+		
+								while done = 1 do
+											
+											-- 删除文件夹或文件
+											set @sql_folder_delete = concat("update files_", companyId, " set isdelete = '1' where id = ", _id );
+											prepare stmt from @sql_folder_delete ;
+											execute stmt ;
+											deallocate prepare stmt ;	
+					
+											-- 删除所有子文件
+											set @idseq_temp = concat(@idseq_folder, _id, ".");
+											set @sql_child = concat("update files_", companyId, " set isdelete = '1' where idseq like '", @idseq_temp, "%'" );
+											prepare stmt from @sql_child ;
+											execute stmt ;
+											deallocate prepare stmt ;							
+											
+											fetch rs_cursor into _id; 
+		
+								end while ;
+		
+								set success = 1 ;
+								commit ;
+		
+				end;
+	
+			]]>
+		</procedure>
+		<procedure creator="lujixiang" createDate="20151230" note="新增公司文档恢复入口">
+			<![CDATA[
+				
+				create procedure `proc_batch_restore_file_folder`(in trashIds varchar(1000), in companyId varchar(10), in userId varchar(10), out indexIds varchar(255), out failIds varchar(255), out fileIds varchar(255) )
+		
+				lable_at_start :
+				begin
+		
+						set indexIds = '' ;
+						set failIds = '' ;
+						set fileIds = '' ;
+		
+						-- 检测参数是否正确 
+						if trashIds is null or trashIds = '' then 
+								leave lable_at_start ;
+						
+						elseif companyId is null or companyId = '' then
+								leave lable_at_start ;				
+						end if;	
+						
+		
+						-- 循环处理每个待恢复的文件--start
+						set @delimiter = ',' ;
+						set @i = 0 ;
+						set @cnt = func_get_split_string_total(trashIds, @delimiter) ;
+		
+						loop_split : while @i < @cnt
+						do
+							
+							-- 获取待恢复的文件id
+							set @i = @i + 1 ;
+		
+							set @tempId = func_get_split_string(trashIds, @delimiter, @i) ;
+							if @tempId is null or @tempId = '' then 
+									iterate loop_split ;
+							end if ;
+		
+							-- 获取路径
+							set @pathname = '' ;
+							set @sql_file_trash = concat('select fromid, idseq, isfile, filename, pathname, isdelete into @fromid, @fromidseq, @isfile, @filename, @pathname, @isdelete from files_trash_', companyId, ' where id = ', @tempId ) ;
+							prepare pstmt from @sql_file_trash ;
+							execute pstmt ;
+							deallocate prepare pstmt ;
+		
+							-- 获取文件路径异常
+							if @pathname is null or @pathname = '' then 
+									iterate loop_split ;
+							-- 该文件已被彻底删除
+							elseif @isdelete = 1 then
+									iterate loop_split ;
+							end if;
+		
+		
+							-- 恢复路径
+							call proc_generate_folder_path(@fromidseq, companyId, @success );
+							select companyId, @tempId, @fromid;
+		
+							-- 路径恢复失败
+							if @success = 0 then				
+									iterate loop_split ;
+							end if ;								
+		
+							-- 恢复文件夹和文件
+							if @isfile = 1 then 
+									call proc_restore_file(companyId, @tempId, @fromid, @success) ;							
+							else
+									call proc_restore_folder(companyId, @tempId, @fromid, @fromidseq, @success);	
+							end if ;					
+							
+							if @success = 1 then
+									set fileIds = concat(fileIds, @fromid, ',');
+							else
+									set failIds = concat(failIds, @fromid, ',');
+							end if ;				 
+		
+						end while loop_split ;
+		
+		
+						-- 循环处理每个待恢复的文件--end
+				end lable_at_start ;
+	
+			]]>
+		</procedure>
+	</version>
+	<version edition="101" description="为个性设置表增加企业字段">
+		<sql creator="liuwei" createDate="20151230" note="修改个性取消主键">
+			ALTER TABLE USER_SINGLESET drop primary key;
+		</sql>
+	</version>
+	<version edition="102" description="添加用户唯一标识符">
+		<sql creator="caohongping" createDate="20160107" note="添加用户唯一标识符">
+			ALTER TABLE
+			ess_user ADD COLUMN TOKEN varchar(50);
+		</sql>
+	</version>
+ 	 <version edition="103" description="增加app更新服务">
+		<sql creator="liuwei" createDate="20160113" note="增加app更新服务 ">
+			INSERT INTO
+			platformservice(serviceId,serviceName,interfaceName,url,enableState,token,appId,instanceId,reason)
+			VALUES ( 'onlinefile', 'appversion',
+			'cn.flying.rest.onlinefile.restInterface.AppVersionWS',
+			'http://127.0.0.1:8080/onlinefile/rest/appversion', '1',
+			'wwwwww', '1', '0', null);
+		</sql>
+	</version>
+	<version edition="104" description="修复fileuserrelation表approveusername字段为空的问题">
+		<procedure creator="wangwenshuo" createDate="20160114" note="删除同名存储过程">
+			<![CDATA[
+					DROP PROCEDURE IF EXISTS `proc_fileuserrelation_approveusername_error`;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160114" note="存储过程">
+			<![CDATA[
+					CREATE PROCEDURE `proc_fileuserrelation_approveusername_error`()
+					BEGIN		
+							DECLARE done INT DEFAULT 0;
+							DECLARE fid INT(8) DEFAULT 0;
+							DECLARE fcompanyid  VARCHAR(100) DEFAULT 0;
+							DECLARE ffileid INT(8) DEFAULT 0;
+							DECLARE rs CURSOR FOR 
+									select ID,COMPANYID,FILEID from fileuserrelation where APPROVEUSERNAME = '';
+							
+							DECLARE CONTINUE  HANDLER  FOR SQLSTATE  '02000'   SET  done  =   1 ; 
+					
+							open rs;		
+							REPEAT
+									FETCH rs INTO fid,fcompanyid,ffileid;
+									
+									if exists(select 1 from information_schema.TABLES where table_schema='onlinefile' and table_name=CONCAT('files_',fcompanyid)) then
+					
+												SET @s = CONCAT('UPDATE fileuserrelation SET APPROVEUSERNAME = IFNULL((select u.username from files_',fcompanyid,' f LEFT JOIN users u ON f.owner = u.id where f.ID=',ffileid,'),"") WHERE ID=',fid);
+												PREPARE stmt FROM @s;
+												EXECUTE stmt;
+												end if;
+					
+							UNTIL done END REPEAT;
+							CLOSE rs;
+					
+					END
+					;;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160114" note="执行存储过过程">
+			<![CDATA[
+					call proc_fileuserrelation_approveusername_error();
+			]]>
+		</procedure>
+	</version>
+	<version edition="105" description="fileuserrelation添加字段，标识权限是否包括历史版本">
+		<sql creator="wangwenshuo" createDate="201601019" note="fileuserrelation添加字段，标识权限是否包括历史版本">
+			ALTER TABLE `fileuserrelation`
+			ADD COLUMN `forAllVersion`  enum('1','0') NULL DEFAULT '0' COMMENT '1:fileId实为solerNum，权限含历史版本   0：fileId就是fileId，权限仅是当前文件' AFTER `isLook`;
+		</sql>
+	</version>
+	
+	<version edition="106" description="安卓版本更新">
+		<sql creator="liuwei" createDate="20160125" note="安卓版本更新">
+			DROP TABLE IF EXISTS `app_update_info`;
+			CREATE TABLE `app_update_info` (
+			`id`  int(11) NOT NULL AUTO_INCREMENT ,
+			`appName`  varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+			`appDescription`  varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+			`packageName`  varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+			`versionCode`  varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+			`versionName`  varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+			`forceUpdate`  tinyint(1) NULL DEFAULT NULL ,
+			`autoUpdate`  tinyint(1) NULL DEFAULT NULL ,
+			`updateTips`  varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+			`updateTime`  varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+			`apkFileId`  varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+			PRIMARY KEY (`id`)
+			)
+			ENGINE=InnoDB
+			DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+			AUTO_INCREMENT=3
+			ROW_FORMAT=COMPACT
+			;
+		</sql>
+	</version> 
+	
+	<version edition="107" description="数据升级,修改更新时间与文件唯一编号(1)   使用临时表代替xyc使用的视图">
+		<procedure creator="wangwenshuo" createDate="20160218" note="数据升级,修改更新时间与文件唯一编号(1)   使用临时表代替xyc使用的视图">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFileAndFolder_updateTimeAndSoleNumber1` ;	
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160218" note="数据升级,修改更新时间与文件唯一编号(1)   使用临时表代替xyc使用的视图">
+			<![CDATA[
+                CREATE PROCEDURE `updateFileAndFolder_updateTimeAndSoleNumber1`(IN _table_name VARCHAR(200))
+					BEGIN		
+					    DECLARE _name VARCHAR(2000); 
+						DECLARE _type VARCHAR(100); 
+						DECLARE _creatime VARCHAR(100);
+						DECLARE _classid VARCHAR(100);
+						DECLARE num INT DEFAULT 0;
+						DECLARE Done INT DEFAULT 0;
+						DECLARE v_sql VARCHAR(1000); 
+						DECLARE v_sql1 VARCHAR(1000); 
+						
+						DECLARE rs_cursor CURSOR FOR  (SELECT o.classid,o.filename,o.TYPE,o.CREATETIME  FROM update_soleNumber_temp_table o GROUP BY o.classId,o.filename,o.type ORDER BY o.createtime ASC,o.id ASC );
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+
+						DROP TABLE IF EXISTS update_soleNumber_temp_table;
+						SET @sqlstr = "CREATE TEMPORARY TABLE update_soleNumber_temp_table";   
+						SET @v_sql= CONCAT(@sqlstr,'(SELECT o.classid,o.filename,o.TYPE,o.CREATETIME,o.id FROM ', _table_name ,'  o WHERE o.classid <> "1" and o.classid <> "0"  ORDER BY createtime ASC,id ASC)');
+						PREPARE stmt FROM @v_sql;
+						EXECUTE stmt;
+						DEALLOCATE PREPARE stmt;
+						
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _classid,_name,_type,_creatime; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+							SET num = num+1;
+							   SET v_sql1= CONCAT('UPDATE  ', _table_name ,' o SET o.SOLENUMBER ="',num,'",  o.updatetime="',_creatime,'"  WHERE o.CLASSID="',_classid,'"  AND o.FILENAME ="', _name, '"  AND o.TYPE="',_type,'"');
+							   SET @v_sql1=v_sql1;
+							   PREPARE stmt1 FROM @v_sql1;
+							   EXECUTE stmt1;
+							   DEALLOCATE PREPARE stmt1;
+					             FETCH rs_cursor INTO _classid,_name,_type,_creatime; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+						
+						-- 手动删除临时表
+						DROP TABLE IF EXISTS update_soleNumber_temp_table;
+					END;
+			]]>
+		</procedure>
+	</version>
+	
+	<version edition="108" description="数据升级,修改文件序号（1）   使用临时表代替xyc使用的视图">
+		<procedure creator="wangwenshuo" createDate="20160218" note="数据升级,修改文件序号（1）   使用临时表代替xyc使用的视图">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `updateFileAndFolder_SerialNumber1` ;	
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160218" note="数据升级,修改文件序号（1）   使用临时表代替xyc使用的视图">
+			<![CDATA[
+                CREATE PROCEDURE `updateFileAndFolder_SerialNumber1`(IN _table_name VARCHAR(200),IN is_file VARCHAR(20))
+					BEGIN		
+					   	DECLARE _solenumber VARCHAR(100);
+						DECLARE _classid VARCHAR(100);
+						DECLARE is_classid VARCHAR(100);
+						DECLARE num INT DEFAULT 0;
+						DECLARE Done INT DEFAULT 0;
+						DECLARE v_sql VARCHAR(1000); 
+						DECLARE v_sql1 VARCHAR(1000); 
+						
+						DECLARE rs_cursor CURSOR FOR  (SELECT o.classId,o.solenumber FROM update_seralNumber_temp_table o   GROUP BY o.classId,o.solenumber ORDER BY o.classId);
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+
+						DROP TABLE IF EXISTS update_seralNumber_temp_table;
+						SET @sqlstr = "CREATE TEMPORARY TABLE update_seralNumber_temp_table";
+						-- 排除删除文件、彻底删除文件、分类   
+						SET @v_sql= CONCAT(@sqlstr,'(SELECT * FROM ', _table_name ,'  WHERE ISFILE="',is_file,'" AND classId <> "-1" AND classId <> "0" AND classId <> "1"  AND ISDELETE="0"  ORDER BY createtime ASC ,ID ASC)');
+						PREPARE stmt FROM @v_sql;
+						EXECUTE stmt;
+						DEALLOCATE PREPARE stmt;
+						
+						OPEN rs_cursor; 
+						 FETCH rs_cursor INTO _classid,_solenumber; -- 取数据  
+						 WHILE ( Done IS NOT NULL) DO
+						       IF (is_classid <> _classid) THEN 
+						       SET num=0;
+						       END IF ;
+						       SET is_classid=_classid;
+							SET num = num+1;
+							   SET v_sql1= CONCAT('UPDATE  ', _table_name ,' o SET SERIALNUMBER=LPAD(',num,',4,"0")  WHERE o.CLASSID="',_classid,'"  AND o.SOLENUMBER="',_solenumber,'"');
+							   SET @v_sql1=v_sql1;
+							   PREPARE stmt1 FROM @v_sql1;
+							   EXECUTE stmt1;
+							   DEALLOCATE PREPARE stmt1;
+					            FETCH rs_cursor INTO _classid,_solenumber; -- 取数据  
+						  END WHILE;  
+						CLOSE rs_cursor;
+						
+						-- 手动删除临时表
+						DROP TABLE IF EXISTS update_seralNumber_temp_table;
+					END;
+			]]>
+		</procedure>
+	</version>
+	<version edition="109" description="修改文件删除存储过程">
+		<procedure creator="wangwenshuo" createDate="20160224" note="删除时文件编号修改">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_delete_file` ;	
+				
+			]]>
+		</procedure>
+		
+		<procedure creator="wangwenshuo" createDate="20160224" note="删除时文件编号修改">
+			<![CDATA[
+				create procedure proc_delete_file(in companyId varchar(10), in fileId varchar(100), in userId varchar(8), out success int)
+				label_at_start :
+					begin
+						-- 存储过程功能:更新文件版本号，并将最高版本置为显示文档
+						-- 传入参数：companyId: 公司id; fileId: 文件id; idseq : idseq
+						-- 返回参数: success: 更新结果(1:成功；0:失败)
+						declare _id int(8);
+						declare done int  default 1 ;
+						-- 按时间顺序排列文档
+						declare rs_cursor cursor for (select id from view_temp_file order by createtime asc);
+						
+						declare continue handler for not found set done = 0 ;
+				
+						declare exit handler for sqlexception begin 
+							set success = 0 ; 
+							rollback ; 
+						end ;
+						
+						
+						-- 视图创建要放在开启事务之前,因为创建视图操作无法回滚,并且会自动提交事务,导致其他操作无法回滚
+
+						-- 获取fileName和idSeq已获取改文档所有版本
+						set @sql_select = concat("select filename, idseq, version ,serialnumber into @filename, @idseq, @version,@serialnumber from files_", companyId, " where id = ", fileId);
+						prepare stmt from @sql_select ;
+						execute stmt ;
+						deallocate prepare stmt ;
+						
+						-- 获取同一文档的所有版本
+						drop view if exists view_temp_file ;
+
+						set @sql_view = concat("create view view_temp_file as select * from files_", companyId, " where filename = '", @filename, "' and idseq='", @idseq, "' and isdelete = '0'");
+						prepare stmt from @sql_view ;
+						execute stmt ;
+						deallocate prepare stmt ;			
+
+						-- 开启事务
+						start transaction;	
+			
+						-- 删除文件
+						set @sql_delete = concat("update files_", companyId, " set isdelete = '1' where id = ", fileId);
+						prepare stmt from @sql_delete ;
+						execute stmt ;
+						deallocate prepare stmt ;									
+				
+						open rs_cursor; 
+						fetch rs_cursor into _id; 
+			
+						-- 更新版本号
+						set @version = 1 ;
+						while( done = 1 ) do
+			
+								set @maxId = _id ;
+								set @sql_version = concat("update files_", companyId, " set version = ", @version, " where id = ", _id ) ; 
+								prepare stmt from @sql_version ;
+								execute stmt ;
+								deallocate prepare stmt ; 
+								fetch rs_cursor into _id; 
+								set @version = @version + 1;
+						end while;
+			
+						close rs_cursor ;
+			
+						-- 如果不是单版本删除,将最高版本号置为显示文档
+						if @version > 1 then 
+							set @sql_last = concat("update files_", companyId, " set islast = '1' where id = ", @maxId) ; 
+							prepare stmt from @sql_last ;
+							execute stmt ;
+							deallocate prepare stmt ;
+						else
+							-- wangwenshuo 20160201 如果删除的是单版本文件  需要更新文件编号 START
+							-- 注意：使用了Mysql的类型隐式转换
+							set @sql_serialnumber = concat("update files_", companyId, " set serialnumber = LPAD(serialnumber-1,4,0) where idseq='", @idseq, "' and serialnumber > ", @serialnumber) ; 
+							prepare stmt from @sql_serialnumber ;
+							execute stmt ;
+							deallocate prepare stmt ;
+							-- wangwenshuo 20160201 如果删除的是单版本文件  需要更新文件编号 END
+						end if;
+
+						-- 将删除的文件放入回收站	
+						call proc_get_folder_path(companyId, @idseq, @pathname);
+						if @pathname = '' then
+								set success = 0 ; 
+								rollback ;
+								leave label_at_start ;
+						end if ;
+	
+						set @sql_transh = concat("insert into files_trash_", companyId, "(fromid, filename, type, creator, owner, deleteuserid, deletetime, isdelete, idseq, pathname, isfile, openlevel) select id, filename, type, creator, owner, '", userId, "', date_format(now(),'%Y-%c-%d %h:%i:%s'), '0', idseq, '", @pathname, "', isfile, openlevel from files_", companyId, " where id = ",fileId );
+						prepare stmt from @sql_transh ;
+						execute stmt ;
+						deallocate prepare stmt ; 	
+
+						-- 提交事务,重要，防止发生死锁
+						commit ;
+
+						-- 操作成功
+						set success = 1 ; 
+					end label_at_start;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160225" note="重排文件编号">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_serialnumber` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160225" note="重排文件编号">
+			<![CDATA[
+				create procedure proc_restore_serialnumber(in tableName varchar(30),in folderId varchar(10), in isfile varchar(10), out success int)
+					BEGIN
+							/*
+							 wangwenshuo 20160225 重排同一文件夹下的文件编号或者文件夹编号
+								tableName 表名 
+								folderId 文件夹id
+								isfile 重排的是文件夹还是文件
+							*/
+							declare _solenumber int(8);
+							declare done int  default 1 ;
+							-- 查出所有需要重排编号的文件或者文件夹
+							declare rs_cursor cursor for (select solenumber from file_serialnumber_temp_table);			
+							declare continue handler for not found set done = 0 ;	
+							declare exit handler for sqlexception begin
+										set success = 0 ; 	
+										rollback ;
+							end ;
+
+							-- 使用了临时表
+							drop table if exists file_serialnumber_temp_table ;
+							set @sql_view = concat("CREATE TEMPORARY TABLE file_serialnumber_temp_table select * from (SELECT * FROM ",tableName," WHERE classId = ",folderId," AND ISFILE='",isfile,"' AND ISDELETE ='0' ORDER BY updatetime asc ,ID asc) as c   GROUP BY c.classId,c.solenumber");
+							prepare stmt from @sql_view ;
+							execute stmt ;
+							deallocate prepare stmt ;		
+
+							start transaction ;
+
+							open rs_cursor; 
+							fetch rs_cursor into _solenumber; 
+
+							-- 更新编号
+							set @serailnumber = 1 ;
+							while( done = 1 ) do
+									set @sql_serailnumber = concat("update ",tableName," set SERIALNUMBER=LPAD(",@serailnumber,",4,0) where classid=",folderId," and SOLENUMBER=",_solenumber," and ISFILE='",isfile,"'") ; 
+									prepare stmt from @sql_serailnumber ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _solenumber; 
+									set @serailnumber = @serailnumber + 1;
+							end while;
+				
+							close rs_cursor ;
+
+							-- 手动删除临时表
+							DROP TABLE file_serialnumber_temp_table;
+				
+							-- 操作成功
+							set success = 1 ; 
+							commit ;
+					END;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160225" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_folder` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160225" note="删除原有存储过程">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_file` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160225" note="修改公司文档恢复">
+			<![CDATA[
+				create procedure proc_restore_file(in companyId varchar(10),in trashId varchar(10), in fileId int, out success int)
+					begin
+							-- 存储过程功能:恢复文件,并更新版本号
+							-- 传入参数：companyId: 公司id; fileId: 文件id; 
+							-- 返回参数: success: 更新结果(1:成功；0:失败)
+							declare _id int(8);
+							declare done int  default 1 ;
+							-- 按时间顺序排列文档
+							declare rs_cursor cursor for (select id from view_temp_file order by createtime asc);			
+							declare continue handler for not found set done = 0 ;	
+							declare exit handler for sqlexception begin
+										set success = 0 ; 	
+										rollback ;
+							end ;
+				
+							set @sql_file = concat("select filename, idseq,classId into @fileName, @idseq, @classId from files_", companyId, ' where id = ', fileId);
+							prepare stmt from @sql_file ;
+							execute stmt ;
+							deallocate prepare stmt ;			
+				
+							-- 获取同一文档（包括所有有效的版本号）
+							drop view if exists view_temp_file ;
+					
+							set @sql_view = concat("create view view_temp_file as select * from files_", companyId, " where filename = '", @fileName, "' and idseq='", @idseq, "' and isdelete = '0'");
+							prepare stmt from @sql_view ;
+							execute stmt ;
+							deallocate prepare stmt ;		
+
+							start transaction ;
+
+							-- 恢复文件
+							set @sql_restore = concat("update files_", companyId, " set isdelete = '0' where id = ", fileId) ; 
+							prepare stmt from @sql_restore ;
+							execute stmt ;
+							deallocate prepare stmt ; 
+
+							-- 删除回收站文件
+							set @sql_trash = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", trashId) ; 
+							prepare stmt from @sql_trash ;
+							execute stmt ;
+							deallocate prepare stmt ; 	
+				
+							open rs_cursor; 
+							fetch rs_cursor into _id; 
+
+							-- 更新版本号
+							set @version = 1 ;
+							while( done = 1 ) do
+
+									set @maxId = _id ;
+									set @sql_version = concat("update files_", companyId, " set version = ", @version, ", islast = '0' where id = ", _id ) ; 
+									prepare stmt from @sql_version ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _id; 
+									set @version = @version + 1;
+							end while;
+				
+							close rs_cursor ;
+				
+							-- 将最高版本号置为显示文档
+							set @sql_last = concat("update files_", companyId, " set islast = '1' where id = ", @maxId) ; 
+							prepare stmt from @sql_last ;
+							execute stmt ;
+							deallocate prepare stmt ; 	
+				
+							-- 操作成功
+							set success = 1 ; 
+
+							-- 重置文件编号  wangwenshuo 20160225
+							call proc_restore_serialnumber(concat("files_",companyId),@classId,'1',@serailSuccess);
+							if @serailSuccess = 0 then
+										set success = 0 ; 	
+										rollback ;
+							end if;
+
+							commit ;
+					end;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160225" note="修改公司文件夹恢复">
+			<![CDATA[
+				create procedure proc_restore_folder(in companyId varchar(10), in trashId varchar(10), in folderId varchar(10), in idseq varchar(1000), out success int)
+						begin
+		
+								declare _id int(8) ;
+								declare done int  default 1 ;
+								declare rs_cursor cursor for select fromid from view_temp_restore_folder ;						
+								declare continue handler for not found set done = 0 ;
+								declare exit handler for sqlexception begin
+										set success = 0 ; 	
+										rollback ;
+								end ;
+		
+								set success = 0 ;
+								set @idseq_folder = concat(idseq, folderId, '.');	
+		
+								-- 获取之前已被删除的子文件夹和文件
+								drop view if exists view_temp_restore_folder ;					
+								
+								set @sql_create_view = concat("create view view_temp_restore_folder as select fromid from files_trash_", companyId, " where isdelete = '0' and idseq like '", @idseq_folder, "%' ");
+								prepare stmt from @sql_create_view ;
+								execute stmt ;
+								deallocate prepare stmt ;						
+
+								start transaction ;
+		
+								-- 恢复文件夹
+								set @sql_folder_restore = concat("update files_", companyId, " set isdelete = '0' where id = ", folderId );
+								prepare stmt from @sql_folder_restore ;
+								execute stmt ;
+								deallocate prepare stmt ;	
+		
+								-- 删除回收站
+								set @sql_trash = concat("update files_trash_", companyId, " set isdelete = '1' where id = ", trashId);
+								prepare stmt from @sql_trash ;
+								execute stmt ;
+								deallocate prepare stmt ;	
+		
+		
+								-- *************************************恢复子文件夹和子文件   --start           **************************
+								-- 1)	恢复该文件下所有子文件夹和子文件
+								-- 2)	获取文件夹已删掉的文件夹和文件，遍历删除
+		
+								-- 恢复该文件夹下所有的子文件夹和文件(即将isdelete置为0, idseq 更新)
+										
+								set @sql_child_restore = concat("update files_", companyId, " set isdelete = '0' where idseq like '", @idseq_folder, "%'" );
+								prepare stmt from @sql_child_restore ;
+								execute stmt ;
+								deallocate prepare stmt ;	
+		
+								open rs_cursor; 
+								fetch rs_cursor into _id; 
+		
+								while done = 1 do
+											
+											-- 删除文件夹或文件
+											set @sql_folder_delete = concat("update files_", companyId, " set isdelete = '1' where id = ", _id );
+											prepare stmt from @sql_folder_delete ;
+											execute stmt ;
+											deallocate prepare stmt ;	
+					
+											-- 删除所有子文件
+											set @idseq_temp = concat(@idseq_folder, _id, ".");
+											set @sql_child = concat("update files_", companyId, " set isdelete = '1' where idseq like '", @idseq_temp, "%'" );
+											prepare stmt from @sql_child ;
+											execute stmt ;
+											deallocate prepare stmt ;							
+											
+											fetch rs_cursor into _id; 
+		
+								end while ;
+
+								-- 重置文件编号 wangwenshuo 20160225
+								set @sql_file = concat("select classid into @classId from files_", companyId, ' where id = ', folderId);
+								prepare stmt from @sql_file ;
+								execute stmt ;
+								deallocate prepare stmt ;									
+								call proc_restore_serialnumber(concat("files_",companyId),@classId,'0',@serailSuccess);
+								if @serailSuccess = 0 then
+											set success = 0 ; 	
+											rollback ;
+								end if;
+		
+								set success = 1 ;
+								commit ;
+		
+						end;
+			]]>
+		</procedure>
+	</version>	
+	
+	<version edition="110" description="修改文件删除存储过程">
+		<procedure creator="wangwenshuo" createDate="20160303" note="重排文件编号">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_restore_serialnumber` ;	
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160303" note="重排文件编号">
+			<![CDATA[
+				create procedure proc_restore_serialnumber(in tableName varchar(30),in folderId varchar(10), in isfile varchar(10), out success int)
+					BEGIN
+							/*
+							 wangwenshuo 20160225 重排同一文件夹下的文件编号或者文件夹编号
+								tableName 表名 
+								folderId 文件夹id
+								isfile 重排的是文件夹还是文件
+							*/
+							declare _solenumber int(8);
+							declare done int  default 1 ;
+							-- 查出所有需要重排编号的文件或者文件夹
+							declare rs_cursor cursor for (select solenumber from file_serialnumber_temp_table);			
+							declare continue handler for not found set done = 0 ;	
+							declare exit handler for sqlexception begin
+										set success = 0 ; 	
+										rollback ;
+							end ;
+
+							-- 使用了临时表
+							drop table if exists file_serialnumber_temp_table ;
+							set @sql_view = concat("CREATE TEMPORARY TABLE file_serialnumber_temp_table select * from (SELECT * FROM ",tableName," WHERE classId = ",folderId," AND ISFILE='",isfile,"' AND ISDELETE ='0'  and islast='1' ORDER BY updatetime asc ,ID asc) as c   GROUP BY c.classId,c.solenumber");
+							prepare stmt from @sql_view ;
+							execute stmt ;
+							deallocate prepare stmt ;		
+
+							start transaction ;
+
+							open rs_cursor; 
+							fetch rs_cursor into _solenumber; 
+
+							-- 更新编号
+							set @serailnumber = 1 ;
+							while( done = 1 ) do
+									set @sql_serailnumber = concat("update ",tableName," set SERIALNUMBER=LPAD(",@serailnumber,",4,0) where classid=",folderId," and SOLENUMBER=",_solenumber," and ISFILE='",isfile,"'") ; 
+									prepare stmt from @sql_serailnumber ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _solenumber; 
+									set @serailnumber = @serailnumber + 1;
+							end while;
+				
+							close rs_cursor ;
+
+							-- 手动删除临时表
+							DROP TABLE file_serialnumber_temp_table;
+				
+							-- 操作成功
+							set success = 1 ; 
+							commit ;
+					END;
+			]]>
+		</procedure>
+	</version>
+	<version edition="111" description="修改文件删除存储过程——修改删除时间格式">
+		<procedure creator="wangwenshuo" createDate="20160304" note="删除时文件编号修改——修改删除时间格式">
+			<![CDATA[
+				DROP PROCEDURE IF EXISTS `proc_delete_file` ;	
+				
+			]]>
+		</procedure>
+		
+		<procedure creator="wangwenshuo" createDate="20160304" note="删除时文件编号修改——修改删除时间格式">
+			<![CDATA[
+				create procedure proc_delete_file(in companyId varchar(10), in fileId varchar(100), in userId varchar(8), out success int)
+				label_at_start :
+					begin
+						-- 存储过程功能:更新文件版本号，并将最高版本置为显示文档
+						-- 传入参数：companyId: 公司id; fileId: 文件id; idseq : idseq
+						-- 返回参数: success: 更新结果(1:成功；0:失败)
+						declare _id int(8);
+						declare done int  default 1 ;
+						-- 按时间顺序排列文档
+						declare rs_cursor cursor for (select id from view_temp_file order by createtime asc);
+						
+						declare continue handler for not found set done = 0 ;
+				
+						declare exit handler for sqlexception begin 
+							set success = 0 ; 
+							rollback ; 
+						end ;
+						
+						
+						-- 视图创建要放在开启事务之前,因为创建视图操作无法回滚,并且会自动提交事务,导致其他操作无法回滚
+
+						-- 获取fileName和idSeq已获取改文档所有版本
+						set @sql_select = concat("select filename, idseq, version ,serialnumber into @filename, @idseq, @version,@serialnumber from files_", companyId, " where id = ", fileId);
+						prepare stmt from @sql_select ;
+						execute stmt ;
+						deallocate prepare stmt ;
+						
+						-- 获取同一文档的所有版本
+						drop view if exists view_temp_file ;
+
+						set @sql_view = concat("create view view_temp_file as select * from files_", companyId, " where filename = '", @filename, "' and idseq='", @idseq, "' and isdelete = '0'");
+						prepare stmt from @sql_view ;
+						execute stmt ;
+						deallocate prepare stmt ;			
+
+						-- 开启事务
+						start transaction;	
+			
+						-- 删除文件
+						set @sql_delete = concat("update files_", companyId, " set isdelete = '1' where id = ", fileId);
+						prepare stmt from @sql_delete ;
+						execute stmt ;
+						deallocate prepare stmt ;									
+				
+						open rs_cursor; 
+						fetch rs_cursor into _id; 
+			
+						-- 更新版本号
+						set @version = 1 ;
+						while( done = 1 ) do
+			
+								set @maxId = _id ;
+								set @sql_version = concat("update files_", companyId, " set version = ", @version, " where id = ", _id ) ; 
+								prepare stmt from @sql_version ;
+								execute stmt ;
+								deallocate prepare stmt ; 
+								fetch rs_cursor into _id; 
+								set @version = @version + 1;
+						end while;
+			
+						close rs_cursor ;
+			
+						-- 如果不是单版本删除,将最高版本号置为显示文档
+						if @version > 1 then 
+							set @sql_last = concat("update files_", companyId, " set islast = '1' where id = ", @maxId) ; 
+							prepare stmt from @sql_last ;
+							execute stmt ;
+							deallocate prepare stmt ;
+						else
+							-- wangwenshuo 20160201 如果删除的是单版本文件  需要更新文件编号 START
+							-- 注意：使用了Mysql的类型隐式转换
+							set @sql_serialnumber = concat("update files_", companyId, " set serialnumber = LPAD(serialnumber-1,4,0) where idseq='", @idseq, "' and serialnumber > ", @serialnumber) ; 
+							prepare stmt from @sql_serialnumber ;
+							execute stmt ;
+							deallocate prepare stmt ;
+							-- wangwenshuo 20160201 如果删除的是单版本文件  需要更新文件编号 END
+						end if;
+
+						-- 将删除的文件放入回收站	
+						call proc_get_folder_path(companyId, @idseq, @pathname);
+						if @pathname = '' then
+								set success = 0 ; 
+								rollback ;
+								leave label_at_start ;
+						end if ;
+	
+						set @sql_transh = concat("insert into files_trash_", companyId, "(fromid, filename, type, creator, owner, deleteuserid, deletetime, isdelete, idseq, pathname, isfile, openlevel) select id, filename, type, creator, owner, '", userId, "', date_format(now(),'%Y-%m-%d %H:%i:%s'), '0', idseq, '", @pathname, "', isfile, openlevel from files_", companyId, " where id = ",fileId );
+						prepare stmt from @sql_transh ;
+						execute stmt ;
+						deallocate prepare stmt ; 	
+
+						-- 提交事务,重要，防止发生死锁
+						commit ;
+
+						-- 操作成功
+						set success = 1 ; 
+					end label_at_start;
+			]]>
+		</procedure>	
+	</version>	
+	<version edition="112" description="修改文件版本号">
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				DROP PROCEDURE if EXISTS updateFile_VersionNumber;
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				CREATE PROCEDURE `updateFile_VersionNumber`()
+					BEGIN		
+						DECLARE _table_name VARCHAR(100); 
+						DECLARE Done INT DEFAULT 0;
+						DECLARE rs_cursor CURSOR FOR  (SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA LIKE 'onlinefile'  AND ((TABLE_NAME LIKE 'files__') OR (TABLE_NAME LIKE 'files___') OR (TABLE_NAME LIKE 'files____') OR (TABLE_NAME LIKE 'files_____') OR (TABLE_NAME LIKE 'files_user__') OR (TABLE_NAME LIKE 'files_user___')OR (TABLE_NAME LIKE 'files_user____') OR (TABLE_NAME LIKE 'files_user_____')));
+						-- 定义游标
+						DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+						OPEN rs_cursor; 
+							 FETCH rs_cursor INTO _table_name; -- 取数据  
+							 WHILE ( Done IS NOT NULL) DO
+								 CALL updateFile_VersionNumberSub(_table_name);
+								 FETCH rs_cursor INTO _table_name; -- 取数据  
+							 END WHILE;  
+						CLOSE rs_cursor;
+					END;
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				DROP PROCEDURE if EXISTS updateFile_VersionNumberSub;
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				CREATE PROCEDURE `updateFile_VersionNumberSub`(IN _table_name VARCHAR(200))
+					BEGIN		
+							DECLARE _name VARCHAR(2000); 
+							DECLARE _type VARCHAR(100); 
+							DECLARE _classid VARCHAR(100);
+							DECLARE Done INT DEFAULT 0;
+							DECLARE v_sql VARCHAR(1000); 
+							
+							DECLARE rs_cursor CURSOR FOR (SELECT o.classid,o.filename,o.TYPE FROM update_version_temp_table o GROUP BY o.classId,o.filename,o.type);
+							-- 定义游标
+							DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = NULL;
+			
+							DROP TABLE IF EXISTS update_version_temp_table;
+							SET @sqlstr = "CREATE TEMPORARY TABLE update_version_temp_table";   
+							SET @v_sql= CONCAT(@sqlstr,'(SELECT distinct o.classid,o.filename,o.TYPE FROM ', _table_name ,'  o WHERE o.classid <> "1" and o.classid <> "0") ');
+							PREPARE stmt FROM @v_sql;
+							EXECUTE stmt;
+							DEALLOCATE PREPARE stmt;
+							
+							OPEN rs_cursor; 
+							 FETCH rs_cursor INTO _classid,_name,_type; -- 取数据  
+							 WHILE ( Done IS NOT NULL) DO
+									 CALL updateFile_VersionNumberSub2(_table_name,_classid,_name,_type); 
+									 FETCH rs_cursor INTO _classid,_name,_type; -- 取数据  
+								END WHILE;  
+							CLOSE rs_cursor;
+							
+							-- 手动删除临时表
+							DROP TABLE IF EXISTS update_version_temp_table;
+					END;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				DROP PROCEDURE if EXISTS updateFile_VersionNumberSub2;
+				
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				CREATE PROCEDURE `updateFile_VersionNumberSub2`(IN _table_name VARCHAR(200),IN _classid VARCHAR(200)
+				,IN _name VARCHAR(200),IN _type VARCHAR(200))
+					BEGIN		
+							DECLARE Done INT DEFAULT 1;
+							DECLARE v_sql VARCHAR(1000); 
+							DECLARE _id INT(8);
+							
+							DECLARE rs_cursor CURSOR FOR (SELECT id FROM update_version2_temp_table order by createtime asc);
+							-- 定义游标
+							DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET Done = 0;
+			
+							DROP TABLE IF EXISTS update_version2_temp_table;
+							SET @sqlstr = "CREATE TEMPORARY TABLE update_version2_temp_table";   
+							SET @v_sql= CONCAT(@sqlstr,"(SELECT * FROM ", _table_name ,"  o WHERE o.classid =",_classid," and filename='",_name,"' and type='",_type,"')");
+							PREPARE stmt FROM @v_sql;
+							EXECUTE stmt;
+							DEALLOCATE PREPARE stmt;
+			
+							open rs_cursor; 
+							fetch rs_cursor into _id; 
+							-- 更新版本号
+							set @version = 1 ;
+							while( Done = 1 ) do
+									set @sql_version = concat("update ", _table_name, " set version = ", @version, " where id = ", _id ) ; 
+									prepare stmt from @sql_version ;
+									execute stmt ;
+									deallocate prepare stmt ; 
+									fetch rs_cursor into _id; 
+									set @version = @version + 1;
+							end while;
+						
+							close rs_cursor ;
+							
+							-- 手动删除临时表
+							DROP TABLE IF EXISTS update_version2_temp_table;
+					END;
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件版本号">
+			<![CDATA[
+				call updateFile_VersionNumber();
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件更新时间和唯一编号">
+			<![CDATA[
+				call updateFileAndFolder_updateTimeAndSoleNumber();
+			]]>
+		</procedure>
+		<procedure creator="wangwenshuo" createDate="20160328" note="修改文件序号">
+			<![CDATA[
+				call updateFileAndFolder_SerialNumber();
+			]]>
+		</procedure>
+	</version>	
+</update>

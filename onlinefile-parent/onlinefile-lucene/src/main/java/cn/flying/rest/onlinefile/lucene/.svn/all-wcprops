@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14184/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-lucene/src/main/java/cn/flying/rest/onlinefile/lucene
+END
+LuceneWSImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 262
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14588/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-lucene/src/main/java/cn/flying/rest/onlinefile/lucene/LuceneWSImpl.java
+END
+LuceneClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 261
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8641/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-lucene/src/main/java/cn/flying/rest/onlinefile/lucene/LuceneClient.java
+END
+LuceneJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 259
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12444/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-lucene/src/main/java/cn/flying/rest/onlinefile/lucene/LuceneJob.java
+END
+MyJobScheduling.java
+K 25
+svn:wc:ra_dav:version-url
+V 265
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12444/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-lucene/src/main/java/cn/flying/rest/onlinefile/lucene/MyJobScheduling.java
+END

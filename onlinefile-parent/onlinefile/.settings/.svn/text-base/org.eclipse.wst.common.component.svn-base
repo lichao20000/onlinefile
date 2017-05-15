@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="onlinefile">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="onlinefile-dbautoupgrade-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-dbautoupgrade/onlinefile-dbautoupgrade">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-utils-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-utils/onlinefile-utils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-restInterface-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-restInterface/onlinefile-restInterface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-wechat-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-wechat/onlinefile-wechat">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="essoaadmin-cache-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/essoaadmin-cache/essoaadmin-cache">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-chat-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-chat/onlinefile-chat">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-files-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-files/onlinefile-files">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-company-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-company/onlinefile-company">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="essoaadmin-restInterface-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/essoaadmin-restInterface/essoaadmin-restInterface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="essoaadmin-entity-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/essoaadmin-entity/essoaadmin-entity">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-users-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-users/onlinefile-users">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-documentclass-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-documentclass/onlinefile-documentclass">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-email-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-email/onlinefile-email">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-entity-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-entity/onlinefile-entity">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-lucene-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-lucene/onlinefile-lucene">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-messagequeue-consumer-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-messagequeue-consumer/onlinefile-messagequeue-consumer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-messagequeue-producer-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-messagequeue-producer/onlinefile-messagequeue-producer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="onlinefile-quartz-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlinefile-quartz/onlinefile-quartz">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="flyingsoft-platform-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/flyingsoft-platform/flyingsoft-platform">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="onlinefile"/>
+        <property name="java-output-path" value="/onlinefile/target/classes"/>
+    </wb-module>
+</project-modules>

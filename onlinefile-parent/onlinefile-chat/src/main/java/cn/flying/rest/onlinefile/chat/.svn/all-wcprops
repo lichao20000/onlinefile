@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 240
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14370/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat
+END
+DNSUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 252
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7444/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/DNSUtil.java
+END
+Session.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12797/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/Session.java
+END
+Janitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 252
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/9913/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/Janitor.java
+END
+ChatWSImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 256
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/14370/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/ChatWSImpl.java
+END
+SSLSocketReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 260
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7444/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/SSLSocketReader.java
+END
+DebugLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7749/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/DebugLog.java
+END
+JHBServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 256
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12407/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/JHBServlet.java
+END
+Response.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7444/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-chat/src/main/java/cn/flying/rest/onlinefile/chat/Response.java
+END

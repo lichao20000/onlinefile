@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 244
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12651/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity
+END
+ValueClob.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueClob.java
+END
+Header.java
+K 25
+svn:wc:ra_dav:version-url
+V 255
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Header.java
+END
+ValueFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 259
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueFloat.java
+END
+ValueType.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueType.java
+END
+FileInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 257
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7387/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/FileInfo.java
+END
+Compare.java
+K 25
+svn:wc:ra_dav:version-url
+V 256
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Compare.java
+END
+FileComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 260
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7387/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/FileComment.java
+END
+EmailAttachment.java
+K 25
+svn:wc:ra_dav:version-url
+V 264
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7680/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/EmailAttachment.java
+END
+ValueDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueDate.java
+END
+EmailEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 260
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/7350/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/EmailEntity.java
+END
+ValueResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 262
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueResource.java
+END
+ValueText.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueText.java
+END
+ValueTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueTime.java
+END
+MailServerAddressEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 273
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12134/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/MailServerAddressEntity.java
+END
+ICompare.java
+K 25
+svn:wc:ra_dav:version-url
+V 257
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ICompare.java
+END
+IndexFileInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 262
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8315/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/IndexFileInfo.java
+END
+ICompareObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 263
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ICompareObject.java
+END
+Condition.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Condition.java
+END
+ValueBool.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueBool.java
+END
+Field.java
+K 25
+svn:wc:ra_dav:version-url
+V 254
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Field.java
+END
+ValueNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 260
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueNumber.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 253
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Pair.java
+END
+UserInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12637/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/UserInfo.java
+END
+Compute.java
+K 25
+svn:wc:ra_dav:version-url
+V 256
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Compute.java
+END
+ValueCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 258
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ValueCell.java
+END
+ImportInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 259
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/ImportInfo.java
+END
+IPropertyCopy.java
+K 25
+svn:wc:ra_dav:version-url
+V 263
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/12651/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/IPropertyCopy.java
+END
+DataMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 256
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/DataMap.java
+END
+Value.java
+K 25
+svn:wc:ra_dav:version-url
+V 254
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Value.java
+END
+Record.java
+K 25
+svn:wc:ra_dav:version-url
+V 255
+/svn/YJY-2014-004-SOA%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0/!svn/ver/8380/01%E5%BC%80%E5%8F%91%E5%BA%93/01%E6%BA%90%E4%BB%A3%E7%A0%81/%E5%90%8E%E5%8F%B0JAVA/maven/onlinefile-parent/onlinefile-entity/src/main/java/cn/flying/rest/onlinefile/entity/Record.java
+END
